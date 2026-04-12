@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.pressing('create:belt_connector', 'minecraft:dried_kelp')
 
-  // --- CRAFT TABLE POUR LES GOGGLES1  ---
+  // --- CRAFT TABLE POUR LES GOGGLES  ---
   event.shaped('create:goggles', [
     ' T ', 
     'GPG', 
