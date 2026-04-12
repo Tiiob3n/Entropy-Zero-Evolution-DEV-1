@@ -5,48 +5,14 @@
 	group: "5CC00E70B006260D"
 	icon: "alltheores:steel_ingot"
 	id: "1939B6C18EEBC6D7"
-	images: [
-		{
-			height: 25.0d
-			image: "entropy:textures/immersive/immersive_back2.png"
-			rotation: 0.0d
-			width: 25.0d
-			x: -4.0d
-			y: -2.5d
-		}
-		{
-			height: 5.0d
-			image: "entropy:textures/immersive/immersive_coke.png"
-			rotation: 0.0d
-			width: 5.0d
-			x: 1.5d
-			y: 1.0d
-		}
-		{
-			height: 5.0d
-			image: "entropy:textures/immersive/immersive_alloy.png"
-			rotation: 0.0d
-			width: 5.0d
-			x: 1.5d
-			y: -3.5d
-		}
-		{
-			height: 3.0d
-			image: "entropy:textures/immersive/immersive_press3.png"
-			rotation: 0.0d
-			width: 4.0d
-			x: -9.5d
-			y: -0.5d
-		}
-	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"&7Fini de jouer avec des engrenages en bois. Les lunettes de Create vous ont ouvert les yeux sur les flux de puissance, mais vos machines actuelles sont trop fragiles pour la suite.",
+				"&7Fini de jouer avec des engrenages en bois. Les lunettes de Create vous ont ouvert les yeux sur les flux de puissance, mais vos machines actuelles sont trop fragiles pour la suite."
 				""
-				"&fL'Age 2 marque votre entrée dans la Métallurgie Lourde et la Chimie.",
+				"&fL'Age 2 marque votre entrée dans la Métallurgie Lourde et la Chimie."
 				""
 				"&8Préparez-vous à manipuler des métaux en fusion et des sous-produits toxiques."
 			]
@@ -397,6 +363,249 @@
 			x: -4.0d
 			y: -7.5d
 		}
+		{
+			description: [
+				"&7L'Acier est prêt, mais il faut maintenant le mettre en forme."
+				""
+				"Réunissez ces composants pour assembler votre première machine industrielle : la &5Metal Press&7."
+				""
+				"&fLe &4Heavy Engineering Block&f est la pièce maîtresse, il prouve que vous maîtrisez enfin l'acier industriel."
+			]
+			id: "5F9B93403BBCD42E"
+			rewards: [{
+				id: "22A8C9CB326275C7"
+				item: "immersiveengineering:mold_gear"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "5EC4D2DE4ACB60AA"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "498E0ECD76F9A998"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "39A0DF488E55B2F0"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "0C22D4D5B533E02F"
+					item: { Count: 2, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "07DACC245BC6A9F1"
+					item: { Count: 2, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+			]
+			title: "&6&lPréparation au Pressage"
+			x: -6.0d
+			y: -7.5d
+		}
+		{
+			description: [
+				"&7Une fois la structure en place, frappez le &lPiston&7 avec votre marteau d'ingénieur pour l'activer."
+				""
+				"La &5Metal Press&7 est la seule machine capable de transformer l'Acier, l'Aluminium et le Plomb en &bFils (Wires)&7."
+				""
+				"&6&lIMPORTANT :&r &fSans cette machine, vous ne pourrez jamais produire les câbles nécessaires au réseau électrique."
+			]
+			icon: "immersiveengineering:metal_press"
+			id: "4CA185ABFD430597"
+			rewards: [{
+				id: "5D8813064DBDA6AF"
+				item: "immersiveengineering:mold_wire"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0940B397582F5662"
+				title: "&d&lForce Hydraulique"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -6.5d
+		}
+		{
+			description: [
+				"&7Votre énergie rotative (Create) ne suffit plus."
+				""
+				"La &3Dynamo&7 est le pont entre la mécanique et l'électrique. Elle convertit la rotation en &eFlux (FE/RF)&7."
+				""
+				"&fPlacez-la face à une source de rotation pour commencer à charger vos machines."
+			]
+			id: "03EF5105D1AC52E2"
+			rewards: [{
+				count: 8
+				id: "46C52C0D33243CC2"
+				item: "immersiveengineering:connector_lv"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6594588EB9DBC06D"
+				item: "immersiveengineering:dynamo"
+				type: "item"
+			}]
+			title: "&b&lÉnergie Cinétique"
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"&7La source d'énergie la plus stable pour débuter."
+				""
+				"Assemblez les 4 segments pour former une roue complète. Elle doit être placée directement contre le côté de la &bDynamo&7."
+				""
+				"&f&lAstuce :&r &fL'eau doit couler sur un seul côté de la roue pour qu'elle tourne à pleine vitesse."
+			]
+			icon: "immersiveengineering:watermill"
+			id: "6E3A8B5559305A98"
+			rewards: [{
+				id: "3AAA2AF8693C9FBF"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "2B87FF4248DDE5A7"
+				item: "immersiveengineering:watermill"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			id: "7F27B4FF454F38D6"
+			rewards: [{
+				count: 4
+				id: "7CA5528B81F0FAFB"
+				item: "immersiveengineering:windmill_sail"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "0F9A1B0E2E13F98F"
+					item: "immersiveengineering:windmill"
+					only_from_crafting: true
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "2C0F31626240AE85"
+					item: { Count: 4, id: "immersiveengineering:windmill_sail" }
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"&7Maintenant, il faut relier la source à la machine."
+				""
+				"1. Posez un &eConnecteur&7 sur la Dynamo."
+				"2. Posez un &eConnecteur&7 sur la Metal Press."
+				"3. Reliez-les avec la bobine de fil."
+				""
+				"&c&lDANGER :&r &fLes fils non isolés infligent des chocs électriques. Ne restez pas dessous !"
+			]
+			id: "2403795A92DC5C19"
+			rewards: [{
+				id: "1DCF49E877CA37A1"
+				item: "immersiveengineering:voltmeter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "5927421C0837C420"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "08B6990077FFA70A"
+					item: { Count: 2, id: "immersiveengineering:connector_lv" }
+					type: "item"
+				}
+				{
+					id: "3E47E699CB6D32EC"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+			]
+			title: "&e&lLe Réseau Basse Tension"
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&7La Dynamo produit peu, la Metal Press consomme beaucoup d'un coup."
+				""
+				"Le &aCapacitor&7 stocke l'énergie en surplus. C'est indispensable pour ne pas que vos machines s'arrêtent au milieu d'un craft."
+				""
+				"&6Marteau :&r &fShift + Clic Droit pour changer les faces (Bleu = Entrée, Orange = Sortie)."
+			]
+			id: "6EEED057A3DCB05A"
+			rewards: [{
+				id: "2CC74AC9437ECCCE"
+				item: "immersiveengineering:capacitor_lv"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "318023073E7B0FC7"
+				item: "immersiveengineering:capacitor_lv"
+				type: "item"
+			}]
+			title: "&a&lLa Première Batterie"
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			id: "7B96A048F280DD6E"
+			tasks: [
+				{
+					id: "6443066466D76C6A"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+				{
+					id: "2276C176363F6431"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+				{
+					id: "6D16319A3157BCAB"
+					item: "toms_storage:ts.crafting_terminal"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "3CF496E2D926E892"
+					item: { Count: 10, id: "toms_storage:ts.inventory_cable" }
+					type: "item"
+				}
+			]
+			title: "&a&lLogistique Simplifiée"
+			x: -8.0d
+			y: -1.0d
+		}
 	]
-	title: "&l&8Black Gold &7Steel"
+	title: "&5&lComplexité &f&lIndustrielle"
 }

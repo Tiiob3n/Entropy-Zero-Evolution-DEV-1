@@ -2,6 +2,6 @@ type = last_world
 
 last_world {
   is_server = false
-  world = C:/Users/benja/curseforge/minecraft/Instances/GamingPack/saves/DevWorld
+  world = C:/Users/benja/curseforge/minecraft/Instances/Entropy-Zero-Evolution-DEV-1/saves/DevWorld
 }
 
