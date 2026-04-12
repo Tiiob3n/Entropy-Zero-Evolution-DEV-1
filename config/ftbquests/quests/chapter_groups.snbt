@@ -1,0 +1,15 @@
+{
+	chapter_groups: [
+		{ id: "10EB39C83676F3B4", title: "&7&lAge 0 : &fPrimitive Inertia" }
+		{ id: "22ADDA28ACA492F0", title: "&b&lAge 1 : &fKinetic Awakening" }
+		{ id: "5CC00E70B006260D", title: "&e&lAge 2 : &fZero Conductivity" }
+		{ id: "56D4EC783D895374", title: "&d&lAge 3 : &fCulinary Arts" }
+		{ id: "33418E23C79FD8FE", title: "&a&lAge 4 : &fMicro-Mechanical" }
+		{ id: "38F7ABC9B17F7967", title: "&5&lAge 5 : &fThermal Refinement" }
+		{ id: "02C4846B8E67A62E", title: "&6&lAge 6 : &fDigital Logistics" }
+		{ id: "5D7D2F535F714310", title: "&4&lAge 7 : &fEthereal Arcanes" }
+		{ id: "266D924F90F87D99", title: "&2&lAge 8 : &fBotanical Industry" }
+		{ id: "205A5F1622510366", title: "&3&lAge 9 : &fCosmic Odyssey" }
+		{ id: "10C001DDF2C76B70", title: "&c&lAge 10 : &fFinal Apotheosis" }
+	]
+}

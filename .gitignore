@@ -1,0 +1,29 @@
+# Dossiers de jeu (Trop lourds / Privés)
+/saves/
+/logs/
+/screenshots/
+/resourcepacks/
+/shaderpacks/
+/simplebackups/
+/crash-reports/
+/journeymap/
+/local/
+
+
+# Fichiers système et cache
+/local/
+/.mixin.out/
+/downloads/
+/usercache.json
+/usernamecache.json
+*.dat
+*.log
+*.class
+
+# On ne garde QUE ce qui est nécessaire au modpack
+!/config/
+!/kubejs/
+!/defaultconfigs/
+!/mods/
+!/global_packs/
+!/patchouli_books/

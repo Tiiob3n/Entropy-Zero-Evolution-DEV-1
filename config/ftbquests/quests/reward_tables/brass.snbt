@@ -1,0 +1,13 @@
+{
+	id: "6787A336CE07287A"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ item: "mysticalagriculture:brass_seeds" }
+		{ item: "alltheores:brass_nugget" }
+		{ item: "create:brass_ingot" }
+		{ item: "create:brass_block" }
+		{ item: "create:brass_funnel" }
+	]
+	title: "Brass"
+}

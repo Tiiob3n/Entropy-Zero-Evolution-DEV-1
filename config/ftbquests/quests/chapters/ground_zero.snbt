@@ -1,0 +1,474 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ground_zero"
+	group: "10EB39C83676F3B4"
+	hide_quest_until_deps_complete: true
+	icon: "minecraft:dead_bush"
+	id: "5C34CDA04714FE6A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&7L'air est lourd et le silence assourdissant. Tu es le dernier vestige d'une ère révolue. Pour survivre, il va falloir réapprendre à fabriquer."]
+			icon: "supplementaries:clock_block"
+			id: "794444A44965DBA0"
+			rewards: [
+				{
+					count: 3
+					id: "5371253A729C0643"
+					item: "minecraft:apple"
+					type: "item"
+				}
+				{
+					id: "621DF6724259DC12"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			tasks: [{
+				id: "74573E3E3BB8F290"
+				title: "&bLe Réveil"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["794444A44965DBA0"]
+			id: "3753B4A56C5FDDAD"
+			rewards: [{
+				count: 8
+				id: "1D2D2AA63AD84BE0"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					count: 10L
+					icon: "minecraft:stick"
+					id: "67D2DEFA1DCAB4DD"
+					item: "minecraft:stick"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "514822FBBBA83B0E"
+					item: { Count: 10, id: "minecraft:flint" }
+					type: "item"
+				}
+			]
+			title: "&6Récolte de Fortune"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3753B4A56C5FDDAD"]
+			description: ["&7Avant de forger, il faut planifier. Les patterns sont la base de tout outil Tinkers."]
+			id: "0FE581846E087AE5"
+			rewards: [{
+				count: 2
+				id: "0BC92A2A5138BD1D"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "0B493D5684EC00AA"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			title: "&eLes Plans de Base"
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0FE581846E087AE5"]
+			description: ["&fConstruis tes premières stations de travail. Le &6Part Builder &fpour tailler les pièces, et la &6Tinker Station fpour les assembler."]
+			id: "6C53B7C34E985E2B"
+			rewards: [{
+				count: 4
+				id: "45BCB752F691FD58"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7E4F5EFF133E30A6"
+					item: "tconstruct:part_builder"
+					type: "item"
+				}
+				{
+					id: "6DE3F6886279F66E"
+					item: "tconstruct:tinker_station"
+					type: "item"
+				}
+			]
+			title: "&6L'Atelier du Fabricant"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6C53B7C34E985E2B"]
+			description: ["&7Utilise le &6Part Builder&7. Place un &fPatron &7et un morceau de &8Silex &7pour créer une tête de pioche. Répète l'opération avec du bois pour le manche et le lien."]
+			id: "0E881CB106F737F4"
+			rewards: [{
+				count: 2
+				id: "67DB934478B0429C"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "3E11E01D6399BEB7"
+					item: {
+						Count: 1
+						id: "tconstruct:pick_head"
+						tag: {
+							Material: "tconstruct:flint"
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "271DF64C999705DB"
+					item: {
+						Count: 1
+						id: "tconstruct:tool_handle"
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5F1C5AA1C247353C"
+					item: {
+						Count: 1
+						id: "tconstruct:tool_binding"
+						tag: {
+							Material: "tconstruct:wood"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&8Tailler le Silex"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0E881CB106F737F4"]
+			description: [
+				"&7La station de montage est prête. Il est temps de transformer tes composants en véritables outils de travail."
+				" "
+				"&fAssemble tes pièces pour obtenir le set complet du parfait explorateur. Ces outils ne sont pas seulement plus efficaces, ils sont l'extension de ta volonté de survivre."
+				" "
+				"&8Astuce : Si un outil est usé, place-le dans la Tinker Station avec un morceau de Silex pour le réparer !"
+			]
+			id: "58D92CCD0719346F"
+			rewards: [
+				{
+					id: "61025277E5589FE2"
+					item: "tconstruct:tinkers_gadgetry"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "683A6843FE4CE8FC"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+				{
+					id: "3B010280688DE766"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			tasks: [
+				{
+					id: "6C3DA8A2C511579D"
+					item: {
+						Count: 1
+						id: "tconstruct:pickaxe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:flint"
+								"tconstruct:flint"
+								"tconstruct:flint"
+							]
+							tic_modifiers: [
+								{
+									level: 1
+									name: "tconstruct:pierce"
+								}
+								{
+									level: 3
+									name: "tconstruct:jagged"
+								}
+							]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 2.4750001f
+								"tconstruct:attack_speed": 1.2f
+								"tconstruct:durability": 72.25f
+								"tconstruct:harvest_tier": "minecraft:stone"
+								"tconstruct:mining_speed": 3.5f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4C780EE1263B2070"
+					item: {
+						Count: 1
+						id: "tconstruct:hand_axe"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:flint"
+								"tconstruct:flint"
+								"tconstruct:flint"
+							]
+							tic_modifiers: [
+								{
+									level: 1
+									name: "tconstruct:stripping"
+								}
+								{
+									level: 3
+									name: "tconstruct:jagged"
+								}
+							]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 7.9750004f
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:durability": 72.25f
+								"tconstruct:harvest_tier": "minecraft:stone"
+								"tconstruct:mining_speed": 3.5f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D73D79926935953"
+					item: {
+						Count: 1
+						id: "tconstruct:mattock"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:flint"
+								"tconstruct:flint"
+								"tconstruct:flint"
+							]
+							tic_modifiers: [
+								{
+									level: 1
+									name: "tconstruct:tilling"
+								}
+								{
+									level: 3
+									name: "tconstruct:jagged"
+								}
+							]
+							tic_multipliers: {
+								"tconstruct:attack_damage": 1.1f
+								"tconstruct:durability": 1.25f
+								"tconstruct:mining_speed": 1.1f
+							}
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:attack_damage": 3.3275f
+								"tconstruct:attack_speed": 0.9f
+								"tconstruct:durability": 90.3125f
+								"tconstruct:harvest_tier": "minecraft:stone"
+								"tconstruct:mining_speed": 3.8500001f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 3
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&bL'Arsenal du Survivant"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["58D92CCD0719346F"]
+			description: [
+				"&7Le silex était un bon début, mais pour s'attaquer aux minerais plus sérieux, il faut monter en gamme."
+				""
+				" "
+				"&fUtilise tes outils en &6Silex &fcomme base dans ton établi pour façonner la &8Pierre&f."
+				" "
+				"&bNote : &7Tu as remarqué ? Le craft classique ne fonctionne plus. C'est l'évolution !"
+			]
+			id: "6820C652C25D3ADB"
+			rewards: [
+				{
+					count: 32
+					id: "11B48B19315A35E1"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "4CF5642FD7C45443"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					id: "5B5C451ECB52616F"
+					item: {
+						Count: 1
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "143C6A8FE4E0D26F"
+					item: {
+						Count: 1
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&8L'Âge de Pierre"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6820C652C25D3ADB"]
+			description: [
+				"&7La pierre est utile, mais elle ne tourne pas. Pour entrer dans l'ère de la rotation, tu as besoin d'un matériau composite."
+				""
+				" "
+				"&fMélange de l'&8Andésite &favec des &6Pépites de Fer &f(ou du Silex selon tes réglages) pour obtenir de l'&6Alliage d'Andésite&f."
+				" "
+				"&8Cet alliage est la base de tous les axes et engrenages que nous allons construire."
+			]
+			icon: "create:andesite_alloy"
+			id: "3D8CF578B91907F1"
+			rewards: [{
+				count: 16
+				id: "30E33E890060518D"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				icon: { Count: 16, id: "create:andesite_alloy" }
+				id: "73CD4841A72FAA77"
+				item: "create:shaft"
+				type: "item"
+			}]
+			title: "&6L'Alliage de l'Aube"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3D8CF578B91907F1"]
+			description: [
+				"&7L'alliage d'andésite est malléable. En le façonnant, tu peux créer des axes capables de transmettre la force de rotation."
+				""
+				" "
+				"&fFabrique tes premiers &bAxes (Shafts)&f. Ils sont le système nerveux de tes futures machines."
+			]
+			icon: "create:shaft"
+			id: "33268D580757CF58"
+			rewards: [{
+				count: 4
+				id: "402AFCE3AC4695DA"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 8L
+				icon: "create:shaft"
+				id: "1AC30A115242444F"
+				item: "create:shaft"
+				type: "item"
+			}]
+			title: "&6La Transmission"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33268D580757CF58"]
+			description: [
+				"&7C'est ici que s'achève ton initiation."
+				""
+				" "
+				"&fEn domestiquant la force de l'eau avec cette &9Roue à Aube&f, tu n'es plus un simple survivant avec un caillou et un bâton."
+				" "
+				"&bFélicitations ! &7Tu as automatisé ton premier mouvement. Prépare-toi à entrer dans l'Âge 1 : Mouvement Perpétuel."
+			]
+			id: "1B5CB4AEB0E2E7E1"
+			rewards: [
+				{
+					id: "5E3055C2B93DFE3C"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "56456734E1B12A92"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "22A979374DE98188"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "&9L'Apogée du Ground Zero"
+			x: -3.5d
+			y: -4.0d
+		}
+	]
+	subtitle: ["&7L'éveil dans les ruines..."]
+	title: "Ground Zero"
+}

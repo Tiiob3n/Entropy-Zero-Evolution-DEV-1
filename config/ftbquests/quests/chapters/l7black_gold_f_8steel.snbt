@@ -1,0 +1,402 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "l7black_gold_f_8steel"
+	group: "5CC00E70B006260D"
+	icon: "alltheores:steel_ingot"
+	id: "1939B6C18EEBC6D7"
+	images: [
+		{
+			height: 25.0d
+			image: "entropy:textures/immersive/immersive_back2.png"
+			rotation: 0.0d
+			width: 25.0d
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			height: 5.0d
+			image: "entropy:textures/immersive/immersive_coke.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			height: 5.0d
+			image: "entropy:textures/immersive/immersive_alloy.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			height: 3.0d
+			image: "entropy:textures/immersive/immersive_press3.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: -9.5d
+			y: -0.5d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&7Fini de jouer avec des engrenages en bois. Les lunettes de Create vous ont ouvert les yeux sur les flux de puissance, mais vos machines actuelles sont trop fragiles pour la suite.",
+				""
+				"&fL'Age 2 marque votre entrée dans la Métallurgie Lourde et la Chimie.",
+				""
+				"&8Préparez-vous à manipuler des métaux en fusion et des sous-produits toxiques."
+			]
+			id: "002141BF70AFF291"
+			rewards: [{
+				id: "1E360ECFF5A72818"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "497A7036885C20EB"
+				title: "&l&6L'Aube Industrielle"
+				type: "checkmark"
+			}]
+			title: "&6L'Appel de la Forge"
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["002141BF70AFF291"]
+			description: ["&7Pour contenir le métal en fusion, il vous faut des briques capables de résister à des températures extrêmes."]
+			id: "3074C5C03E07FA2C"
+			rewards: [{
+				count: 16
+				id: "5471FE88F43DDD01"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 32L
+				id: "526BABA42240FD7A"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			title: "&8La Terre de Feu"
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3074C5C03E07FA2C"]
+			description: [
+				"&7Le &lMelter&r est votre point d'entrée dans la métallurgie. Il ne peut pas faire d'alliages complexes, mais il est parfait pour fondre de petites quantités de métal."
+				""
+				"&bAstuce :&7 Placez le &lHeater&r en dessous pour chauffer le tout avec du charbon !"
+			]
+			id: "3F45E06273E2C93F"
+			rewards: [{
+				id: "3F52984D362D0F99"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4315E5F6A0BEC402"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "599F6C0B560B6451"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+				{
+					id: "06D2F77B020E75A9"
+					item: "tconstruct:seared_fuel_gauge"
+					type: "item"
+				}
+			]
+			title: "&eLe Seared Melter"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1898064789819285"]
+			description: [
+				"&7Les briques standards ne suffiront pas pour l'industrie lourde. Vous devez les renforcer avec un liant spécial : &ll'Argile Liquide&r."
+				""
+				"&f&lLe Processus :"
+				""
+				"1. Jetez des &lClay Balls&r dans votre grande Smeltery pour obtenir de la &lMolten Clay&r."
+				""
+				"2. Placez une &lSeared Brick (item)&r dans le &lCasting Basin&r."
+				""
+				"3. Versez &l250 mB&r d'argile liquide par-dessus."
+				""
+				"&cNote :&7 Vous avez besoin de 27 briques pour construire le four. Automatisez cela avec des entonnoirs !"
+			]
+			id: "40D58C0B0E39D3DF"
+			rewards: [{
+				id: "3CE709B5E8DA6E94"
+				item: {
+					Count: 1
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 27L
+				id: "4F96A4C0865D83BF"
+				item: "immersiveengineering:cokebrick"
+				type: "item"
+			}]
+			title: "&l&8Le Secret des Coke Bricks"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3F45E06273E2C93F"]
+			description: [
+				"&7Pour passer à la vitesse supérieure, il vous faut le cœur de la grande fonderie. Mais celui-ci demande un matériau que seul Create peut vous fournir : le Laiton (Brass)."
+				""
+				"&f&lLe Processus :"
+				""
+				"1. Posez un &lCasting Basin&r sous un robinet relié à votre Melter."
+				""
+				"2. Placez une &lSeared Brick (item)&r à l'intérieur du bassin."
+				""
+				"3. Faites couler &l6 lingots de Brass fondu (540 mB)&r sur la brique."
+			]
+			id: "053D44877F9A01AA"
+			rewards: [{
+				count: 4
+				id: "2EA868337B1AC64A"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "51388B4F70FC72C7"
+				item: "tconstruct:smeltery_controller"
+				type: "item"
+			}]
+			title: "&bL'Alliage de Précision"
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["053D44877F9A01AA"]
+			description: [
+				"&7Utilisez votre nouveau Controller pour bâtir une Smeltery multi-bloc (minimum 3x3 à la base)."
+				"&fCette cuve massive permet de fondre des minerais par piles entières, de doubler votre production et surtout de créer des alliages complexes comme le Bronze ou l'Invar."
+			]
+			id: "1898064789819285"
+			rewards: [{
+				count: 9
+				id: "272BE13E142B1E19"
+				item: "tconstruct:seared_glass"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "6F051ABFEF96563E"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "01D6A75AC9912EEC"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "61A632CD53D5131D"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "548C18ED5FBD86A7"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+			]
+			title: "&6La Grande Fonderie"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["40D58C0B0E39D3DF"]
+			description: [
+				"&7Assemblez vos 27 briques en un bloc massif de 3x3x3."
+				""
+				"&fUtilisez votre Engineer's Hammer (clic droit) sur le centre d'une face pour activer le Coke Oven."
+				""
+				"&6Utilité :&7 Transforme le charbon en Coal Coke (carburant puissant) et génère un sous-produit vital : la Créosote."
+			]
+			id: "51D23A244068C49E"
+			rewards: [{
+				count: 8
+				id: "77EEFB853D10C586"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6202F939B4B2ACBB"
+				title: "&8Le Four à Coke"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51D23A244068C49E"]
+			description: [
+				"&7Récupérez la Créosote du four à l'aide de seaux ou de tuyaux."
+				""
+				"&fCombinez vos planches de bois avec la Créosote pour obtenir du Bois Traité. C'est le matériau de base pour toute l'infrastructure électrique d'Immersive Engineering."
+			]
+			id: "45978D37EC6ED1D6"
+			rewards: [{
+				id: "39B4C50EB77CA5C7"
+				item: "mekanism:basic_fluid_tank"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C366DD9FF81FCF4"
+				item: "immersiveengineering:creosote_bucket"
+				type: "item"
+			}]
+			title: "&3L'Imprégnation"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["45978D37EC6ED1D6"]
+			description: [
+				"&7Récupérez la Créosote du four à l'aide de seaux ou de tuyaux."
+				""
+				"&fCombinez vos planches de bois avec la Créosote pour obtenir du Treated Wood. C'est le matériau isolant de base pour toute l'infrastructure électrique."
+			]
+			id: "07DCE54A6E0252B1"
+			rewards: [{
+				count: 16
+				id: "5DBF141E9C292CDF"
+				item: "immersiveengineering:stick_treated"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 16L
+				icon: "immersiveengineering:treated_wood_horizontal"
+				id: "22F77E10D40A5273"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			title: "&3Le Bois Traité"
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["07DCE54A6E0252B1"]
+			description: [
+				"&7Pour avancer, vous avez besoin d'alliages plus résistants que le bronze. Le Kiln est un four 2x2x2 qui fonctionne au charbon."
+				""
+				"&f&lLe Processus :"
+				""
+				"1. Utilisez votre &lMixer&r (Create) pour créer du &lBronze&r."
+				""
+				"2. Coulez le bronze sur des &lSeared Brick&r (90mB) dans la fonderie pour obtenir des &lAlloy Bricks&r."
+			]
+			id: "72590741F37C3026"
+			rewards: [{
+				id: "3F0CC7A70F43329B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "4EC65DB693D31BB1"
+				item: "immersiveengineering:alloy_smelter"
+				type: "item"
+			}]
+			title: "&eL'Alloy Kiln"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["72590741F37C3026"]
+			description: [
+				"&7Utilisez votre nouvel &lAlloy Kiln&r pour mélanger du &lFer&r et du &lNickel&r."
+				""
+				"&fL'Invar ne se dilate pas à la chaleur, ce qui en fait le liant parfait pour créer des briques capables de supporter la fusion de l'acier."
+			]
+			id: "5CD5704493748CAF"
+			rewards: [{
+				count: 16
+				id: "305A2D5BA18FB3EB"
+				item: "alltheores:invar_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "46F373B9338DD1F8"
+				item: "alltheores:invar_ingot"
+				type: "item"
+			}]
+			title: "&fL'Invar Industriel"
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5CD5704493748CAF"]
+			description: [
+				"&7C'est le moment de vérité. Renforcez vos &lCoke Bricks&r (déjà imprégnées d'argile) avec votre &lInvar&r fondu."
+				""
+				"&f&lLe Processus :"
+				""
+				"1. Posez une &lCoke Brick&r dans le Casting Basin."
+				""
+				"2. Versez &l90mB d'Invar&r par-dessus."
+			]
+			id: "610A23F2BF94DEF7"
+			tasks: [{
+				consume_items: false
+				count: 27L
+				id: "46D89E80D459D1F1"
+				item: "immersiveengineering:blastbrick"
+				type: "item"
+			}]
+			title: "&l&4Les Briques de Haut Fourneau"
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["610A23F2BF94DEF7"]
+			description: [
+				"&7Assemblez votre cube 3x3x3. Placez-y du &lFer&r et du &lCoal Coke&r."
+				""
+				"&fL'Acier est là. C'est lent, c'est chaud, mais c'est le métal qui va construire vos premières machines électriques."
+			]
+			id: "11D5910891BB45CC"
+			tasks: [{
+				consume_items: true
+				id: "2671B7F5CAE2972C"
+				item: "alltheores:steel_ingot"
+				type: "item"
+			}]
+			title: "&4Le Haut Fourneau"
+			x: -4.0d
+			y: -7.5d
+		}
+	]
+	title: "&l&8Black Gold &7Steel"
+}

@@ -1,0 +1,598 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bmouvement_fperptuel"
+	group: "22ADDA28ACA492F0"
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
+	icon: "create:large_water_wheel"
+	id: "318A7F5023619DD5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1B5CB4AEB0E2E7E1"]
+			description: [
+				"&7\"Fini le travail manuel au marteau.\""
+				""
+				"La &6Presse Mécanique&f est votre premier outil d'usinage. Elle utilise la force de rotation pour aplatir les lingots en plaques."
+				""
+				"&eComment l'utiliser :&f"
+				""
+				"Place la presse au-dessus d'un bloc solide ou d'un &bDepot&f."
+				""
+				"Alimente-la en énergie rotative."
+				""
+				"Jette un lingot (Fer, Cuivre, Zinc...) en dessous."
+				""
+				"&cNote importante :&f Dans ce pack, les marteaux ont été supprimés. La presse est désormais le &nseul moyen&f d'obtenir des plaques."
+			]
+			id: "2A7CA6F523FFF94F"
+			rewards: [{
+				id: "36A0E9D083A4E1D2"
+				item: "create:depot"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "729127C6E12DAF1D"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "&6La Presse Mécanique"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A7CA6F523FFF94F"]
+			description: [
+				"&7\"Relier les points A et B n'a jamais été aussi satisfaisant.\""
+				""
+				"Les &6Courroies&f sont les veines de votre usine. Elles permettent de transporter les items horizontalement ou en diagonale."
+				""
+				"&cAttention :&f Dans ce pack, la table de craft est désactivée pour cet objet. Vous devez &6presser du Kelp séché&f sous votre &6Presse Mécanique&f pour obtenir ces connecteurs !"
+				""
+				"&eAstuce :&f Cliquez sur un &bAxe (Shaft)&f puis sur un autre pour les relier."
+			]
+			id: "3D7128DB58F1E9D2"
+			rewards: [{
+				id: "1F124B76985475C6"
+				item: "create:wrench"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "05BB256E22011D84"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			title: "&6Courroies de Transport"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3D7128DB58F1E9D2"]
+			description: [
+				"&7\"Ne laissez plus vos lingots traîner par terre.\""
+				""
+				"Le &bDépôt&f est un bloc statique qui retient un item pile en dessous de votre presse."
+				""
+				"Contrairement aux courroies, l'item ne bougera pas tant qu'il n'est pas récupéré, ce qui garantit que la presse fera son travail à chaque fois sans rater sa cible."
+			]
+			id: "7FE53165961A7060"
+			rewards: [{
+				count: 4
+				id: "370964141F08F52A"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "2CD669022D59E26E"
+				item: "create:depot"
+				type: "item"
+			}]
+			title: "&bLe Support de Travail"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7FE53165961A7060"]
+			description: [
+				"&7\"L'armature de vos premières machines.\""
+				""
+				"Les &bAndesite Casings&f sont la base de la plupart des machines de cet âge."
+				""
+				"&eComment les fabriquer :&f"
+				""
+				"Posez du &bBois écorcé&f au sol."
+				""
+				"Utilisez de l'&6Alliage d'Andésite&f sur le bois avec un clic-droit."
+			]
+			id: "25909150A9B9E4C5"
+			rewards: [{
+				count: 4
+				id: "68FA7EC4357CC45D"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "681287802DD3A95C"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "&bStructure en Andésite"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["25909150A9B9E4C5"]
+			description: ["Le &6Bassin&f est indispensable pour compacter des objets ou mélanger des alliages. Il permet de retenir les composants pendant que la presse ou le mélangeur font leur travail."]
+			id: "379F680751C7300E"
+			rewards: [{
+				count: 4
+				id: "2B857A3F92B67C70"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "48C61E5A361A8A31"
+				item: "create:basin"
+				type: "item"
+			}]
+			title: "&6Le Bassin Industriel"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["379F680751C7300E"]
+			description: [
+				"&7\"Tourner ne suffit plus, il faut brasser.\""
+				""
+				"Le &6Mélangeur&f permet de créer des alliages complexes."
+				""
+				"&eInstallation :&f Placez-le au-dessus d'un &6Bassin&f."
+				"&cAttention :&f Il nécessite une vitesse de rotation élevée (&bMinimum 30 RPM&f). Utilisez des engrenages pour multiplier la vitesse de vos roues à eau !"
+			]
+			id: "722C1629B67B25EC"
+			rewards: [{
+				id: "5F01190A1CD1D73C"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "136788E472E7382C"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "&6Le Mélangeur Mécanique"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["722C1629B67B25EC"]
+			description: [
+				"&7\"L'alliage de la précision.\""
+				""
+				"Le &6Laiton&f est le métal de transition vers les composants avancés."
+				""
+				"&eRecette :&f Mélangez un lingot de &6Cuivre&f et un lingot de &6Zinc&f dans votre bassin avec le mélangeur en marche."
+			]
+			id: "41B74802DD983EB5"
+			rewards: [{
+				id: "3027F63553A9DDFC"
+				item: "create:brass_block"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 12L
+				id: "19EC52512DD22560"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "&6Laiton Industriel"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"722C1629B67B25EC"
+				"2A7CA6F523FFF94F"
+			]
+			description: [
+				"&7\"Laisser s'exprimer la brillance du quartz.\""
+				""
+				"Pour fabriquer des composants électroniques, vous avez besoin de Quartz Poli."
+				""
+				"&eMéthode :&f Mettez du &ePapier de verre (Sandpaper)&f dans votre main secondaire, un Quartz du Nether dans votre main principale, et maintenez le clic-droit pour le polir."
+			]
+			id: "0619C62BBB1CF519"
+			rewards: [{
+				count: 7
+				id: "6B03CEC75E7D19E7"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "42F028C1DA5D0210"
+				item: {
+					Count: 1
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&eLe Polissage Manuel"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0619C62BBB1CF519"]
+			description: [
+				"&7\"Le début de l'ère technologique.\""
+				""
+				"Combinez une &6Plaque de Fer&f et votre Rose Quartz pour créer ce composant. Il est le cerveau rudimentaire de vos machines intelligentes."
+			]
+			id: "44C6A1342397EEE7"
+			tasks: [{
+				consume_items: false
+				count: 6L
+				id: "3CF7C5E48EA79B2A"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"44C6A1342397EEE7"
+				"41B74802DD983EB5"
+			]
+			description: [
+				"&7\"L'outil d'automatisation ultime.\""
+				""
+				"Le &dDéployeur&f utilise l'item qu'il tient sur le bloc devant lui. Il est indispensable pour assembler les mécanismes de précision que nous verrons ensuite."
+			]
+			id: "5498FDA5A29ABFDB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5CABA4B6C3610CA0"
+				table_id: 7460110763542653050L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 3L
+				id: "79321C7A6BCE26E2"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "&dLa Main Mécanique"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["44C6A1342397EEE7"]
+			description: [
+				"&7\"L'horlogerie industrielle à son paroxysme.\""
+				""
+				"Le &bMécanisme de Précisionf ne se fabrique pas d'un coup. Il nécessite une &6Séquence d'Assemblage&f."
+				""
+				"&eInstallation recommandée :&f"
+				"Placez 3 Déployeurs au-dessus d'un tapis ou de dépôts. Faites passer une &6Plaque d'Or&f successivement sous les objets suivants :"
+				""
+				"1-Petit engrenage (Small Cogwheel)"
+				""
+				"2-Grand engrenage (Large Cogwheel)"
+				""
+				"3-Pépite de fer (Iron Nugget)"
+				""
+				"&cAttention :&f Cette boucle doit être répétée &n5 fois&f sur la même plaque. Il y a 20% de chances que l'assemblage échoue et ne donne que des débris. Soyez patient !"
+			]
+			id: "42E12988B52F9A1E"
+			rewards: [{
+				count: 2
+				id: "6CFD2C804B1092BD"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "365D484ABF1F85F0"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["42E12988B52F9A1E"]
+			description: [
+				"&7\"Stocker la puissance liquide.\""
+				""
+				"Pour dompter la vapeur, vous devez d'abord savoir manipuler l'eau. Les &6Fluid Tanks&f peuvent être empilés pour créer d'énormes réservoirs."
+				""
+				"&fIls serviront de base à votre future chaudière. Utilisez des &6Tuyaux (Pipes)&f et une &6Pompe Mécanique&f pour les remplir automatiquement."
+			]
+			id: "256CFE304C6F4962"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "686825F9BFA72468"
+				table_id: 1426976330461193527L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "256FD4986B1B343E"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			title: "&6Le Réservoir à Fluides"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["256CFE304C6F4962"]
+			description: [
+				"&7\"La puissance de l'eau chauffée.\""
+				""
+				"Le &6Steam Engine&f transforme la pression de la vapeur en force de rotation colossale."
+				""
+				"&eComment l'activer :&f"
+				""
+				"Placez le moteur sur un &bFluid Tank&f (qui sert de chaudière)."
+				""
+				"Pompez de l'Eau à l'intérieur du réservoir."
+				""
+				"Placez une source de chaleur en dessous (Feu, Magma, ou mieux : un &cBrûleur de Blaze&f)."
+				""
+				"Reliez l'arbre du piston à votre réseau !"
+			]
+			id: "030DC894D851E2B4"
+			rewards: [{
+				id: "1A5C87DDB5EB622D"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 6L
+				icon: "create:steam_engine"
+				id: "33F960ADA5A34C77"
+				item: "create:steam_engine"
+				title: "&6La Vapeur : Le Piston"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["030DC894D851E2B4"]
+			description: [
+				"&7\"Tchou-tchou !\""
+				""
+				"Posez ce sifflet sur votre chaudière et reliez-le à une commande (levier ou bouton)."
+				""
+				"&fPlus la pression dans votre chaudière est élevée, plus le son sera puissant. C'est le symbole ultime de votre réussite industrielle dans cet âge !"
+			]
+			id: "273D5CC543FDE307"
+			tasks: [{
+				id: "0FFDA3AB8B6E471F"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
+			title: "&cLe Sifflet de Vapeur"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["256CFE304C6F4962"]
+			description: [
+				"&7\"Certaines machines ont soif de chaleur.\""
+				""
+				"Vous allez avoir besoin de Lave en grande quantité. Deux écoles s'offrent à vous :"
+				""
+				"&e1. La méthode patiente (Overworld) :&f"
+				"Placez de la lave au-dessus d'une &bPointed Dripstone&f qui goutte dans un &bChaudron&f. C'est gratuit, mais lent."
+				""
+				"&e2. Le pompage massif (Nether) :&f"
+				"Utilisez une &6Hose Pulley&f au-dessus d'un lac de lave géant dans le Nether. Si le lac est assez grand (plus de 10 000 blocs), Create le considérera comme &binfinif !"
+				""
+				"&fUtilisez l'&5Ender Tank&f pour synchroniser les fluides entre les dimensions. Posez-en un dans le Nether (en sortie de pompe) et un à votre base (en entrée de vos réservoirs)."
+			]
+			icon: "minecraft:lava_bucket"
+			id: "704FE248339070EE"
+			rewards: [{
+				id: "249CDCB3D8E713B4"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				icon: "minecraft:lava_bucket"
+				id: "711D662953283B64"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			title: "&6L'Énergie Géothermique"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["704FE248339070EE"]
+			description: [
+				"&7\"La physique n'est qu'une suggestion.\""
+				""
+				"Les &5Ender Tanks&f partagent leur contenu selon leur code couleur."
+				""
+				"&bConfiguration :&f"
+				""
+				"Utilisez des teintures sur les pads de couleur pour changer de réseau."
+				""
+				"Utilisez un &bdiamond&f sur le loquet pour rendre le tank &nprivé&f."
+				""
+				"Gérez le mode Entrée/Sortie en cliquant sur le cadran central."
+			]
+			id: "327B8B0014624E5F"
+			rewards: [{
+				id: "24316297B625A4FE"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "0B4B5EFAFEDCF413"
+				item: "enderstorage:ender_tank"
+				type: "item"
+			}]
+			title: "&5Transport Dimensionnel"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["722C1629B67B25EC"]
+			description: [
+				"&7\"Capturer l'enfer dans une cage.\""
+				""
+				"Pour fabriquer du &6Laiton&f ou générer de la &6Vapeur&f, un simple feu ne suffira pas. Vous avez besoin d'une chaleur contrôlée et intense."
+				""
+				"&eProcédure :&f"
+				""
+				"Fabriquez un Brûleur vide."
+				""
+				"Trouvez un Blaze (Nether ou Spawner) et faites un &bclic-droit&f sur lui avec le brûleur en main."
+				""
+				"Félicitations, vous avez un esclave thermique !"
+			]
+			icon: "create:empty_blaze_burner"
+			id: "6DBEAC33B8273C80"
+			rewards: [{
+				count: 3
+				id: "386B8DCAD20594FB"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "2373DC619366C429"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			title: "&cLe Brûleur de Blaze"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"704FE248339070EE"
+				"6DBEAC33B8273C80"
+			]
+			description: [
+				"&7\"Un Blaze affamé est un Blaze inutile.\""
+				""
+				"Pour que votre machine à vapeur tourne en continu, votre Blaze doit rester allumé. Vous pouvez lui donner du charbon à la main, mais la méthode industrielle est préférable."
+				""
+				"&eAutomatisation :&f"
+				"Utilisez un &dDéployeur&f pointé vers le Blaze avec des seaux de lave (ou du charbon) pour le nourrir automatiquement."
+				""
+				"&fSi vous avez de la lave infinie via vos &5Ender Tanks&f, c'est le moment de créer une boucle infinie de carburant !"
+			]
+			id: "56DCD8C19D39B29D"
+			rewards: [{
+				count: 16
+				id: "1C1D479E18200DE4"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "77EC9C9B06D2840E"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			title: "&6Alimentation Automatique"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["56DCD8C19D39B29D"]
+			description: [
+				"&7\"Sous pression.\""
+				""
+				"Assemblez vos réservoirs en un bloc (ex: 2x2). C'est ici que l'eau va bouillir."
+				""
+				"&fPlus vous avez de &6Brûleurs de Blaze&f actifs en dessous et plus votre apport en eau est constant, plus le niveau de votre chaudière augmentera, permettant d'alimenter plusieurs Steam Engines à pleine puissance."
+			]
+			id: "5493EDA09C0A6CBF"
+			rewards: [{
+				id: "3C566B4BBDCB50CA"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "4E61E44E24E79395"
+				item: "create:fluid_tank"
+				title: "&6La Chaudière à Vapeur"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["42E12988B52F9A1E"]
+			description: [
+				"&7\"Voir l'invisible a un prix.\""
+				""
+				"Porter ces &bLunettes d'Ingénieur&f change tout, mais leur fabrication demande une précision extrême."
+				""
+				"&eLigne d'assemblage requise :&f"
+				"Utilisez une &6Plaque d'Or&f et faites-lui subir la séquence suivante via vos &dDéployeurs&f :"
+				""
+				"&fVerre&f (x2)"
+				""
+				"&fTube Électronique&f"
+				""
+				"&fMécanisme de Précision&f"
+				""
+				"&fUne fois équipées, vous verrez le Stress, les Fluides et le RPM de vos machines d'un simple regard."
+			]
+			id: "1BDB4525F07B452D"
+			rewards: [
+				{
+					id: "0A0E073E17B0FA26"
+					item: "create:speedometer"
+					type: "item"
+				}
+				{
+					id: "5B1BAC35B2D6928B"
+					item: "create:stressometer"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				consume_items: false
+				id: "00A019030C8E44D5"
+				item: "create:goggles"
+				type: "item"
+			}]
+			title: "&bVision d'Ingénieur"
+			x: 0.0d
+			y: -4.5d
+		}
+	]
+	title: "&bMouvement &fPerpétuel"
+}

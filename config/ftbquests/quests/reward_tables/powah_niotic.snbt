@@ -1,0 +1,14 @@
+{
+	id: "4E550B6FE754E446"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{ item: "powah:capacitor_niotic", random_bonus: 1, weight: 10.0f }
+		{ item: "powah:crystal_niotic", weight: 25.0f }
+		{ item: "powah:energy_cell_niotic" }
+		{ item: "powah:energizing_rod_niotic", weight: 5.0f }
+		{ item: "powah:solar_panel_niotic" }
+		{ item: "powah:niotic_crystal_block" }
+	]
+	use_title: true
+}
