@@ -1,4 +1,5 @@
 {
+	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ground_zero"
@@ -10,6 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["465F0FBCE0785C70"]
 			description: ["&7L'air est lourd et le silence assourdissant. Tu es le dernier vestige d'une ère révolue. Pour survivre, il va falloir réapprendre à fabriquer."]
 			icon: "supplementaries:clock_block"
 			id: "794444A44965DBA0"
@@ -21,7 +23,7 @@
 					type: "item"
 				}
 				{
-					id: "621DF6724259DC12"
+					id: "05E3983F279D4E19"
 					item: {
 						Count: 1
 						id: "minecraft:wooden_shovel"
@@ -60,9 +62,10 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 10L
 					id: "514822FBBBA83B0E"
-					item: { Count: 10, id: "minecraft:flint" }
+					item: "minecraft:flint"
 					type: "item"
 				}
 			]
@@ -81,6 +84,7 @@
 				type: "item"
 			}]
 			tasks: [{
+				consume_items: false
 				count: 4L
 				id: "0B493D5684EC00AA"
 				item: "tconstruct:pattern"
@@ -102,11 +106,13 @@
 			}]
 			tasks: [
 				{
+					consume_items: false
 					id: "7E4F5EFF133E30A6"
 					item: "tconstruct:part_builder"
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "6DE3F6886279F66E"
 					item: "tconstruct:tinker_station"
 					type: "item"
@@ -198,6 +204,7 @@
 			]
 			tasks: [
 				{
+					consume_items: false
 					id: "6C3DA8A2C511579D"
 					item: {
 						Count: 1
@@ -237,6 +244,7 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "4C780EE1263B2070"
 					item: {
 						Count: 1
@@ -276,6 +284,7 @@
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "2D73D79926935953"
 					item: {
 						Count: 1
@@ -458,6 +467,8 @@
 					type: "item"
 				}
 			]
+			shape: "diamond"
+			size: 2.0d
 			tasks: [{
 				consume_items: false
 				id: "22A979374DE98188"
@@ -470,5 +481,5 @@
 		}
 	]
 	subtitle: ["&7L'éveil dans les ruines..."]
-	title: "Ground Zero"
+	title: "&cGenèse &fde l'Inertie"
 }

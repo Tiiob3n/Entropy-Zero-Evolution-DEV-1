@@ -1,0 +1,187 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "blwfelcome"
+	group: ""
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
+	icon: {
+		Count: 1
+		id: "gamingsog:gaming_sword_god"
+		tag: { }
+	}
+	id: "077C19C03D2DBDB3"
+	images: [
+		{
+			height: 5.0d
+			image: "kubejs:item/tiiob3nn"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			height: 6.0d
+			image: "kubejs:item/logoentropy"
+			rotation: 0.0d
+			width: 6.0d
+			x: 0.5d
+			y: 0.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["604613590598BFAF"]
+			description: [
+				"&fBienvenue ! Pour vous aider à bien démarrer, choisissez un objet de soutien utilitaire."
+				" "
+				"&fRéfléchissez bien, un seul choix est possible :"
+				""
+				"&d- Netherite Backpack :&f Pour les explorateurs (stockage massif dès le départ)."
+				"&e- Time in a Bottle :&f Pour les ingénieurs (accélère le temps de vos machines)."
+			]
+			id: "465F0FBCE0785C70"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7BBE14744363E1CD"
+				table_id: 8643277399109392176L
+				type: "choice"
+			}]
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "&eChoisissez votre spécialisation"
+			tasks: [{
+				id: "1B916E189DBAFE7E"
+				title: "&6&lÉquipement de Départ"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&fIl y a des siècles, l'humanité avait atteint la &bSingularité Thermique&f. L'énergie était gratuite, les machines pensaient pour nous, et la matière n'était qu'un jouet."
+				" "
+				"&fPuis, le &c\"Grand Gel\"&f est arrivé. En une seconde, la conductivité a chuté à zéro. Les circuits ont grillé, les usines se sont figées, et le savoir s'est évaporé dans le froid industriel."
+				" "
+				"&fVous vous réveillez dans les ruines de cet ancien monde. Votre mission n'est pas seulement de survivre, mais de &6reconstruire la chaîne du savoir&f. De la pierre à la vapeur, de la vapeur à l'atome."
+				" "
+				"&e&nVotre objectif :&r&f Redonner vie à la technologie. Mais attention... la nature a repris ses droits, et elle ne compte pas se laisser domestiquer si facilement."
+			]
+			id: "0505D6A0280E26B1"
+			rewards: [{
+				count: 2
+				id: "530091A7B56EF3D6"
+				item: "farmersdelight:honey_glazed_ham_block"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&8L'Effondrement de la Singularité"
+			tasks: [{
+				id: "48A64927BAA43517"
+				title: "&7&lFragment d'Histoire"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0505D6A0280E26B1"]
+			description: [
+				"&fDans ce monde, la coopération est possible, mais la protection est vitale."
+				" "
+				"&6&l1. Créez votre Team :&r"
+				"&fOuvrez votre inventaire et cliquez sur l'icône &b\"My Team\"&f (en haut à gauche). Cela vous permet d'inviter des amis et de partager vos quêtes."
+				" "
+				"&6&l2. Réclamez vos Chunks (Claims) :&r"
+				"&fCliquez sur l'icône de la &aCarte (Map)&f. Faites un &eclic-gauche&f sur les carrés pour \"Claim\" un territoire (personne ne pourra casser vos blocs ou ouvrir vos coffres)."
+				" "
+				"&6&l3. Le Chunk Loading :&r"
+				"&fFaites &eShift + clic-gauche&f sur un chunk déjà réclamé pour le garder actif même quand vous êtes absent. Très utile pour que vos machines de l'&2Âge 2&f continuent de tourner !"
+			]
+			id: "1CC29CFD9D4298A1"
+			rewards: [{
+				id: "5A28914F92DCE795"
+				item: "croptopia:raisin_oatmeal_cookie"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&7Sécurisez votre complexe industriel"
+			tasks: [{
+				id: "0C716BED64F0108E"
+				title: "&bGestion du Territoire : Teams & Claims"
+				type: "checkmark"
+			}]
+			title: "&bGestion du Territoire : Teams et Claims"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CC29CFD9D4298A1"]
+			description: [
+				"&fL'ingénierie est une science exacte, mais des imprévus peuvent arriver."
+				" "
+				"&fSi vous identifiez une &cinstabilité&f, un &6conflit de craft&f ou si une donnée de JEI vous semble erronée :"
+				" "
+				"&7- Vérifiez vos protocoles (et vos outils)."
+				"&7- Envoyez un rapport détaillé sur le &9Discord officiel&f."
+				" "
+				"&fVos retours permettent de maintenir l'intégrité de ce système pour tous les futurs ingénieurs."
+				""
+				""
+				""
+				""
+				"{\"text\": \"Cliquez ici pour rejoindre le Discord !\", \"color\": \"blue\", \"clickEvent\": {\"action\": \"open_url\", \"value\": \"https://discord.gg/TjUG4A965U\"}}"
+			]
+			id: "3DA3D8B38A1CA66F"
+			shape: "gear"
+			subtitle: "&7Amélioration continue du complexe"
+			tasks: [{
+				id: "395A11ED2D73892F"
+				title: "&cSupport & Signalements"
+				type: "checkmark"
+			}]
+			title: "&cSupport et Rapport de Terrain"
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3DA3D8B38A1CA66F"]
+			description: [
+				"&fDans ce pack, le savoir est votre meilleure arme. Voici les commandes de base pour naviguer dans l'interface :"
+				" "
+				"&6&lSur un objet dans l'inventaire ou JEI :&r"
+				"&e- Touche [R] :&f Affiche la &bRecette&f de l'objet."
+				"&e- Touche [U] :&f Affiche les &dUtilisations&f de l'objet."
+				"&e- Touche [A] :&f &6Épingle&f l'objet à gauche de l'écran (très utile pour suivre un craft long)."
+				" "
+				"&6&lGestion d'inventaire :&r"
+				"&e- [Ctrl] + Clic :&f (Si configuré) déplace tous les objets identiques."
+				"&e- Touche [Espace] :&f Dans la barre de recherche JEI pour vider la recherche."
+				" "
+				"&7&oAstuce : Si vous cherchez un mod spécifique dans JEI, tapez \"@\" suivi du nom du mod (ex: @powah).&r"
+			]
+			id: "604613590598BFAF"
+			rewards: [{
+				id: "4507757DD63417DB"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "&7Maîtrisez votre interface"
+			tasks: [{
+				id: "4B4463DA63157B34"
+				title: "&bLa Bible JEI & Raccourcis"
+				type: "checkmark"
+			}]
+			title: "&bLa Bible JEI et Raccourcis"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["&bInitialisation &fdu Système"]
+	title: "&d&lWELCOME"
+}

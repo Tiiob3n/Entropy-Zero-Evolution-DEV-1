@@ -1,0 +1,17 @@
+{
+	id: "2F5C2E6883FDC2EB"
+	loot_size: 1
+	order_index: 13
+	rewards: [
+		{ item: "mysticalagriculture:dye_seeds" }
+		{ item: "mysticalagriculture:pig_seeds" }
+		{ item: "mysticalagriculture:chicken_seeds" }
+		{ item: "mysticalagriculture:cow_seeds" }
+		{ item: "mysticalagriculture:sheep_seeds" }
+		{ item: "mysticalagriculture:squid_seeds" }
+		{ item: "mysticalagriculture:fish_seeds" }
+		{ item: "mysticalagriculture:netherite_seeds" }
+		{ item: "mysticalagriculture:nitro_crystal_seeds" }
+	]
+	title: "Mystical"
+}

@@ -6,11 +6,6 @@
 		{ item: "powah:capacitor_nitro", random_bonus: 1, weight: 10.0f }
 		{ item: "powah:crystal_nitro", random_bonus: 3, weight: 25.0f }
 		{ item: "powah:energizing_rod_nitro", weight: 5.0f }
-		{
-			count: 2
-			random_bonus: 2
-			weight: 10.0f
-		}
 		{ item: "powah:nitro_crystal_block" }
 		{ item: "powah:solar_panel_nitro" }
 	]

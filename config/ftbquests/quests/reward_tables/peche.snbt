@@ -1,0 +1,17 @@
+{
+	id: "7B73E979B278C2FC"
+	loot_size: 1
+	order_index: 15
+	rewards: [
+		{ item: "aquaculture:iron_hook" }
+		{ item: "aquaculture:gold_hook" }
+		{ item: "aquaculture:diamond_hook" }
+		{ item: "aquaculture:light_hook" }
+		{ item: "aquaculture:heavy_hook" }
+		{ item: "aquaculture:double_hook" }
+		{ item: "aquaculture:redstone_hook" }
+		{ item: "aquaculture:note_hook" }
+		{ item: "aquaculture:nether_star_hook" }
+	]
+	title: "Peche"
+}

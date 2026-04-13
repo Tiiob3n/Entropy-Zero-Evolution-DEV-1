@@ -1,14 +1,18 @@
 {
+	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "l7black_gold_f_8steel"
 	group: "5CC00E70B006260D"
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
 	icon: "alltheores:steel_ingot"
 	id: "1939B6C18EEBC6D7"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["1BDB4525F07B452D"]
 			description: [
 				"&7Fini de jouer avec des engrenages en bois. Les lunettes de Create vous ont ouvert les yeux sur les flux de puissance, mais vos machines actuelles sont trop fragiles pour la suite."
 				""
@@ -29,8 +33,8 @@
 				type: "checkmark"
 			}]
 			title: "&6L'Appel de la Forge"
-			x: -4.0d
-			y: 7.5d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["002141BF70AFF291"]
@@ -50,8 +54,8 @@
 				type: "item"
 			}]
 			title: "&8La Terre de Feu"
-			x: -4.0d
-			y: 5.5d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3074C5C03E07FA2C"]
@@ -84,8 +88,8 @@
 				}
 			]
 			title: "&eLe Seared Melter"
-			x: -4.0d
-			y: 4.5d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1898064789819285"]
@@ -122,8 +126,8 @@
 				type: "item"
 			}]
 			title: "&l&8Le Secret des Coke Bricks"
-			x: -4.0d
-			y: 1.0d
+			x: -1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3F45E06273E2C93F"]
@@ -151,8 +155,8 @@
 				type: "item"
 			}]
 			title: "&bL'Alliage de Précision"
-			x: -4.0d
-			y: 3.5d
+			x: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["053D44877F9A01AA"]
@@ -194,8 +198,8 @@
 				}
 			]
 			title: "&6La Grande Fonderie"
-			x: -4.0d
-			y: 2.5d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["40D58C0B0E39D3DF"]
@@ -218,8 +222,8 @@
 				title: "&8Le Four à Coke"
 				type: "checkmark"
 			}]
-			x: -4.0d
-			y: 0.0d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["51D23A244068C49E"]
@@ -241,7 +245,7 @@
 			}]
 			title: "&3L'Imprégnation"
 			x: -4.0d
-			y: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["45978D37EC6ED1D6"]
@@ -354,7 +358,7 @@
 			]
 			id: "11D5910891BB45CC"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "2671B7F5CAE2972C"
 				item: "alltheores:steel_ingot"
 				type: "item"
@@ -364,6 +368,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["11D5910891BB45CC"]
 			description: [
 				"&7L'Acier est prêt, mais il faut maintenant le mettre en forme."
 				""
@@ -416,6 +421,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["5F9B93403BBCD42E"]
 			description: [
 				"&7Une fois la structure en place, frappez le &lPiston&7 avec votre marteau d'ingénieur pour l'activer."
 				""
@@ -439,6 +445,7 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["4CA185ABFD430597"]
 			description: [
 				"&7Votre énergie rotative (Create) ne suffit plus."
 				""
@@ -464,6 +471,7 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["03EF5105D1AC52E2"]
 			description: [
 				"&7La source d'énergie la plus stable pour débuter."
 				""
@@ -488,6 +496,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["6E3A8B5559305A98"]
 			id: "7F27B4FF454F38D6"
 			rewards: [{
 				count: 4
@@ -515,6 +524,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["7F27B4FF454F38D6"]
 			description: [
 				"&7Maintenant, il faut relier la source à la machine."
 				""
@@ -554,6 +564,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["2403795A92DC5C19"]
 			description: [
 				"&7La Dynamo produit peu, la Metal Press consomme beaucoup d'un coup."
 				""
@@ -568,7 +579,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "318023073E7B0FC7"
 				item: "immersiveengineering:capacitor_lv"
 				type: "item"
@@ -578,27 +589,33 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["6EEED057A3DCB05A"]
+			icon: "toms_storage:ts.inventory_cable"
 			id: "7B96A048F280DD6E"
 			tasks: [
 				{
+					consume_items: false
 					id: "6443066466D76C6A"
 					item: "toms_storage:ts.storage_terminal"
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "2276C176363F6431"
 					item: "toms_storage:ts.inventory_connector"
 					type: "item"
 				}
 				{
+					consume_items: false
 					id: "6D16319A3157BCAB"
 					item: "toms_storage:ts.crafting_terminal"
 					type: "item"
 				}
 				{
+					consume_items: false
 					count: 10L
 					id: "3CF496E2D926E892"
-					item: { Count: 10, id: "toms_storage:ts.inventory_cable" }
+					item: "toms_storage:ts.inventory_cable"
 					type: "item"
 				}
 			]
@@ -606,6 +623,507 @@
 			x: -8.0d
 			y: -1.0d
 		}
+		{
+			dependencies: ["7B96A048F280DD6E"]
+			description: [
+				"&fBienvenue dans l'ère du recyclage et de la pulvérisation !"
+				" "
+				"&bLe Crusher&f est une machine multiblock massive. Sans elle, impossible d'obtenir la &eCoal Dust&f nécessaire à la fabrication de la &8Pâte Diélectrique&f de Powah."
+				" "
+				"&c⚠ Attention :&f Cette machine est dangereuse. Ne tombez pas dedans pendant qu'elle fonctionne, sous peine de finir en... steak haché."
+				" "
+				"&6&lComposants requis :"
+				"* &b10x&f Light Engineering Blocks"
+				"* &b1x&f Redstone Engineering Block"
+				"* &b10x&f Steel Scaffolding"
+				"* &b8x&f Steel Fences"
+				"* &b9x&f Hoppers"
+				" "
+				"&7Astuce : Utilisez le &eManual de l'Ingénieur&7 pour visualiser la structure avec la silhouette fantôme."
+			]
+			id: "729E1D7F912F8423"
+			rewards: [
+				{
+					count: 16
+					id: "478AD96AE0302E3E"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "4DC8C53A7A2DD00E"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			tasks: [
+				{
+					consume_items: false
+					count: 10L
+					id: "3C059295A38F00BF"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5D356A134ABFEE5A"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 10L
+					id: "515FB2F6121984FA"
+					item: { Count: 10, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 8L
+					id: "73D77BE361BC3ABA"
+					item: { Count: 8, id: "immersiveengineering:steel_fence" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 9L
+					id: "1656A589EBC326C7"
+					item: { Count: 9, id: "minecraft:hopper" }
+					type: "item"
+				}
+			]
+			title: "&6L'Industrie Lourde : Le Crusher"
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["729E1D7F912F8423"]
+			description: [
+				"&fMaintenant que vous avez accès à la &eCoal Dust&f grâce au &bCrusher&f, vous pouvez fabriquer l'isolant universel de Powah."
+				" "
+				"&fCette pâte est le composant principal de tous les châssis et câbles du mod."
+			]
+			id: "616E0CCC9EFF96E0"
+			rewards: [{
+				count: 8
+				id: "1CBAAA3236D65F64"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "1F2893BCEE526B25"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			title: "&6La Base de l'Énergie : Dielectric Paste"
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["616E0CCC9EFF96E0"]
+			description: [
+				"&fUtilisez vos &6Plaques d'Acier&f et vos &bComposants Mécaniques&f pour assembler les châssis de vos futures machines."
+				" "
+				"&fC'est ici que votre investissement dans le Haut Fourneau d'Immersive Engineering porte ses fruits !"
+			]
+			id: "2328ADF78549291D"
+			rewards: [{
+				count: 24
+				id: "7EDF94BA520FF0F4"
+				item: "immersiveengineering:plate_steel"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "5FC180D499015996"
+				item: "powah:dielectric_casing"
+				type: "item"
+			}]
+			title: "&6L'ossature : Dielectric Casing"
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2328ADF78549291D"]
+			description: [
+				"&fLe &bThermo Generator&f produit de l'énergie (FE) simplement en étant placé sur une source de chaleur (Lave, Magma, etc.) avec de l'eau à l'intérieur."
+				" "
+				"&fGrâce au &eSlag Glass&f et à l'&6Acier&f, vous avez un générateur solide qui ne vous lâchera pas."
+				" "
+				"&7Note : Plus la source de chaleur est puissante, plus il produit !"
+			]
+			id: "4BE539672AD9F359"
+			subtitle: "&7Chaud dessous !"
+			tasks: [{
+				consume_items: false
+				id: "3E5A1922666802DE"
+				item: "powah:thermo_generator_starter"
+				type: "item"
+			}]
+			title: "&6Énergie Thermique : Thermo Generator"
+			x: -8.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4BE539672AD9F359"]
+			description: [
+				"&fL'&dEnergizing Orb&f est l'outil le plus important de Powah. Elle permet de charger des matériaux pour créer des cristaux avancés."
+				" "
+				"&fPlacez des &bEnergizing Rods&f autour de l'orb pour lui envoyer de l'énergie (FE). Plus vous mettez de Rods, plus le processus est rapide !"
+				" "
+				"&7Note : L'Orb ne consomme pas d'énergie si elle n'a rien à transformer."
+			]
+			id: "59F58D04A81A5AF6"
+			rewards: [{
+				count: 4
+				id: "38769325C1C7293A"
+				item: "powah:steel_energized"
+				type: "item"
+			}]
+			subtitle: "&7Le rituel électrique"
+			tasks: [
+				{
+					consume_items: false
+					id: "1DC9D60AB8B4267B"
+					item: "powah:energizing_orb"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "30FD53364CFF5A9C"
+					item: "powah:energizing_rod_starter"
+					type: "item"
+				}
+			]
+			title: "&dL'Éveil des Cristaux : Energizing Orb"
+			x: -8.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["59F58D04A81A5AF6"]
+			description: [
+				"&fL'étape cruciale pour passer aux choses sérieuses."
+				" "
+				"&fPlacez un lingot d'&6Acier&f et un lingot d'&eOr&f (ou de la poudre d'or) dans l'&dEnergizing Orb&f."
+				" "
+				"&fCet alliage est indispensable pour fabriquer les composants de palier supérieur et débloquer les prochaines quêtes de Powah."
+			]
+			id: "3AF368A322BBAC02"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "45EDEF8D77781C7B"
+				table_id: 323217218064538611L
+				type: "choice"
+			}]
+			subtitle: "&7Quand l'Acier rencontre la Foudre"
+			tasks: [{
+				consume_items: false
+				id: "193B64EBD405853A"
+				item: "powah:steel_energized"
+				type: "item"
+			}]
+			title: "&bL'Alliage Électrique : Energized Steel"
+			x: -8.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["59F58D04A81A5AF6"]
+			description: [
+				"&fMarre de passer votre vie devant le Haut Fourneau d'Immersive ?"
+				" "
+				"&fL'essence d'Acier vous permet de faire pousser votre métal. Huit de ces essences vous donneront un lingot d'&6Acier d'Immersive Engineering&f, prêt à être surchargé dans l'Orb."
+			]
+			id: "5D8890F2AE14E06F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1D0AFE97914F0D7D"
+				table_id: 3412653644065915627L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 8L
+				icon: "mysticalagriculture:steel_essence"
+				id: "7E37F9272E27BA15"
+				item: "immersiveengineering:ingot_steel"
+				title: "&bL'Acier Fertile"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["3AF368A322BBAC02"]
+			description: [
+				"&fLe &6Blazing Crystal&f est le premier palier de cristaux \"purs\"."
+				" "
+				"&fPlacez une &eBlaze Rod&f dans l'Orb. Elle va absorber une quantité massive d'énergie pour se transformer."
+				" "
+				"&fCe cristal est la clé pour fabriquer des générateurs plus performants et les câbles de palier &6Blazing&f."
+			]
+			id: "146100FF0AB131D4"
+			rewards: [{
+				id: "74FEE0BA0032B95A"
+				item: "powah:crystal_blazing"
+				type: "item"
+			}]
+			subtitle: "&7De la lave en bâton"
+			tasks: [{
+				consume_items: false
+				id: "0D938FB22D83196F"
+				item: "powah:crystal_blazing"
+				type: "item"
+			}]
+			title: "&6L'Énergie Solaire : Blazing Crystal"
+			x: -8.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["146100FF0AB131D4"]
+			description: [
+				"&fEn surchargeant un &bDiamant&f dans l'Orb, vous obtenez un cristal d'une pureté incroyable."
+				" "
+				"&fC'est le palier où les choses deviennent sérieuses au niveau du stockage et du transfert."
+			]
+			id: "089F33F1A04AB557"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "52078410DA874C7B"
+				table_id: 5644430283229160518L
+				type: "random"
+			}]
+			subtitle: "&7Le diamant sous haute tension"
+			tasks: [{
+				consume_items: false
+				id: "490781E18511E1B2"
+				item: "powah:crystal_niotic"
+				type: "item"
+			}]
+			title: "&bLa Pureté Électrique : Niotic Crystal"
+			x: -8.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["089F33F1A04AB557"]
+			description: [
+				"&fLe mariage entre la force de l'&2Émeraude&f et l'énergie brute."
+				" "
+				"&fCes cristaux permettent de fabriquer des machines capables de gérer des flux d'énergie colossaux."
+			]
+			id: "6BDB935E959EDD24"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0CF1F3F07FA85606"
+				table_id: 5896103029501993867L
+				type: "random"
+			}]
+			subtitle: "&7Le pouvoir de l'Émeraude"
+			tasks: [{
+				consume_items: false
+				id: "380C8B7E25EB9CDC"
+				item: "powah:crystal_spirited"
+				type: "item"
+			}]
+			title: "&2L'Éveil de la Nature : Spirited Crystal"
+			x: -8.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["6BDB935E959EDD24"]
+			description: [
+				"&fLe summum de la technologie &cPowah&f. Ce cristal demande des matériaux instables comme la &4Nether Star&f."
+				" "
+				"&fAvec le palier &cNitro&f, vous atteignez le sommet de la pyramide énergétique."
+			]
+			id: "10361232CD3446CA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D5A3081C2392295"
+				table_id: 1432029627393651571L
+				type: "random"
+			}]
+			subtitle: "&7L'énergie au-delà des limites"
+			tasks: [{
+				consume_items: false
+				id: "60770327CA5A8699"
+				item: "powah:crystal_nitro"
+				type: "item"
+			}]
+			title: "&cLa Puissance Ultime : Nitro Crystal"
+			x: -8.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["5D8890F2AE14E06F"]
+			description: [
+				"&fVous pensiez pouvoir planter vos lingots si facilement ?"
+				" "
+				"&fL'&dInfusion Altar&f demande maintenant une base en &8Deepslate&f renforcée par un cœur en &bEnergized Steel&f."
+				" "
+				"&fC'est le point de départ obligatoire pour créer toutes vos graines magiques."
+			]
+			id: "746F9C492464BED6"
+			rewards: [{
+				count: 16
+				id: "2249EC1CE544B502"
+				item: "mysticalagriculture:prosperity_shard"
+				type: "item"
+			}]
+			subtitle: "&7Quand l'électricité réveille les plantes"
+			tasks: [{
+				id: "2AA1C57CE76980D4"
+				item: "mysticalagriculture:infusion_altar"
+				type: "item"
+			}]
+			title: "&dLe Mariage de la Technologie et de la Nature"
+			x: -4.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["746F9C492464BED6"]
+			description: [
+				"&fPour que le rituel de l'autel fonctionne, vous avez besoin de 8 piédestaux placés autour."
+				" "
+				"&fOubliez l'acier pour un moment : ces supports doivent être taillés dans la &8Deepslate polie&f et surmontés d'un &dÉclat d'Améthyste&f pour canaliser l'énergie magique."
+			]
+			id: "3FC04D3671A1BFE1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7DF12D7A90711E5A"
+				table_id: 3412653644065915627L
+				type: "random"
+			}]
+			subtitle: "&7Taillés dans la roche profonde"
+			tasks: [{
+				count: 8L
+				id: "6012AC97F7C384CA"
+				item: { Count: 8, id: "mysticalagriculture:infusion_pedestal" }
+				type: "item"
+			}]
+			title: "&5Résonance Cristalline : Pedestals"
+			x: -5.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["3FC04D3671A1BFE1"]
+			description: [
+				"&fLe cristal de base est une relique fragile. Pour atteindre la perfection, vous devez le faire évoluer à travers tous les paliers d'essence."
+				" "
+				"&fChaque étape (&aInferium &f➜ &ePrudentium &f➜ &6Tertium &f➜ &bImperium &f➜ &cSupremium&f) augmente drastiquement la durabilité de votre outil."
+				" "
+				"&d&lL'Objectif Final :&r&f Une fois que vous aurez maîtrisé le cristal de Supremium, vous recevrez l'artefact ultime qui ne se brisera jamais."
+			]
+			id: "5468626BA3F056D1"
+			rewards: [{
+				id: "17EE756EE9667A4C"
+				item: "mysticalagriculture:master_infusion_crystal"
+				type: "item"
+			}]
+			subtitle: "&7De la fragilité à l'immortalité"
+			tasks: [
+				{
+					consume_items: false
+					id: "3334B138BD4B94FA"
+					item: {
+						Count: 1
+						id: "matc:inferium_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "337FFC5CC30C95C4"
+					item: {
+						Count: 1
+						id: "matc:prudentium_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4D50248D95C99CDD"
+					item: {
+						Count: 1
+						id: "matc:tertium_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "470FF34B2EE815BA"
+					item: {
+						Count: 1
+						id: "matc:imperium_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2D9A3D3D2A85A024"
+					item: {
+						Count: 1
+						id: "matc:supremium_crystal"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&bÉvolution Alchimique : La Voie du Maître"
+			x: -4.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"10361232CD3446CA"
+				"5468626BA3F056D1"
+			]
+			description: [
+				"&fManipuler le temps n'est pas une mince affaire. L'acier et les engrenages simples ne suffisent plus à contenir une telle énergie."
+				" "
+				"&fVous devez assembler une structure massive de &621 Mechanical Crafters&f pour forger la &eTime in a Bottle&f."
+				" "
+				"&6&lLe Protocole d'Assemblage :&r"
+				"&7- Le &4Nitro Crystal&7 sert de bouchon énergétique."
+				"&7- Vos &bEngineer Goggles&7 focalisent la distorsion temporelle."
+				"&7- Le &dCœur de l'Étoile du Nether&7 stabilise le tout."
+				" "
+				"&cAttention :&f Cet objet est gourmand en énergie... laissez-le se charger dans votre inventaire avant de l'utiliser sur vos machines !"
+			]
+			id: "451D11D4EE5DC9EB"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "&7La forme contient le fond"
+			tasks: [{
+				consume_items: false
+				id: "43B179C822C887C2"
+				item: {
+					Count: 1
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&e&lMaîtrise Temporelle : Chronos"
+			x: -6.0d
+			y: -12.0d
+		}
 	]
-	title: "&5&lComplexité &f&lIndustrielle"
+	title: "&dComplexité &fIndustrielle"
 }

@@ -1,0 +1,44 @@
+{
+	id: "4F68A46E8561F155"
+	loot_size: 1
+	order_index: 16
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "sophisticatedstorage:barrel"
+				tag: {
+					woodType: "dark_oak"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "sophisticatedstorage:copper_barrel"
+				tag: {
+					woodType: "dark_oak"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "sophisticatedstorage:iron_barrel"
+				tag: {
+					woodType: "dark_oak"
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "sophisticatedstorage:gold_barrel"
+				tag: {
+					woodType: "dark_oak"
+				}
+			}
+		}
+	]
+	title: "stockage"
+}

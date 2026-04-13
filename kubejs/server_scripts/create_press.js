@@ -1,15 +1,19 @@
 ServerEvents.recipes(event => {
+  // --- SUPPRESSIONS ---
   event.remove({ output: 'create:andesite_alloy' })
   event.remove({ output: '#forge:plates' })
   event.remove({ input: '#alltheores:ore_hammers' })
   event.remove({ output: 'create:belt_connector' })
   event.remove({ output: 'create:goggles' })
+  event.remove({ output: 'tiab:time_in_a_bottle' }) 
 
+  // --- COMPOSANTS DE BASE ---
   event.shapeless('2x create:andesite_alloy', [
     'minecraft:andesite',
     'minecraft:flint'
   ]).id('entropy:andesite_alloy_flint')
 
+  // --- TRAITEMENT DES PLAQUES (CREATE & IE) ---
   const plates = [
     { ingot: 'minecraft:iron_ingot', out: 'create:iron_sheet' },
     { ingot: 'minecraft:gold_ingot', out: 'create:golden_sheet' },
@@ -33,6 +37,7 @@ ServerEvents.recipes(event => {
     { ingot: 'alltheores:osmium_ingot', out: 'alltheores:osmium_plate' },
     { ingot: 'alltheores:uranium_ingot', out: 'alltheores:uranium_plate' },
     { ingot: 'alltheores:steel_ingot', out: 'alltheores:steel_plate' },
+    { ingot: 'alltheores:steel_ingot', out: 'immersiveengineering:plate_steel' },
     { ingot: 'alltheores:invar_ingot', out: 'alltheores:invar_plate' },
     { ingot: 'alltheores:bronze_ingot', out: 'alltheores:bronze_plate' },
     { ingot: 'alltheores:constantan_ingot', out: 'alltheores:constantan_plate' },
@@ -47,11 +52,26 @@ ServerEvents.recipes(event => {
 
   plates.forEach(p => {
     event.recipes.create.pressing(p.out, p.ingot)
+    event.custom({
+        type: "immersiveengineering:metal_press",
+        mold: "immersiveengineering:mold_plate",
+        result: { item: p.out },
+        input: { item: p.ingot },
+        energy: 2400
+    })
   })
 
   event.recipes.create.pressing('create:belt_connector', 'minecraft:dried_kelp')
 
-  // --- CRAFT TABLE POUR LES GOGGLES  ---
+  // --- CRAFTS SPÉCIFIQUES ---
+
+  // Acier manuel
+  event.shapeless('immersiveengineering:plate_steel', [
+    'alltheores:steel_ingot',
+    'immersiveengineering:hammer'
+  ]).damageIngredient('immersiveengineering:hammer')
+
+  // Goggles
   event.shaped('create:goggles', [
     ' T ', 
     'GPG', 
@@ -61,5 +81,19 @@ ServerEvents.recipes(event => {
     G: 'minecraft:glass',
     P: 'create:precision_mechanism',
     S: 'create:golden_sheet'
+  })
+// --- LE CRAFT DE LA TIME IN A BOTTLE ---
+  event.recipes.create.mechanical_crafting('tiab:time_in_a_bottle', [
+    'S N S',
+    'S G S',
+    'SMMMS',
+    'SMTMS',
+    'SSSSS'
+  ], {
+    N: 'powah:crystal_nitro',
+    G: 'create:goggles',
+    M: 'create:precision_mechanism',
+    S: 'create:brass_sheet',
+    T: 'minecraft:nether_star'
   })
 })

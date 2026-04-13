@@ -8,11 +8,6 @@
 		{ item: "powah:dielectric_casing", random_bonus: 1, weight: 10.0f }
 		{ item: "powah:steel_energized", random_bonus: 2, weight: 25.0f }
 		{ item: "powah:energy_cell_hardened" }
-		{
-			count: 2
-			random_bonus: 2
-			weight: 10.0f
-		}
 		{ item: "powah:energizing_rod_hardened", weight: 5.0f }
 		{ item: "powah:solar_panel_hardened" }
 		{ item: "powah:energized_steel_block" }

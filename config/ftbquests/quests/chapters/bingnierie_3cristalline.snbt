@@ -1,0 +1,315 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bingnierie_3cristalline"
+	group: "33418E23C79FD8FE"
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
+	icon: "xycraft_world:xychorium_gem_blue"
+	id: "07AAADF56AAE3096"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1E09F2E7F1D84260"]
+			description: [
+				"&fPour entrer dans l'Âge 4, oubliez les bâtons en bois. Vous avez besoin de solidité."
+				" "
+				"&f1. Fabriquez des &6Tiges de Bronze&f (AllTheOres)."
+				"&f2. Assemblez-les avec du bois pour créer le &aMarteau Tetra&f."
+				"&f3. Faites un &eclic-droit&f avec le marteau sur une &6Table de Craft&f posée au sol pour la transformer."
+			]
+			id: "3C348580462EE4CA"
+			rewards: [{
+				count: 16
+				id: "32D70989E31F8F89"
+				item: "minecraft:oak_log"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "0272514BEA56CA65"
+					item: {
+						Count: 1
+						id: "tetra:modular_double"
+						tag: {
+							Damage: 0
+							"double/basic_hammer_left_material": "basic_hammer/oak"
+							"double/basic_hammer_right_material": "basic_hammer/oak"
+							"double/basic_handle_material": "basic_handle/stick"
+							"double/handle": "double/basic_handle"
+							"double/head_left": "double/basic_hammer_left"
+							"double/head_right": "double/basic_hammer_right"
+							id: "867d85b1-7559-427a-bf30-9c4c5f640d29"
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 2L
+					id: "13B5762E58E76C5F"
+					item: { Count: 2, id: "alltheores:bronze_rod" }
+					type: "item"
+				}
+			]
+			title: "&aStructure Renforcée"
+			x: 0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3C348580462EE4CA"]
+			description: [
+				"&fLe Laser Drill est incapable de détecter les &bGemmes de Xychorium&f. Ces cristaux ne réagissent qu'au contact manuel."
+				" "
+				"&fDescendez sous le niveau &eY=30&f. Ces gemmes seront les stabilisateurs de vos futures machines à XP."
+			]
+			id: "6434A2E4D707582D"
+			rewards: [{
+				id: "0C202C0FFD447808"
+				item: "xycraft_machines:collector"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "69348C2CF631B148"
+				item: "xycraft_world:xychorium_gem_blue"
+				type: "item"
+			}]
+			title: "&bRésonance Cristalline"
+			x: 0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6434A2E4D707582D"]
+			description: [
+				"&fLe &cMob Masher&f ne se contente pas de tuer ; il extrait l'essence même de l'expérience des créatures."
+				" "
+				"&fUne fois posé, il broiera tout ce qui passe devant ses pales pour produire des orbes et des loots."
+			]
+			id: "38DA0D9207867CAD"
+			rewards: [{
+				icon: "mob_grinding_utils:absorption_hopper"
+				id: "325E08DDA4F6FF6D"
+				item: "mob_grinding_utils:fan"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "2DCA23A85FF2B3A6"
+				item: "mob_grinding_utils:saw"
+				type: "item"
+			}]
+			title: "&cExtraction de Savoir Brut"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38DA0D9207867CAD"]
+			description: [
+				"Utilisez le Xychorium Vert pour créer un fourrage mutagène."
+				"Nourrissez un poulet pour obtenir un œuf doré capable de fertiliser l'herbe en &aDelightful Dirt&f."
+			]
+			id: "5F72C1E72FDA916E"
+			tasks: [{
+				consume_items: false
+				id: "100692D7C5A6B4BA"
+				item: "mob_grinding_utils:gm_chicken_feed"
+				type: "item"
+			}]
+			title: "&aGM Chicken Feed"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["38DA0D9207867CAD"]
+			description: [
+				"En corrompant votre fourrage avec du Xychorium Rouge, vous obtenez un mélange instable."
+				"Le poulet qui en mangera droppera un &5Rotten Egg&f. Utilisez-le sur de la terre pour créer de la &dDreadful Dirt&f."
+				"Attention : Les monstres y apparaissent instantanément dans le noir !"
+			]
+			id: "375FC03A0D315416"
+			tasks: [{
+				consume_items: false
+				id: "5010559106255F0E"
+				item: "mob_grinding_utils:gm_chicken_feed_cursed"
+				type: "item"
+			}]
+			title: "&5GM Chicken Feed Cursed"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"375FC03A0D315416"
+				"5F72C1E72FDA916E"
+			]
+			description: [
+				"&fVotre Masher fait un carnage, mais qui va ramasser ?"
+				" "
+				"&fL' &eAbsorption Hopper&f aspire tous les items et l'XP dans une zone autour de lui. Configurez-le pour envoyer les items dans un coffre et l'XP liquide dans un tank."
+			]
+			id: "4389E8DF5B0A2D9D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "303F7A31D08F1389"
+				table_id: 5722004121165361493L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "09C8BBEA51CA1F3D"
+				item: "mob_grinding_utils:absorption_hopper"
+				type: "item"
+			}]
+			title: "&6Absorption Hopper"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4389E8DF5B0A2D9D"]
+			description: [
+				"&fL'expérience sous forme liquide est bien plus stable. Le &dSingularity Tank&f peut stocker des quantités astronomiques de fluide (32 000 buckets !)."
+				" "
+				"&fC'est ici que vous garderez votre réserve de Savoir pour les crafts de l'Âge 5."
+			]
+			id: "4660FE349EA7B838"
+			rewards: [{
+				id: "71EA1B8C3E353175"
+				item: "mob_grinding_utils:xp_tap"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "3EFE868793C81F60"
+				item: "mob_grinding_utils:tank"
+				type: "item"
+			}]
+			title: "&dSingularity Tank"
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4660FE349EA7B838"]
+			description: [
+				"&fLes monstres sont têtus et ne veulent pas marcher vers leur destin."
+				" "
+				"&fUtilisez des &fMob Fans&f pour les pousser de force vers les pales du Masher. Vous pouvez les améliorer avec des \"Upgrades\" pour augmenter leur portée."
+			]
+			id: "449D0404895AB0F3"
+			rewards: [
+				{
+					id: "081CB62346F65365"
+					item: "mob_grinding_utils:fan_upgrade_height"
+					type: "item"
+				}
+				{
+					id: "7629A6450E240DEB"
+					item: "mob_grinding_utils:fan_upgrade_width"
+					type: "item"
+				}
+				{
+					id: "6A3D966114308EA5"
+					item: "mob_grinding_utils:fan_upgrade_speed"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "1EA0C81391204BEA"
+				item: "mob_grinding_utils:fan"
+				type: "item"
+			}]
+			title: "&fVentilation de Masse"
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["449D0404895AB0F3"]
+			description: [
+				"&fUn Masher de base, c'est bien. Un Masher optimisé, c'est mieux."
+				" "
+				"&fFabriquez des &eMob Masher Upgrades&f (Looting, Sharpness, Fire Aspect) pour maximiser vos gains."
+				" "
+				"&7&oNote : Les upgrades de Fan (Width, Height, Distance) sont aussi indispensables pour ajuster votre ferme."
+			]
+			id: "1F5E595299F0AF62"
+			tasks: [
+				{
+					consume_items: false
+					id: "74440BC132D29D60"
+					item: "mob_grinding_utils:saw_upgrade_arthropod"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "750F7F063D0EA47E"
+					item: "mob_grinding_utils:saw_upgrade_sharpness"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5A6EEB594278271B"
+					item: "mob_grinding_utils:saw_upgrade_looting"
+					type: "item"
+				}
+			]
+			title: "&6Upgrades de Performance"
+			x: 0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["1F5E595299F0AF62"]
+			description: [
+				"&fVous avez maîtrisé le Bronze, le Xychorium et l'Experience Liquide."
+				" "
+				"&fPour passer à l'étape suivante, vous devez prouver votre capacité à condenser ces énergies. Fabriquez un bloc de chaque type de &bXychorium Storage&f."
+				" "
+				"&fCes blocs serviront de base aux machines à énergie de l'Âge 5."
+			]
+			icon: "xycraft_world:xychorium_storage_light"
+			id: "4764DE44DE7F24BE"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "7AF37E2AF3A59510"
+					item: "xycraft_world:xychorium_storage_light"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "130824BE5F39BFE3"
+					item: "xycraft_world:xychorium_storage_blue"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5B19C8AC52D6687B"
+					item: "xycraft_world:xychorium_storage_green"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "693CAEEA66FC73C9"
+					item: "xycraft_world:xychorium_storage_red"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "164E11956EABEAAD"
+					item: "xycraft_world:xychorium_storage_dark"
+					type: "item"
+				}
+			]
+			title: "&5Cristal de Pureté"
+			x: 0.5d
+			y: -8.5d
+		}
+	]
+	title: "&aStructure &fBio-Synthétique"
+}

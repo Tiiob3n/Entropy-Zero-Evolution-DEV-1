@@ -1,0 +1,11 @@
+{
+	id: "77F317001D13D730"
+	loot_size: 1
+	order_index: 14
+	rewards: [
+		{ item: "sophisticatedbackpacks:netherite_backpack" }
+		{ item: "dankstorage:dank_1" }
+		{ item: "pocketstorage:psu_1" }
+	]
+	title: "Welcome"
+}

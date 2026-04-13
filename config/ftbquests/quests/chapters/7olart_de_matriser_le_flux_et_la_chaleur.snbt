@@ -1,0 +1,347 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7olart_de_matriser_le_flux_et_la_chaleur"
+	group: "38F7ABC9B17F7967"
+	icon: "thermalendergy:melodium_ingot"
+	id: "03C30CBD0F6EE59D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4764DE44DE7F24BE"]
+			description: [
+				"&fBienvenue dans l'&5Âge 5&f."
+				" "
+				"&fPour construire vos premières machines, vous aurez besoin d'&6Invar&f. C'est un alliage de &7Fer&f et de &8Nickel&f."
+				" "
+				"&fCombinez-les avec une &bGemme de Xychorium&f pour stabiliser le &eMachine Frame&f. Ce bloc est le cœur de toutes vos futures automatisations."
+			]
+			id: "0A06D46A16384B54"
+			rewards: [{
+				count: 8
+				id: "63DD978308DD0A4C"
+				item: "alltheores:nickel_ingot"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&7\"Solide comme l'acier, ou presque.\""
+			tasks: [{
+				consume_items: false
+				id: "17581A20737C23FD"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			title: "&5Structure Thermique"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0A06D46A16384B54"]
+			description: [
+				"&fLes tapis roulants sont dépassés. Il est temps de passer aux &9Tuyaux&f."
+				" "
+				"&fLes tuyaux de &ePipez&f sont capables de transférer des items, des fluides et de l'énergie à une vitesse folle dans un seul bloc."
+				" "
+				"&7&oAstuce : Utilisez une clé à molette pour configurer les entrées et sorties !"
+			]
+			id: "44C7D911E985F936"
+			rewards: [{
+				id: "3F7F02551D8E034C"
+				item: "pipez:wrench"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "4AA681CFF2792B65"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			title: "&bLogistique Moderne"
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["44C7D911E985F936"]
+			description: [
+				"&fVous pensiez pouvoir échapper à la métallurgie grâce à vos plantes ?"
+				" "
+				"&fDans cet âge, les graines de métaux avancés (Invar, Electrum, Constantan) demandent une structure plus complexe."
+				" "
+				"&fVous devrez sacrifier des &eMachine Frames&f pour créer vos graines. Automatisez d'abord la production mécanique avant de passer à la production biologique."
+			]
+			id: "799F8D47971CF8ED"
+			rewards: [{
+				count: 4
+				id: "1DD13BB3C6FEF9D8"
+				item: "mysticalagriculture:tertium_essence"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "43473BE253ECAE1C"
+				item: "mysticalagriculture:invar_seeds"
+				type: "item"
+			}]
+			title: "&aGénétique Thermique"
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["799F8D47971CF8ED"]
+			description: [
+				"&fMarre de voir des câbles &ePipez&f partout dans votre base ?"
+				" "
+				"&fLe &bFlux Networks&f permet de transférer de l'énergie (RF/FE) à travers les dimensions et sans aucun fil."
+				" "
+				"&fCréez votre premier &eFlux Plug&f (entrée d'énergie) et &eFlux Point&f (sortie d'énergie). N'oubliez pas le &3Flux Controller&f pour gérer vos priorités et charger votre inventaire !"
+			]
+			id: "0C1B9AD68B7D9010"
+			rewards: [{
+				count: 8
+				id: "70E3C3F32289013C"
+				item: "fluxnetworks:flux_dust"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "321657AB7EEA1E72"
+					item: "fluxnetworks:flux_dust"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "065F961604736D79"
+					item: "fluxnetworks:flux_core"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "34F51679B1FC4A55"
+					item: "fluxnetworks:flux_controller"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "09E51B4DC7B9C4CB"
+					item: "fluxnetworks:flux_plug"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "22974CE79ACA61DC"
+					item: "fluxnetworks:flux_point"
+					type: "item"
+				}
+			]
+			title: "&bRéseau de Flux"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C1B9AD68B7D9010"]
+			description: [
+				"&fLe &ePulverizer&f est votre premier pas vers la multiplication des ressources."
+				" "
+				"&fIl transforme vos minerais en poussières, doublant souvent votre production, et permet d'obtenir des sous-produits rares comme le &7Nickel&f ou l'&6Or&f."
+			]
+			id: "3C6BC294D099B103"
+			rewards: [{
+				count: 2
+				id: "1A8D6DA7B578DF17"
+				item: "alltheores:invar_gear"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "7F741FAE67ACE784"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			title: "&ePulvérisation"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3C6BC294D099B103"]
+			description: [
+				"&fCette machine est le pilier central de l'&5Âge 5&f."
+				" "
+				"&fL'&cInduction Smelter&f permet de fusionner des métaux pour créer des alliages impossibles à obtenir autrement. C'est ici que vous créerez le &6Signalum&f et l'&bEnderium&f nécessaires pour l'Âge 6."
+			]
+			id: "5BDE2C985A26B556"
+			rewards: [{
+				count: 64
+				id: "6B79086F31CD5C94"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "663070D6B80BE94A"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			title: "&cInduction Smelter"
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5BDE2C985A26B556"]
+			description: [
+				"&fCertains composants ne peuvent pas être assemblés à sec. Le &dFluid Encapsulator&f permet d'injecter des fluides (Redstone déstabilisée, Sève, etc.) directement dans des objets."
+				" "
+				"&fC'est une machine indispensable pour préparer les processeurs de l'Âge 6."
+			]
+			id: "3F4CE667ECB2B304"
+			rewards: [{
+				id: "3601DB50463BEE40"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "1144DF8E02272807"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			title: "&dFluid Encapsulator"
+			x: 10.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0A06D46A16384B54"]
+			description: [
+				"&fVos machines sont trop lentes ? Il est temps de les booster."
+				" "
+				"&fLes &eIntegral Components&f augmentent la vitesse et la capacité de stockage d'énergie de vos machines Thermal."
+				" "
+				"&fChaque niveau demande une gemme de &bXychorium&f plus pure et des alliages plus complexes."
+			]
+			id: "029C63777AB59494"
+			rewards: [{
+				count: 4
+				id: "7224BDE3D8490C15"
+				item: "alltheores:electrum_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "4CCD57883A38FBB7"
+					item: "thermal:upgrade_augment_1"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "44E9377362A65C8C"
+					item: "thermal:upgrade_augment_2"
+					type: "item"
+				}
+			]
+			title: "&6Integral Components"
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3F4CE667ECB2B304"]
+			description: [
+				"&fLe &cSignalum&f est bien trop complexe pour être assemblé avec un simple marteau."
+				" "
+				"&fVous devez impérativement utiliser l'&eInduction Smelter&f pour fusionner le &6Cuivre&f, l'&fArgent&f, la &4Redstone&f et une &cGemme de Xychorium Rouge&f."
+				" "
+				"&fCet alliage est la base de vos futurs systèmes de stockage d'énergie et des composants électroniques de précision."
+			]
+			id: "66F1B5AB8A462CA5"
+			rewards: [{
+				id: "7AEBB9CF22ABCB29"
+				item: "thermal:signalum_gear"
+				type: "item"
+			}]
+			subtitle: "&7\"La fin du bricolage.\""
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "54DACF20CE627713"
+				item: "thermal:signalum_ingot"
+				type: "item"
+			}]
+			title: "&cL'Alliage de Signalum"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["66F1B5AB8A462CA5"]
+			description: [
+				"&fGrâce au Signalum, vous pouvez fabriquer des &eEnergy Cells&f."
+				" "
+				"&fCes blocs stockent vos RF et permettent de stabiliser votre réseau. Très utile pour éviter que vos machines s'arrêtent au milieu d'un craft coûteux."
+				" "
+				"&bAstuce : Pensez à configurer les entrées/sorties avec une clé à molette !"
+			]
+			id: "154923BD40C6852A"
+			rewards: [{
+				id: "4A147F1BF42BD37D"
+				item: "thermal:upgrade_augment_3"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "17E146CFF7586194"
+				item: {
+					Count: 1
+					id: "thermal:energy_cell"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 1000000
+							EnergyRecv: 1000
+							EnergySend: 1000
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "&eEnergy Cell"
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["154923BD40C6852A"]
+			description: [
+				"&fL'&bEnderium&f est l'alliage le plus complexe que vous puissiez forger pour le moment."
+				" "
+				"&fPour le stabiliser, vous devrez fusionner du &8Plomb&f, du &bDiamant&f et des &5Ender Pearls&f à l'aide d'une &1Gemme de Xychorium Dark&f."
+				" "
+				"&fSeule l'&eInduction Smelter&f peut supporter la réaction nécessaire à sa création."
+				" "
+				"&dCet alliage vous permettra de débloquer les machines de l'Âge 6 : Applied Energistics 2 et Mekanism."
+			]
+			id: "323D227A8C597AFE"
+			rewards: [{
+				count: 2
+				id: "0F932100D9D9D959"
+				item: "thermal:enderium_ingot"
+				type: "item"
+			}]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "&7\"Le sommet de la technologie thermique.\""
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "7D3ACE775BA0586A"
+				item: "thermal:enderium_ingot"
+				type: "item"
+			}]
+			title: "&bL'Alliage de l'Infini"
+			x: 13.0d
+			y: -3.0d
+		}
+	]
+	title: "&6L'art &ede &6maîtriser &f le &bflux &3et &f la &cchaleur"
+}

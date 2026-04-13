@@ -1,0 +1,649 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7lart_de_transformer_le_vivant"
+	group: "56D4EC783D895374"
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
+	icon: "farmersdelight:roast_chicken_block"
+	id: "6348EA3C195450D5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["451D11D4EE5DC9EB"]
+			description: [
+				"&fPour transformer le vivant, vous avez besoin d'une lame capable de trancher au niveau cellulaire. Oubliez le silex ou le fer brut."
+				" "
+				"&fForgez un &fCouteau en Acier&f. Cet outil vous permettra d'obtenir des découpes parfaites sur la planche à découper et de récolter des ressources organiques rares sur la faune et la flore."
+				" "
+				"&7Astuce : Le couteau est l'outil principal pour débuter dans Farmer's Delight. Gardez-le toujours sur vous."
+			]
+			id: "2FCC0A01193B3A86"
+			rewards: [{
+				id: "2E9BC9AFEA3427F8"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "&7Plus qu'un simple couteau"
+			tasks: [{
+				consume_items: false
+				id: "2BF9DCFA806C99E3"
+				item: {
+					Count: 1
+					id: "farmersdelight:iron_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&d&lL'Art de la Découpe"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2FCC0A01193B3A86"]
+			description: [
+				"&fLa cuisson traditionnelle au feu de camp est terminée. La &6Marmite (Cooking Pot)&f permet de combiner plusieurs ingrédients pour créer des plats riches en nutriments et en effets bénéfiques."
+				" "
+				"&fPlacez-la sur une source de chaleur (un four, un feu de camp ou un brûleur de Create) pour commencer vos mélanges."
+			]
+			id: "7E591DCA7E41BEDF"
+			rewards: [{
+				count: 4
+				id: "34D710AD7C44E3F4"
+				item: "minecraft:bowl"
+				type: "item"
+			}]
+			subtitle: "&7Le Cooking Pot"
+			tasks: [{
+				consume_items: false
+				id: "4681F8A3B237F8B5"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			title: "&5Alchimie des Saveurs"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E591DCA7E41BEDF"]
+			description: [
+				"&fPour cultiver des produits de qualité supérieure, la terre ordinaire ne suffit pas. Vous devez créer du &6Rich Soil&f."
+				" "
+				"&fCe mélange riche en nutriments booste la croissance de vos plantes. Combinez du compost et de la terre pour obtenir ce substrat idéal."
+			]
+			id: "47AE2996AEBC14B5"
+			rewards: [{
+				count: 8
+				id: "15CE324A8965DBF9"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "58CE1214EB747CBE"
+				item: "farmersdelight:rich_soil"
+				type: "item"
+			}]
+			title: "&2Terre Fertile"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["47AE2996AEBC14B5"]
+			description: [
+				"&fBeaucoup de vos futurs plats demanderont des bases liquides ou des huiles. Utilisez vos mécanismes pour presser des graines ou des végétaux."
+				" "
+				"&7Astuce : Préparez un stock de bouteilles en verre, vous allez en avoir besoin pour stocker vos extraits."
+			]
+			id: "0B4A160C4D4ADBC9"
+			rewards: [{
+				count: 2
+				id: "2AD5F63DF21B850E"
+				item: "croptopia:tomato_seed"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7EECA83CA14442EA"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			title: "&ePresse à Froid"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B4A160C4D4ADBC9"]
+			description: [
+				"&fRien ne se perd, tout se transforme. En tant qu'ingénieur culinaire, vous devez apprendre à gérer vos biodéchets."
+				" "
+				"&fRassemblez vos restes (paille, os, nourriture gâtée) pour fabriquer du &aCompost Organique&f. Laissez-le reposer au soleil ou accélérez sa décomposition pour obtenir le substrat ultime."
+			]
+			id: "72BEF5D80B8E9171"
+			rewards: [{
+				count: 4
+				id: "6F3F0D685474D90F"
+				item: "farmersdelight:canvas"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "181F87558A1C0FCC"
+				item: "farmersdelight:organic_compost"
+				type: "item"
+			}]
+			title: "&aCycle de la Vie : Le Compost"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["72BEF5D80B8E9171"]
+			description: [
+				"&fLe feu de camp, c'est pour les survivants. Pour un chef, il faut une chaleur constante et contrôlée."
+				" "
+				"&fLe &6Stove (Poêle)&f est l'outil parfait. Il sert de source de chaleur permanente pour votre marmite et vous permet même de griller jusqu'à 6 aliments simultanément sur sa plaque supérieure."
+			]
+			id: "4722DEF006F19494"
+			rewards: [{
+				id: "4A59159D984173D9"
+				item: "farmersdelight:roast_chicken_block"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "78CE3F8C03DDF762"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			title: "&6Maîtrise Thermique"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4722DEF006F19494"]
+			description: [
+				"&fMaintenant que vous produisez des ingrédients de qualité, il faut les stocker avec classe. Le &bFrigo&f est la pièce maîtresse de votre laboratoire culinaire."
+				" "
+				"&fEn plus de stocker vos denrées, il peut être &3teint&f pour correspondre à votre esthétique. Mais son vrai pouvoir réside dans sa capacité à se connecter à une &6Cooking Table&f."
+				" "
+				"&7Astuce : Placez plusieurs frigos les uns sur les autres pour augmenter votre capacité de stockage réfrigérée !"
+			]
+			id: "07D5060463773601"
+			rewards: [
+				{
+					id: "305CD2E70E1561C3"
+					item: "minecraft:white_dye"
+					type: "item"
+				}
+				{
+					id: "2FDE0E50BC5236F8"
+					item: "minecraft:red_dye"
+					type: "item"
+				}
+				{
+					id: "3EEA7ABFC2314470"
+					item: "minecraft:yellow_dye"
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "73428A111E4CBD18"
+				item: "cookingforblockheads:fridge"
+				type: "item"
+			}]
+			title: "&bPréservation Moléculaire"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["07D5060463773601"]
+			description: [
+				"&fLe Frigo est plein, mais comment s'y retrouver ? La &6Cooking Table&f est l'ordinateur central de votre cuisine."
+				" "
+				"&fElle scanne tous vos frigos et coffres adjacents pour vous dire instantanément ce que vous pouvez cuisiner. Plus besoin de chercher vos œufs pendant 10 minutes."
+			]
+			id: "15EBC6D49F47BEE6"
+			rewards: [{
+				id: "2B980AB9B3D77CDE"
+				item: "cookingforblockheads:heating_unit"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "525C8CEA56F3665C"
+				item: "cookingforblockheads:cooking_table"
+				type: "item"
+			}]
+			title: "&6Le Cerveau de la Cuisine"
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["15EBC6D49F47BEE6"]
+			description: [
+				"&fPour vos jus et vos huiles, oubliez le mortier et le pilon. Utilisez votre &6Mechanical Press&f sur des cannes à sucre, des fruits ou des graines de citrouille."
+				" "
+				"&fRécupérez le précieux liquide dans un bassin en dessous. C'est la première étape pour des boissons de haute qualité."
+			]
+			id: "7BFFC90D93B2B902"
+			rewards: [{
+				count: 4
+				id: "1DA60F7E4B5DC76C"
+				item: "minecraft:sugar_cane"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C33978F3E35CA3C"
+				title: "mechanical_press"
+				type: "checkmark"
+			}]
+			title: "&eExtraction à Froid"
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7BFFC90D93B2B902"]
+			description: [
+				"&fRemplir des fioles à la main ? Trop archaïque. Le &bSpout&f va transférer vos jus directement du bassin vers les bouteilles qui défilent sur vos tapis roulants."
+				" "
+				"&fC'est ainsi que vous créerez vos &6Apple Juice&f ou &6Hot Cocoa&f de manière industrielle."
+				" "
+				"&7Note : Assurez-vous d'avoir une pompe et des tuyaux pour relier votre source de liquide au Spout."
+			]
+			id: "4A07915A7534DA72"
+			rewards: [{
+				count: 16
+				id: "0E828D4D3EDB9F41"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "73F6166A79C9038E"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4A07915A7534DA72"]
+			description: [
+				"&fCertaines préparations comme la &ePâte à pain (Dough)&f ou les sauces onctueuses demandent un mélange vigoureux sous chaleur contrôlée."
+				" "
+				"&fUtilisez le &5Mechanical Mixer&f au-dessus d'un bassin chauffé par un &dBlaze Burner&f pour automatiser les recettes de Farmer's Delight les plus complexes."
+			]
+			id: "1FFBE3DFB945EFD3"
+			rewards: [{
+				id: "5BEC22580C17B8F0"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "0C74970336DA2AE2"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "&5Émulsions et Mélanges"
+			x: -1.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["1FFBE3DFB945EFD3"]
+			description: [
+				"&fPresser un melon à la main ? Trop de pertes. Faire bouillir du lait dans une simple tasse ? Trop instable."
+				" "
+				"&fDésormais, pour obtenir du &aJus de Melon&f ou des &fBouteilles de Lait&f, vous devrez utiliser la puissance du &6Mechanical Mixer&f."
+				" "
+				"&7- &eJus de Melon :&7 Mélange simple à froid."
+				"&7- &eLait en Bouteille :&7 Nécessite une source de &cChaleur&7 (Blaze Burner) pour le conditionnement."
+				" "
+				"&fC'est le prix à payer pour une qualité constante."
+			]
+			id: "463B8C96B37D9196"
+			tasks: [
+				{
+					consume_items: false
+					id: "583AD58393B76E26"
+					item: "farmersdelight:melon_juice"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "48351B63F91C7F9E"
+					item: "farmersdelight:milk_bottle"
+					type: "item"
+				}
+			]
+			title: "&bL'Industrie du Rafraîchissement"
+			x: -1.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["463B8C96B37D9196"]
+			description: [
+				"&fCroptopia apporte une variété de fruits immense. Mais attention : pour extraire leurs vitamines, le passage au &6Mechanical Mixer&f est obligatoire."
+				" "
+				"&fConfigurez votre ligne de production pour traiter les Oranges, Citrons et Raisins. Chaque fruit doit être pressé avec une bouteille vide pour obtenir le breuvage final."
+			]
+			id: "7EBB8ABEB54B0F7F"
+			rewards: [
+				{
+					id: "53FC2E32C7956E29"
+					item: "farmersdelight:fruit_salad"
+					type: "item"
+				}
+				{
+					id: "61300A525F116109"
+					item: "croptopia:fruit_salad"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "20C7C4A44EAD9AD2"
+					item: "croptopia:orange_juice"
+					type: "item"
+				}
+				{
+					id: "00BD9E4C96AB41D7"
+					item: "croptopia:orange"
+					type: "item"
+				}
+			]
+			title: "&6&lL'Empire des Vergers"
+			x: -3.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["7EBB8ABEB54B0F7F"]
+			description: [
+				"&fL'huile est la base de la cuisine moléculaire et de la lubrification mécanique. Utilisez la &6Mechanical Press&f sur les Olives ou les Graines de Tournesol de Croptopia."
+				" "
+				"&fCe liquide gras sera essentiel pour vos futures recettes de friture et certains composants de haute technologie."
+			]
+			id: "18C3457A4ECA5CB4"
+			rewards: [{
+				count: 6
+				id: "0F24E1845B648195"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48C3DB56A4B2064B"
+				item: "croptopia:olive_oil"
+				type: "item"
+			}]
+			title: "&eL'Or Liquide"
+			x: -3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["18C3457A4ECA5CB4"]
+			description: [
+				"&fMême les poissons d'Aquaculture 2 ont un rôle à jouer dans votre usine. En découpant vos prises sur la &eCutting Board&f, vous obtenez des filets, mais aussi des restes."
+				" "
+				"&fPassez ces restes au Mixer pour en extraire des huiles de poisson ou utilisez les filets pour des plats de sushis automatisés."
+			]
+			id: "6637870B7B6E3E1C"
+			rewards: [{
+				id: "66D0FC7DE949AF4F"
+				item: "aquaculture:treasure_chest"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "67EA7682ED398803"
+				item: {
+					Count: 1
+					id: "aquaculture:iron_fillet_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&bOméga-3 et Mécanique"
+			x: -3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6637870B7B6E3E1C"]
+			description: [
+				"&fVotre Mixer ne sert plus seulement à faire de l'Andesite Alloy. Il est devenu votre barman personnel."
+				" "
+				"&fTous les jus de &eCroptopia&f ont été retirés des recettes manuelles. Si vous voulez un rafraîchissement, il faudra passer par vos cuves."
+				" "
+				"&7Astuce : Automatisez la livraison des bouteilles vides avec un tapis roulant pour ne jamais être à sec !"
+			]
+			id: "5FEE27940D32EB55"
+			tasks: [
+				{
+					consume_items: false
+					id: "55FEBDD90CCB24B4"
+					item: "croptopia:orange_juice"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "48C1A65C4D8B4065"
+					item: "croptopia:apple_juice"
+					type: "item"
+				}
+			]
+			title: "&6&lMixologie Moléculaire"
+			x: -3.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5FEE27940D32EB55"]
+			description: [
+				"&fPêcher, c'est bien. Transformer, c'est mieux. Aquaculture 2 vous offre des poissons variés, mais c'est votre industrie qui les rend utiles."
+				" "
+				"&fUtilisez votre &eCouteau à Filet&f pour obtenir des pièces de choix, et n'oubliez pas : même un poisson peut finir en huile industrielle via votre Mixer chauffé."
+			]
+			id: "7A2C26DAF59ADACF"
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "78C954B363597D79"
+				item: "aquaculture:fish_fillet_raw"
+				type: "item"
+			}]
+			title: "&b&lRessources Marines"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7A2C26DAF59ADACF"]
+			description: [
+				"&fAssembler un sushi demande une précision millimétrée. Vos mains tremblent ? Laissez les &6Mechanical Crafters&f s'en charger."
+				" "
+				"&fCombinez le &eRiz de Croptopia&f, les &bFilets d'Aquaculture&f et les &2Algues séchées&f dans une grille de 3x3 crafters pour produire des sushis en série."
+			]
+			id: "4F2BC24802658A05"
+			rewards: [{
+				count: 32
+				id: "37303444553029B4"
+				item: "minecraft:dried_kelp"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "66C02E272FEDBBB7"
+				item: "croptopia:sushi"
+				type: "item"
+			}]
+			title: "&b&lGastronomie Nipponne Automatisée"
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4F2BC24802658A05"]
+			description: [
+				"&fUn burger, c'est une superposition de couches. Pourquoi ne pas créer une ligne de montage ?"
+				" "
+				"&fLe &eMechanical Crafter&f configuré verticalement permet de simuler une presse à burger parfaite. Pain, steak, salade... le compte est bon."
+			]
+			id: "499022C1B4C07C11"
+			rewards: [{
+				count: 2
+				id: "714DBE089FC1D485"
+				item: "croptopia:french_fries"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "7AC3192A9F9551D3"
+				item: "croptopia:hamburger"
+				type: "item"
+			}]
+			title: "&6&lLe Fast-Food Industriel"
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["499022C1B4C07C11"]
+			description: [
+				"&fSi vous voulez que votre usine de sushis tourne à plein régime, il vous faut des prises constantes. "
+				" "
+				"&fFabriquez une &3Neptunium Toolbox&f pour organiser vos appâts et vos lignes. Une fois vos stocks pleins, déversez-les dans vos tapis roulants."
+			]
+			id: "3B4E28CE46B72D41"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1093465497C0936E"
+				table_id: 8895710397881434876L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "508378B73B123736"
+				item: "aquaculture:neptunium_ingot"
+				type: "item"
+			}]
+			title: "&3&lL'Arsenal du Pêcheur Expert"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3B4E28CE46B72D41"]
+			description: [
+				"&fAlimenter une ligne de production de sushis demande un flux constant de poisson. Placez un &6Deployer&f avec un &bCouteau à Filet&f au-dessus d'une &eCutting Board&f."
+				" "
+				"&fEnvoyez vos prises d'Aquaculture sur le tapis roulant : le Deployer s'occupera de lever les filets automatiquement pour vous."
+			]
+			id: "1B8374BBD3E1F6FC"
+			rewards: [{
+				count: 5
+				id: "14E9A906A244E116"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 32L
+				id: "4DEE4600D180E000"
+				item: "aquaculture:fish_fillet_raw"
+				type: "item"
+			}]
+			title: "&b&lBoucherie Marine Automatisée"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1B8374BBD3E1F6FC"]
+			description: [
+				"&fLe sel et le sucre sont les catalyseurs de la gastronomie moléculaire. Utilisez votre &6Millstone (Meule)&f ou votre &6Crushing Wheels&f pour transformer les ressources brutes."
+				" "
+				"&7- &fSel :&7 Broyez les blocs de roche saline ou évaporez l'eau de mer."
+				"&7- &eSucre :&7 Pulvérisez la canne à sucre pour un rendement optimal."
+			]
+			id: "36A3A4B9F3539F56"
+			rewards: [{
+				id: "2067B73F6A733EC3"
+				item: "create:millstone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					count: 16L
+					id: "074D15BC17FEB269"
+					item: "croptopia:salt"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "65BD3841B427D9F3"
+					item: { Count: 16, id: "minecraft:sugar" }
+					type: "item"
+				}
+			]
+			title: "&e&lCristallisation et Saveurs"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["36A3A4B9F3539F56"]
+			description: [
+				"&fVotre ligne de montage de Burgers et de Sushis tourne à plein régime ? Vous ne pouvez plus tout garder dans vos poches."
+				" "
+				"&fReliez la sortie de vos Mechanical Crafters directement à un &3Frigo&f via des entonnoirs ou des tapis roulants. Votre &6Cooking Table&f piochera dedans automatiquement pour vos futurs festins."
+			]
+			id: "67F79F67D222C47B"
+			rewards: [{
+				count: 2
+				id: "12A1BBAF8A1E693B"
+				item: "cookingforblockheads:counter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5EE61FCB487265A9"
+				title: "&3&lLogistique du Froid"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67F79F67D222C47B"]
+			description: [
+				"&fVous avez automatisé les champs, filtré les huiles, pressé les fruits et fileté les poissons. Il est temps de mettre vos machines à l'épreuve ultime."
+				" "
+				"&fLe &dBig Breakfast&f n'est pas qu'un repas, c'est une prouesse d'ingénierie biologique. Il nécessite une grille de &625 Mechanical Crafters&f pour assembler parfaitement chaque calorie."
+				" "
+				"&cDéfi :&f Réussir à produire ce plat marque la fin de votre dépendance au travail manuel. Votre corps est maintenant prêt pour les radiations et les énergies lourdes de l'Âge 4."
+			]
+			id: "1E09F2E7F1D84260"
+			rewards: [{
+				advancement: "minecraft:story/root"
+				criterion: ""
+				icon: "megacells:bulk_cell_component"
+				id: "2A09C53E8832CAD6"
+				title: "&6[Accès à l'Âge 4 Débloqué]"
+				type: "advancement"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				consume_items: false
+				id: "10B8D9E65CE314A6"
+				item: "croptopia:the_big_breakfast"
+				type: "item"
+			}]
+			title: "&d&lLe Big Breakfast : Le Petit-Déjeuner des Champions"
+			x: -3.0d
+			y: 3.0d
+		}
+	]
+	title: "&5Gastronomie &fMoléculaire"
+}

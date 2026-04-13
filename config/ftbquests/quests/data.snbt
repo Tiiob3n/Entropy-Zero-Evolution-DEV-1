@@ -1,7 +1,7 @@
 {
 	default_autoclaim_rewards: "disabled"
 	default_consume_items: false
-	default_quest_disable_jei: true
+	default_quest_disable_jei: false
 	default_quest_shape: "circle"
 	default_reward_team: false
 	detection_delay: 20
@@ -11,6 +11,7 @@
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
 	hide_excluded_quests: false
+	icon: "avaritia:eternal_singularity"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
@@ -20,5 +21,6 @@
 	pause_game: false
 	progression_mode: "linear"
 	show_lock_icons: false
+	title: "&8&l[&r&b&lENTROPY&f&l-&3&lZERO&r&8&l] &f&l»&r &f&nEVOLUTION&r"
 	version: 13
 }
