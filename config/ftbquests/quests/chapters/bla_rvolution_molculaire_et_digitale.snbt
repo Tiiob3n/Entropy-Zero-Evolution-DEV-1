@@ -1,0 +1,687 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "bla_rvolution_molculaire_et_digitale"
+	group: "02C4846B8E67A62E"
+	icon: "ae2:spatial_cell_component_128"
+	id: "19AC7D1D0CE539A6"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["323D227A8C597AFE"]
+			description: [
+				"&fL'Age 6 commence enfin. Ton premier objectif, c'est cette machine. Sans elle, t'es bloqué."
+				" "
+				"&fL'&5Infuseur&f va te permettre de modifier tes lingots au niveau atomique. J'ai un peu durci le craft avec de l'&bEnderium&f et du &6Signalum&f pour être sûr que t'as bien bossé l'Age 5 avant de venir ici."
+				" "
+				"&cAttention :&f Ça pompe une blinde de RF. Vérifie tes câbles avant de la brancher."
+			]
+			id: "1B0E5CC52EB833ED"
+			rewards: [{
+				count: 8
+				id: "1F6D63A7163A8C5B"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
+			subtitle: "&7\"Fini de rigoler avec les alliages de base\""
+			tasks: [{
+				consume_items: false
+				id: "3989EDCFA5EDF822"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			title: "&5L'Aube de la Métallurgie"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B0E5CC52EB833ED"]
+			description: [
+				"&fInjectez de la &4Redstone&f dans du &6Signalum&f à l'aide de votre Infuseur pour obtenir vos premiers circuits."
+				" "
+				"&fCe petit composant est la brique de base pour presque toutes les machines de Mekanism et Industrial Foregoing."
+				" "
+				"&eConseil :&f Prévoyez-en une quantité importante, car ils servent également de base pour les circuits de niveaux supérieurs."
+			]
+			id: "530A24267E6293D5"
+			rewards: [{
+				count: 4
+				id: "0DCBEFB6214DBCF9"
+				item: "minecraft:redstone_block"
+				type: "item"
+			}]
+			subtitle: "&7\"Le composant central de l'électronique\""
+			tasks: [{
+				consume_items: false
+				count: 12L
+				id: "4A6A2AC9ADDEB5A3"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			title: "&aLa Logique Infusée"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["530A24267E6293D5"]
+			description: [
+				"&fLe plastique est indispensable pour la suite. La première étape consiste à extraire du &fLatex&f liquide."
+				" "
+				"&fPlacez le &fFluid Extractor&f face à une bûche. Il récoltera lentement la sève nécessaire à la production de caoutchouc."
+				" "
+				"&bÀ savoir :&f Le bois d'Acacia offre le meilleur rendement, mais gardez à l'esprit que la bûche finira par se briser après extraction."
+			]
+			id: "2791A3116E0A9590"
+			rewards: [{
+				count: 16
+				id: "0434D65CB395B285"
+				item: "minecraft:acacia_log"
+				type: "item"
+			}]
+			subtitle: "&7\"Récolte de polymères naturels\""
+			tasks: [{
+				consume_items: false
+				id: "079CE4A900A33545"
+				item: "industrialforegoing:fluid_extractor"
+				type: "item"
+			}]
+			title: "&fLa Sève Industrielle"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2791A3116E0A9590"]
+			description: [
+				"&fL'&eEnrichment Chamber&f est un outil polyvalent pour le traitement des matériaux."
+				" "
+				"&fElle permet de doubler vos minerais en les transformant en poussière, mais elle sera surtout utilisée ici pour traiter des composants industriels comme le caoutchouc sec."
+				" "
+				"&fLe craft a été revu pour inclure du &bPrismalium&f, marquant votre progression technologique."
+			]
+			id: "690F21C5F1AC6397"
+			rewards: [{
+				count: 8
+				id: "098691BB9759D833"
+				item: "mekanism:dust_quartz"
+				type: "item"
+			}]
+			subtitle: "&7\"Optimisation de la matière\""
+			tasks: [{
+				consume_items: false
+				id: "12F9AB6418F22ECA"
+				item: "mekanism:enrichment_chamber"
+				type: "item"
+			}]
+			title: "&eRaffinement Moléculaire"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["690F21C5F1AC6397"]
+			description: [
+				"&fPour obtenir du &fPlastique&f de qualité industrielle, la simple cuisson ne suffit plus."
+				" "
+				"&fVous devez désormais traiter vos &7Tiny Dry Rubber&f dans l'&eEnrichment Chamber&f. Ce procédé permet d'obtenir du caoutchouc dense prêt pour la fabrication des châssis de machines."
+				" "
+				"&cRappel :&f Il faut combiner 9 unités de Tiny Rubber pour obtenir une plaque de Dry Rubber."
+			]
+			id: "48552183D62FD8E7"
+			rewards: [{
+				count: 18
+				id: "10BB285BA5DFFAFD"
+				item: "industrialforegoing:tinydryrubber"
+				type: "item"
+			}]
+			subtitle: "&7\"Transition vers les polymères synthétiques\""
+			tasks: [{
+				consume_items: false
+				id: "4ADE7511B678E97D"
+				item: "industrialforegoing:dryrubber"
+				type: "item"
+			}]
+			title: "&dLe Vrai Plastique"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["48552183D62FD8E7"]
+			description: [
+				"&fCertains matériaux avancés nécessitent l'injection d'Osmium gazeux sous pression pour être finalisés."
+				" "
+				"&fL'&bOsmium Compressor&f est essentiel pour accéder au second palier d'alliages de Mekanism et pour débloquer les premières technologies de stockage numérique."
+			]
+			id: "2C9058DB5B6799BA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A612DF741C0E4F3"
+				table_id: 5871764666515020368L
+				type: "choice"
+			}]
+			subtitle: "&7\"Alliages de haute densité\""
+			tasks: [{
+				consume_items: false
+				id: "20128757BF72A1E5"
+				item: "mekanism:osmium_compressor"
+				type: "item"
+			}]
+			title: "&bCompression à l'Osmium"
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["2C9058DB5B6799BA"]
+			description: [
+				"&fLe &7Pity Machine Frame&f est le point de départ de toutes vos machines complexes."
+				" "
+				"&fEn combinant votre &fPlastique&f fraîchement enrichi avec des alliages d'&6Invar&f, vous obtenez une structure capable de supporter les composants électroniques avancés."
+				" "
+				"&fC'est ce cadre qui servira de base pour vos premiers pas dans le stockage digital."
+			]
+			id: "5BADD0A3338E9F8B"
+			rewards: [{
+				count: 4
+				id: "14F6A2999286FD07"
+				item: "industrialforegoing:dryrubber"
+				type: "item"
+			}]
+			subtitle: "&7\"Une base solide pour l'industrie\""
+			tasks: [{
+				consume_items: false
+				id: "4DC174A1D6FA129D"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			title: "&7Le Châssis de Fortune"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["5BADD0A3338E9F8B"]
+			description: [
+				"&fPour passer au niveau supérieur, vous devez combiner vos &7Pity Frames&f avec l'&aAlloy Infused&f de Mekanism."
+				" "
+				"&fL'ajout de &bPrismalium&f permet de stabiliser les composants internes pour des machines de récolte plus performantes."
+			]
+			id: "1487AFC19C5CF684"
+			rewards: [{
+				count: 4
+				id: "18C4BADDAB744E79"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			subtitle: "&7\"Allier l'infusion et le prisme\""
+			tasks: [{
+				consume_items: false
+				id: "495AA4BDF78B0456"
+				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
+			}]
+			title: "&eL'Évolution Mécanique"
+			x: 0.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["1487AFC19C5CF684"]
+			description: [
+				"&fCe châssis est nécessaire pour les machines de haute technologie. Il utilise l'&6Alloy Reinforced&f (obtenu via l'Osmium Compressor) et le précieux &dMelodium&f."
+				" "
+				"&fC'est avec ce cadre que vous pourrez commencer à automatiser l'extraction d'Éther et les traitements chimiques complexes."
+			]
+			id: "35FF6E9B36EE25B0"
+			rewards: [{
+				count: 2
+				id: "32204D417F2EB979"
+				item: "thermalendergy:melodium_ingot"
+				type: "item"
+			}]
+			subtitle: "&7\"La résonance du Melodium\""
+			tasks: [{
+				consume_items: false
+				id: "080689111F305437"
+				item: "industrialforegoing:machine_frame_advanced"
+				type: "item"
+			}]
+			title: "&6La Structure Renforcée"
+			x: 0.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["35FF6E9B36EE25B0"]
+			description: [
+				"&fVoici le châssis ultime d'Industrial Foregoing. Il demande une maîtrise totale de l'atome avec l'&cAtomic Alloy&f et la puissance stellaire du &6Stellarium&f."
+				" "
+				"&fC'est la base indispensable pour les Laser Drills et les machines capables de plier la réalité."
+			]
+			id: "67780A5DBCFC950F"
+			rewards: [{
+				count: 2
+				id: "0CF2E80F85F4BEE3"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			subtitle: "&7\"L'éclat du Stellarium\""
+			tasks: [{
+				consume_items: false
+				id: "6602291B532AF1D4"
+				item: "industrialforegoing:machine_frame_supreme"
+				type: "item"
+			}]
+			title: "&cLe Sommet de l'Industrie"
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["67780A5DBCFC950F"]
+			description: [
+				"&fLa &dDissolution Chamber&f est l'étape suivante pour Industrial Foregoing. Elle permet de mélanger des fluides avec des items pour créer des composants avancés."
+				" "
+				"&fC'est ici que vous fabriquerez vos futurs tiers de Machine Frames et vos premiers composants d'Ether."
+			]
+			id: "484D33F95BCD2619"
+			rewards: [{
+				count: 8
+				id: "082EF333D510F447"
+				item: "industrialforegoing:dryrubber"
+				type: "item"
+			}]
+			subtitle: "&7\"Mélanges moléculaires complexes\""
+			tasks: [{
+				consume_items: false
+				id: "32E9383C757F0699"
+				item: "industrialforegoing:dissolution_chamber"
+				type: "item"
+			}]
+			title: "&dLa Chambre de Dissolution"
+			x: 0.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["484D33F95BCD2619"]
+			description: [
+				"&fPour aller plus loin avec Mekanism, vous allez avoir besoin de &bBrine&f et de &eLithium&f."
+				" "
+				"&fConstruisez une tour d'évaporation thermique. Plus elle est haute, plus elle est efficace. Elle sera le pilier de votre production chimique pour les alliages de Tier 2 et 3."
+			]
+			id: "03D3FE9A23F93194"
+			rewards: [{
+				count: 16
+				id: "3C36BDE405A02E06"
+				item: "mekanism:thermal_evaporation_block"
+				type: "item"
+			}]
+			subtitle: "&7\"Extraire la saumure du soleil\""
+			tasks: [{
+				consume_items: false
+				id: "360AD5FF02F135B7"
+				item: "mekanism:thermal_evaporation_controller"
+				type: "item"
+			}]
+			title: "&eL'Évaporation Solaire"
+			x: 0.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["03D3FE9A23F93194"]
+			description: [
+				"&fQue vous ayez choisi &bRefined Storage&f ou &dApplied Energistics 2&f, il est temps de fabriquer vos premiers composants de stockage."
+				" "
+				"&fUtilisez du &fPlastique&f et vos &aCircuits&f pour stabiliser la matrice de stockage. Ce n'est que le début, les capacités vont grimper très vite !"
+			]
+			id: "0BF72E3F47A48087"
+			rewards: [{
+				count: 4
+				id: "3412341D321D1766"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			subtitle: "&7\"Vos premiers octets de stockage\""
+			tasks: [
+				{
+					consume_items: false
+					id: "276AC89F4BD15D92"
+					item: "ae2:cell_component_1k"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "56D307EF84F8478A"
+					item: "refinedstorage:1k_storage_part"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["0BF72E3F47A48087"]
+			description: [
+				"&fL'&bInscriber&f est indispensable pour AE2. C'est ici que vous presserez vos processeurs logiques, de calcul et d'ingénierie."
+				" "
+				"&fLe craft demande maintenant un &eSimple Machine Frame&f pour supporter la pression nécessaire à la gravure des cristaux de Fluix."
+			]
+			id: "0C0F04FFE178B53B"
+			rewards: [{
+				id: "23B1211ACF2D6DFD"
+				item: "ae2:silicon_press"
+				type: "item"
+			}]
+			subtitle: "&7\"Presser le silicium\""
+			tasks: [{
+				consume_items: false
+				id: "7804CED0ADB0F900"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			title: "&bLa Gravure de Données"
+			x: -1.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["0BF72E3F47A48087"]
+			description: [
+				"&fPour Refined Storage, oubliez la table de craft. Vous devez utiliser la &dDissolution Chamber&f et du &fLatex&f liquide pour lier vos processeurs."
+				" "
+				"&fC'est plus complexe, mais cela garantit des composants bien plus stables pour votre réseau de stockage."
+			]
+			id: "37D48A6A81B8DC6C"
+			rewards: [{
+				count: 8
+				id: "25114BFACAF9B7EC"
+				item: "refinedstorage:processor_binding"
+				type: "item"
+			}]
+			subtitle: "&7\"La voie de la Dissolution\""
+			tasks: [{
+				consume_items: false
+				id: "353D02DDE7E1B5C5"
+				item: "refinedstorage:basic_processor"
+				type: "item"
+			}]
+			title: "&3La Chimie des Processeurs"
+			x: -1.5d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"37D48A6A81B8DC6C"
+				"0C0F04FFE178B53B"
+			]
+			description: [
+				"&fLa &6Precision Sawmill&f n'est pas juste un gadget. Elle permet de maximiser votre rendement de bois, mais elle sera surtout utile pour découper certains composants technologiques plus tard."
+				" "
+				"&fElle s'appuie sur la technologie des châssis d'IF pour une stabilité parfaite."
+			]
+			id: "27899A7E7D9E400E"
+			rewards: [{
+				count: 8
+				id: "23B3186AB7A89F8B"
+				item: "alltheores:steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "6D74162C7944C117"
+				item: "mekanism:precision_sawmill"
+				type: "item"
+			}]
+			title: "&6Découpe de Précision"
+			x: -3.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["27899A7E7D9E400E"]
+			description: [
+				"&fLe &bSéparateur Électrolytique&f est votre premier pas dans la manipulation des gaz. En y injectant de l'eau, vous allez séparer les molécules pour obtenir deux gaz essentiels."
+				" "
+				"&fL'&lHydrogène&r servira de carburant ou de réactif, tandis que l'&lOxygène&r sera la clé pour augmenter le rendement de vos minerais."
+				" "
+				"&eAstuce :&f Pensez à gérer l'excès de gaz (Dump Idle) si l'un des deux réservoirs est plein, sinon la machine s'arrêtera."
+			]
+			id: "7EFD2B7C0C33622F"
+			rewards: [{
+				count: 2
+				id: "726B0314AEC5EB4F"
+				item: "mekanism:upgrade_gas"
+				type: "item"
+			}]
+			subtitle: "&7\"Briser les molécules\""
+			tasks: [{
+				consume_items: false
+				id: "3D444D62EA4A1CBB"
+				item: "mekanism:electrolytic_separator"
+				type: "item"
+			}]
+			title: "&bLa Séparation Électrolytique"
+			x: -4.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["7EFD2B7C0C33622F"]
+			description: [
+				"&fEn envoyant l'&lOxygène&r produit par votre séparateur dans la &2Purification Chamber&f, vous passez au traitement des minerais de palier 3."
+				" "
+				"&fCe procédé transforme vos minerais bruts en &aClumps&f, ce qui vous permet d'obtenir plus de lingots qu'avec un simple enrichissement."
+				" "
+				"&cNote :&f Ce palier demande un &6Advanced Machine Frame&f car la pression d'oxygène nécessaire est bien plus élevée que dans une chambre d'enrichissement classique."
+			]
+			id: "2470497FEEE6DBE4"
+			rewards: [{
+				id: "1A4B72446DC675B6"
+				item: "mekanism:oxygen_bucket"
+				type: "item"
+			}]
+			subtitle: "&7\"L'Oxygène comme catalyseur\""
+			tasks: [{
+				consume_items: false
+				id: "4DEE6DF27FE3FF15"
+				item: "mekanism:purification_chamber"
+				type: "item"
+			}]
+			title: "&2La Voie de la Purification (x3)"
+			x: -5.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["2470497FEEE6DBE4"]
+			description: [
+				"&fL'&eEnergy Tablet&f est le composant de base de toutes les machines et outils avancés de Mekanism."
+				" "
+				"&fGrâce au &eLithium&f extrait de vos tours, vous pouvez enfin fabriquer des cellules de stockage denses capables d'alimenter vos futurs Laser Drills et votre réseau digital."
+			]
+			id: "4736084EC8EEC933"
+			rewards: [{
+				count: 4
+				id: "53261663411C328A"
+				item: "mekanism:dust_lithium"
+				type: "item"
+			}]
+			subtitle: "&7\"Condenser la puissance du Lithium\""
+			tasks: [{
+				consume_items: false
+				id: "4D51AE4A037FD562"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
+			title: "&eLe Stockage d'Énergie Mobile"
+			x: -6.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["4736084EC8EEC933"]
+			description: [
+				"&fPour AE2, le passage par la &dDissolution Chamber&f est maintenant obligatoire pour assembler vos processeurs."
+				" "
+				"&fLe &eLithium&f liquide agit ici comme un stabilisateur thermique, permettant de souder les circuits imprimés sans endurer de pertes de données."
+			]
+			id: "76D7E1B54C44B4B5"
+			rewards: [{
+				count: 8
+				id: "02AF58ED6FE37C79"
+				item: "ae2:printed_silicon"
+				type: "item"
+			}]
+			subtitle: "&7\"Calculs à haute température\""
+			tasks: [{
+				consume_items: false
+				id: "4892C5434A9382FC"
+				item: "ae2:calculation_processor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["76D7E1B54C44B4B5"]
+			description: [
+				"&fSi vous avez choisi Applied Energistics, préparez-vous à manipuler des composants de plus en plus denses."
+				" "
+				"&fPour assembler les composants de &b16k&f et &b64k&f, la table de craft est devenue trop imprécise. Vous devez plonger vos processeurs dans la &dChambre de Dissolution&f."
+				" "
+				"&fLa &b(Brine)&f sert à stabiliser le Fluix pour le palier 16k, tandis que le &eLithium&f est indispensable pour atteindre les 64k sans effondrement de la matrice."
+			]
+			id: "4A3343ECAB2F0D12"
+			rewards: [{
+				count: 8
+				id: "3FDDB7C91D1C9DAA"
+				item: "ae2:fluix_smart_cable"
+				type: "item"
+			}]
+			subtitle: "&7\"L'art de la compression spatiale\""
+			tasks: [
+				{
+					consume_items: false
+					id: "17E7C3FF6A636BDC"
+					item: "ae2:cell_component_64k"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5EA350298108739B"
+					item: "ae2:cell_component_16k"
+					type: "item"
+				}
+			]
+			title: "&dLa Matrice d'Energistics"
+			x: -8.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["76D7E1B54C44B4B5"]
+			description: [
+				"&fRefined Storage mise sur la simplicité, mais la haute capacité demande quand même du sérieux."
+				" "
+				"&fLe passage par la &dChambre de Dissolution&f est ici utilisé pour \"souder\" les circuits de Redstone à haute pression. Utiliser la &bBrine&f permet de créer des liaisons parfaites pour vos Storage Parts de 16k."
+				" "
+				"&fPour le palier 64k, l'injection de &eLithium&f liquide permet d'aligner les électrons et de garantir que vos millions d'items ne finissent pas en erreur système."
+			]
+			id: "6FDE5B25480A8F93"
+			rewards: [{
+				count: 16
+				id: "306FCC2FE080B059"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			subtitle: "&7\"Optimisation des flux de données\""
+			tasks: [
+				{
+					consume_items: false
+					id: "02538854533CBF76"
+					item: "refinedstorage:64k_storage_part"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1E3A8894412C78FF"
+					item: "refinedstorage:16k_storage_part"
+					type: "item"
+				}
+			]
+			title: "&bL'Architecture de Refined"
+			x: -8.0d
+			y: -13.5d
+		}
+		{
+			description: [
+				"&fLe &bCrafter&f est l'outil ultime de Refined Storage. Connecté à votre réseau, il vous permet d'automatiser n'importe quelle recette."
+				" "
+				"&fSa structure repose sur un &8Steel Casing&f de Mekanism pour supporter les vibrations des micro-assemblages répétitifs."
+			]
+			id: "42FEBA52A772EDE4"
+			rewards: [{
+				count: 16
+				id: "50178B2B413EA2AC"
+				item: "refinedstorage:pattern"
+				type: "item"
+			}]
+			subtitle: "&7\"Déléguer le travail manuel\""
+			tasks: [{
+				consume_items: false
+				id: "0F9847E85FD50EBF"
+				item: "refinedstorage:crafter"
+				type: "item"
+			}]
+			title: "&6L'Esprit de la Machine (RS)"
+			x: -9.0d
+			y: -13.5d
+		}
+		{
+			description: [
+				"&fPour AE2, l'autocraft demande deux blocs : le &dPattern Provider&f qui stocke les recettes, et le &fMolecular Assembler&f qui fabrique l'item."
+				" "
+				"&fEn utilisant un &8Steel Casing&f comme socle, vous garantissez une précision de craft que même vos mains ne peuvent égaler."
+			]
+			id: "4501DDCD2C7F7723"
+			rewards: [{
+				count: 16
+				id: "3A9DD114C51FDFDB"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
+			subtitle: "&7\"L'assemblage au niveau atomique\""
+			tasks: [
+				{
+					consume_items: false
+					id: "412675E532151882"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "39D6C20710AAF23C"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+			]
+			title: "&dLa Forge Moléculaire (AE2)"
+			x: -9.0d
+			y: -17.5d
+		}
+		{
+			description: [
+				"&fLe Pattern Provider ne suffit pas : AE2 a besoin de puissance de calcul pour planifier les crafts complexes. Les &eCrafting Units&f sont les briques de vos futurs processeurs de craft."
+				" "
+				"&fPlus vous empilez de stockage de craft (1k, 4k Co-processors), plus votre système pourra gérer de tâches simultanément."
+			]
+			id: "4927ED706C9C9068"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A9A2C490C833E81"
+				table_id: 5871764666515020368L
+				type: "random"
+			}]
+			subtitle: "&7\"Monter un CPU de craft\""
+			tasks: [{
+				consume_items: false
+				id: "130F8BD067DDCA01"
+				item: "ae2:crafting_unit"
+				type: "item"
+			}]
+			title: "&eLe Cerveau de Calcul (AE2)"
+			x: -10.0d
+			y: -17.5d
+		}
+	]
+	title: "&6Manipuler l'atome&f, &bnumériser le monde"
+}

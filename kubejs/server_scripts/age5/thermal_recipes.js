@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
 
-    // --- 1. CHÂSSIS DE BASE (MACHINE FRAME) ---
+    // --- MACHINE FRAME ---
     event.remove({ output: 'thermal:machine_frame' })
     event.shaped('thermal:machine_frame', [
         'IXI',
@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         C: 'create:brass_casing'               
     }).id('entropy:age5/machine_frame_expert')
 
-    // --- 2. LOGISTIQUE DE DÉPART ---
+    // --- LOGISTIQUE PIPEZ ---
     event.remove({ output: 'pipez:item_pipe' })
     event.shaped('16x pipez:item_pipe', [
         'BBB',
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         X: 'xycraft_world:xychorium_gem_blue'
     }).id('entropy:age5/item_pipe_expert')
 
-    // --- 3. FLUX NETWORKS ---
+    // --- FLUX NETWORKS ---
     event.remove({ output: 'fluxnetworks:flux_dust' })
     event.shapeless('4x fluxnetworks:flux_dust', [
         'minecraft:redstone_block',
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
         M: 'thermal:machine_frame'
     }).id('entropy:age5/flux_core_expert')
 
-    // --- 4. MYSTICAL AGRICULTURE (SEEDS) ---
+    // --- MYSTICAL AGRICULTURE SEEDS ---
     event.remove({ id: 'mysticalagriculture:seed/infusion/invar' })
     event.shaped('mysticalagriculture:invar_seeds', [
         'LFL',
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
         S: 'mysticalagriculture:prosperity_seed_base'
     }).id('entropy:age5/mystical_nickel_expert')
 
-    // --- 5. LES MACHINES DE RAFFINEMENT ---
+    // --- THERMAL MACHINES ---
     event.remove({ output: 'thermal:machine_pulverizer' })
     event.shaped('thermal:machine_pulverizer', [
         ' P ',
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
         E: 'thermal:constantan_gear'
     }).id('entropy:age5/encapsulator_expert')
 
-    // --- 6. INTEGRAL COMPONENTS (UPGRADES) ---
+    // --- THERMAL UPGRADES ---
     event.remove({ output: 'thermal:upgrade_augment_1' })
     event.shaped('thermal:upgrade_augment_1', [
         'IBI',
@@ -143,7 +143,7 @@ ServerEvents.recipes(event => {
         U: 'thermal:upgrade_augment_2'
     }).id('entropy:age5/upgrade_tier_3')
 
-    // --- 7. SIGNALUM EXCLUSIF ---
+    // --- ALLIAGES DE BASE THERMAL (SMELTER ONLY) ---
     event.remove({ output: 'thermal:signalum_dust' })
     event.custom({
         type: 'thermal:smelter',
@@ -157,13 +157,6 @@ ServerEvents.recipes(event => {
         energy: 15000
     }).id('entropy:age5/smelter_signalum_exclusive')
 
-    // --- 8. VERROUILLAGE ALLIAGES MANUELS ---
-    event.remove({ output: 'thermal:invar_ingot', type: 'minecraft:crafting_shapeless' })
-    event.remove({ output: 'thermal:electrum_ingot', type: 'minecraft:crafting_shapeless' })
-    event.remove({ output: 'thermal:invar_dust' })
-    event.remove({ output: 'thermal:electrum_dust' })
-
-// --- 9. ALLIAGE : ENDERIUM (SMELTER) ---
     event.remove({ output: 'thermal:enderium_dust' })
     event.remove({ id: 'thermal:machines/smelter/smelter_alloy_enderium' })
     event.custom({
@@ -177,4 +170,48 @@ ServerEvents.recipes(event => {
         result: [{ item: 'thermal:enderium_ingot', count: 4 }],
         energy: 25000
     }).id('entropy:age5/smelter_enderium_exclusive')
+
+    // --- THERMAL ENDERGY ALLOYS & UPGRADES ---
+    event.remove({ output: 'thermalendergy:prismalium_ingot' })
+    event.custom({
+        type: 'thermal:smelter',
+        ingredients: [
+            { item: 'thermal:enderium_ingot', count: 2 },
+            { item: 'xycraft_world:xychorium_gem_light', count: 2 },
+            { item: 'minecraft:prismarine_shards', count: 4 }
+        ],
+        result: [{ item: 'thermalendergy:prismalium_ingot', count: 2 }],
+        energy: 30000
+    }).id('entropy:age5/smelter_prismalium')
+
+    event.remove({ output: 'thermalendergy:melodium_ingot' })
+    event.custom({
+        type: 'thermal:smelter',
+        ingredients: [
+            { item: 'thermalendergy:prismalium_ingot', count: 1 },
+            { item: 'xycraft_world:xychorium_gem_dark', count: 1 },
+            { item: 'minecraft:chorus_fruit', count: 4 }
+        ],
+        result: [{ item: 'thermalendergy:melodium_ingot', count: 1 }],
+        energy: 45000
+    }).id('entropy:age5/smelter_melodium')
+
+    event.remove({ output: 'thermalendergy:stellarium_ingot' })
+    event.custom({
+        type: 'thermal:smelter',
+        ingredients: [
+            { item: 'thermalendergy:melodium_ingot', count: 1 },
+            { item: 'xycraft_world:xychorium_gem_red', count: 2 },
+            { item: 'minecraft:nether_star', count: 1 }
+        ],
+        result: [{ item: 'thermalendergy:stellarium_ingot', count: 1 }],
+        energy: 100000
+    }).id('entropy:age5/smelter_stellarium')
+
+    // --- ALLOY CLEANUP ---
+    event.remove({ output: 'thermal:invar_ingot', type: 'minecraft:crafting_shapeless' })
+    event.remove({ output: 'thermal:electrum_ingot', type: 'minecraft:crafting_shapeless' })
+    event.remove({ output: 'thermal:invar_dust' })
+    event.remove({ output: 'thermal:electrum_dust' })
+
 })

@@ -218,6 +218,13 @@ ServerEvents.recipes(event => {
     ], {
         E: 'mysticalagriculture:lead_essence'
     })
+      event.shaped('alltheores:enderium_ingot', [
+        '  E',
+        'EE ',
+        '  E'
+    ], {
+        E: 'mysticalagriculture:enderium_essence'
+    })
 })
 
 

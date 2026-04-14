@@ -328,7 +328,7 @@
 				item: "thermal:enderium_ingot"
 				type: "item"
 			}]
-			shape: "pentagon"
+			shape: "octagon"
 			size: 2.0d
 			subtitle: "&7\"Le sommet de la technologie thermique.\""
 			tasks: [{
@@ -341,6 +341,84 @@
 			title: "&bL'Alliage de l'Infini"
 			x: 13.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["323D227A8C597AFE"]
+			description: [
+				"&fEn combinant l'&bEnderium&f avec des éclats abyssaux, vous obtenez le &3Prismalium&f."
+				" "
+				"&fCet alliage permet de créer l'&eEndergy Upgrade 1&f, dépassant les limites de vitesse standards."
+			]
+			id: "70D297B0F264539A"
+			tasks: [
+				{
+					consume_items: false
+					id: "7B7CA38EFAADAACA"
+					item: "thermalendergy:prismalium_ingot"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "383B930564BC77F0"
+					item: "thermalendergy:endergy_upgrade_1"
+					type: "item"
+				}
+			]
+			title: "&bPrismalium et Augment"
+			x: 13.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["323D227A8C597AFE"]
+			description: [
+				"&fInfusez votre Prismalium avec l'essence du Chorus. Le &dMelodium&f résonne avec une fréquence énergétique instable mais surpuissante."
+				" "
+				"&fIndispensable pour l'&eEndergy Upgrade 2&f."
+			]
+			id: "087662EBD74EC801"
+			tasks: [
+				{
+					consume_items: false
+					id: "6F98705D747E4545"
+					item: "thermalendergy:melodium_ingot"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "01EDB0590B43B5F3"
+					item: "thermalendergy:endergy_upgrade_2"
+					type: "item"
+				}
+			]
+			title: "&dMelodium et Augment"
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["323D227A8C597AFE"]
+			description: [
+				"&fLe sommet de l'ingénierie thermique. Le &fStellarium&f utilise la puissance d'une étoile du Nether pour saturer vos machines de puissance."
+				" "
+				"&fL'&eEndergy Upgrade 3&f représente la vitesse absolue."
+			]
+			id: "23CDE754DFB13C91"
+			tasks: [
+				{
+					consume_items: false
+					id: "04579E7F3B3BEA4C"
+					item: "thermalendergy:stellarium_ingot"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "436DA158A06B8F9A"
+					item: "thermalendergy:endergy_upgrade_3"
+					type: "item"
+				}
+			]
+			title: "&fStellarium et Augment"
+			x: 13.0d
+			y: -1.0d
 		}
 	]
 	title: "&6L'art &ede &6maîtriser &f le &bflux &3et &f la &cchaleur"
