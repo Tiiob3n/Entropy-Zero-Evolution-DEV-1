@@ -603,10 +603,13 @@
 			y: -13.5d
 		}
 		{
+			dependencies: ["6FDE5B25480A8F93"]
 			description: [
-				"&fLe &bCrafter&f est l'outil ultime de Refined Storage. Connecté à votre réseau, il vous permet d'automatiser n'importe quelle recette."
+				"&fRefined Storage mise sur l'efficacité directe. Le &bCrafter&f est l'unique bloc dont vous avez besoin pour apprendre des recettes à votre réseau."
 				" "
-				"&fSa structure repose sur un &8Steel Casing&f de Mekanism pour supporter les vibrations des micro-assemblages répétitifs."
+				"&fPlacez-le contre une machine Mekanism pour automatiser les circuits, ou laissez-le seul pour les crafts de table classiques."
+				" "
+				"&cAttention :&f Sa fabrication demande un &8Steel Casing&f robuste pour supporter les cadences infernales que vous allez lui imposer."
 			]
 			id: "42FEBA52A772EDE4"
 			rewards: [{
@@ -622,43 +625,12 @@
 				item: "refinedstorage:crafter"
 				type: "item"
 			}]
-			title: "&6L'Esprit de la Machine (RS)"
-			x: -9.0d
+			title: "&bL'Automatisation Industrielle"
+			x: -10.0d
 			y: -13.5d
 		}
 		{
-			description: [
-				"&fPour AE2, l'autocraft demande deux blocs : le &dPattern Provider&f qui stocke les recettes, et le &fMolecular Assembler&f qui fabrique l'item."
-				" "
-				"&fEn utilisant un &8Steel Casing&f comme socle, vous garantissez une précision de craft que même vos mains ne peuvent égaler."
-			]
-			id: "4501DDCD2C7F7723"
-			rewards: [{
-				count: 16
-				id: "3A9DD114C51FDFDB"
-				item: "ae2:blank_pattern"
-				type: "item"
-			}]
-			subtitle: "&7\"L'assemblage au niveau atomique\""
-			tasks: [
-				{
-					consume_items: false
-					id: "412675E532151882"
-					item: "ae2:molecular_assembler"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "39D6C20710AAF23C"
-					item: "ae2:pattern_provider"
-					type: "item"
-				}
-			]
-			title: "&dLa Forge Moléculaire (AE2)"
-			x: -9.0d
-			y: -17.5d
-		}
-		{
+			dependencies: ["4A3343ECAB2F0D12"]
 			description: [
 				"&fLe Pattern Provider ne suffit pas : AE2 a besoin de puissance de calcul pour planifier les crafts complexes. Les &eCrafting Units&f sont les briques de vos futurs processeurs de craft."
 				" "
@@ -679,8 +651,535 @@
 				type: "item"
 			}]
 			title: "&eLe Cerveau de Calcul (AE2)"
+			x: -9.0d
+			y: -17.5d
+		}
+		{
+			dependencies: ["4927ED706C9C9068"]
+			description: [
+				"&fApplied Energistics ne se contente pas de stocker, il forge. Pour automatiser vos crafts, vous aurez besoin de deux composants clés :"
+				" "
+				"* &bLe Pattern Provider :&f Le cerveau. Il contient vos recettes (Patterns) et distribue les ressources."
+				"* &bLe Molecular Assembler :&f Les bras. C'est ici que les items sont assemblés instantanément."
+				" "
+				"&6Note :&f N'oubliez pas de construire une &eCrafting Unit&f pour donner de la mémoire vive à votre système !"
+			]
+			id: "08C919E3A48AE1B5"
+			rewards: [{
+				count: 16
+				id: "1BD37F04D700FB51"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
+			subtitle: "&7\"L'assemblage par la pensée\""
+			tasks: [
+				{
+					consume_items: false
+					id: "5B091B1E89DBE483"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "422A537EFC15175E"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+			]
+			title: "&dLa Logistique Moléculaire"
 			x: -10.0d
 			y: -17.5d
+		}
+		{
+			dependencies: ["08C919E3A48AE1B5"]
+			description: [
+				"&fVos Molecular Assemblers et vos Inscribers sont trop lents ? Il est temps de les doper."
+				" "
+				"&fLes &dAcceleration Cards&f permettent de traiter les opérations beaucoup plus vite. En les combinant avec une &9Interface&f universelle (qui gère items et fluides), votre réseau AE2 devient le cœur battant de votre usine."
+				" "
+				"&6Astuce :&f L'Interface peut aussi servir à maintenir un stock constant de ressources dans une machine."
+			]
+			id: "5284C8B75E0955C5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53D1E3771EE834B3"
+				table_id: 8684226449189553635L
+				type: "random"
+			}]
+			subtitle: "&7\"Réduire la latence au minimum\""
+			tasks: [
+				{
+					consume_items: false
+					id: "662078CF6B9D03D3"
+					item: "ae2:speed_card"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1DC93CD338B41874"
+					item: "ae2:interface"
+					type: "item"
+				}
+			]
+			title: "&dAccélération de la Matrice"
+			x: -11.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["42FEBA52A772EDE4"]
+			description: [
+				"&fPour que Refined Storage suive la cadence de Mekanism, vous devez passer à la vitesse supérieure."
+				" "
+				"&fLa &bFluid Interface&f vous permet d'exporter et d'importer vos gaz et liquides Mekanism comme s'il s'agissait de simples blocs de terre. Couplez cela avec des &eSpeed Upgrades&f dans vos Crafters, et vous ne verrez plus jamais la barre de progression bouger."
+			]
+			id: "08A8357924E9E01D"
+			rewards: [{
+				count: 16
+				id: "02054DC48C28A596"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			subtitle: "&7\"Optimisation des transferts\""
+			tasks: [
+				{
+					consume_items: false
+					id: "53AB762746CA6010"
+					item: "refinedstorage:speed_upgrade"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3A79DE067BFA9758"
+					item: "refinedstorage:fluid_interface"
+					type: "item"
+				}
+			]
+			title: "&bFlux de Données Liquides"
+			x: -11.0d
+			y: -15.0d
+		}
+		{
+			description: [
+				"&fL'autocraft est installé, mais il va vite se heurter à un mur : le Metallurgic Infuser."
+				" "
+				"&fCette machine ne peut pas changer de gaz toute seule. Si vous envoyez du Diamant alors qu'elle contient de la Redstone, tout s'arrête. La solution ? &lDédier une machine par type d'infusion.&r"
+				" "
+				"&fUtilisez le &6Logistical Sorter&f pour diriger les bons items vers les bons infusers. C'est le secret d'une usine qui ne dort jamais."
+			]
+			id: "01109A7DB4009978"
+			rewards: [{
+				count: 16
+				id: "7584F70D98A724A5"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
+			subtitle: "&7\"Dédier pour mieux régner\""
+			tasks: [
+				{
+					consume_items: false
+					id: "5ECB10585DB77A3E"
+					item: "mekanism:logistical_sorter"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 4L
+					id: "046723A14526A0E3"
+					item: { Count: 4, id: "mekanism:metallurgic_infuser" }
+					type: "item"
+				}
+			]
+			title: "&6La Chaîne de Montage"
+			x: -12.5d
+			y: -15.5d
+		}
+		{
+			description: [
+				"&fPour que votre chaîne de montage fonctionne, chaque machine doit savoir quoi faire de ses items finis."
+				" "
+				"&fLe &eConfigurator&f est l'outil indispensable. Shift-clic sur un tuyau pour changer son mode, ou utilisez-le sur une machine pour définir les entrées (bleu) et les sorties (rouge)."
+				" "
+				"&6Le réglage parfait :&f Réglez vos infusers en &lAuto-Eject : ON&r. Vos circuits retourneront directement dans votre terminal dès qu'ils seront prêts."
+			]
+			id: "379F6E1A55677D94"
+			rewards: [{
+				count: 4
+				id: "71CA41FBE0F4CF4B"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			subtitle: "&7\"Maîtriser les flux\""
+			tasks: [{
+				consume_items: false
+				id: "0D980F7CF2049401"
+				item: "mekanism:configurator"
+				type: "item"
+			}]
+			title: "&eLe Chef d'Orchestre"
+			x: -13.5d
+			y: -15.5d
+		}
+		{
+			description: [
+				"&fGrâce à vos graines de &aMystical Agriculture&f, vous avez accès à de la biomasse infinie. Mais la brûler telle quelle est inefficace."
+				" "
+				"&fUtilisez la &2PRC&f pour combiner du Bio Fuel, de l'Eau et de l'Hydrogène. Vous obtiendrez du &6Substrat&f (utile pour les upgrades) et surtout de l'&dÉthylène&f, un gaz extrêmement inflammable."
+			]
+			id: "7B30DCBC9AC53DB5"
+			rewards: [{
+				count: 32
+				id: "00EAFBA523C3CDCB"
+				item: "mekanism:bio_fuel"
+				type: "item"
+			}]
+			subtitle: "&7\"Transformer les plantes en Watts\""
+			tasks: [
+				{
+					consume_items: false
+					id: "779E7181415F4DCD"
+					item: "mekanism:pressurized_reaction_chamber"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4B6C948C97A95DC7"
+					item: "mekanism:electrolytic_separator"
+					type: "item"
+				}
+			]
+			title: "&2Le Carburant Vert"
+			x: -14.5d
+			y: -15.5d
+		}
+		{
+			description: [
+				"&fLe &eGas-Burning Generator&f est l'une des machines les plus rentables du mod. Injectez-y de l'Éthylène et il produira des quantités massives d'énergie."
+				" "
+				"&fCouplez-en plusieurs pour alimenter votre chaîne de montage et vos systèmes de stockage sans jamais regarder votre batterie."
+			]
+			id: "28E908A5A6680A5A"
+			rewards: [{
+				count: 8
+				id: "2AF6E79D6B951600"
+				item: "mekanism:upgrade_energy"
+				type: "item"
+			}]
+			subtitle: "&7\"La fin des problèmes d'énergie\""
+			tasks: [{
+				consume_items: false
+				id: "42D1488746ABBADB"
+				item: "mekanismgenerators:gas_burning_generator"
+				type: "item"
+			}]
+			title: "&eLe Feu Liquide"
+			x: -15.5d
+			y: -15.5d
+		}
+		{
+			description: [
+				"&fMarre d'attendre devant vos machines ? Il est temps de fabriquer des &lSpeed Upgrades&r en masse."
+				" "
+				"&fChaque machine peut en recevoir 8. Attention, cela multiplie aussi la consommation d'énergie par 10 ! J'espère que votre production d'Éthylène est solide."
+			]
+			id: "5FD7A9B176C4DAC6"
+			rewards: [{
+				count: 8
+				id: "7970B80B67DDED74"
+				item: "mekanism:upgrade_energy"
+				type: "item"
+			}]
+			subtitle: "&7\"10x plus vite\""
+			tasks: [{
+				consume_items: false
+				count: 8L
+				id: "543615CB26CB3F0A"
+				item: "mekanism:upgrade_speed"
+				type: "item"
+			}]
+			title: "&bLa Course à la Vitesse"
+			x: -16.5d
+			y: -15.5d
+		}
+		{
+			description: [
+				"&fPourquoi s'embêter avec une pioche en diamant quand on peut avoir un laser de minage ?"
+				" "
+				"&fLe &dMeka-Tool&f est modulaire. Via une Modification Station, vous pourrez lui ajouter le minage en 3x3, un mode Silk Touch, ou même une fonction de téléportation."
+				" "
+				"&6Note :&f Il nécessite de l'énergie pour fonctionner, chargez-le dans un cube d'énergie."
+			]
+			id: "5477269C45C54386"
+			rewards: [
+				{
+					id: "3E7AB4ECBF8A6584"
+					item: "mekanism:module_base"
+					type: "item"
+				}
+				{
+					id: "7D32A21EC1ED1412"
+					item: "mekanism:module_energy_unit"
+					type: "item"
+				}
+			]
+			subtitle: "&7\"L'outil de fin de monde\""
+			tasks: [
+				{
+					consume_items: false
+					id: "6693D9B603738127"
+					item: "mekanism:meka_tool"
+					type: "item"
+				}
+				{
+					id: "0491B5CBEACB3DC8"
+					item: "mekanism:modification_station"
+					type: "item"
+				}
+			]
+			title: "&dLe Roi du Minage"
+			x: -17.5d
+			y: -15.5d
+		}
+		{
+			description: [
+				"&fEn infusant de l'&8Obsidienne Raffinée&f dans vos alliages renforcés, vous obtenez l'&dAlliage Atomique&f."
+				" "
+				"&fC'est le composant le plus avancé de Mekanism. Il est nécessaire pour toutes les machines de fin d'Âge et pour votre équipement personnel de haut vol."
+			]
+			id: "08A7FD79C31A44A0"
+			rewards: [{
+				count: 5
+				id: "059C39FDA8893A29"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "79E92B44290B67D6"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			title: "&dLa Quintessence Métallique"
+			x: -18.5d
+			y: -15.5d
+		}
+		{
+			description: [
+				"&fL'alliage Atomique n'était que le début. Pour atteindre les sommets technologiques de cet Âge, vous devez compresser la matière à des niveaux &6Subatomiques&f."
+				" "
+				"&fCes alliages demandent des quantités de réactifs astronomiques. Votre ligne de Montage d'Infusers va devoir tourner à plein régime pour fournir ces composants."
+			]
+			id: "4659BFEE222BB330"
+			rewards: [{
+				count: 8
+				id: "2F4F9A9F481C0DAB"
+				item: "evolvedmekanism:ingot_better_gold"
+				type: "item"
+			}]
+			subtitle: "&7\"Réécrire les lois de la matière\""
+			tasks: [
+				{
+					consume_items: false
+					id: "43483D7F0AFBF8CF"
+					item: "evolvedmekanism:alloy_subatomic"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5C3786CCCE1EBED4"
+					item: "evolvedmekanism:alloy_hypercharged"
+					type: "item"
+				}
+			]
+			title: "&dLa Physique des Particules"
+			x: -19.5d
+			y: -15.5d
+		}
+		{
+			description: [
+				"&fLes circuits d'élite ne suffisent plus pour gérer vos futurs systèmes de téléportation ou votre MekaSuite. Les &bQuantum Control Circuits&f utilisent la résonance des alliages subatomiques pour traiter des milliards de données par seconde."
+				" "
+				"&fIls sont le cœur de tout ce qui touche à l'Espace-Temps dans cet Âge."
+			]
+			id: "71D4EA9675422430"
+			rewards: [
+				{
+					id: "04D729847354A508"
+					item: "evolvedmekanism:alloy_singular"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "24DCB8F33767A2FA"
+					item: "industrialforegoing:machine_frame_supreme"
+					type: "item"
+				}
+			]
+			subtitle: "&7\"Calculs en temps réel\""
+			tasks: [
+				{
+					consume_items: false
+					id: "74B3D9E4936FAB47"
+					item: "evolvedmekanism:quantum_control_circuit"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4D52CD98868C557A"
+					item: "evolvedmekanism:ingot_plaslitherite"
+					type: "item"
+				}
+			]
+			x: -20.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["349B29A223AC563B"]
+			description: [
+				"&fVotre usine commence à prendre trop de place ? Ou peut-être voulez-vous miner dans d'autres dimensions tout en restant connecté à votre stock ?"
+				" "
+				"&fLe &bQuantum Network Bridge&f permet de lier deux réseaux AE2, peu importe la distance. Pour le construire, il vous faudra 1 &3Link Chamber&f entourée de 8 &8Quantum Rings&f."
+				" "
+				"&6Le secret :&f Pour lier les deux ponts, faites exploser une &fSingularity&f avec de la poudre d'Ender pour obtenir des &dQuantum Entangled Singularities&f jumelées."
+			]
+			id: "6A32C06A9223994F"
+			rewards: [{
+				count: 4
+				id: "270FDAAE40FF4A4B"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			subtitle: "&7\"La distance n'est qu'une illusion\""
+			tasks: [
+				{
+					consume_items: false
+					id: "10C2848FB31A3678"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 8L
+					id: "1D7FAC867EBC9E6D"
+					item: { Count: 8, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+			]
+			title: "&bL'Intrication Quantique"
+			x: -10.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["08C919E3A48AE1B5"]
+			description: [
+				"&fCréer une singularité demande une pression colossale. En utilisant l'Éthylène comme propulseur dans votre &5Dissolution Chamber&f, vous pouvez condenser des piles de matière en un point minuscule."
+				" "
+				"&fC'est l'étape ultime avant la téléportation d'items et d'énergie à travers le multivers."
+			]
+			id: "349B29A223AC563B"
+			rewards: [{
+				count: 64
+				id: "10514A14F5691C42"
+				item: "ae2:matter_ball"
+				type: "item"
+			}]
+			subtitle: "&7\"64 condensés en 1\""
+			tasks: [{
+				consume_items: false
+				id: "2E9FA4C32C96ACAC"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			title: "&3La Compression Infinie"
+			x: -11.5d
+			y: -19.0d
+		}
+		{
+			description: [
+				"&fVos disques de 1M commencent à saturer ? Il est temps de passer à l'échelle supérieure."
+				" "
+				"&fLa &dSingular Alloy&f permet de stabiliser les données à une densité jamais vue. En combinant vos disques AE2 avec des &bQuantum Circuits&f, vous pouvez créer des cellules de 4M, 16M et même 64M d'octets."
+				" "
+				"&6Note :&f L'automatisation de la Singular Alloy est désormais &cOBLIGATOIRE&f pour ne pas finir noyé sous les coffres."
+			]
+			id: "090E81CBAA7A546B"
+			rewards: [{
+				count: 2
+				id: "257C2328720F66DA"
+				item: "evolvedmekanism:alloy_singular"
+				type: "item"
+			}]
+			subtitle: "&7\"Stockez des planètes entières\""
+			tasks: [{
+				consume_items: false
+				id: "2546CE4620E7CCDB"
+				item: "megacells:cell_component_4m"
+				type: "item"
+			}]
+			title: "&dLa Mémoire du Multivers"
+			x: -21.5d
+			y: -15.5d
+		}
+		{
+			description: [
+				"&fLe &eDense Control Circuit&f est le composant ultime pour vos machines de fin d'âge. Il utilise la &6Plaslitherite&f comme isolant pour empêcher vos processeurs de fondre sous la chaleur des calculs quantiques."
+				" "
+				"&fIl vous sera demandé pour :"
+				"* Les &bQIO Drives&f Supermassifs."
+				"* Les modules de la &dMekaSuite&f."
+				"* Les futurs injecteurs d'Antimatière."
+			]
+			id: "13F61A34151466EA"
+			rewards: [{
+				count: 4
+				id: "35FB8DCE272CC4AC"
+				item: "evolvedmekanism:ingot_plaslitherite"
+				type: "item"
+			}]
+			subtitle: "&7\"Une puissance de calcul infinie\""
+			tasks: [{
+				consume_items: false
+				id: "2A2D21071C525CF2"
+				item: "evolvedmekanism:dense_control_circuit"
+				type: "item"
+			}]
+			title: "&eL'Intelligence Dense"
+			x: -22.5d
+			y: -15.5d
+		}
+		{
+			description: [
+				"&fSi AE2 est le roi de l'autocraft, le système &3QIO&f de Mekanism est le roi du stockage pur. Un seul &6QIO Drive Supermassive&f peut contenir plus d'items que 1000 coffres."
+				" "
+				"&fUtilisez vos &5Dense Circuits&f pour fabriquer ces disques et ne plus jamais vous soucier de la place."
+			]
+			id: "284E6D4C6E51877A"
+			rewards: [
+				{
+					id: "438B1B76505D1545"
+					item: "mekanism:qio_dashboard"
+					type: "item"
+				}
+				{
+					id: "7DAC33D26057E6C7"
+					item: "mekanism:qio_drive_array"
+					type: "item"
+				}
+				{
+					id: "69965C16EB9BDE3F"
+					item: "mekanism:portable_qio_dashboard"
+					type: "item"
+				}
+			]
+			subtitle: "&7\"Un inventaire de Dieu\""
+			tasks: [{
+				consume_items: false
+				id: "37C30BEBFD785EFB"
+				item: "mekanism:qio_drive_supermassive"
+				type: "item"
+			}]
+			title: "&3Le QIO : Le Roi du Stockage"
+			x: -23.5d
+			y: -15.5d
 		}
 	]
 	title: "&6Manipuler l'atome&f, &bnumériser le monde"

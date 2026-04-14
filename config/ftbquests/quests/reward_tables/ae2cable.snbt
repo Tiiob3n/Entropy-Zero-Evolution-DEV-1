@@ -1,0 +1,12 @@
+{
+	id: "788491F1CCFEC5E3"
+	loot_size: 1
+	order_index: 17
+	rewards: [
+		{ count: 12, item: "ae2:fluix_smart_cable" }
+		{ count: 12, item: "ae2:fluix_smart_dense_cable" }
+		{ count: 12, item: "ae2:white_smart_cable" }
+		{ count: 12, item: "ae2:white_smart_dense_cable" }
+	]
+	title: "ae2cable"
+}
