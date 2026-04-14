@@ -4,6 +4,8 @@
 	default_quest_shape: ""
 	filename: "bla_rvolution_molculaire_et_digitale"
 	group: "02C4846B8E67A62E"
+	hide_quest_until_deps_complete: true
+	hide_quest_until_deps_visible: true
 	icon: "ae2:spatial_cell_component_128"
 	id: "19AC7D1D0CE539A6"
 	order_index: 0
@@ -25,6 +27,8 @@
 				item: "mekanism:ingot_osmium"
 				type: "item"
 			}]
+			shape: "square"
+			size: 2.0d
 			subtitle: "&7\"Fini de rigoler avec les alliages de base\""
 			tasks: [{
 				consume_items: false
@@ -759,6 +763,10 @@
 			y: -15.0d
 		}
 		{
+			dependencies: [
+				"5284C8B75E0955C5"
+				"08A8357924E9E01D"
+			]
 			description: [
 				"&fL'autocraft est installé, mais il va vite se heurter à un mur : le Metallurgic Infuser."
 				" "
@@ -794,6 +802,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["01109A7DB4009978"]
 			description: [
 				"&fPour que votre chaîne de montage fonctionne, chaque machine doit savoir quoi faire de ses items finis."
 				" "
@@ -820,6 +829,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["379F6E1A55677D94"]
 			description: [
 				"&fGrâce à vos graines de &aMystical Agriculture&f, vous avez accès à de la biomasse infinie. Mais la brûler telle quelle est inefficace."
 				" "
@@ -852,6 +862,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["7B30DCBC9AC53DB5"]
 			description: [
 				"&fLe &eGas-Burning Generator&f est l'une des machines les plus rentables du mod. Injectez-y de l'Éthylène et il produira des quantités massives d'énergie."
 				" "
@@ -876,6 +887,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["28E908A5A6680A5A"]
 			description: [
 				"&fMarre d'attendre devant vos machines ? Il est temps de fabriquer des &lSpeed Upgrades&r en masse."
 				" "
@@ -901,6 +913,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["5FD7A9B176C4DAC6"]
 			description: [
 				"&fPourquoi s'embêter avec une pioche en diamant quand on peut avoir un laser de minage ?"
 				" "
@@ -940,6 +953,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["5477269C45C54386"]
 			description: [
 				"&fEn infusant de l'&8Obsidienne Raffinée&f dans vos alliages renforcés, vous obtenez l'&dAlliage Atomique&f."
 				" "
@@ -963,6 +977,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["08A7FD79C31A44A0"]
 			description: [
 				"&fL'alliage Atomique n'était que le début. Pour atteindre les sommets technologiques de cet Âge, vous devez compresser la matière à des niveaux &6Subatomiques&f."
 				" "
@@ -995,6 +1010,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["4659BFEE222BB330"]
 			description: [
 				"&fLes circuits d'élite ne suffisent plus pour gérer vos futurs systèmes de téléportation ou votre MekaSuite. Les &bQuantum Control Circuits&f utilisent la résonance des alliages subatomiques pour traiter des milliards de données par seconde."
 				" "
@@ -1066,7 +1082,7 @@
 			]
 			title: "&bL'Intrication Quantique"
 			x: -10.0d
-			y: -19.0d
+			y: -15.5d
 		}
 		{
 			dependencies: ["08C919E3A48AE1B5"]
@@ -1090,10 +1106,11 @@
 				type: "item"
 			}]
 			title: "&3La Compression Infinie"
-			x: -11.5d
-			y: -19.0d
+			x: -8.5d
+			y: -15.5d
 		}
 		{
+			dependencies: ["71D4EA9675422430"]
 			description: [
 				"&fVos disques de 1M commencent à saturer ? Il est temps de passer à l'échelle supérieure."
 				" "
@@ -1120,6 +1137,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["090E81CBAA7A546B"]
 			description: [
 				"&fLe &eDense Control Circuit&f est le composant ultime pour vos machines de fin d'âge. Il utilise la &6Plaslitherite&f comme isolant pour empêcher vos processeurs de fondre sous la chaleur des calculs quantiques."
 				" "
@@ -1147,6 +1165,7 @@
 			y: -15.5d
 		}
 		{
+			dependencies: ["04B12D95C063B2DA"]
 			description: [
 				"&fSi AE2 est le roi de l'autocraft, le système &3QIO&f de Mekanism est le roi du stockage pur. Un seul &6QIO Drive Supermassive&f peut contenir plus d'items que 1000 coffres."
 				" "
@@ -1178,7 +1197,154 @@
 				type: "item"
 			}]
 			title: "&3Le QIO : Le Roi du Stockage"
+			x: -24.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["13F61A34151466EA"]
+			description: ["Utilisez vos alliages Hypercharged et Singular pour bâtir cette structure. Une fois finie, elle transformera votre Polonium en Antimatière au taux de 1 pour 1 !"]
+			id: "04B12D95C063B2DA"
+			rewards: [{
+				id: "32F37659C717D339"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					count: 60L
+					id: "1D146EEB131EA3EB"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 3L
+					id: "3531D29E99C1A49F"
+					item: { Count: 3, id: "mekanism:sps_port" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5E8549DB13CBC9B7"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 123L
+					id: "6FE6D52B166041DB"
+					item: { Count: 123, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+			]
+			title: "&bLe Berceau de l'Antimatière"
 			x: -23.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["284E6D4C6E51877A"]
+			description: [
+				"&fVous avez dompté l'antimatière pour forger l'armure technologique la plus avancée qui soit. La &dMekaSuite&f vous offre une invulnérabilité totale tant qu'elle dispose d'énergie."
+				" "
+				"&fC'est le sommet de l'Âge 6. Cependant, gardez à l'esprit que ce n'est que le début. Les énergies draconiques qui vous attendent dans l'Âge 7 feront passer ces composants pour des jouets."
+				" "
+				"&6Prérequis :&f Vous aurez besoin de tout votre parc de machines pour maintenir la charge et fabriquer les modules de modifications."
+			]
+			id: "084020D016D5D81C"
+			rewards: [{
+				id: "56C599C21ABEA238"
+				item: {
+					Count: 1
+					id: "mekanism:ultimate_energy_cube"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "256000000"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "&7\"La pointe de la science avant l'éveil du Dragon\""
+			tasks: [
+				{
+					consume_items: false
+					id: "1B91A95DDBE88D3E"
+					item: "mekanism:mekasuit_helmet"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1233A01A7BF03180"
+					item: "mekanism:mekasuit_bodyarmor"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "3C409C8B616570B6"
+					item: "mekanism:mekasuit_pants"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "43F418AE3A2BD35F"
+					item: "mekanism:mekasuit_boots"
+					type: "item"
+				}
+			]
+			x: -26.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["084020D016D5D81C"]
+			description: [
+				"&fFélicitations ! Vous avez atteint le sommet de la technologie de l'Âge 6. Mais soyons honnêtes : gérer des réacteurs instables, des barils de déchets et attendre le soleil pour vos activateurs, c'est du passé."
+				""
+				"&fGrâce à l'infusion de vos &dAlliages Exoversaux&f et de vos &bPellets d'Antimatière&f, vous pouvez désormais plier la nature à votre volonté."
+				""
+				"&6&l⚠️ PROTOCOLE DE CULTURE&r"
+				"&fCes graines technologiques sont trop puissantes pour une serre classique."
+				"&fElles ne fonctionneront PAS dans la Garden Cloche."
+				"&fVous devez impérativement utiliser le &e&lPhytogenic Insolator&f de Thermal."
+				""
+				"&f&lComment automatiser :&r"
+				"&fLa machine consomme la graine pour lancer le cycle, mais elle vous la restitue à &a100%&f à la fin."
+				"&7(Astuce : Utilisez un tuyau en boucle pour réinjecter la graine automatiquement dans le slot d'entrée !)"
+			]
+			id: "5DF9C8126C6AEE00"
+			rewards: [{
+				count: 3
+				id: "37C207A97BD2A179"
+				item: "mysticalagradditions:insanium_farmland"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "739A45C1A113B9C4"
+					item: "entropy:antimatter_seeds"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "142C7D716245B49A"
+					item: "entropy:plutonium_seeds"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2A2F69DE2D82DC5C"
+					item: "entropy:polonium_seeds"
+					type: "item"
+				}
+			]
+			title: "&6&lQUÊTE FINALE : &d&lLA NATURE NUCLÉAIRE"
+			x: -29.0d
 			y: -15.5d
 		}
 	]

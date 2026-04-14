@@ -1,10 +1,9 @@
 ServerEvents.recipes(event => {
 
     // ========================================================================
-    // --- 1. INFRASTRUCTURE ET MACHINE FRAMES ---
+    // --- 1. INFRASTRUCTURE DE BASE & CHÂSSIS ---
     // ========================================================================
 
-    // Metallurgic Infuser (Mekanism)
     event.remove({ output: 'mekanism:metallurgic_infuser' })
     event.shaped('mekanism:metallurgic_infuser', ['SFS', 'RCR', 'SFS'], {
         S: 'thermal:signalum_ingot',
@@ -13,7 +12,6 @@ ServerEvents.recipes(event => {
         C: 'thermal:enderium_ingot'
     }).id('entropy:age6/metallurgic_infuser_expert')
 
-    // Basic Control Circuit (Infusion)
     event.remove({ output: 'mekanism:basic_control_circuit' })
     event.custom({
         type: 'mekanism:metallurgic_infusing',
@@ -22,7 +20,6 @@ ServerEvents.recipes(event => {
         output: { item: 'mekanism:basic_control_circuit' }
     }).id('entropy:age6/basic_circuit_infusion')
 
-    // Industrial Foregoing Frames (Pity -> Supreme)
     const frames = [
         { out: 'industrialforegoing:machine_frame_pity', pattern: ['IPI','PMP','IPI'], ing: { I: 'alltheores:invar_ingot', P: 'industrialforegoing:dry_rubber', M: 'thermal:machine_frame' }, id: 'pity' },
         { out: 'industrialforegoing:machine_frame_simple', pattern: ['APA','PFP','APA'], ing: { A: 'mekanism:alloy_infused', P: 'thermalendergy:prismalium_ingot', F: 'industrialforegoing:machine_frame_pity' }, id: 'simple' },
@@ -34,7 +31,6 @@ ServerEvents.recipes(event => {
         event.shaped(f.out, f.pattern, f.ing).id(`entropy:age6/${f.id}_frame_expert`)
     })
 
-    // Steel Casing
     event.remove({ output: 'mekanism:steel_casing' })
     event.shaped('mekanism:steel_casing', ['SPS', 'PFP', 'SPS'], {
         S: 'alltheores:steel_ingot',
@@ -43,10 +39,9 @@ ServerEvents.recipes(event => {
     }).id('entropy:age6/steel_casing_expert')
 
     // ========================================================================
-    // --- 2. REFINED STORAGE ---
+    // --- 2. LOGISTIQUE : REFINED STORAGE ---
     // ========================================================================
 
-    // Controller & Casing
     event.remove({ output: 'refinedstorage:controller' })
     event.shaped('refinedstorage:controller', ['SCS','CFC','SCS'], {
         S: 'thermal:signalum_ingot', C: 'mekanism:basic_control_circuit', F: 'industrialforegoing:machine_frame_pity'
@@ -60,7 +55,6 @@ ServerEvents.recipes(event => {
         output: { item: 'refinedstorage:machine_casing' }
     }).id('entropy:age6/rs_casing_infusion')
 
-    // Crafter & Fluid Interface
     event.remove({ output: 'refinedstorage:crafter' })
     event.shaped('refinedstorage:crafter', ['SCS','MAM','SCS'], {
         S: 'thermal:signalum_ingot', C: 'mekanism:advanced_control_circuit', M: 'refinedstorage:machine_casing', A: 'mekanism:steel_casing'
@@ -71,7 +65,6 @@ ServerEvents.recipes(event => {
         S: 'thermal:signalum_ingot', G: 'minecraft:glass', F: 'industrialforegoing:machine_frame_simple'
     }).id('entropy:age6/rs_fluid_interface_expert')
 
-    // Components 1k & 16k
     event.remove({ output: 'refinedstorage:1k_storage_part' })
     event.shaped('refinedstorage:1k_storage_part', ['SPS','PCP','SPS'], {
         S: 'thermal:signalum_ingot', P: 'industrialforegoing:dry_rubber', C: 'mekanism:basic_control_circuit'
@@ -87,10 +80,9 @@ ServerEvents.recipes(event => {
     }).id('entropy:age6/rs_16k_brine')
 
     // ========================================================================
-    // --- 3. APPLIED ENERGISTICS 2 ---
+    // --- 3. LOGISTIQUE : APPLIED ENERGISTICS 2 ---
     // ========================================================================
 
-    // Drive & Inscriber
     event.remove({ output: 'ae2:drive' })
     event.shaped('ae2:drive', ['ECE','CFC','ECE'], {
         E: 'thermal:enderium_ingot', C: 'mekanism:basic_control_circuit', F: 'industrialforegoing:machine_frame_pity'
@@ -101,7 +93,6 @@ ServerEvents.recipes(event => {
         E: 'thermal:enderium_ingot', P: 'minecraft:sticky_piston', S: 'thermal:signalum_ingot', F: 'industrialforegoing:machine_frame_simple'
     }).id('entropy:age6/ae2_inscriber_expert')
 
-    // Molecular Assembler & Interface
     event.remove({ output: 'ae2:molecular_assembler' })
     event.shaped('ae2:molecular_assembler', ['IWI','SCS','IWI'], {
         I: 'minecraft:iron_ingot', W: 'ae2:quartz_glass', S: 'thermal:signalum_ingot', C: 'mekanism:steel_casing'
@@ -112,7 +103,6 @@ ServerEvents.recipes(event => {
         E: 'thermal:enderium_ingot', P: 'ae2:calculation_processor', F: 'industrialforegoing:machine_frame_simple'
     }).id('entropy:age6/ae2_interface_expert')
 
-    // AE2 Components (Progression dissolution)
     event.remove({ output: 'ae2:cell_component_16k' })
     event.custom({
         type: 'industrialforegoing:dissolution_chamber',
@@ -122,17 +112,34 @@ ServerEvents.recipes(event => {
         processingTime: 300
     }).id('entropy:age6/ae2_16k_brine')
 
+    event.remove({ output: 'ae2:singularity' })
+    event.custom({
+        type: 'industrialforegoing:dissolution_chamber',
+        input: [{ item: 'ae2:matter_ball', count: 64 }, { item: 'evolvedmekanism:alloy_singular' }],
+        inputFluid: "{FluidName:\"mekanism:ethene\",Amount:1000}", 
+        output: { item: 'ae2:singularity', count: 1 },
+        processingTime: 600
+    }).id('entropy:age6/ae2_singularity_expert')
+
+    event.remove({ output: 'ae2:quantum_link' })
+    event.shaped('ae2:quantum_link', ['ASA','CFC','ASA'], {
+        A: 'evolvedmekanism:alloy_singular', S: 'ae2:quartz_glass', C: 'evolvedmekanism:quantum_control_circuit', F: 'industrialforegoing:machine_frame_supreme'
+    }).id('entropy:age6/ae2_quantum_link_expert')
+
+    event.remove({ output: 'ae2:quantum_ring' })
+    event.shaped('ae2:quantum_ring', ['EBE','BMB','EBE'], {
+        E: 'thermal:enderium_ingot', B: 'evolvedmekanism:ingot_better_gold', M: 'mekanism:steel_casing'
+    }).id('entropy:age6/ae2_quantum_ring_expert')
+
     // ========================================================================
-    // --- 4. MEKANISM : CHIMIE ET ÉNERGIE ---
+    // --- 4. MEKANISM : CHIMIE & ÉNERGIE ---
     // ========================================================================
 
-    // Gas-Burning Generator
     event.remove({ output: 'mekanismgenerators:gas_burning_generator' })
     event.shaped('mekanismgenerators:gas_burning_generator', ['CAC','TFT','CAC'], {
         C: 'mekanism:advanced_control_circuit', A: 'mekanism:alloy_reinforced', T: 'mekanism:electrolytic_core', F: 'industrialforegoing:machine_frame_advanced'
     }).id('entropy:age6/gas_generator_expert')
 
-    // PRC & Separator
     event.remove({ output: 'mekanism:pressurized_reaction_chamber' })
     event.shaped('mekanism:pressurized_reaction_chamber', ['ACA','DFD','ACA'], {
         A: 'mekanism:alloy_reinforced', C: 'mekanism:advanced_control_circuit', D: 'mekanism:dynamic_tank', F: 'industrialforegoing:machine_frame_advanced'
@@ -143,7 +150,6 @@ ServerEvents.recipes(event => {
         A: 'mekanism:alloy_infused', C: 'mekanism:basic_control_circuit', S: 'alltheores:steel_ingot', F: 'industrialforegoing:machine_frame_simple'
     }).id('entropy:age6/electrolytic_separator_expert')
 
-    // ALLIAGES SUPÉRIEURS (Automatisation)
     event.remove({ output: 'mekanism:alloy_reinforced' })
     event.custom({
         type: 'mekanism:metallurgic_infusing',
@@ -161,42 +167,9 @@ ServerEvents.recipes(event => {
     }).id('entropy:age6/alloy_atomic_infusion')
 
     // ========================================================================
-    // --- 5. LOGISTIQUE ET OUTILS ---
+    // --- 5. EVOLVED MEKANISM : MATÉRIAUX SUPÉRIEURS ---
     // ========================================================================
 
-    // Logistical Sorter & Configurator
-    event.remove({ output: 'mekanism:logistical_sorter' })
-    event.shaped('mekanism:logistical_sorter', ['ICI','SFS','ICI'], {
-        I: 'minecraft:iron_ingot', C: 'mekanism:basic_control_circuit', S: 'thermal:signalum_ingot', F: 'industrialforegoing:machine_frame_pity'
-    }).id('entropy:age6/logistical_sorter_expert')
-
-    event.remove({ output: 'mekanism:configurator' })
-    event.shaped('mekanism:configurator', [' L ',' S ',' E '], {
-        L: 'mekanism:alloy_infused', S: 'minecraft:stick', E: 'mekanism:energy_tablet'
-    }).id('entropy:age6/configurator_expert')
-
-    // ========================================================================
-    // --- 6. FACTORIES (BOUCLE AUTOMATIQUE) ---
-    // ========================================================================
-
-    const factoryMap = [
-        { machine: 'enrichment_chamber', factory: 'mekanism:basic_enriching_factory' },
-        { machine: 'osmium_compressor', factory: 'mekanism:basic_compressing_factory' },
-        { machine: 'purification_chamber', factory: 'mekanism:basic_purifying_factory' },
-        { machine: 'metallurgic_infuser', factory: 'mekanism:basic_infusing_factory' }
-    ]
-    factoryMap.forEach(f => {
-        event.remove({ output: f.factory })
-        event.shaped(f.factory, ['CAC','SFS','CAC'], {
-            C: 'mekanism:basic_control_circuit', A: 'mekanism:alloy_infused', S: 'alltheores:steel_ingot', F: `mekanism:${f.machine}`
-        }).id(`entropy:age6/${f.factory.replace(':', '_')}_expert`)
-    })
-    // ========================================================================
-    // ---EVOLVED MEKANISM---
-    // ========================================================================
-
-    // --- ALLIAGES EVOLVED ---
-    
     event.remove({ output: 'evolvedmekanism:alloy_hypercharged' })
     event.custom({
         type: 'mekanism:metallurgic_infusing',
@@ -217,174 +190,148 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'mekanism:metallurgic_infusing',
         itemInput: { ingredient: { item: 'evolvedmekanism:alloy_subatomic' } },
-        chemicalInput: { amount: 100, infuse_type: 'mekanism:tin' }, // Ou autre gaz rare
+        chemicalInput: { amount: 100, infuse_type: 'mekanism:tin' }, 
         output: { item: 'evolvedmekanism:alloy_singular' }
     }).id('entropy:age6/alloy_singular_infusion')
 
-    // --- CIRCUITS EVOLVED ---
-
     event.remove({ output: 'evolvedmekanism:overclocked_control_circuit' })
-    event.shaped('evolvedmekanism:overclocked_control_circuit', [
-        'AHA',
-        'HCH',
-        'AHA'
-    ], {
-        A: 'mekanism:alloy_atomic',
-        H: 'evolvedmekanism:alloy_hypercharged',
-        C: 'mekanism:ultimate_control_circuit'
+    event.shaped('evolvedmekanism:overclocked_control_circuit', ['AHA','HCH','AHA'], {
+        A: 'mekanism:alloy_atomic', H: 'evolvedmekanism:alloy_hypercharged', C: 'mekanism:ultimate_control_circuit'
     }).id('entropy:age6/overclocked_circuit_expert')
 
     event.remove({ output: 'evolvedmekanism:quantum_control_circuit' })
-    event.shaped('evolvedmekanism:quantum_control_circuit', [
-        'SQS',
-        'QCQ',
-        'SQS'
-    ], {
-        S: 'evolvedmekanism:alloy_subatomic',
-        Q: 'ae2:quantum_link_chamber', 
-        C: 'evolvedmekanism:overclocked_control_circuit'
+    event.shaped('evolvedmekanism:quantum_control_circuit', ['SQS','QCQ','SQS'], {
+        S: 'evolvedmekanism:alloy_subatomic', Q: 'ae2:quantum_link', C: 'evolvedmekanism:overclocked_control_circuit'
     }).id('entropy:age6/quantum_circuit_expert')
 
-    // --- MÉTAUX SPÉCIAUX ---
+    event.remove({ output: 'evolvedmekanism:dense_control_circuit' })
+    event.shaped('evolvedmekanism:dense_control_circuit', ['PPP','SCS','PPP'], {
+        P: 'evolvedmekanism:ingot_plaslitherite', S: 'evolvedmekanism:alloy_singular', C: 'evolvedmekanism:quantum_control_circuit'
+    }).id('entropy:age6/dense_circuit_expert')
 
     event.remove({ output: 'evolvedmekanism:ingot_better_gold' })
     event.custom({
         type: 'mekanism:enriching',
         input: { ingredient: { item: 'minecraft:gold_ingot' } },
-        output: { item: 'evolvedmekanism:ingot_better_gold', count: 1 }
+        output: { item: 'evolvedmekanism:ingot_better_gold' }
     }).id('entropy:age6/better_gold_enriching')
 
     event.remove({ output: 'evolvedmekanism:ingot_plaslitherite' })
     event.custom({
         type: 'industrialforegoing:dissolution_chamber',
-        input: [
-            { item: 'evolvedmekanism:alloy_singular' },
-            { item: 'industrialforegoing:dry_rubber' },
-            { item: 'thermal:enderium_ingot' }
-        ],
+        input: [{ item: 'evolvedmekanism:alloy_singular' }, { item: 'industrialforegoing:dry_rubber' }, { item: 'thermal:enderium_ingot' }],
         inputFluid: "{FluidName:\"industrialforegoing:latex\",Amount:1000}",
-        output: { item: 'evolvedmekanism:ingot_plaslitherite', count: 1 },
+        output: { item: 'evolvedmekanism:ingot_plaslitherite' },
         processingTime: 400
     }).id('entropy:age6/plaslitherite_dissolution')
-    // ========================================================================
-    // --- 8. APPLIED ENERGISTICS 2 : DIMENSIONAL LINK ---
-    // ========================================================================
 
-    event.remove({ output: 'ae2:quantum_link' })
-    event.shaped('ae2:quantum_link', [
-        'ASA',
-        'CFC',
-        'ASA'
-    ], {
-        A: 'evolvedmekanism:alloy_singular',
-        S: 'ae2:quartz_glass',
-        C: 'evolvedmekanism:quantum_control_circuit',
-        F: 'industrialforegoing:machine_frame_supreme'
-    }).id('entropy:age6/ae2_quantum_link_expert')
-
-    // Quantum Ring (La structure externe)
-    event.remove({ output: 'ae2:quantum_ring' })
-    event.shaped('ae2:quantum_ring', [
-        'EBE',
-        'BMB',
-        'EBE'
-    ], {
-        E: 'thermal:enderium_ingot',
-        B: 'evolvedmekanism:ingot_better_gold',
-        M: 'mekanism:steel_casing'
-    }).id('entropy:age6/ae2_quantum_ring_expert')
-
-    // Craft des Singularities (Via une Explosion ou une machine)
-    event.remove({ output: 'ae2:singularity' })
-    event.custom({
-        type: 'industrialforegoing:dissolution_chamber',
-        input: [
-            { item: 'ae2:matter_ball', count: 64 },
-            { item: 'evolvedmekanism:alloy_singular' }
-        ],
-        inputFluid: "{FluidName:\"mekanism:ethene\",Amount:1000}", 
-        output: { item: 'ae2:singularity', count: 1 },
-        processingTime: 600
-    }).id('entropy:age6/ae2_singularity_expert')
     // ========================================================================
-    // --- 9. UTILITÉ : STOCKAGE DE MASSE & PROCESSEURS ---
+    // --- 6. ANTIMATIÈRE & ALLIAGES FINAUX ---
     // ========================================================================
 
-    event.remove({ output: 'megacells:cell_component_4m' })
-    event.custom({
-        type: 'industrialforegoing:dissolution_chamber',
-        input: [
-            { item: 'megacells:cell_component_1m' },
-            { item: 'megacells:cell_component_1m' },
-            { item: 'megacells:cell_component_1m' },
-            { item: 'evolvedmekanism:alloy_singular' }, // Utilisation de l'alliage Singular
-            { item: 'evolvedmekanism:quantum_control_circuit' } // Et du circuit Quantum
-        ],
-        inputFluid: "{FluidName:\"mekanism:lithium\",Amount:2000}",
-        output: { item: 'megacells:cell_component_4m', count: 1 },
-        processingTime: 1000
-    }).id('entropy:age6/megacells_4m_expert')
+    event.remove({ output: 'mekanism:sps_casing' })
+    event.shaped('mekanism:sps_casing', ['BSB','SFS','BSB'], {
+        B: 'evolvedmekanism:alloy_subatomic', S: 'evolvedmekanism:alloy_hypercharged', F: 'industrialforegoing:machine_frame_supreme'
+    }).id('entropy:age6/sps_casing_expert')
 
-    // Dense Control Circuit 
-    event.remove({ output: 'evolvedmekanism:dense_control_circuit' })
-    event.shaped('evolvedmekanism:dense_control_circuit', [
-        'PPP',
-        'SCS',
-        'PPP'
-    ], {
-        P: 'evolvedmekanism:ingot_plaslitherite',
-        S: 'evolvedmekanism:alloy_singular',
-        C: 'evolvedmekanism:quantum_control_circuit'
-    }).id('entropy:age6/dense_circuit_expert')
+    event.remove({ output: 'mekanism:sps_port' })
+    event.shaped('mekanism:sps_port', [' C ','CPC',' C '], {
+        C: 'evolvedmekanism:quantum_control_circuit', P: 'mekanism:sps_casing'
+    }).id('entropy:age6/sps_port_expert')
 
-    // QIO Bulk Storage (Mekanism)
-    event.remove({ output: 'mekanism:qio_drive_supermassive' })
-    event.shaped('mekanism:qio_drive_supermassive', [
-        'DQD',
-        'QAQ',
-        'DQD'
-    ], {
-        D: 'evolvedmekanism:dense_control_circuit',
-        Q: 'evolvedmekanism:alloy_singular',
-        A: 'mekanism:qio_drive_hyper_dense'
-    }).id('entropy:age6/qio_supermassive_expert')
-    // ========================================================================
-    // --- 11. L'ANTIMATIÈRE ET L'EXOVERSAL (PUISSANCE MAX) ---
-    // ========================================================================
+    event.remove({ output: 'mekanism:supercharged_coil' })
+    event.shaped('mekanism:supercharged_coil', ['AHA','HCH','AHA'], {
+        A: 'evolvedmekanism:alloy_singular', H: 'evolvedmekanism:alloy_hypercharged', C: 'evolvedmekanism:overclocked_control_circuit'
+    }).id('entropy:age6/supercharged_coil_expert')
 
-    // Pellet d'Antimatière (Simplifié dans le Nucleosynthesizer)
-    event.remove({ output: 'mekanism:antimatter_pellet' })
+    event.remove({ output: 'mekanism:structural_glass' })
+    event.shaped('mekanism:structural_glass', [' S ','SGS',' S '], {
+        S: 'alltheores:steel_ingot', G: 'ae2:quartz_glass'
+    }).id('entropy:age6/structural_glass_expert')
+
+    event.remove({ output: 'mekanism:pellet_antimatter' })
     event.custom({
         type: 'mekanism:nucleosynthesizing',
         itemInput: { ingredient: { item: 'evolvedmekanism:alloy_singular' } },
-        gasInput: { amount: 100, gas: 'mekanism:antimatter' }, // 10x moins cher en gaz
-        output: { item: 'mekanism:antimatter_pellet' },
+        gasInput: { amount: 100, gas: 'mekanism:antimatter' }, 
+        output: { item: 'mekanism:pellet_antimatter' },
         duration: 100
     }).id('entropy:age6/antimatter_pellet_expert')
 
-    // Alloy Exoversal (L'alliage ultime avant le Creative)
     event.remove({ output: 'evolvedmekanism:alloy_exoversal' })
     event.custom({
-        type: 'industrialforegoing:dissolution_chamber',
-        input: [
-            { item: 'evolvedmekanism:alloy_singular' },
-            { item: 'mekanism:antimatter_pellet' },
-            { item: 'thermal:enderium_ingot' },
-            { item: 'evolvedmekanism:ingot_plaslitherite' }
-        ],
-        inputFluid: "{FluidName:\"mekanism:lithium\",Amount:1000}",
-        output: { item: 'evolvedmekanism:alloy_exoversal', count: 1 },
-        processingTime: 200
-    }).id('entropy:age6/alloy_exoversal_dissolution')
+        type: "mekanism:nucleosynthesizing",
+        itemInput: { ingredient: { item: "evolvedmekanism:alloy_singular" } },
+        gasInput: { amount: 100, gas: "mekanism:antimatter" },
+        output: { item: "evolvedmekanism:alloy_exoversal" },
+        duration: 200
+    }).id('entropy:age6/alloy_exoversal_nucleo')
+
+    event.shaped('evolvedmekanism:alloy_exoversal', [' S ','APA',' S '], {
+        S: 'evolvedmekanism:alloy_singular',
+        P: 'mekanism:pellet_antimatter',
+        A: 'evolvedmekanism:ingot_plaslitherite'
+    }).id('entropy:age6/exoversal_table_fix')
 
     event.remove({ output: 'evolvedmekanism:multiversal_control_circuit' })
-    event.shaped('evolvedmekanism:multiversal_control_circuit', [
-        'EXE',
-        'XCX',
-        'EXE'
-    ], {
-        E: 'evolvedmekanism:alloy_exoversal',
-        X: 'mekanism:antimatter_pellet',
-        C: 'evolvedmekanism:dense_control_circuit'
+    event.shaped('evolvedmekanism:multiversal_control_circuit', ['EXE','XCX','EXE'], {
+        E: 'evolvedmekanism:alloy_exoversal', X: 'mekanism:pellet_antimatter', C: 'evolvedmekanism:dense_control_circuit'
     }).id('entropy:age6/multiversal_circuit_expert')
+
+    // ========================================================================
+    // --- 7. STOCKAGE MASSIF & FACTORIES ---
+    // ========================================================================
+
+    event.remove({ output: 'mekanism:qio_drive_supermassive' })
+    event.shaped('mekanism:qio_drive_supermassive', ['DQD','QAQ','DQD'], {
+        D: 'evolvedmekanism:dense_control_circuit', Q: 'evolvedmekanism:alloy_singular', A: 'mekanism:qio_drive_hyper_dense'
+    }).id('entropy:age6/qio_supermassive_expert')
+
+    const factoryMap = [
+        { machine: 'enrichment_chamber', factory: 'mekanism:basic_enriching_factory' },
+        { machine: 'osmium_compressor', factory: 'mekanism:basic_compressing_factory' },
+        { machine: 'purification_chamber', factory: 'mekanism:basic_purifying_factory' },
+        { machine: 'metallurgic_infuser', factory: 'mekanism:basic_infusing_factory' }
+    ]
+    factoryMap.forEach(f => {
+        event.remove({ output: f.factory })
+        event.shaped(f.factory, ['CAC','SFS','CAC'], {
+            C: 'mekanism:basic_control_circuit', A: 'mekanism:alloy_infused', S: 'alltheores:steel_ingot', F: `mekanism:${f.machine}`
+        }).id(`entropy:age6/${f.factory.replace(':', '_')}_expert`)
+    })
+
+    event.remove({ output: 'mekanism:logistical_sorter' })
+    event.shaped('mekanism:logistical_sorter', ['ICI','SFS','ICI'], {
+        I: 'minecraft:iron_ingot', C: 'mekanism:basic_control_circuit', S: 'thermal:signalum_ingot', F: 'industrialforegoing:machine_frame_pity'
+    }).id('entropy:age6/logistical_sorter_expert')
+
+    event.remove({ output: 'mekanism:configurator' })
+    event.shaped('mekanism:configurator', [' L ',' S ',' E '], {
+        L: 'mekanism:alloy_infused', S: 'minecraft:stick', E: 'mekanism:energy_tablet'
+    }).id('entropy:age6/configurator_expert')
+
+    // ========================================================================
+    // --- 8. MEKASUITE (PALIER ANTIMATIÈRE) ---
+    // ========================================================================
+
+    event.remove({ output: 'mekanism:mekasuit_helmet' })
+    event.shaped('mekanism:mekasuit_helmet', ['HCH','APA','SFS'], {
+        H: 'evolvedmekanism:alloy_singular', C: 'evolvedmekanism:dense_control_circuit', A: 'mekanism:pellet_antimatter', P: 'mekanism:pellet_polonium', S: 'evolvedmekanism:ingot_plaslitherite', F: 'industrialforegoing:machine_frame_supreme'
+    }).id('entropy:age6/mekasuit_helmet_expert')
+
+    event.remove({ output: 'mekanism:mekasuit_bodyarmor' })
+    event.shaped('mekanism:mekasuit_bodyarmor', ['HCH','APA','SFS'], {
+        H: 'evolvedmekanism:alloy_exoversal', C: 'evolvedmekanism:multiversal_control_circuit', A: 'mekanism:pellet_antimatter', P: 'mekanism:pellet_polonium', S: 'evolvedmekanism:ingot_plaslitherite', F: 'industrialforegoing:machine_frame_supreme'
+    }).id('entropy:age6/mekasuit_bodyarmor_expert')
+
+    event.remove({ output: 'mekanism:mekasuit_pants' })
+    event.shaped('mekanism:mekasuit_pants', ['HCH','APA','SFS'], {
+        H: 'evolvedmekanism:alloy_subatomic', C: 'evolvedmekanism:dense_control_circuit', A: 'mekanism:pellet_antimatter', P: 'mekanism:pellet_polonium', S: 'evolvedmekanism:ingot_plaslitherite', F: 'industrialforegoing:machine_frame_supreme'
+    }).id('entropy:age6/mekasuit_pants_expert')
+
+    event.remove({ output: 'mekanism:mekasuit_boots' })
+    event.shaped('mekanism:mekasuit_boots', ['HCH','APA','SFS'], {
+        H: 'evolvedmekanism:alloy_hypercharged', C: 'evolvedmekanism:overclocked_control_circuit', A: 'mekanism:pellet_antimatter', P: 'mekanism:pellet_polonium', S: 'evolvedmekanism:ingot_plaslitherite', F: 'industrialforegoing:machine_frame_supreme'
+    }).id('entropy:age6/mekasuit_boots_expert')
+
 })
