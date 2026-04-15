@@ -7,4 +7,7 @@ StartupEvents.registry('item', event => {
 
     event.create('entropy:antimatter_seeds').displayName("Graines d'Antimatière (Tech)")
     event.create('entropy:antimatter_essence').displayName("Essence d'Antimatière")
+
+    event.create('entropy:resonarium_seeds').displayName('Resonarium Seeds')
+    event.create('entropy:resonarium_essence').displayName('Resonarium Essence')
 })

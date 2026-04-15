@@ -1,0 +1,442 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2lharmonie_de_la_fleur7_5la_force_du_mana"
+	group: "266D924F90F87D99"
+	icon: {
+		Count: 1
+		id: "botania:twig_wand"
+		tag: {
+			color1: 0
+			color2: 0
+		}
+	}
+	id: "60BBB04A3A1E59DC"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&7La technologie de l'Âge 7 vous a mené aux confins de l'espace, mais pour stabiliser l'antimatière, vous devez puiser dans l'énergie vitale."
+				""
+				"&7Le &aLexica Botania &7est votre nouveau guide. Commencez par créer une &fPure Daisy &7pour obtenir du &eLivingwood &7et de la &eLivingrock&7."
+			]
+			id: "3FB90A7691BB63E9"
+			subtitle: "&8Le savoir est le premier pas"
+			tasks: [{
+				consume_items: false
+				id: "514ACA25F7F91C85"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			title: "&6L'Héritage d'Alfheim"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&7Fini de courir après les fleurs sauvages. Utilisez la technologie des &6Botany Pots &7pour miniaturiser les biomes."
+				""
+				"&cNote : &7Automatisez les 16 couleurs dès maintenant. Les recettes de l'Âge 8 demandent des &lmilliers &r&7de pétales."
+			]
+			id: "255A08510B1013DC"
+			rewards: [{
+				id: "7D7D0F9FEE928E21"
+				item: "storagedrawers:controller"
+				type: "item"
+			}]
+			subtitle: "&8L'Horticulture Industrielle"
+			tasks: [{
+				consume_items: false
+				id: "7E3BE3B6F214A632"
+				item: "botanypots:terracotta_hopper_botany_pot"
+				type: "item"
+			}]
+			title: "&2Culture de Masse &7(Botany Pots)"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			description: ["&7Reliez vos &6Botany Pots &7à des &bStorage Drawers &7via le Controller. C'est la seule façon de gérer le flux massif de ressources nécessaire pour vos futurs rituels."]
+			id: "72550820824F6F38"
+			rewards: [{
+				count: 16
+				id: "1C842AFE158F0988"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			subtitle: "&816 couleurs, un seul réseau"
+			tasks: [{
+				consume_items: false
+				id: "579BDF8A51B292C2"
+				item: "storagedrawers:oak_full_drawers_1"
+				type: "item"
+			}]
+			title: "&bLogistique des Pétales &7(Drawers)"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&7Le &bMana Pool &7est votre batterie magique. Pour le remplir, utilisez des &eEndoflames &7(Charbon) ou des &6Rosa Arcana &7(XP)."
+				""
+				"&7Utilisez un &aMana Spreader &7pour diriger le flux. Pensez aux &6Mana Lens &7pour augmenter la portée !"
+			]
+			id: "543AAA514038D0AA"
+			rewards: [{
+				id: "5DA654A917A89B81"
+				item: "botania:mana_tablet"
+				type: "item"
+			}]
+			subtitle: "&8Stocker l'énergie de la Terre"
+			tasks: [
+				{
+					consume_items: false
+					id: "1CD03D7BD6CFDB39"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "23DEE2167A54F780"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "011131627A476258"
+					item: "botania:endoflame"
+					type: "item"
+				}
+			]
+			title: "&dLe Flux Primaire"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			description: ["&7Le &dRunic Altar &7est nécessaire pour infuser la matière. Placez les items, attendez l'absorption du mana, puis jetez une &fLivingrock &7et utilisez votre baguette."]
+			id: "219A0C69E1D6924F"
+			subtitle: "&8Le premier processeur magique"
+			tasks: [{
+				consume_items: false
+				id: "6A7CC45774ACED82"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			title: "&dLe Runic Altar"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			id: "6F3F1A872E3F3665"
+			subtitle: "&8Eau, Feu, Terre et Air"
+			tasks: [
+				{
+					consume_items: false
+					id: "2758BB7375F59EFE"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "51E0860769526898"
+					item: "botania:rune_fire"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "490D076FEECF13F3"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4FA77494803BB1BB"
+					item: "botania:rune_air"
+					type: "item"
+				}
+			]
+			title: "&3Runes de Niveau 1"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			description: ["&7Plus complexes, ces runes exigent les runes élémentaires comme composants. Elles servent à stabiliser les alliages avancés."]
+			id: "64428DE1DE090253"
+			subtitle: "&8L'emprise du temps"
+			tasks: [
+				{
+					consume_items: false
+					id: "0A5B8F09CCCF739D"
+					item: "botania:rune_autumn"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7CB3BC695286C6A1"
+					item: "botania:rune_spring"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6CD18F9C16750E38"
+					item: "botania:rune_winter"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "57B76C9CF0F526B4"
+					item: "botania:rune_summer"
+					type: "item"
+				}
+			]
+			title: "&5Runes de Niveau 2"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			description: [
+				"&7Fini d'attendre 1 minute à côté de votre fleur. La version mécanique transforme les blocs &lautomatiquement&r."
+				""
+				"&cCraft : &7Exige des &9Plaques de Resonarium&7."
+			]
+			id: "477EC8B892A2B42A"
+			subtitle: "&8Transformation instantanée"
+			tasks: [{
+				consume_items: false
+				id: "50C04B3C657054F0"
+				item: "botanicalmachinery:mechanical_daisy"
+				type: "item"
+			}]
+			title: "&dMechanical Pure Daisy"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			description: ["&7Automatise la création des fleurs fonctionnelles. Reliez-la à votre stock de pétales AE2 pour ne plus jamais manquer de génératrices."]
+			id: "0201F6A30228AE6A"
+			subtitle: "&8Fleurs en série"
+			tasks: [{
+				consume_items: false
+				id: "59952C283444101B"
+				item: "botanicalmachinery:mechanical_apothecary"
+				type: "item"
+			}]
+			title: "&dMechanical Apothecary"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			description: ["&7Cette machine est le cœur de votre usine. Elle réalise les rituels de l'autel runique sans aucune intervention manuelle."]
+			id: "51E27ED1F39401DB"
+			subtitle: "&8L'usine à runes"
+			tasks: [{
+				consume_items: false
+				id: "1ADF466492137661"
+				item: "botanicalmachinery:mechanical_runic_altar"
+				type: "item"
+			}]
+			title: "&dMechanical Runic Altar"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			description: ["&7Permet d'infuser des items (Mana Diamond, Mana Pearl) de manière industrielle sans les jeter un par un dans l'eau."]
+			id: "2CA14BB6C85EE0D3"
+			subtitle: "&8L'infusion de masse"
+			tasks: [{
+				consume_items: false
+				id: "2F97027C64110D4A"
+				item: "botanicalmachinery:mechanical_mana_pool"
+				type: "item"
+			}]
+			title: "&dMechanical Mana Pool"
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			description: [
+				"&7Le portail vers Alfheim est un &6Puits d'Échange &7(La dimension est &cDésactivée&7)."
+				""
+				"&fRequis : &71x Portail, 3x Glowstone Livingwood, 8x Livingwood."
+			]
+			id: "024B994AA7C5AD58"
+			subtitle: "&8Construire l'impossible"
+			tasks: [{
+				id: "4339F1C5B247D48E"
+				title: "&6La Structure du Portail"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -11.0d
+		}
+		{
+			description: [
+				"&7Placez ces deux pylônes sur deux &bMana Pools &7pour alimenter le portail."
+				""
+				"&6Coût : &7Il faut &b1/2 bassin &7pour l'ouverture. Une fois ouvert, jetez votre fer pour obtenir de l'&bElementium&7."
+			]
+			id: "017332F5DC6311A8"
+			rewards: [{
+				count: 2
+				id: "1F71823A48751C57"
+				item: "botania:pixie_dust"
+				type: "item"
+			}]
+			subtitle: "&8Alimenter la faille"
+			tasks: [{
+				consume_items: false
+				count: 2L
+				id: "15CDA33104A7F57F"
+				item: "botania:natura_pylon"
+				type: "item"
+			}]
+			title: "&bLes Natura Pylons"
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			description: ["&7Échangez vos diamants et vos perles de mana contre les matériaux ultimes d'Alfheim. Ces derniers sont requis pour les &6mana cell &7AE2."]
+			id: "7AB4804459EA75C6"
+			tasks: [
+				{
+					consume_items: false
+					count: 36L
+					id: "303D589FD9FFD187"
+					item: "botania:dragonstone"
+					type: "item"
+				}
+				{
+					consume_items: false
+					count: 12L
+					id: "1B84F6606EF0E151"
+					item: "botania:dreamwood_log"
+					type: "item"
+				}
+			]
+			title: "&3L'Échange Elfe"
+			x: 0.0d
+			y: -13.0d
+		}
+		{
+			description: ["&7Stockez des millions d'unités de mana dans un seul disque. Fini les rangées de bassins !"]
+			id: "3F78EA1CD6286BC1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "348EE65CBFD78463"
+				table_id: 4221674481076631905L
+				type: "random"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "0BAC8FB961DEE074"
+				item: {
+					Count: 1
+					id: "appbot:mana_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&9Mana Disks"
+			x: 0.0d
+			y: -14.0d
+		}
+		{
+			description: [
+				"&7Maîtrisez les Sparks pour déplacer le mana entre vos pools et vos machines."
+				""
+				"&cRecessive : &7Vide le pool. "
+				"&bDominant : &7Remplit le pool."
+			]
+			id: "46E3E3E1998CE7CE"
+			subtitle: "&8Logistique sans fil"
+			tasks: [
+				{
+					id: "6D7A467EF9893353"
+					item: "botania:spark_upgrade_dominant"
+					type: "item"
+				}
+				{
+					id: "61C007C1A44876EB"
+					item: "botania:spark_upgrade_recessive"
+					type: "item"
+				}
+			]
+			title: "&6Sparks et Augments"
+			x: 0.0d
+			y: -15.0d
+		}
+		{
+			description: ["&7Utilisez la &eTerra Plate &7entourée de 4 &dGaia Pylons&7. Un lingot coûte &b1 bassin entier&7."]
+			id: "41820C01B08F5792"
+			subtitle: "&8L'alliage suprême"
+			tasks: [{
+				count: 16L
+				id: "287B07D688C3F8F6"
+				item: { Count: 16, id: "botania:terrasteel_ingot" }
+				type: "item"
+			}]
+			title: "&aTerrasteel Agglomeration"
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			description: ["&7Battez le Guardian I pour obtenir les &dGaia Spirits&7."]
+			id: "090AD762B434E990"
+			subtitle: "&8Esprit de Gaia"
+			tasks: [{
+				consume_items: false
+				count: 4L
+				id: "693D8318F8005DCE"
+				item: { Count: 2, id: "botania:life_essence" }
+				type: "item"
+			}]
+			title: "&4Gaia Guardian I"
+			x: 0.0d
+			y: -17.0d
+		}
+		{
+			description: ["&7Utilisez un &dGaia Ingot &7sur le beacon. C'est ici que vous obtiendrez le &6Dice of Fate&7."]
+			id: "185CF2CE54D18874"
+			rewards: [{
+				id: "348807EF2ADCEF25"
+				item: "botania:gaia_ingot"
+				type: "item"
+			}]
+			subtitle: "&8Le Boss de l'Antimatière"
+			tasks: [{
+				id: "0A5DC333251BF02B"
+				title: "&l&4Gaia Guardian II"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -18.0d
+		}
+		{
+			description: ["&7Ouvrez vos dés. Vous &lDEVEZ &r&7obtenir l'&6Anneau d'Odin&7. Sans lui, impossible de stabiliser la &dMaster Key &7de l'Âge 9."]
+			id: "66B26C147C27F8F3"
+			subtitle: "&8L'Élite de la Destinée"
+			tasks: [{
+				id: "4686B138111A7773"
+				item: {
+					Count: 1
+					id: "botania:odin_ring"
+					tag: {
+						baubleUUID: [I;
+							1786792402
+							320487982
+							-2091096626
+							-1812616757
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "&6L'Anneau d'Odin"
+			x: 0.0d
+			y: -19.0d
+		}
+	]
+	title: "&5L'Industrialisation de la Magie Florale"
+}
