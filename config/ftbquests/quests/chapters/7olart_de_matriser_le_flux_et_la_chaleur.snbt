@@ -30,11 +30,11 @@
 		{
 			dependencies: ["4764DE44DE7F24BE"]
 			description: [
-				"&fBienvenue dans l'&5Âge 5&f."
+				"&fWelcome to &5Age 5&f."
 				" "
-				"&fPour construire vos premières machines, vous aurez besoin d'&6Invar&f. C'est un alliage de &7Fer&f et de &8Nickel&f."
+				"&fTo build your first machines, you will need &6Invar&f. It is an alloy made of &7Iron&f and &8Nickel&f."
 				" "
-				"&fCombinez-les avec une &bGemme de Xychorium&f pour stabiliser le &eMachine Frame&f. Ce bloc est le cœur de toutes vos futures automatisations."
+				"&fCombine them with a &bXychorium Gem&f to stabilize the &eMachine Frame&f. This block is the heart of all your future automations."
 			]
 			id: "0A06D46A16384B54"
 			rewards: [{
@@ -45,25 +45,25 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "&7\"Solide comme l'acier, ou presque.\""
+			subtitle: "&7\"Strong as steel, or almost.\""
 			tasks: [{
 				consume_items: false
 				id: "17581A20737C23FD"
 				item: "thermal:machine_frame"
 				type: "item"
 			}]
-			title: "&5Structure Thermique"
+			title: "&5Thermal Structure"
 			x: 7.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["0A06D46A16384B54"]
 			description: [
-				"&fLes tapis roulants sont dépassés. Il est temps de passer aux &9Tuyaux&f."
+				"&fConveyor belts are outdated. It's time to move on to &9Pipes&f."
 				" "
-				"&fLes tuyaux de &ePipez&f sont capables de transférer des items, des fluides et de l'énergie à une vitesse folle dans un seul bloc."
+				"&f&ePipez&f are capable of transferring items, fluids, and energy at insane speeds within a single block space."
 				" "
-				"&7&oAstuce : Utilisez une clé à molette pour configurer les entrées et sorties !"
+				"&7&oTip: Use a wrench to configure inputs and outputs!"
 			]
 			id: "44C7D911E985F936"
 			rewards: [{
@@ -78,18 +78,18 @@
 				item: "pipez:item_pipe"
 				type: "item"
 			}]
-			title: "&bLogistique Moderne"
+			title: "&bModern Logistics"
 			x: 7.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["44C7D911E985F936"]
 			description: [
-				"&fVous pensiez pouvoir échapper à la métallurgie grâce à vos plantes ?"
+				"&fDid you think you could escape metallurgy thanks to your plants?"
 				" "
-				"&fDans cet âge, les graines de métaux avancés (Invar, Electrum, Constantan) demandent une structure plus complexe."
+				"&fIn this age, advanced metal seeds (Invar, Electrum, Constantan) require a more complex structure."
 				" "
-				"&fVous devrez sacrifier des &eMachine Frames&f pour créer vos graines. Automatisez d'abord la production mécanique avant de passer à la production biologique."
+				"&fYou must sacrifice &eMachine Frames&f to create your seeds. Automate mechanical production first before moving to biological production."
 			]
 			id: "799F8D47971CF8ED"
 			rewards: [{
@@ -104,18 +104,18 @@
 				item: "mysticalagriculture:invar_seeds"
 				type: "item"
 			}]
-			title: "&aGénétique Thermique"
+			title: "&aThermal Genetics"
 			x: 5.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["799F8D47971CF8ED"]
 			description: [
-				"&fMarre de voir des câbles &ePipez&f partout dans votre base ?"
+				"&fTired of seeing &ePipez&f cables everywhere in your base?"
 				" "
-				"&fLe &bFlux Networks&f permet de transférer de l'énergie (RF/FE) à travers les dimensions et sans aucun fil."
+				"&f&bFlux Networks&f allow you to transfer energy (RF/FE) across dimensions wirelessly."
 				" "
-				"&fCréez votre premier &eFlux Plug&f (entrée d'énergie) et &eFlux Point&f (sortie d'énergie). N'oubliez pas le &3Flux Controller&f pour gérer vos priorités et charger votre inventaire !"
+				"&fCreate your first &eFlux Plug&f (energy input) and &eFlux Point&f (energy output). Don't forget the &3Flux Controller&f to manage priorities and charge your inventory!"
 			]
 			id: "0C1B9AD68B7D9010"
 			rewards: [{
@@ -156,16 +156,16 @@
 					type: "item"
 				}
 			]
-			title: "&bRéseau de Flux"
+			title: "&bFlux Network"
 			x: 5.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["0C1B9AD68B7D9010"]
 			description: [
-				"&fLe &ePulverizer&f est votre premier pas vers la multiplication des ressources."
+				"&fThe &ePulverizer&f is your first step towards resource multiplication."
 				" "
-				"&fIl transforme vos minerais en poussières, doublant souvent votre production, et permet d'obtenir des sous-produits rares comme le &7Nickel&f ou l'&6Or&f."
+				"&fIt turns your ores into dust, often doubling your production, and allows you to obtain rare by-products like &7Nickel&f or &6Gold&f."
 			]
 			id: "3C6BC294D099B103"
 			rewards: [{
@@ -180,16 +180,16 @@
 				item: "thermal:machine_pulverizer"
 				type: "item"
 			}]
-			title: "&ePulvérisation"
+			title: "&ePulverization"
 			x: 5.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3C6BC294D099B103"]
 			description: [
-				"&fCette machine est le pilier central de l'&5Âge 5&f."
+				"&fThis machine is the central pillar of &5Age 5&f."
 				" "
-				"&fL'&cInduction Smelter&f permet de fusionner des métaux pour créer des alliages impossibles à obtenir autrement. C'est ici que vous créerez le &6Signalum&f et l'&bEnderium&f nécessaires pour l'Âge 6."
+				"&fThe &cInduction Smelter&f allows you to fuse metals to create alloys that are impossible to obtain otherwise. This is where you will create &6Signalum&f and &bEnderium&f required for Age 6."
 			]
 			id: "5BDE2C985A26B556"
 			rewards: [{
@@ -211,9 +211,9 @@
 		{
 			dependencies: ["5BDE2C985A26B556"]
 			description: [
-				"&fCertains composants ne peuvent pas être assemblés à sec. Le &dFluid Encapsulator&f permet d'injecter des fluides (Redstone déstabilisée, Sève, etc.) directement dans des objets."
+				"&fSome components cannot be assembled dry. The &dFluid Encapsulator&f allows you to inject fluids (Destabilized Redstone, Sap, etc.) directly into items."
 				" "
-				"&fC'est une machine indispensable pour préparer les processeurs de l'Âge 6."
+				"&fThis is an essential machine for preparing Age 6 processors."
 			]
 			id: "3F4CE667ECB2B304"
 			rewards: [{
@@ -234,11 +234,11 @@
 		{
 			dependencies: ["0A06D46A16384B54"]
 			description: [
-				"&fVos machines sont trop lentes ? Il est temps de les booster."
+				"&fAre your machines too slow? It's time to boost them."
 				" "
-				"&fLes &eIntegral Components&f augmentent la vitesse et la capacité de stockage d'énergie de vos machines Thermal."
+				"&f&eIntegral Components&f increase the speed and energy storage capacity of your Thermal machines."
 				" "
-				"&fChaque niveau demande une gemme de &bXychorium&f plus pure et des alliages plus complexes."
+				"&fEach tier requires a purer &bXychorium&f gem and more complex alloys."
 			]
 			id: "029C63777AB59494"
 			rewards: [{
@@ -268,11 +268,11 @@
 		{
 			dependencies: ["3F4CE667ECB2B304"]
 			description: [
-				"&fLe &cSignalum&f est bien trop complexe pour être assemblé avec un simple marteau."
+				"&f&cSignalum&f is far too complex to be assembled with a simple hammer."
 				" "
-				"&fVous devez impérativement utiliser l'&eInduction Smelter&f pour fusionner le &6Cuivre&f, l'&fArgent&f, la &4Redstone&f et une &cGemme de Xychorium Rouge&f."
+				"&fYou must use the &eInduction Smelter&f to fuse &6Copper&f, &fSilver&f, &4Redstone&f, and a &cRed Xychorium Gem&f."
 				" "
-				"&fCet alliage est la base de vos futurs systèmes de stockage d'énergie et des composants électroniques de précision."
+				"&fThis alloy is the foundation for your future energy storage systems and precision electronic components."
 			]
 			id: "66F1B5AB8A462CA5"
 			rewards: [{
@@ -280,7 +280,7 @@
 				item: "thermal:signalum_gear"
 				type: "item"
 			}]
-			subtitle: "&7\"La fin du bricolage.\""
+			subtitle: "&7\"The end of amateur tinkering.\""
 			tasks: [{
 				consume_items: false
 				count: 4L
@@ -288,18 +288,18 @@
 				item: "thermal:signalum_ingot"
 				type: "item"
 			}]
-			title: "&cL'Alliage de Signalum"
+			title: "&cSignalum Alloy"
 			x: 10.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["66F1B5AB8A462CA5"]
 			description: [
-				"&fGrâce au Signalum, vous pouvez fabriquer des &eEnergy Cells&f."
+				"&fThanks to Signalum, you can craft &eEnergy Cells&f."
 				" "
-				"&fCes blocs stockent vos RF et permettent de stabiliser votre réseau. Très utile pour éviter que vos machines s'arrêtent au milieu d'un craft coûteux."
+				"&fThese blocks store your RF and help stabilize your grid. Very useful for preventing your machines from stopping in the middle of a costly craft."
 				" "
-				"&bAstuce : Pensez à configurer les entrées/sorties avec une clé à molette !"
+				"&bTip: Remember to configure inputs/outputs with a wrench!"
 			]
 			id: "154923BD40C6852A"
 			rewards: [{
@@ -331,13 +331,13 @@
 		{
 			dependencies: ["154923BD40C6852A"]
 			description: [
-				"&fL'&bEnderium&f est l'alliage le plus complexe que vous puissiez forger pour le moment."
+				"&f&bEnderium&f is the most complex alloy you can forge for now."
 				" "
-				"&fPour le stabiliser, vous devrez fusionner du &8Plomb&f, du &bDiamant&f et des &5Ender Pearls&f à l'aide d'une &1Gemme de Xychorium Dark&f."
+				"&fTo stabilize it, you must fuse &8Lead&f, &bDiamond&f, and &5Ender Pearls&f using a &1Dark Xychorium Gem&f."
 				" "
-				"&fSeule l'&eInduction Smelter&f peut supporter la réaction nécessaire à sa création."
+				"&fOnly the &eInduction Smelter&f can withstand the reaction necessary for its creation."
 				" "
-				"&dCet alliage vous permettra de débloquer les machines de l'Âge 6 : Applied Energistics 2 et Mekanism."
+				"&dThis alloy will allow you to unlock Age 6 machines: Applied Energistics 2 and Mekanism."
 			]
 			id: "323D227A8C597AFE"
 			rewards: [{
@@ -348,7 +348,7 @@
 			}]
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "&7\"Le sommet de la technologie thermique.\""
+			subtitle: "&7\"The pinnacle of thermal technology.\""
 			tasks: [{
 				consume_items: false
 				count: 4L
@@ -356,16 +356,16 @@
 				item: "thermal:enderium_ingot"
 				type: "item"
 			}]
-			title: "&bL'Alliage de l'Infini"
+			title: "&bThe Alloy of Infinity"
 			x: 13.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["323D227A8C597AFE"]
 			description: [
-				"&fEn combinant l'&bEnderium&f avec des éclats abyssaux, vous obtenez le &3Prismalium&f."
+				"&fBy combining &bEnderium&f with abyssal shards, you obtain &3Prismalium&f."
 				" "
-				"&fCet alliage permet de créer l'&eEndergy Upgrade 1&f, dépassant les limites de vitesse standards."
+				"&fThis alloy allows you to create the &eEndergy Upgrade 1&f, exceeding standard speed limits."
 			]
 			id: "70D297B0F264539A"
 			tasks: [
@@ -382,16 +382,16 @@
 					type: "item"
 				}
 			]
-			title: "&bPrismalium et Augment"
+			title: "&bPrismalium and Augment"
 			x: 13.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["323D227A8C597AFE"]
 			description: [
-				"&fInfusez votre Prismalium avec l'essence du Chorus. Le &dMelodium&f résonne avec une fréquence énergétique instable mais surpuissante."
+				"&fInfuse your Prismalium with Chorus essence. &dMelodium&f resonates with an unstable but overpowered energy frequency."
 				" "
-				"&fIndispensable pour l'&eEndergy Upgrade 2&f."
+				"&fEssential for &eEndergy Upgrade 2&f."
 			]
 			id: "087662EBD74EC801"
 			tasks: [
@@ -408,16 +408,16 @@
 					type: "item"
 				}
 			]
-			title: "&dMelodium et Augment"
+			title: "&dMelodium and Augment"
 			x: 15.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["323D227A8C597AFE"]
 			description: [
-				"&fLe sommet de l'ingénierie thermique. Le &fStellarium&f utilise la puissance d'une étoile du Nether pour saturer vos machines de puissance."
+				"&fThe peak of thermal engineering. &fStellarium&f uses the power of a Nether Star to saturate your machines with power."
 				" "
-				"&fL'&eEndergy Upgrade 3&f représente la vitesse absolue."
+				"&fThe &eEndergy Upgrade 3&f represents absolute speed."
 			]
 			id: "23CDE754DFB13C91"
 			tasks: [
@@ -434,10 +434,10 @@
 					type: "item"
 				}
 			]
-			title: "&fStellarium et Augment"
+			title: "&fStellarium and Augment"
 			x: 13.0d
 			y: -1.0d
 		}
 	]
-	title: "&6L'art &ede &6maîtriser &f le &bflux &3et &f la &cchaleur"
+	title: "&6The Art &eof &6Mastering &f the &bFlux &3and &f the &cHeat"
 }

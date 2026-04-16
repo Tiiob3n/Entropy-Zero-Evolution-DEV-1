@@ -1,29 +1,46 @@
-# Dossiers de jeu (Trop lourds / Privés)
-/saves/
-/logs/
-/screenshots/
-/resourcepacks/
-/shaderpacks/
-/simplebackups/
-/crash-reports/
-/journeymap/
-/local/
+# --- DOSSIERS DE JEU  ---
+saves/
+logs/
+screenshots/
+resourcepacks/
+shaderpacks/
+simplebackups/
+crash-reports/
+journeymap/
+local/
+tmp/
+patchouli_data/
+fancymenu_data/last_world.fmdata
 
+# --- FICHIERS SYSTÈME ET CACHE ---
+.mixin.out/
+downloads/
+usercache.json
+usernamecache.json
+minecraftinstance.json
+options.txt
+optionsof.txt
+servers.dat
+servers.dat_old
 
-# Fichiers système et cache
-/local/
-/.mixin.out/
-/downloads/
-/usercache.json
-/usernamecache.json
-*.dat
+# --- CONFIGS LOCALES ET LOGS ---
 *.log
 *.class
+*.pstats
+config/jei/world/
 
-# On ne garde QUE ce qui est nécessaire au modpack
-!/config/
-!/kubejs/
-!/defaultconfigs/
-!/mods/
-!/global_packs/
-!/patchouli_books/
+# --- RÈGLES D'EXCLUSION ---
+/*
+
+# Ensuite on autorise les dossiers vitaux
+!config/
+!kubejs/
+!defaultconfigs/
+!mods/
+!global_packs/
+!patchouli_books/
+!scripts/
+!fancymenu_data/
+
+# On ré-ignore les fichiers inutiles 
+config/jei/world/**

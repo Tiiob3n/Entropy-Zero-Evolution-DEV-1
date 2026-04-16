@@ -30,7 +30,7 @@
 	quests: [
 		{
 			dependencies: ["465F0FBCE0785C70"]
-			description: ["&7L'air est lourd et le silence assourdissant. Tu es le dernier vestige d'une ère révolue. Pour survivre, il va falloir réapprendre à fabriquer."]
+			description: ["&7The air is heavy and the silence is deafening. You are the last vestige of a bygone era. To survive, you will have to relearn how to craft."]
 			icon: "supplementaries:clock_block"
 			id: "794444A44965DBA0"
 			rewards: [
@@ -55,7 +55,7 @@
 			shape: "octagon"
 			tasks: [{
 				id: "74573E3E3BB8F290"
-				title: "&bLe Réveil"
+				title: "&bThe Awakening"
 				type: "checkmark"
 			}]
 			x: -1.0d
@@ -87,13 +87,13 @@
 					type: "item"
 				}
 			]
-			title: "&6Récolte de Fortune"
+			title: "&6Makeshift Scavenging"
 			x: -3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3753B4A56C5FDDAD"]
-			description: ["&7Avant de forger, il faut planifier. Les patterns sont la base de tout outil Tinkers."]
+			description: ["&7Before you forge, you must plan. Patterns are the foundation of every Tinkers tool."]
 			id: "0FE581846E087AE5"
 			rewards: [{
 				count: 2
@@ -108,13 +108,13 @@
 				item: "tconstruct:pattern"
 				type: "item"
 			}]
-			title: "&eLes Plans de Base"
+			title: "&eBasic Blueprints"
 			x: -3.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["0FE581846E087AE5"]
-			description: ["&fConstruis tes premières stations de travail. Le &6Part Builder &fpour tailler les pièces, et la &6Tinker Station fpour les assembler."]
+			description: ["&fBuild your first workstations. The &6Part Builder &fto carve your components, and the &6Tinker Station &fto assemble them."]
 			id: "6C53B7C34E985E2B"
 			rewards: [{
 				count: 4
@@ -136,13 +136,13 @@
 					type: "item"
 				}
 			]
-			title: "&6L'Atelier du Fabricant"
+			title: "&6The Maker's Workshop"
 			x: -1.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6C53B7C34E985E2B"]
-			description: ["&7Utilise le &6Part Builder&7. Place un &fPatron &7et un morceau de &8Silex &7pour créer une tête de pioche. Répète l'opération avec du bois pour le manche et le lien."]
+			description: ["&7Use the &6Part Builder&7. Place a &fPattern &7and a piece of &8Flint &7to create a pickaxe head. Repeat the process with wood for the handle and binding."]
 			id: "0E881CB106F737F4"
 			rewards: [{
 				count: 2
@@ -188,18 +188,18 @@
 					type: "item"
 				}
 			]
-			title: "&8Tailler le Silex"
+			title: "&8Carving Flint"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["0E881CB106F737F4"]
 			description: [
-				"&7La station de montage est prête. Il est temps de transformer tes composants en véritables outils de travail."
+				"&7The assembly station is ready. It's time to transform your components into real working tools."
 				" "
-				"&fAssemble tes pièces pour obtenir le set complet du parfait explorateur. Ces outils ne sont pas seulement plus efficaces, ils sont l'extension de ta volonté de survivre."
+				"&fAssemble your parts to obtain the full set for the perfect explorer. These tools are not just more efficient; they are an extension of your will to survive."
 				" "
-				"&8Astuce : Si un outil est usé, place-le dans la Tinker Station avec un morceau de Silex pour le réparer !"
+				"&8Tip: If a tool is worn out, place it in the Tinker Station with a piece of Flint to repair it!"
 			]
 			id: "58D92CCD0719346F"
 			rewards: [
@@ -347,19 +347,19 @@
 					type: "item"
 				}
 			]
-			title: "&bL'Arsenal du Survivant"
+			title: "&bThe Survivor's Arsenal"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["58D92CCD0719346F"]
 			description: [
-				"&7Le silex était un bon début, mais pour s'attaquer aux minerais plus sérieux, il faut monter en gamme."
+				"&7Flint was a good start, but to tackle more serious ores, you need to upgrade."
 				""
 				" "
-				"&fUtilise tes outils en &6Silex &fcomme base dans ton établi pour façonner la &8Pierre&f."
+				"&fUse your &6Flint &ftools as a base in your workbench to shape &8Stone&f."
 				" "
-				"&bNote : &7Tu as remarqué ? Le craft classique ne fonctionne plus. C'est l'évolution !"
+				"&bNote: &7Have you noticed? Classic crafting no longer works. This is evolution!"
 			]
 			id: "6820C652C25D3ADB"
 			rewards: [
@@ -401,19 +401,19 @@
 					type: "item"
 				}
 			]
-			title: "&8L'Âge de Pierre"
+			title: "&8The Stone Age"
 			x: 2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["6820C652C25D3ADB"]
 			description: [
-				"&7La pierre est utile, mais elle ne tourne pas. Pour entrer dans l'ère de la rotation, tu as besoin d'un matériau composite."
+				"&7Stone is useful, but it doesn't spin. To enter the era of rotation, you need a composite material."
 				""
 				" "
-				"&fMélange de l'&8Andésite &favec des &6Pépites de Fer &f(ou du Silex selon tes réglages) pour obtenir de l'&6Alliage d'Andésite&f."
+				"&fMix &8Andesite &fwith &6Iron Nuggets &f(or Flint, depending on your settings) to obtain &6Andesite Alloy&f."
 				" "
-				"&8Cet alliage est la base de tous les axes et engrenages que nous allons construire."
+				"&8This alloy is the foundation of all the shafts and gears we are about to build."
 			]
 			icon: "create:andesite_alloy"
 			id: "3D8CF578B91907F1"
@@ -430,17 +430,17 @@
 				item: "create:shaft"
 				type: "item"
 			}]
-			title: "&6L'Alliage de l'Aube"
+			title: "&6The Alloy of the Dawn"
 			x: -1.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["3D8CF578B91907F1"]
 			description: [
-				"&7L'alliage d'andésite est malléable. En le façonnant, tu peux créer des axes capables de transmettre la force de rotation."
+				"&7Andesite alloy is malleable. By shaping it, you can create shafts capable of transmitting rotational force."
 				""
 				" "
-				"&fFabrique tes premiers &bAxes (Shafts)&f. Ils sont le système nerveux de tes futures machines."
+				"&fCraft your first &bShafts&f. They are the nervous system of your future machines."
 			]
 			icon: "create:shaft"
 			id: "33268D580757CF58"
@@ -458,19 +458,19 @@
 				item: "create:shaft"
 				type: "item"
 			}]
-			title: "&6La Transmission"
+			title: "&6Transmission"
 			x: -3.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["33268D580757CF58"]
 			description: [
-				"&7C'est ici que s'achève ton initiation."
+				"&7This is where your initiation ends."
 				""
 				" "
-				"&fEn domestiquant la force de l'eau avec cette &9Roue à Aube&f, tu n'es plus un simple survivant avec un caillou et un bâton."
+				"&fBy taming the force of water with this &9Water Wheel&f, you are no longer a mere survivor with a rock and a stick."
 				" "
-				"&bFélicitations ! &7Tu as automatisé ton premier mouvement. Prépare-toi à entrer dans l'Âge 1 : Mouvement Perpétuel."
+				"&bCongratulations! &7You have automated your first movement. Prepare to enter Age 1: Perpetual Motion."
 			]
 			id: "1B5CB4AEB0E2E7E1"
 			rewards: [
@@ -493,11 +493,11 @@
 				item: "create:water_wheel"
 				type: "item"
 			}]
-			title: "&9L'Apogée du Ground Zero"
+			title: "&9The Peak of Ground Zero"
 			x: -3.5d
 			y: -4.0d
 		}
 	]
-	subtitle: ["&7L'éveil dans les ruines..."]
-	title: "&cGenèse &fde l'Inertie"
+	subtitle: ["&7Awakening in the ruins..."]
+	title: "&cGenesis &fof Inertia"
 }

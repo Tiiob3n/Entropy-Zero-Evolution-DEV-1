@@ -48,11 +48,11 @@
 		{
 			dependencies: ["1BDB4525F07B452D"]
 			description: [
-				"&7Fini de jouer avec des engrenages en bois. Les lunettes de Create vous ont ouvert les yeux sur les flux de puissance, mais vos machines actuelles sont trop fragiles pour la suite."
+				"&7No more playing around with wooden gears. Create's goggles have opened your eyes to power flows, but your current machines are too fragile for what's coming next."
 				""
-				"&fL'Age 2 marque votre entrée dans la Métallurgie Lourde et la Chimie."
+				"&fAge 2 marks your entry into Heavy Metallurgy and Chemistry."
 				""
-				"&8Préparez-vous à manipuler des métaux en fusion et des sous-produits toxiques."
+				"&8Prepare to handle molten metals and toxic by-products."
 			]
 			id: "002141BF70AFF291"
 			rewards: [{
@@ -63,16 +63,16 @@
 			shape: "gear"
 			tasks: [{
 				id: "497A7036885C20EB"
-				title: "&l&6L'Aube Industrielle"
+				title: "&l&6The Industrial Dawn"
 				type: "checkmark"
 			}]
-			title: "&6L'Appel de la Forge"
+			title: "&6The Call of the Forge"
 			x: 4.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["002141BF70AFF291"]
-			description: ["&7Pour contenir le métal en fusion, il vous faut des briques capables de résister à des températures extrêmes."]
+			description: ["&7To contain molten metal, you need bricks capable of withstanding extreme temperatures."]
 			id: "3074C5C03E07FA2C"
 			rewards: [{
 				count: 16
@@ -87,16 +87,16 @@
 				item: "tconstruct:grout"
 				type: "item"
 			}]
-			title: "&8La Terre de Feu"
+			title: "&8Fireclay Earth"
 			x: 3.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3074C5C03E07FA2C"]
 			description: [
-				"&7Le &lMelter&r est votre point d'entrée dans la métallurgie. Il ne peut pas faire d'alliages complexes, mais il est parfait pour fondre de petites quantités de métal."
+				"&7The &lMelter&r is your entry point into metallurgy. It cannot create complex alloys, but it is perfect for smelting small quantities of metal."
 				""
-				"&bAstuce :&7 Placez le &lHeater&r en dessous pour chauffer le tout avec du charbon !"
+				"&bTip:&7 Place the &lHeater&r underneath to heat everything with coal!"
 			]
 			id: "3F45E06273E2C93F"
 			rewards: [{
@@ -121,24 +121,24 @@
 					type: "item"
 				}
 			]
-			title: "&eLe Seared Melter"
+			title: "&eThe Seared Melter"
 			x: 2.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1898064789819285"]
 			description: [
-				"&7Les briques standards ne suffiront pas pour l'industrie lourde. Vous devez les renforcer avec un liant spécial : &ll'Argile Liquide&r."
+				"&7Standard bricks will not suffice for heavy industry. You must reinforce them with a special binder: &lLiquid Clay&r."
 				""
-				"&f&lLe Processus :"
+				"&f&lThe Process:"
 				""
-				"1. Jetez des &lClay Balls&r dans votre grande Smeltery pour obtenir de la &lMolten Clay&r."
+				"1. Throw &lClay Balls&r into your large Smeltery to obtain &lMolten Clay&r."
 				""
-				"2. Placez une &lSeared Brick (item)&r dans le &lCasting Basin&r."
+				"2. Place a &lSeared Brick (item)&r in the &lCasting Basin&r."
 				""
-				"3. Versez &l250 mB&r d'argile liquide par-dessus."
+				"3. Pour &l250 mB&r of liquid clay over it."
 				""
-				"&cNote :&7 Vous avez besoin de 27 briques pour construire le four. Automatisez cela avec des entonnoirs !"
+				"&cNote:&7 You need 27 bricks to build the oven. Automate this with hoppers!"
 			]
 			id: "40D58C0B0E39D3DF"
 			rewards: [{
@@ -159,22 +159,22 @@
 				item: "immersiveengineering:cokebrick"
 				type: "item"
 			}]
-			title: "&l&8Le Secret des Coke Bricks"
+			title: "&l&8The Secret of Coke Bricks"
 			x: -1.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["3F45E06273E2C93F"]
 			description: [
-				"&7Pour passer à la vitesse supérieure, il vous faut le cœur de la grande fonderie. Mais celui-ci demande un matériau que seul Create peut vous fournir : le Laiton (Brass)."
+				"&7To progress to the next level, you need the heart of the great foundry. But it requires a material only Create can provide: Brass."
 				""
-				"&f&lLe Processus :"
+				"&f&lThe Process:"
 				""
-				"1. Posez un &lCasting Basin&r sous un robinet relié à votre Melter."
+				"1. Place a &lCasting Basin&r under a faucet connected to your Melter."
 				""
-				"2. Placez une &lSeared Brick (item)&r à l'intérieur du bassin."
+				"2. Place a &lSeared Brick (item)&r inside the basin."
 				""
-				"3. Faites couler &l6 lingots de Brass fondu (540 mB)&r sur la brique."
+				"3. Pour &l6 Brass ingots worth (540 mB)&r onto the brick."
 			]
 			id: "053D44877F9A01AA"
 			rewards: [{
@@ -188,15 +188,15 @@
 				item: "tconstruct:smeltery_controller"
 				type: "item"
 			}]
-			title: "&bL'Alliage de Précision"
+			title: "&bThe Alloy of Precision"
 			x: 1.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["053D44877F9A01AA"]
 			description: [
-				"&7Utilisez votre nouveau Controller pour bâtir une Smeltery multi-bloc (minimum 3x3 à la base)."
-				"&fCette cuve massive permet de fondre des minerais par piles entières, de doubler votre production et surtout de créer des alliages complexes comme le Bronze ou l'Invar."
+				"&7Use your new Controller to build a multi-block Smeltery (minimum 3x3 base)."
+				"&fThis massive vat allows you to smelt entire stacks of ore, double your production, and most importantly, create complex alloys like Bronze or Invar."
 			]
 			id: "1898064789819285"
 			rewards: [{
@@ -231,18 +231,18 @@
 					type: "item"
 				}
 			]
-			title: "&6La Grande Fonderie"
+			title: "&6The Great Smeltery"
 			x: 0.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["40D58C0B0E39D3DF"]
 			description: [
-				"&7Assemblez vos 27 briques en un bloc massif de 3x3x3."
+				"&7Assemble your 27 bricks into a massive 3x3x3 block."
 				""
-				"&fUtilisez votre Engineer's Hammer (clic droit) sur le centre d'une face pour activer le Coke Oven."
+				"&fUse your Engineer's Hammer (right-click) on the center of one face to activate the Coke Oven."
 				""
-				"&6Utilité :&7 Transforme le charbon en Coal Coke (carburant puissant) et génère un sous-produit vital : la Créosote."
+				"&6Utility:&7 Transforms coal into Coal Coke (powerful fuel) and generates a vital by-product: Creosote."
 			]
 			id: "51D23A244068C49E"
 			rewards: [{
@@ -253,7 +253,7 @@
 			}]
 			tasks: [{
 				id: "6202F939B4B2ACBB"
-				title: "&8Le Four à Coke"
+				title: "&8The Coke Oven"
 				type: "checkmark"
 			}]
 			x: -2.5d
@@ -262,9 +262,9 @@
 		{
 			dependencies: ["51D23A244068C49E"]
 			description: [
-				"&7Récupérez la Créosote du four à l'aide de seaux ou de tuyaux."
+				"&7Collect Creosote from the oven using buckets or pipes."
 				""
-				"&fCombinez vos planches de bois avec la Créosote pour obtenir du Bois Traité. C'est le matériau de base pour toute l'infrastructure électrique d'Immersive Engineering."
+				"&fCombine your wooden planks with Creosote to obtain Treated Wood. This is the base material for all the heavy electrical infrastructure in Immersive Engineering."
 			]
 			id: "45978D37EC6ED1D6"
 			rewards: [{
@@ -277,16 +277,16 @@
 				item: "immersiveengineering:creosote_bucket"
 				type: "item"
 			}]
-			title: "&3L'Imprégnation"
+			title: "&3Impregnation"
 			x: -4.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["45978D37EC6ED1D6"]
 			description: [
-				"&7Récupérez la Créosote du four à l'aide de seaux ou de tuyaux."
+				"&7Collect Creosote from the oven using buckets or pipes."
 				""
-				"&fCombinez vos planches de bois avec la Créosote pour obtenir du Treated Wood. C'est le matériau isolant de base pour toute l'infrastructure électrique."
+				"&fCombine your wooden planks with Creosote to obtain Treated Wood. This is the base insulating material for all your electrical networking."
 			]
 			id: "07DCE54A6E0252B1"
 			rewards: [{
@@ -303,20 +303,20 @@
 				item: "immersiveengineering:treated_wood_horizontal"
 				type: "item"
 			}]
-			title: "&3Le Bois Traité"
+			title: "&3Treated Wood"
 			x: -4.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["07DCE54A6E0252B1"]
 			description: [
-				"&7Pour avancer, vous avez besoin d'alliages plus résistants que le bronze. Le Kiln est un four 2x2x2 qui fonctionne au charbon."
+				"&7To move forward, you need alloys stronger than bronze. The Kiln is a 2x2x2 coal-fired furnace."
 				""
-				"&f&lLe Processus :"
+				"&f&lThe Process:"
 				""
-				"1. Utilisez votre &lMixer&r (Create) pour créer du &lBronze&r."
+				"1. Use your &lMixer&r (Create) to create &lBronze&r."
 				""
-				"2. Coulez le bronze sur des &lSeared Brick&r (90mB) dans la fonderie pour obtenir des &lAlloy Bricks&r."
+				"2. Pour bronze over &lSeared Bricks&r (90mB) in the smeltery to obtain &lAlloy Bricks&r."
 			]
 			id: "72590741F37C3026"
 			rewards: [{
@@ -331,16 +331,16 @@
 				item: "immersiveengineering:alloy_smelter"
 				type: "item"
 			}]
-			title: "&eL'Alloy Kiln"
+			title: "&eThe Alloy Kiln"
 			x: -4.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["72590741F37C3026"]
 			description: [
-				"&7Utilisez votre nouvel &lAlloy Kiln&r pour mélanger du &lFer&r et du &lNickel&r."
+				"&7Use your new &lAlloy Kiln&r to mix &lIron&r and &lNickel&r."
 				""
-				"&fL'Invar ne se dilate pas à la chaleur, ce qui en fait le liant parfait pour créer des briques capables de supporter la fusion de l'acier."
+				"&fInvar does not expand with heat, making it the perfect binder for creating bricks that can withstand the melting of steel."
 			]
 			id: "5CD5704493748CAF"
 			rewards: [{
@@ -356,20 +356,20 @@
 				item: "alltheores:invar_ingot"
 				type: "item"
 			}]
-			title: "&fL'Invar Industriel"
+			title: "&fIndustrial Invar"
 			x: -4.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["5CD5704493748CAF"]
 			description: [
-				"&7C'est le moment de vérité. Renforcez vos &lCoke Bricks&r (déjà imprégnées d'argile) avec votre &lInvar&r fondu."
+				"&7It is the moment of truth. Reinforce your &lCoke Bricks&r (already clay-impregnated) with your molten &lInvar&r."
 				""
-				"&f&lLe Processus :"
+				"&f&lThe Process:"
 				""
-				"1. Posez une &lCoke Brick&r dans le Casting Basin."
+				"1. Place a &lCoke Brick&r in the Casting Basin."
 				""
-				"2. Versez &l90mB d'Invar&r par-dessus."
+				"2. Pour &l90mB of Invar&r over it."
 			]
 			id: "610A23F2BF94DEF7"
 			tasks: [{
@@ -379,16 +379,16 @@
 				item: "immersiveengineering:blastbrick"
 				type: "item"
 			}]
-			title: "&l&4Les Briques de Haut Fourneau"
+			title: "&l&4Blast Furnace Bricks"
 			x: -4.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["610A23F2BF94DEF7"]
 			description: [
-				"&7Assemblez votre cube 3x3x3. Placez-y du &lFer&r et du &lCoal Coke&r."
+				"&7Assemble your 3x3x3 cube. Fill it with &lIron&r and &lCoal Coke&r."
 				""
-				"&fL'Acier est là. C'est lent, c'est chaud, mais c'est le métal qui va construire vos premières machines électriques."
+				"&fSteel is here. It is slow, it is hot, but it is the metal that will build your first electrical machines."
 			]
 			id: "11D5910891BB45CC"
 			tasks: [{
@@ -397,18 +397,18 @@
 				item: "alltheores:steel_ingot"
 				type: "item"
 			}]
-			title: "&4Le Haut Fourneau"
+			title: "&4The Blast Furnace"
 			x: -4.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["11D5910891BB45CC"]
 			description: [
-				"&7L'Acier est prêt, mais il faut maintenant le mettre en forme."
+				"&7The Steel is ready, but it must now be shaped."
 				""
-				"Réunissez ces composants pour assembler votre première machine industrielle : la &5Metal Press&7."
+				"Gather these components to assemble your first industrial machine: the &5Metal Press&7."
 				""
-				"&fLe &4Heavy Engineering Block&f est la pièce maîtresse, il prouve que vous maîtrisez enfin l'acier industriel."
+				"&fThe &4Heavy Engineering Block&f is the centerpiece, proving you have finally mastered industrial steel."
 			]
 			id: "5F9B93403BBCD42E"
 			rewards: [{
@@ -450,18 +450,18 @@
 					type: "item"
 				}
 			]
-			title: "&6&lPréparation au Pressage"
+			title: "&6&lPressing Preparation"
 			x: -6.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["5F9B93403BBCD42E"]
 			description: [
-				"&7Une fois la structure en place, frappez le &lPiston&7 avec votre marteau d'ingénieur pour l'activer."
+				"&7Once the structure is in place, hit the &lPiston&7 with your engineer's hammer to activate it."
 				""
-				"La &5Metal Press&7 est la seule machine capable de transformer l'Acier, l'Aluminium et le Plomb en &bFils (Wires)&7."
+				"The &5Metal Press&7 is the only machine capable of transforming Steel, Aluminum, and Lead into &bWires&7."
 				""
-				"&6&lIMPORTANT :&r &fSans cette machine, vous ne pourrez jamais produire les câbles nécessaires au réseau électrique."
+				"&6&lIMPORTANT:&r &fWithout this machine, you will never be able to produce the cables needed for the power grid."
 			]
 			icon: "immersiveengineering:metal_press"
 			id: "4CA185ABFD430597"
@@ -472,7 +472,7 @@
 			}]
 			tasks: [{
 				id: "0940B397582F5662"
-				title: "&d&lForce Hydraulique"
+				title: "&d&lHydraulic Force"
 				type: "checkmark"
 			}]
 			x: -6.0d
@@ -481,11 +481,11 @@
 		{
 			dependencies: ["4CA185ABFD430597"]
 			description: [
-				"&7Votre énergie rotative (Create) ne suffit plus."
+				"&7Your rotational energy (Create) is no longer enough."
 				""
-				"La &3Dynamo&7 est le pont entre la mécanique et l'électrique. Elle convertit la rotation en &eFlux (FE/RF)&7."
+				"The &3Dynamo&7 is the bridge between mechanics and electricity. It converts rotation into &eFlux (FE/RF)&7."
 				""
-				"&fPlacez-la face à une source de rotation pour commencer à charger vos machines."
+				"&fPlace it facing a rotation source to start charging your machines."
 			]
 			id: "03EF5105D1AC52E2"
 			rewards: [{
@@ -500,18 +500,18 @@
 				item: "immersiveengineering:dynamo"
 				type: "item"
 			}]
-			title: "&b&lÉnergie Cinétique"
+			title: "&b&lKinetic Energy"
 			x: -6.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["03EF5105D1AC52E2"]
 			description: [
-				"&7La source d'énergie la plus stable pour débuter."
+				"&7The most stable energy source for starting out."
 				""
-				"Assemblez les 4 segments pour former une roue complète. Elle doit être placée directement contre le côté de la &bDynamo&7."
+				"Assemble the 4 segments to form a complete wheel. It must be placed directly against the side of the &bDynamo&7."
 				""
-				"&f&lAstuce :&r &fL'eau doit couler sur un seul côté de la roue pour qu'elle tourne à pleine vitesse."
+				"&f&lTip:&r &fWater must flow on only one side of the wheel for it to spin at full speed."
 			]
 			icon: "immersiveengineering:watermill"
 			id: "6E3A8B5559305A98"
@@ -560,13 +560,13 @@
 		{
 			dependencies: ["7F27B4FF454F38D6"]
 			description: [
-				"&7Maintenant, il faut relier la source à la machine."
+				"&7Now, you must link the source to the machine."
 				""
-				"1. Posez un &eConnecteur&7 sur la Dynamo."
-				"2. Posez un &eConnecteur&7 sur la Metal Press."
-				"3. Reliez-les avec la bobine de fil."
+				"1. Place a &eConnector&7 on the Dynamo."
+				"2. Place a &eConnector&7 on the Metal Press."
+				"3. Connect them with the wire coil."
 				""
-				"&c&lDANGER :&r &fLes fils non isolés infligent des chocs électriques. Ne restez pas dessous !"
+				"&c&lDANGER:&r &fUninsulated wires inflict electric shocks. Do not stand under them!"
 			]
 			id: "2403795A92DC5C19"
 			rewards: [{
@@ -593,18 +593,18 @@
 					type: "item"
 				}
 			]
-			title: "&e&lLe Réseau Basse Tension"
+			title: "&e&lThe Low Voltage Network"
 			x: -6.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["2403795A92DC5C19"]
 			description: [
-				"&7La Dynamo produit peu, la Metal Press consomme beaucoup d'un coup."
+				"&7The Dynamo produces little, but the Metal Press consumes a lot in bursts."
 				""
-				"Le &aCapacitor&7 stocke l'énergie en surplus. C'est indispensable pour ne pas que vos machines s'arrêtent au milieu d'un craft."
+				"The &aCapacitor&7 stores surplus energy. This is vital to prevent your machines from stalling mid-craft."
 				""
-				"&6Marteau :&r &fShift + Clic Droit pour changer les faces (Bleu = Entrée, Orange = Sortie)."
+				"&6Hammer:&r &fShift + Right Click to change faces (Blue = Input, Orange = Output)."
 			]
 			id: "6EEED057A3DCB05A"
 			rewards: [{
@@ -618,7 +618,7 @@
 				item: "immersiveengineering:capacitor_lv"
 				type: "item"
 			}]
-			title: "&a&lLa Première Batterie"
+			title: "&a&lThe First Battery"
 			x: -6.0d
 			y: -1.0d
 		}
@@ -653,27 +653,27 @@
 					type: "item"
 				}
 			]
-			title: "&a&lLogistique Simplifiée"
+			title: "&a&lSimplified Logistics"
 			x: -8.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["7B96A048F280DD6E"]
 			description: [
-				"&fBienvenue dans l'ère du recyclage et de la pulvérisation !"
+				"&fWelcome to the era of recycling and pulverization!"
 				" "
-				"&bLe Crusher&f est une machine multiblock massive. Sans elle, impossible d'obtenir la &eCoal Dust&f nécessaire à la fabrication de la &8Pâte Diélectrique&f de Powah."
+				"&bThe Crusher&f is a massive multiblock machine. Without it, obtaining &eCoal Dust&f needed to manufacture Powah's &8Dielectric Paste&f is impossible."
 				" "
-				"&c⚠ Attention :&f Cette machine est dangereuse. Ne tombez pas dedans pendant qu'elle fonctionne, sous peine de finir en... steak haché."
+				"&c⚠ Warning:&f This machine is dangerous. Do not fall in while it is running, or you will end up as... ground beef."
 				" "
-				"&6&lComposants requis :"
+				"&6&lRequired Components:"
 				"* &b10x&f Light Engineering Blocks"
 				"* &b1x&f Redstone Engineering Block"
 				"* &b10x&f Steel Scaffolding"
 				"* &b8x&f Steel Fences"
 				"* &b9x&f Hoppers"
 				" "
-				"&7Astuce : Utilisez le &eManual de l'Ingénieur&7 pour visualiser la structure avec la silhouette fantôme."
+				"&7Tip: Use the &eEngineer's Manual&7 to visualize the structure with the ghost silhouette."
 			]
 			id: "729E1D7F912F8423"
 			rewards: [
@@ -725,16 +725,16 @@
 					type: "item"
 				}
 			]
-			title: "&6L'Industrie Lourde : Le Crusher"
+			title: "&6Heavy Industry: The Crusher"
 			x: -8.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["729E1D7F912F8423"]
 			description: [
-				"&fMaintenant que vous avez accès à la &eCoal Dust&f grâce au &bCrusher&f, vous pouvez fabriquer l'isolant universel de Powah."
+				"&fNow that you have access to &eCoal Dust&f thanks to the &bCrusher&f, you can manufacture Powah's universal insulator."
 				" "
-				"&fCette pâte est le composant principal de tous les châssis et câbles du mod."
+				"&fThis paste is the primary component for all frames and cables in the mod."
 			]
 			id: "616E0CCC9EFF96E0"
 			rewards: [{
@@ -750,16 +750,16 @@
 				item: "powah:dielectric_paste"
 				type: "item"
 			}]
-			title: "&6La Base de l'Énergie : Dielectric Paste"
+			title: "&6The Power Foundation: Dielectric Paste"
 			x: -8.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["616E0CCC9EFF96E0"]
 			description: [
-				"&fUtilisez vos &6Plaques d'Acier&f et vos &bComposants Mécaniques&f pour assembler les châssis de vos futures machines."
+				"&fUse your &6Steel Plates&f and &bMechanical Components&f to assemble the skeletons of your future machines."
 				" "
-				"&fC'est ici que votre investissement dans le Haut Fourneau d'Immersive Engineering porte ses fruits !"
+				"&fThis is where your investment in the Immersive Engineering Blast Furnace pays off!"
 			]
 			id: "2328ADF78549291D"
 			rewards: [{
@@ -775,39 +775,39 @@
 				item: "powah:dielectric_casing"
 				type: "item"
 			}]
-			title: "&6L'ossature : Dielectric Casing"
+			title: "&6The Skeleton: Dielectric Casing"
 			x: -8.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["2328ADF78549291D"]
 			description: [
-				"&fLe &bThermo Generator&f produit de l'énergie (FE) simplement en étant placé sur une source de chaleur (Lave, Magma, etc.) avec de l'eau à l'intérieur."
+				"&fThe &bThermo Generator&f produces energy (FE) simply by being placed on a heat source (Lava, Magma, etc.) with water inside."
 				" "
-				"&fGrâce au &eSlag Glass&f et à l'&6Acier&f, vous avez un générateur solide qui ne vous lâchera pas."
+				"&fThanks to &eSlag Glass&f and &6Steel&f, you have a solid generator that won't let you down."
 				" "
-				"&7Note : Plus la source de chaleur est puissante, plus il produit !"
+				"&7Note: The more powerful the heat source, the more it produces!"
 			]
 			id: "4BE539672AD9F359"
-			subtitle: "&7Chaud dessous !"
+			subtitle: "&7Hot stuff!"
 			tasks: [{
 				consume_items: false
 				id: "3E5A1922666802DE"
 				item: "powah:thermo_generator_starter"
 				type: "item"
 			}]
-			title: "&6Énergie Thermique : Thermo Generator"
+			title: "&6Thermal Energy: Thermo Generator"
 			x: -8.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["4BE539672AD9F359"]
 			description: [
-				"&fL'&dEnergizing Orb&f est l'outil le plus important de Powah. Elle permet de charger des matériaux pour créer des cristaux avancés."
+				"&fThe &dEnergizing Orb&f is Powah's most important tool. It allows you to charge materials to create advanced crystals."
 				" "
-				"&fPlacez des &bEnergizing Rods&f autour de l'orb pour lui envoyer de l'énergie (FE). Plus vous mettez de Rods, plus le processus est rapide !"
+				"&fPlace &bEnergizing Rods&f around the orb to send it energy (FE). The more Rods you use, the faster the process!"
 				" "
-				"&7Note : L'Orb ne consomme pas d'énergie si elle n'a rien à transformer."
+				"&7Note: The Orb does not consume energy if it has nothing to transform."
 			]
 			id: "59F58D04A81A5AF6"
 			rewards: [{
@@ -816,7 +816,7 @@
 				item: "powah:steel_energized"
 				type: "item"
 			}]
-			subtitle: "&7Le rituel électrique"
+			subtitle: "&7The electrical ritual"
 			tasks: [
 				{
 					consume_items: false
@@ -832,18 +832,18 @@
 					type: "item"
 				}
 			]
-			title: "&dL'Éveil des Cristaux : Energizing Orb"
+			title: "&dCrystal Awakening: Energizing Orb"
 			x: -8.0d
 			y: -8.5d
 		}
 		{
 			dependencies: ["59F58D04A81A5AF6"]
 			description: [
-				"&fL'étape cruciale pour passer aux choses sérieuses."
+				"&fThe crucial step to getting serious."
 				" "
-				"&fPlacez un lingot d'&6Acier&f et un lingot d'&eOr&f (ou de la poudre d'or) dans l'&dEnergizing Orb&f."
+				"&fPlace one &6Steel Ingot&f and one &eGold Ingot&f (or gold dust) into the &dEnergizing Orb&f."
 				" "
-				"&fCet alliage est indispensable pour fabriquer les composants de palier supérieur et débloquer les prochaines quêtes de Powah."
+				"&fThis alloy is indispensable for manufacturing higher-tier components and unlocking further Powah quests."
 			]
 			id: "3AF368A322BBAC02"
 			rewards: [{
@@ -852,23 +852,23 @@
 				table_id: 323217218064538611L
 				type: "choice"
 			}]
-			subtitle: "&7Quand l'Acier rencontre la Foudre"
+			subtitle: "&7When Steel meets Lightning"
 			tasks: [{
 				consume_items: false
 				id: "193B64EBD405853A"
 				item: "powah:steel_energized"
 				type: "item"
 			}]
-			title: "&bL'Alliage Électrique : Energized Steel"
+			title: "&bElectric Alloy: Energized Steel"
 			x: -8.0d
 			y: -9.5d
 		}
 		{
 			dependencies: ["59F58D04A81A5AF6"]
 			description: [
-				"&fMarre de passer votre vie devant le Haut Fourneau d'Immersive ?"
+				"&fTired of spending your life in front of Immersive's Blast Furnace?"
 				" "
-				"&fL'essence d'Acier vous permet de faire pousser votre métal. Huit de ces essences vous donneront un lingot d'&6Acier d'Immersive Engineering&f, prêt à être surchargé dans l'Orb."
+				"&fSteel essence allows you to grow your metal. Eight of these essences will give you one &6Immersive Engineering Steel Ingot&f, ready to be overcharged in the Orb."
 			]
 			id: "5D8890F2AE14E06F"
 			rewards: [{
@@ -883,7 +883,7 @@
 				icon: "mysticalagriculture:steel_essence"
 				id: "7E37F9272E27BA15"
 				item: "immersiveengineering:ingot_steel"
-				title: "&bL'Acier Fertile"
+				title: "&bFertile Steel"
 				type: "item"
 			}]
 			x: -4.0d
@@ -892,11 +892,11 @@
 		{
 			dependencies: ["3AF368A322BBAC02"]
 			description: [
-				"&fLe &6Blazing Crystal&f est le premier palier de cristaux \"purs\"."
+				"&fThe &6Blazing Crystal&f is the first tier of \"pure\" crystals."
 				" "
-				"&fPlacez une &eBlaze Rod&f dans l'Orb. Elle va absorber une quantité massive d'énergie pour se transformer."
+				"&fPlace a &eBlaze Rod&f in the Orb. It will absorb a massive amount of energy to transform."
 				" "
-				"&fCe cristal est la clé pour fabriquer des générateurs plus performants et les câbles de palier &6Blazing&f."
+				"&fThis crystal is the key to manufacturing high-performance generators and &6Blazing&f tier cables."
 			]
 			id: "146100FF0AB131D4"
 			rewards: [{
@@ -904,23 +904,23 @@
 				item: "powah:crystal_blazing"
 				type: "item"
 			}]
-			subtitle: "&7De la lave en bâton"
+			subtitle: "&7Lava on a stick"
 			tasks: [{
 				consume_items: false
 				id: "0D938FB22D83196F"
 				item: "powah:crystal_blazing"
 				type: "item"
 			}]
-			title: "&6L'Énergie Solaire : Blazing Crystal"
+			title: "&6Solar Energy: Blazing Crystal"
 			x: -8.0d
 			y: -10.5d
 		}
 		{
 			dependencies: ["146100FF0AB131D4"]
 			description: [
-				"&fEn surchargeant un &bDiamant&f dans l'Orb, vous obtenez un cristal d'une pureté incroyable."
+				"&fBy overcharging a &bDiamond&f in the Orb, you obtain a crystal of incredible purity."
 				" "
-				"&fC'est le palier où les choses deviennent sérieuses au niveau du stockage et du transfert."
+				"&fThis is the tier where things get serious for storage and transfer."
 			]
 			id: "089F33F1A04AB557"
 			rewards: [{
@@ -929,23 +929,23 @@
 				table_id: 5644430283229160518L
 				type: "random"
 			}]
-			subtitle: "&7Le diamant sous haute tension"
+			subtitle: "&7Diamond under high voltage"
 			tasks: [{
 				consume_items: false
 				id: "490781E18511E1B2"
 				item: "powah:crystal_niotic"
 				type: "item"
 			}]
-			title: "&bLa Pureté Électrique : Niotic Crystal"
+			title: "&bElectric Purity: Niotic Crystal"
 			x: -8.0d
 			y: -11.5d
 		}
 		{
 			dependencies: ["089F33F1A04AB557"]
 			description: [
-				"&fLe mariage entre la force de l'&2Émeraude&f et l'énergie brute."
+				"&fThe marriage between the strength of the &2Emerald&f and raw energy."
 				" "
-				"&fCes cristaux permettent de fabriquer des machines capables de gérer des flux d'énergie colossaux."
+				"&fThese crystals allow you to manufacture machines capable of handling colossal energy flows."
 			]
 			id: "6BDB935E959EDD24"
 			rewards: [{
@@ -954,23 +954,23 @@
 				table_id: 5896103029501993867L
 				type: "random"
 			}]
-			subtitle: "&7Le pouvoir de l'Émeraude"
+			subtitle: "&7The power of the Emerald"
 			tasks: [{
 				consume_items: false
 				id: "380C8B7E25EB9CDC"
 				item: "powah:crystal_spirited"
 				type: "item"
 			}]
-			title: "&2L'Éveil de la Nature : Spirited Crystal"
+			title: "&2Nature's Awakening: Spirited Crystal"
 			x: -8.0d
 			y: -12.5d
 		}
 		{
 			dependencies: ["6BDB935E959EDD24"]
 			description: [
-				"&fLe summum de la technologie &cPowah&f. Ce cristal demande des matériaux instables comme la &4Nether Star&f."
+				"&fThe pinnacle of &cPowah&f technology. This crystal requires unstable materials like the &4Nether Star&f."
 				" "
-				"&fAvec le palier &cNitro&f, vous atteignez le sommet de la pyramide énergétique."
+				"&fWith the &cNitro&f tier, you reach the summit of the energy pyramid."
 			]
 			id: "10361232CD3446CA"
 			rewards: [{
@@ -979,25 +979,25 @@
 				table_id: 1432029627393651571L
 				type: "random"
 			}]
-			subtitle: "&7L'énergie au-delà des limites"
+			subtitle: "&7Energy beyond limits"
 			tasks: [{
 				consume_items: false
 				id: "60770327CA5A8699"
 				item: "powah:crystal_nitro"
 				type: "item"
 			}]
-			title: "&cLa Puissance Ultime : Nitro Crystal"
+			title: "&cUltimate Power: Nitro Crystal"
 			x: -8.0d
 			y: -13.5d
 		}
 		{
 			dependencies: ["5D8890F2AE14E06F"]
 			description: [
-				"&fVous pensiez pouvoir planter vos lingots si facilement ?"
+				"&fYou thought you could just plant your ingots so easily?"
 				" "
-				"&fL'&dInfusion Altar&f demande maintenant une base en &8Deepslate&f renforcée par un cœur en &bEnergized Steel&f."
+				"&fThe &dInfusion Altar&f now requires a &8Deepslate&f base reinforced with an &bEnergized Steel&f core."
 				" "
-				"&fC'est le point de départ obligatoire pour créer toutes vos graines magiques."
+				"&fThis is the mandatory starting point for creating all your magical seeds."
 			]
 			id: "746F9C492464BED6"
 			rewards: [{
@@ -1006,22 +1006,22 @@
 				item: "mysticalagriculture:prosperity_shard"
 				type: "item"
 			}]
-			subtitle: "&7Quand l'électricité réveille les plantes"
+			subtitle: "&7When electricity awakens plants"
 			tasks: [{
 				id: "2AA1C57CE76980D4"
 				item: "mysticalagriculture:infusion_altar"
 				type: "item"
 			}]
-			title: "&dLe Mariage de la Technologie et de la Nature"
+			title: "&dThe Marriage of Technology and Nature"
 			x: -4.0d
 			y: -9.5d
 		}
 		{
 			dependencies: ["746F9C492464BED6"]
 			description: [
-				"&fPour que le rituel de l'autel fonctionne, vous avez besoin de 8 piédestaux placés autour."
+				"&fFor the altar ritual to work, you need 8 pedestals placed around it."
 				" "
-				"&fOubliez l'acier pour un moment : ces supports doivent être taillés dans la &8Deepslate polie&f et surmontés d'un &dÉclat d'Améthyste&f pour canaliser l'énergie magique."
+				"&fForget steel for a moment: these supports must be carved from &8Polished Deepslate&f and topped with an &dAmethyst Shard&f to channel magical energy."
 			]
 			id: "3FC04D3671A1BFE1"
 			rewards: [{
@@ -1030,25 +1030,25 @@
 				table_id: 3412653644065915627L
 				type: "random"
 			}]
-			subtitle: "&7Taillés dans la roche profonde"
+			subtitle: "&7Carved from the deep rock"
 			tasks: [{
 				count: 8L
 				id: "6012AC97F7C384CA"
 				item: { Count: 8, id: "mysticalagriculture:infusion_pedestal" }
 				type: "item"
 			}]
-			title: "&5Résonance Cristalline : Pedestals"
+			title: "&5Crystalline Resonance: Pedestals"
 			x: -5.0d
 			y: -9.5d
 		}
 		{
 			dependencies: ["3FC04D3671A1BFE1"]
 			description: [
-				"&fLe cristal de base est une relique fragile. Pour atteindre la perfection, vous devez le faire évoluer à travers tous les paliers d'essence."
+				"&fThe basic crystal is a fragile relic. To reach perfection, you must evolve it through all tiers of essence."
 				" "
-				"&fChaque étape (&aInferium &f➜ &ePrudentium &f➜ &6Tertium &f➜ &bImperium &f➜ &cSupremium&f) augmente drastiquement la durabilité de votre outil."
+				"&fEach step (&aInferium &f➜ &ePrudentium &f➜ &6Tertium &f➜ &bImperium &f➜ &cSupremium&f) drastically increases the durability of your tool."
 				" "
-				"&d&lL'Objectif Final :&r&f Une fois que vous aurez maîtrisé le cristal de Supremium, vous recevrez l'artefact ultime qui ne se brisera jamais."
+				"&d&lThe Final Goal:&r&f Once you have mastered the Supremium crystal, you will receive the ultimate artifact that will never break."
 			]
 			id: "5468626BA3F056D1"
 			rewards: [{
@@ -1056,7 +1056,7 @@
 				item: "mysticalagriculture:master_infusion_crystal"
 				type: "item"
 			}]
-			subtitle: "&7De la fragilité à l'immortalité"
+			subtitle: "&7From fragility to immortality"
 			tasks: [
 				{
 					consume_items: false
@@ -1119,7 +1119,7 @@
 					type: "item"
 				}
 			]
-			title: "&bÉvolution Alchimique : La Voie du Maître"
+			title: "&bAlchemical Evolution: The Master's Way"
 			x: -4.0d
 			y: -10.5d
 		}
@@ -1129,21 +1129,21 @@
 				"5468626BA3F056D1"
 			]
 			description: [
-				"&fManipuler le temps n'est pas une mince affaire. L'acier et les engrenages simples ne suffisent plus à contenir une telle énergie."
+				"&fManipulating time is no small feat. Steel and simple gears are no longer enough to contain such energy."
 				" "
-				"&fVous devez assembler une structure massive de &621 Mechanical Crafters&f pour forger la &eTime in a Bottle&f."
+				"&fYou must assemble a massive structure of &621 Mechanical Crafters&f to forge the &eTime in a Bottle&f."
 				" "
-				"&6&lLe Protocole d'Assemblage :&r"
-				"&7- Le &4Nitro Crystal&7 sert de bouchon énergétique."
-				"&7- Vos &bEngineer Goggles&7 focalisent la distorsion temporelle."
-				"&7- Le &dCœur de l'Étoile du Nether&7 stabilise le tout."
+				"&6&lThe Assembly Protocol:&r"
+				"&7- The &4Nitro Crystal&7 acts as an energy cap."
+				"&7- Your &bEngineer Goggles&7 focus the temporal distortion."
+				"&7- The &dNether Star Heart&7 stabilizes everything."
 				" "
-				"&cAttention :&f Cet objet est gourmand en énergie... laissez-le se charger dans votre inventaire avant de l'utiliser sur vos machines !"
+				"&cWarning:&f This item is energy-hungry... let it charge in your inventory before using it on your machines!"
 			]
 			id: "451D11D4EE5DC9EB"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "&7La forme contient le fond"
+			subtitle: "&7The form contains the content"
 			tasks: [{
 				consume_items: false
 				id: "43B179C822C887C2"
@@ -1154,10 +1154,10 @@
 				}
 				type: "item"
 			}]
-			title: "&e&lMaîtrise Temporelle : Chronos"
+			title: "&e&lTemporal Mastery: Chronos"
 			x: 2.0d
 			y: -13.0d
 		}
 	]
-	title: "&dComplexité &fIndustrielle"
+	title: "&dIndustrial &fComplexity"
 }

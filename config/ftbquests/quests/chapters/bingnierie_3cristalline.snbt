@@ -22,11 +22,11 @@
 		{
 			dependencies: ["1E09F2E7F1D84260"]
 			description: [
-				"&fPour entrer dans l'Âge 4, oubliez les bâtons en bois. Vous avez besoin de solidité."
+				"&fTo enter Age 4, forget wooden sticks. You need durability."
 				" "
-				"&f1. Fabriquez des &6Tiges de Bronze&f (AllTheOres)."
-				"&f2. Assemblez-les avec du bois pour créer le &aMarteau Tetra&f."
-				"&f3. Faites un &eclic-droit&f avec le marteau sur une &6Table de Craft&f posée au sol pour la transformer."
+				"&f1. Craft some &6Bronze Rods&f (AllTheOres)."
+				"&f2. Assemble them with wood to create the &aTetra Hammer&f."
+				"&f3. &eRight-click&f with the hammer on a &6Crafting Table&f placed on the ground to transform it."
 			]
 			id: "3C348580462EE4CA"
 			rewards: [{
@@ -50,7 +50,7 @@
 							"double/handle": "double/basic_handle"
 							"double/head_left": "double/basic_hammer_left"
 							"double/head_right": "double/basic_hammer_right"
-							id: "867d85b1-7559-427a-bf30-9c4c5f640d29"
+							"double/id": "867d85b1-7559-427a-bf30-9c4c5f640d29"
 						}
 					}
 					type: "item"
@@ -63,16 +63,16 @@
 					type: "item"
 				}
 			]
-			title: "&aStructure Renforcée"
+			title: "&aReinforced Structure"
 			x: 0.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["3C348580462EE4CA"]
 			description: [
-				"&fLe Laser Drill est incapable de détecter les &bGemmes de Xychorium&f. Ces cristaux ne réagissent qu'au contact manuel."
+				"&fThe Laser Drill is unable to detect &bXychorium Gems&f. These crystals only react to manual contact."
 				" "
-				"&fDescendez sous le niveau &eY=30&f. Ces gemmes seront les stabilisateurs de vos futures machines à XP."
+				"&fDescend below &eY=30&f. These gems will serve as stabilizers for your future XP machines."
 			]
 			id: "6434A2E4D707582D"
 			rewards: [{
@@ -87,16 +87,16 @@
 				item: "xycraft_world:xychorium_gem_blue"
 				type: "item"
 			}]
-			title: "&bRésonance Cristalline"
+			title: "&bCrystalline Resonance"
 			x: 0.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["6434A2E4D707582D"]
 			description: [
-				"&fLe &cMob Masher&f ne se contente pas de tuer ; il extrait l'essence même de l'expérience des créatures."
+				"&fThe &cMob Masher&f doesn't just kill; it extracts the very essence of experience from creatures."
 				" "
-				"&fUne fois posé, il broiera tout ce qui passe devant ses pales pour produire des orbes et des loots."
+				"&fOnce placed, it will grind everything that passes before its blades to produce orbs and loot."
 			]
 			id: "38DA0D9207867CAD"
 			rewards: [{
@@ -111,15 +111,15 @@
 				item: "mob_grinding_utils:saw"
 				type: "item"
 			}]
-			title: "&cExtraction de Savoir Brut"
+			title: "&cRaw Knowledge Extraction"
 			x: 0.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["38DA0D9207867CAD"]
 			description: [
-				"Utilisez le Xychorium Vert pour créer un fourrage mutagène."
-				"Nourrissez un poulet pour obtenir un œuf doré capable de fertiliser l'herbe en &aDelightful Dirt&f."
+				"Use Green Xychorium to create a mutagenic feed."
+				"Feed a chicken to obtain a golden egg capable of fertilizing grass into &aDelightful Dirt&f."
 			]
 			id: "5F72C1E72FDA916E"
 			tasks: [{
@@ -135,9 +135,9 @@
 		{
 			dependencies: ["38DA0D9207867CAD"]
 			description: [
-				"En corrompant votre fourrage avec du Xychorium Rouge, vous obtenez un mélange instable."
-				"Le poulet qui en mangera droppera un &5Rotten Egg&f. Utilisez-le sur de la terre pour créer de la &dDreadful Dirt&f."
-				"Attention : Les monstres y apparaissent instantanément dans le noir !"
+				"By corrupting your feed with Red Xychorium, you obtain an unstable mixture."
+				"The chicken that eats it will drop a &5Rotten Egg&f. Use it on dirt to create &dDreadful Dirt&f."
+				"Warning: Monsters spawn here instantly in the dark!"
 			]
 			id: "375FC03A0D315416"
 			tasks: [{
@@ -146,7 +146,7 @@
 				item: "mob_grinding_utils:gm_chicken_feed_cursed"
 				type: "item"
 			}]
-			title: "&5GM Chicken Feed Cursed"
+			title: "&5Cursed GM Chicken Feed"
 			x: -0.5d
 			y: -2.5d
 		}
@@ -156,9 +156,9 @@
 				"5F72C1E72FDA916E"
 			]
 			description: [
-				"&fVotre Masher fait un carnage, mais qui va ramasser ?"
+				"&fYour Masher is causing a carnage, but who's going to pick it up?"
 				" "
-				"&fL' &eAbsorption Hopper&f aspire tous les items et l'XP dans une zone autour de lui. Configurez-le pour envoyer les items dans un coffre et l'XP liquide dans un tank."
+				"&fThe &eAbsorption Hopper&f vacuums up all items and XP in an area around it. Configure it to send items to a chest and liquid XP to a tank."
 			]
 			id: "4389E8DF5B0A2D9D"
 			rewards: [{
@@ -180,9 +180,9 @@
 		{
 			dependencies: ["4389E8DF5B0A2D9D"]
 			description: [
-				"&fL'expérience sous forme liquide est bien plus stable. Le &dSingularity Tank&f peut stocker des quantités astronomiques de fluide (32 000 buckets !)."
+				"&fExperience in liquid form is much more stable. The &dSingularity Tank&f can store astronomical amounts of fluid (32,000 buckets!)."
 				" "
-				"&fC'est ici que vous garderez votre réserve de Savoir pour les crafts de l'Âge 5."
+				"&fThis is where you will keep your reserve of Knowledge for Age 5 crafting."
 			]
 			id: "4660FE349EA7B838"
 			rewards: [{
@@ -203,9 +203,9 @@
 		{
 			dependencies: ["4660FE349EA7B838"]
 			description: [
-				"&fLes monstres sont têtus et ne veulent pas marcher vers leur destin."
+				"&fMonsters are stubborn and don't want to walk toward their fate."
 				" "
-				"&fUtilisez des &fMob Fans&f pour les pousser de force vers les pales du Masher. Vous pouvez les améliorer avec des \"Upgrades\" pour augmenter leur portée."
+				"&fUse &fMob Fans&f to forcibly push them toward the Masher's blades. You can improve them with \"Upgrades\" to increase their range."
 			]
 			id: "449D0404895AB0F3"
 			rewards: [
@@ -231,18 +231,18 @@
 				item: "mob_grinding_utils:fan"
 				type: "item"
 			}]
-			title: "&fVentilation de Masse"
+			title: "&fMass Ventilation"
 			x: 0.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["449D0404895AB0F3"]
 			description: [
-				"&fUn Masher de base, c'est bien. Un Masher optimisé, c'est mieux."
+				"&fA base Masher is good. An optimized Masher is better."
 				" "
-				"&fFabriquez des &eMob Masher Upgrades&f (Looting, Sharpness, Fire Aspect) pour maximiser vos gains."
+				"&fCraft &eMob Masher Upgrades&f (Looting, Sharpness, Fire Aspect) to maximize your gains."
 				" "
-				"&7&oNote : Les upgrades de Fan (Width, Height, Distance) sont aussi indispensables pour ajuster votre ferme."
+				"&7&oNote: Fan upgrades (Width, Height, Distance) are also essential for fine-tuning your farm."
 			]
 			id: "1F5E595299F0AF62"
 			tasks: [
@@ -265,18 +265,18 @@
 					type: "item"
 				}
 			]
-			title: "&6Upgrades de Performance"
+			title: "&6Performance Upgrades"
 			x: 0.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["1F5E595299F0AF62"]
 			description: [
-				"&fVous avez maîtrisé le Bronze, le Xychorium et l'Experience Liquide."
+				"&fYou have mastered Bronze, Xychorium, and Liquid Experience."
 				" "
-				"&fPour passer à l'étape suivante, vous devez prouver votre capacité à condenser ces énergies. Fabriquez un bloc de chaque type de &bXychorium Storage&f."
+				"&fTo move to the next step, you must prove your ability to condense these energies. Craft one block of each &bXychorium Storage&f type."
 				" "
-				"&fCes blocs serviront de base aux machines à énergie de l'Âge 5."
+				"&fThese blocks will serve as the foundation for Age 5 power machines."
 			]
 			icon: "xycraft_world:xychorium_storage_light"
 			id: "4764DE44DE7F24BE"
@@ -314,10 +314,10 @@
 					type: "item"
 				}
 			]
-			title: "&5Cristal de Pureté"
+			title: "&5Crystal of Purity"
 			x: 0.5d
 			y: -8.5d
 		}
 	]
-	title: "&aStructure &fBio-Synthétique"
+	title: "&aBio-Synthetic &fStructure"
 }

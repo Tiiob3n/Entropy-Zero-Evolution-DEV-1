@@ -285,13 +285,13 @@
 		{
 			dependencies: ["66B26C147C27F8F3"]
 			description: [
-				"&fLe &5Draconium &fest la fondation de votre divinité. On raconte qu'il est né du souffle des premiers dragons."
+				"&f&5Draconium &fis the foundation of your divinity. Legends say it was born from the breath of the first dragons."
 				" "
-				"&7Où le trouver ?"
-				"&8- &eLune &8et &aAstéroïdes &7(Beyond Earth)"
-				"&8- &dDimension de l'End"
+				"&7Where to find it?"
+				"&8- &eMoon &8and &aAsteroids &7(Beyond Earth)"
+				"&8- &dThe End Dimension"
 				" "
-				"&c⚠️ Note : &fIl est rare, mais vital pour la suite."
+				"&c⚠️ Note: &fIt is rare, but vital for what follows."
 			]
 			id: "18F96154D719FF23"
 			rewards: [{
@@ -307,17 +307,17 @@
 				item: "draconicevolution:draconium_ingot"
 				type: "item"
 			}]
-			title: "&5Minerai de l'Infini"
+			title: "&5Ore of Infinity"
 			x: 4.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["18F96154D719FF23"]
 			description: [
-				"&fLa table de craft est désormais un jouet du passé. L'&dInfusion &futilise des courants d'énergie brute pour fusionner la matière."
+				"&fThe crafting table is now a toy of the past. &dInfusion &fuses raw energy currents to fuse matter together."
 				" "
-				"&bInstallation :"
-				"&fPlacez le &3Core &fau centre et entourez-le d'&bInjecteurs&f. Chaque injecteur doit être alimenté en &6RF&f."
+				"&bSetup:"
+				"&fPlace the &3Core &fin the center and surround it with &bInjectors&f. Each injector must be powered with &6RF&f."
 			]
 			id: "4F78B36CBBC17760"
 			rewards: [{
@@ -340,16 +340,16 @@
 					type: "item"
 				}
 			]
-			title: "&dCoeur d'Infusion"
+			title: "&dInfusion Heart"
 			x: 0.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["4F78B36CBBC17760"]
 			description: [
-				"&fEn combinant vos connaissances de l'&3Atome &f(Age 6) et la &dMagie &f(Age 7), vous obtenez votre premier noyau de haute densité."
+				"&fBy combining your knowledge of the &3Atom &f(Age 6) and &dMagic &f(Age 7), you obtain your first high-density core."
 				" "
-				"&eUtilité : &fC'est le composant de base pour l'équipement de &6Tier 1 &fde Draconic."
+				"&eUse: &fThis is the base component for Draconic &6Tier 1 &fequipment."
 			]
 			id: "5C1D6A6EF528E302"
 			rewards: [{
@@ -364,13 +364,13 @@
 				item: "draconicevolution:wyvern_core"
 				type: "item"
 			}]
-			title: "&6Puissance de la Wyvern"
+			title: "&6Power of the Wyvern"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5C1D6A6EF528E302"]
-			description: ["&fCette armure ne s'use pas, elle consomme de l'énergie (RF) pour maintenir un bouclier autour de vous."]
+			description: ["&fThis armor does not wear out; it consumes energy (RF) to maintain a shield around you."]
 			id: "6822DC937529C054"
 			tasks: [
 				{
@@ -509,16 +509,16 @@
 					type: "item"
 				}
 			]
-			title: "&eProtection Absolue"
+			title: "&eAbsolute Protection"
 			x: 0.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["6822DC937529C054"]
 			description: [
-				"&fPour l'Age 9, les batteries classiques sont dérisoires. Vous avez besoin de stocker des &bQuadrillons de RF&f."
+				"&fFor Age 9, standard batteries are laughable. You need to store &bQuadrillions of RF&f."
 				" "
-				"&7Construisez la structure multi-bloc du &3Energy Core&7. Plus vous l'agrandissez, plus votre capacité devient infinie."
+				"&7Build the multi-block structure of the &3Energy Core&7. The larger you make it, the more infinite your capacity becomes."
 			]
 			id: "6BE1072C6862724D"
 			tasks: [{
@@ -527,18 +527,18 @@
 				item: "draconicevolution:energy_core"
 				type: "item"
 			}]
-			title: "&bLa Sphère d'Énergie"
+			title: "&bThe Energy Sphere"
 			x: 4.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["6BE1072C6862724D"]
 			description: [
-				"&fLe générateur ultime. Il manipule l'instabilité du &cChaos &fpour produire une énergie colossale."
+				"&fThe ultimate generator. It manipulates the instability of &cChaos &fto produce colossal energy."
 				" "
-				"&4DANGER CRITIQUE :"
-				"&cSi la température dépasse 8000°C ou si le bouclier tombe à 0%, le réacteur explosera."
-				"&4L'explosion peut raser votre base entière sur des centaines de blocs."
+				"&4CRITICAL DANGER:"
+				"&cIf the temperature exceeds 8000°C or if the shield drops to 0%, the reactor will explode."
+				"&4The explosion can level your entire base over hundreds of blocks."
 			]
 			icon: "draconicevolution:reactor_stabilizer"
 			id: "47B1EB79825AA9F1"
@@ -556,16 +556,16 @@
 					type: "item"
 				}
 			]
-			title: "&4Le Réacteur Draconique"
+			title: "&4The Draconic Reactor"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["47B1EB79825AA9F1"]
 			description: [
-				"&fLe passage au &cTier Supérieur&f. Ce noyau palpite d'une énergie instable qui doit être domptée par un rituel d'infusion complexe."
+				"&fStepping up to the &cNext Tier&f. This core pulses with unstable energy that must be tamed by a complex infusion ritual."
 				" "
-				"&eIngrédient clé : &fNécessite souvent un &4Dragon Heart &fou une explosion contrôlée."
+				"&eKey ingredient: &fOften requires a &4Dragon Heart &for a controlled explosion."
 			]
 			id: "225D9A340DD84259"
 			tasks: [{
@@ -582,15 +582,15 @@
 		{
 			dependencies: ["225D9A340DD84259"]
 			description: [
-				"&fLe défi final de combat. Voyagez à &b10 000 blocs &fdans l'End pour débusquer le &4Gardien du Chaos&f."
+				"&fThe final combat challenge. Travel &b10,000 blocks &finto the End to track down the &4Chaos Guardian&f."
 				" "
-				"&7Ses cristaux le protègent. Détruisez-les avant de l'attaquer, ou votre mort sera instantanée."
+				"&7Its crystals protect it. Destroy them before attacking, or your death will be instantaneous."
 			]
 			id: "0B4230E3749BDBD3"
 			tasks: [
 				{
 					id: "113C5FE2BE66E372"
-					title: "&4BOSS : Le Gardien du Chaos"
+					title: "&4BOSS: The Chaos Guardian"
 					type: "checkmark"
 				}
 				{
@@ -606,9 +606,9 @@
 		{
 			dependencies: ["0B4230E3749BDBD3"]
 			description: [
-				"&fVaincre le Gardien est un exploit, le farmer est une corvée. Utilisez vos &4Small Chaos Fragments &fpour synthétiser la vie."
+				"&fDefeating the Guardian is a feat; farming it is a chore. Use your &4Small Chaos Fragments &fto synthesize life."
 				" "
-				"&aFélicitations : &fVous pouvez désormais produire du &cChaos &fvia vos fermes de &2Mystical Agriculture&f."
+				"&aCongratulations: &fYou can now produce &cChaos &fvia your &2Mystical Agriculture &ffarms."
 			]
 			id: "47D149167DE0EC34"
 			tasks: [{
@@ -617,16 +617,16 @@
 				item: "entropy:chaos_seeds"
 				type: "item"
 			}]
-			title: "&bAutomatisation Mystique"
+			title: "&bMystical Automation"
 			x: 4.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["47D149167DE0EC34"]
 			description: [
-				"&fLe vide de l'espace contient une force : le &8Neutronium&f. Ces collecteurs sont les seuls capables de le condenser."
+				"&fThe void of space contains a force: &8Neutronium&f. These collectors are the only ones capable of condensing it."
 				" "
-				"&7Préparez-vous à une attente éternelle... ou multipliez les collecteurs par cent."
+				"&7Prepare for an eternal wait... or multiply the collectors by a hundred."
 			]
 			id: "5677751DCCFF0785"
 			tasks: [{
@@ -635,16 +635,16 @@
 				item: "avaritia:neutron_collector"
 				type: "item"
 			}]
-			title: "&8Singularités de l'Entropy"
+			title: "&8Entropy Singularities"
 			x: 0.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["5677751DCCFF0785"]
 			description: [
-				"&fLe point de rupture de la physique. Ce lingot pèse plus que toutes les étoiles de la galaxie réunies."
+				"&fThe breaking point of physics. This ingot weighs more than all the stars in the galaxy combined."
 				" "
-				"&6Craft : &fUtilisez votre giga-structure de &eMechanical Crafters &f(Create) pour l'assembler."
+				"&6Craft: &fUse your giga-structure of &eMechanical Crafters &f(Create) to assemble it."
 			]
 			id: "328432BBB84114EC"
 			shape: "heart"
@@ -662,11 +662,11 @@
 		{
 			dependencies: ["328432BBB84114EC"]
 			description: [
-				"&fVous y êtes. Le sommet de l'aventure &3Entropy&f."
+				"&fYou're here. The pinnacle of the &3Entropy &fadventure."
 				" "
-				"&fCet éclat contient l'équilibre parfait entre le &cChaos&f, l'&dArcane &fet la &bScience&f."
+				"&fThis shard contains the perfect balance between &cChaos&f, &dArcane&f, and &bScience&f."
 				" "
-				"&b&k!!! &6VOUS AVEZ ATTEINT LA PERFECTION &b&k!!!"
+				"&b&k!!! &6YOU HAVE REACHED PERFECTION &b&k!!!"
 			]
 			id: "427FBB44E2780268"
 			shape: "rsquare"
@@ -676,16 +676,16 @@
 				item: "entropy:primordial_inertia_shard"
 				type: "item"
 			}]
-			title: "&b&lL'ÉCLAT DE L'INERTIE PRIMORDIALE"
+			title: "&b&lTHE SHARD OF PRIMORDIAL INERTIA"
 			x: 2.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["427FBB44E2780268"]
 			description: [
-				"&fCette lame ne coupe pas la matière, elle &cefface &fl'existence de ce qu'elle touche."
+				"&fThis blade does not cut matter; it &cerases &fthe existence of what it touches."
 				" "
-				"&7Utilisez vos &bMechanical Crafters &7pour forger cette arme capable de terrasser n'importe quelle entité en un seul coup."
+				"&7Use your &bMechanical Crafters &7to forge this weapon capable of slaying any entity in a single strike."
 			]
 			id: "5634B69D28C8FFA5"
 			rewards: [{
@@ -712,9 +712,9 @@
 		{
 			dependencies: ["427FBB44E2780268"]
 			description: [
-				"&fUne pioche capable de miner des chunks entiers en un instant. Rien ne résiste à sa puissance de minage divine."
+				"&fA pickaxe capable of mining entire chunks in an instant. Nothing resists its divine mining power."
 				" "
-				"&4Attention : &fL'utiliser sans précaution peut transformer votre paysage en gruyère spatial."
+				"&4Warning: &fUsing it carelessly can turn your landscape into spatial Swiss cheese."
 			]
 			id: "4439438868B91C83"
 			rewards: [{
@@ -741,9 +741,9 @@
 		{
 			dependencies: ["427FBB44E2780268"]
 			description: [
-				"&fPorter cette armure, c'est devenir &bimmortel&f. Vous ne craignez plus le vide, le chaos, ni même les commandes de destruction du serveur."
+				"&fTo wear this armor is to become &bimmortal&f. You no longer fear the void, chaos, or even server destruction commands."
 				" "
-				"&7Chaque pièce demande un &dÉclat d'Inertie &7central pour lier les lingots d'Infini entre eux."
+				"&7Each piece requires a central &dInertia Shard &7to bind the Infinity Ingots together."
 			]
 			id: "2CA49AE013F9BFDB"
 			rewards: [{
@@ -783,7 +783,7 @@
 		}
 		{
 			dependencies: ["427FBB44E2780268"]
-			description: ["&fUn seau qui contient tous les fluides de l'univers en quantité infinie. Une fois rempli, il ne se videra jamais."]
+			description: ["&fA bucket containing all the fluids of the universe in infinite quantity. Once filled, it will never empty."]
 			id: "31CCA3A841ECC68A"
 			rewards: [{
 				count: 64
@@ -803,7 +803,7 @@
 		}
 		{
 			dependencies: ["427FBB44E2780268"]
-			description: ["&fLe goulot d'étranglement de vos tuyaux appartient au passé. Ce module permet un transfert &dinstantané &fet &binfini &fde n'importe quelle ressource."]
+			description: ["&fThe bottleneck of your pipes is a thing of the past. This module allows for &dinstant &fand &binfinite &ftransfer of any resource."]
 			id: "79AD71D1A402661C"
 			rewards: [{
 				id: "70C6AA79ADE6F884"
@@ -822,7 +822,7 @@
 		}
 		{
 			dependencies: ["427FBB44E2780268"]
-			description: ["&fPourquoi s'embêter avec des chiffres ? Ce module rend la capacité de vos tiroirs &6illimitée&f."]
+			description: ["&fWhy bother with numbers? This module makes your drawer capacity &6unlimited&f."]
 			id: "125FD50CE0BDFB09"
 			rewards: [
 				{
@@ -858,7 +858,7 @@
 		}
 		{
 			dependencies: ["427FBB44E2780268"]
-			description: ["&fLe cœur noir de la galaxie. C'est l'un des composants les plus denses jamais créés."]
+			description: ["&fThe black heart of the galaxy. This is one of the densest components ever created."]
 			id: "7AE10E532D238E57"
 			rewards: [{
 				id: "622D6C04A66A0431"
@@ -877,7 +877,7 @@
 		}
 		{
 			dependencies: ["427FBB44E2780268"]
-			description: ["&fLe combustible parfait. Une source de chaleur qui ne s'éteindra jamais, symbolisant la fin de votre quête énergétique."]
+			description: ["&fThe perfect fuel. A heat source that will never go out, symbolizing the end of your energetic quest."]
 			id: "14320DFD9E85BC97"
 			tasks: [{
 				consume_items: false
@@ -890,5 +890,5 @@
 			y: -16.5d
 		}
 	]
-	title: "&3Le point de convergence&7, &6le Dieu de l'Entropy"
+	title: "&3Convergence Point&7, &6the God of Entropy"
 }

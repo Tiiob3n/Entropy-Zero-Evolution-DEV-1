@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "dlle_stockage_dimensionnel"
-	group: ""
+	group: "3BF6D2B95CD1CAD4"
 	id: "3E1488E25F21E9E7"
 	images: [{
 		height: 10.0d
@@ -12,7 +12,7 @@
 		x: -1.5d
 		y: -2.5d
 	}]
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -75,7 +75,7 @@
 				item: "dankstorage:dank_1"
 				type: "item"
 			}]
-			title: "&7&lLe Dank 1"
+			title: "&7&lThe Dank 1"
 			x: -5.0d
 			y: -2.5d
 		}
@@ -88,7 +88,7 @@
 				item: "dankstorage:dank_2"
 				type: "item"
 			}]
-			title: "&7&lLe Dank 2"
+			title: "&7&lThe Dank 2"
 			x: -4.0d
 			y: -1.0d
 		}
@@ -101,12 +101,12 @@
 				item: "dankstorage:dank_3"
 				type: "item"
 			}]
-			title: "&7&lLe Dank 3"
+			title: "&7&lThe Dank 3"
 			x: -4.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["5BE22D55A3437991"]
+			dependencies: ["2834330585E36DED"]
 			id: "5E9D9C0D6AAD3D1B"
 			tasks: [{
 				consume_items: false
@@ -114,7 +114,7 @@
 				item: "dankstorage:dank_4"
 				type: "item"
 			}]
-			title: "&7&lLe Dank 4"
+			title: "&7&lThe Dank 4"
 			x: -4.0d
 			y: -4.0d
 		}
@@ -127,7 +127,7 @@
 				item: "dankstorage:dank_5"
 				type: "item"
 			}]
-			title: "&7&lLe Dank 5"
+			title: "&7&lThe Dank 5"
 			x: -2.5d
 			y: -5.5d
 		}
@@ -140,7 +140,7 @@
 				item: "dankstorage:dank_6"
 				type: "item"
 			}]
-			title: "&7&lLe Dank 6"
+			title: "&7&lThe Dank 6"
 			x: -2.5d
 			y: 0.5d
 		}
@@ -153,11 +153,11 @@
 				item: "dankstorage:dank_7"
 				type: "item"
 			}]
-			title: "&7&lLe Dank 7"
+			title: "&7&lThe Dank 7"
 			x: -2.0d
 			y: -2.5d
 		}
 	]
-	subtitle: ["&fMarre d'avoir les poches pleines de terre et de gravier ? Apprenez à compresser l'espace pour transporter des &dmilliers d'items &fdans une seule main."]
-	title: "&d&lLE STOCKAGE DIMENSIONNEL"
+	subtitle: ["&fTired of having your pockets full of dirt and gravel? Learn how to compress space to carry &dthousands of items &fin a single hand."]
+	title: "&dDIMENSIONAL STORAGE"
 }

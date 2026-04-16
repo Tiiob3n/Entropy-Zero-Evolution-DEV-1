@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "blcompact_machines"
-	group: ""
+	group: "3BF6D2B95CD1CAD4"
 	id: "2E2FE9E78D6D553D"
 	images: [
 		{
@@ -27,9 +27,9 @@
 	quests: [
 		{
 			description: [
-				"&fBienvenue dans la première étape de la miniaturisation. Ce bloc contient une dimension de &b3x3x3&f."
+				"&fWelcome to the first step of miniaturization. This block contains a &b3x3x3&f dimension."
 				" "
-				"&7Idéal pour isoler un petit système de câbles ou une micro-ferme."
+				"&7Ideal for isolating a small cable system or a micro-farm."
 			]
 			id: "6B3055F800F81EC7"
 			tasks: [{
@@ -110,9 +110,9 @@
 		{
 			dependencies: ["6B3055F800F81EC7"]
 			description: [
-				"&fC'est votre clé d'entrée. Faites un &eClic Droit &fsur une Compact Machine avec cet outil pour être &fminiaturisé &fet projeté à l'intérieur."
+				"&fThis is your entry key. &eRight-Click&f on a Compact Machine with this tool to be &fminiaturized&f and projected inside."
 				" "
-				"&cAttention : &fN'oubliez pas de le garder sur vous pour ressortir !"
+				"&cWarning: &fDon't forget to keep it on you to get back out!"
 			]
 			id: "0D10BDF49B954EEC"
 			tasks: [{
@@ -125,5 +125,5 @@
 			y: 0.0d
 		}
 	]
-	title: "&b&lCOMPACT MACHINES"
+	title: "&bCOMPACT MACHINES"
 }

@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "5lle_grimoire_de_sang"
-	group: ""
+	group: "3BF6D2B95CD1CAD4"
 	id: "2470569888D95A3C"
 	images: [
 		{
@@ -22,14 +22,14 @@
 			y: -4.0d
 		}
 	]
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"&fTout commence par une entaille. La &cdague sacrificielle &fpermet de tracer des cercles de sang au sol."
+				"&fIt all starts with a cut. The &csacrificial dagger &fallows you to draw blood circles on the ground."
 				" "
-				"&7Faites un &eClic Droit &7pour vous blesser et créer un &6Mahoujin &7(Cercle Magique). C'est la base de tous vos futurs rituels."
+				"&7Perform a &eRight-Click &7to wound yourself and create a &6Mahoujin &7(Magic Circle). This is the foundation of all your future rituals."
 			]
 			id: "09683944E58CF02F"
 			tasks: [{
@@ -38,16 +38,16 @@
 				item: "mahoutsukai:dagger"
 				type: "item"
 			}]
-			title: "&c&lL'Offrande de Soi"
+			title: "&c&lThe Offering of Self"
 			x: 14.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["09683944E58CF02F"]
 			description: [
-				"&fCe livre contient la liste de tous les rituels et les ingrédients nécessaires."
+				"&fThis book contains a list of all rituals and the necessary ingredients."
 				" "
-				"&bAstuce : &fEn faisant un &eClic Droit &fsur un cercle au sol avec ce livre, vous identifierez le sort que vous préparez."
+				"&bTip: &fBy &eRight-Clicking &fa circle on the ground with this book, you will identify the spell you are preparing."
 			]
 			id: "7A0AB1FD22049E9E"
 			tasks: [{
@@ -56,21 +56,21 @@
 				item: "mahoutsukai:guidebook"
 				type: "item"
 			}]
-			title: "&5&lLe Savoir Perdu"
+			title: "&5&lLost Knowledge"
 			x: 8.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7A0AB1FD22049E9E"]
 			description: [
-				"&fVotre réserve de Mana n'est pas fixe. Chaque fois que vous dépensez du &bMana&f, votre capacité maximale augmente légèrement."
+				"&fYour Mana pool is not fixed. Every time you spend &bMana&f, your maximum capacity increases slightly."
 				" "
-				"&7Pratiquez régulièrement pour dépasser les &d10 000 &7de Mana nécessaires aux rituels divins."
+				"&7Practice regularly to exceed the &d10,000 &7Mana required for divine rituals."
 			]
 			id: "529A63DDA61EBBAB"
 			tasks: [{
 				id: "671D0B97A13B79E5"
-				title: "&b&lAtteindre 200 de Mana Max"
+				title: "&b&lReach 200 Max Mana"
 				type: "checkmark"
 			}]
 			x: 4.5d
@@ -79,9 +79,9 @@
 		{
 			dependencies: ["529A63DDA61EBBAB"]
 			description: [
-				"&fVotre corps a des limites. Pour stocker plus de puissance, infusez votre mana dans des diamants."
+				"&fYour body has limits. To store more power, infuse your mana into diamonds."
 				" "
-				"&7Maintenez &6Shift + Clic Droit &7avec un diamant pour y transférer votre réserve personnelle."
+				"&7Hold &6Shift + Right-Click &7with a diamond to transfer your personal reserve into it."
 			]
 			id: "5D70DA944BE8669A"
 			tasks: [{
@@ -98,13 +98,13 @@
 				}
 				type: "item"
 			}]
-			title: "&d&lStockage Éthéré"
+			title: "&d&lEthereal Storage"
 			x: 2.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["5D70DA944BE8669A"]
-			description: ["&fLe &5Circuit &fest un bloc capable de stocker l'énergie de tous les mages alentours. Indispensable pour alimenter vos machines magiques."]
+			description: ["&fThe &5Circuit &fis a block capable of storing the energy of all nearby mages. Essential for powering your magical machines."]
 			id: "348440100FDDF404"
 			tasks: [{
 				consume_items: false
@@ -112,13 +112,13 @@
 				item: "mahoutsukai:mana_circuit"
 				type: "item"
 			}]
-			title: "&5&lCircuit de Mana"
+			title: "&5&lMana Circuit"
 			x: 4.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["348440100FDDF404"]
-			description: ["&fL'arme légendaire de la projection. Jetez une épée enchantée dans un lac après le rituel de &6Power Consolidation &fpour l'obtenir."]
+			description: ["&fThe legendary weapon of projection. Throw an enchanted sword into a lake after the &6Power Consolidation &fritual to obtain it."]
 			id: "7B83B141F17505B3"
 			tasks: [{
 				id: "68FF888FF8987BBF"
@@ -137,16 +137,16 @@
 				}
 				type: "item"
 			}]
-			title: "&f&lCaliburn : La Voie Royale"
+			title: "&f&lCaliburn: The Royal Way"
 			x: 8.5d
 			y: -10.0d
 		}
 		{
 			dependencies: ["7B83B141F17505B3"]
 			description: [
-				"&fObtenue en sacrifiant un loup apprivoisé avec &fCaliburn&f."
+				"&fObtained by sacrificing a tamed wolf with &fCaliburn&f."
 				" "
-				"&cLe Pouvoir Absolu : &fEn tuant des villageois (contre du mana), les dégâts de Morgan augmentent &eSANS LIMITE&f. Elle peut atteindre des milliers de points d'attaque."
+				"&cAbsolute Power: &fBy killing villagers (in exchange for mana), Morgan's damage increases &eWITHOUT LIMIT&f. It can reach thousands of attack points."
 			]
 			id: "794AECBB88F861CD"
 			tasks: [{
@@ -166,13 +166,13 @@
 				}
 				type: "item"
 			}]
-			title: "&4&lMorgan : La Chute du Roi"
+			title: "&4&lMorgan: The Fall of the King"
 			x: 12.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["794AECBB88F861CD"]
-			description: ["&fPercevez les lignes de faille de la réalité. Frapper un ennemi sur ses &clignes de mort &finflige des dégâts critiques ignorant toute armure."]
+			description: ["&fPerceive the reality's fault lines. Striking an enemy on their &cdeath lines &finflicts critical damage ignoring all armor."]
 			id: "12B4730D38E26205"
 			tasks: [{
 				id: "730CEB3A9327431C"
@@ -187,13 +187,13 @@
 				}
 				type: "item"
 			}]
-			title: "&1&lYeux de Perception de Mort"
+			title: "&1&lMystic Eyes of Death Perception"
 			x: 12.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["12B4730D38E26205"]
-			description: ["&fOuvrez les portes de votre dimension de poche et faites pleuvoir des &edizaines d'épées dorées &fsur vos ennemis."]
+			description: ["&fOpen the gates of your pocket dimension and rain down &egolden swords &fupon your enemies."]
 			id: "3FA02F226C50567D"
 			tasks: [{
 				id: "2D80B7D1A05711F9"
@@ -215,9 +215,9 @@
 		{
 			dependencies: ["3FA02F226C50567D"]
 			description: [
-				"&fCe rituel aspire l'énergie vitale de tout ce qui meurt dans son périmètre. "
+				"&fThis ritual drains the life energy of everything that dies within its perimeter. "
 				" "
-				"&6Le combo parfait : &fPlacez-le sur un spawner à mobs pour remplir vos circuits automatiquement."
+				"&6The Perfect Combo: &fPlace it over a mob spawner to refill your circuits automatically."
 			]
 			id: "372CEECD48EFCD94"
 			tasks: [{
@@ -238,6 +238,6 @@
 			y: -5.5d
 		}
 	]
-	subtitle: ["&fPlongez dans les arts interdits de la &dProjection &fet de la &cMagie du Sang&f. Ici, la puissance se paie en essence vitale."]
-	title: "&5&lLE GRIMOIRE DE SANG"
+	subtitle: ["&fDive into the forbidden arts of &dProjection &fand &cBlood Magic&f. Here, power is paid for in life essence."]
+	title: "&5THE BLOOD GRIMOIRE"
 }

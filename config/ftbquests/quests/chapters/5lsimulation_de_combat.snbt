@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "5lsimulation_de_combat"
-	group: ""
+	group: "3BF6D2B95CD1CAD4"
 	id: "4D64996BFCD1AEB8"
 	images: [{
 		height: 20.0d
@@ -12,14 +12,14 @@
 		x: 0.0d
 		y: -2.5d
 	}]
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"&fCeci est votre outil de capture de données. Insérez un &7Model Framework &fà l'intérieur et partez au combat."
+				"&fThis is your data capture tool. Insert a &7Model Framework &finside and head into battle."
 				" "
-				"&7Tuez le mob correspondant pour que le modèle apprenne ses schémas de comportement."
+				"&7Kill the corresponding mob so the model can learn its behavior patterns."
 			]
 			id: "0FBD55E9778D0724"
 			tasks: [{
@@ -34,7 +34,7 @@
 		}
 		{
 			dependencies: ["0FBD55E9778D0724"]
-			description: ["&fUne puce vierge prête à être programmée. Faites un &eClic Droit &fsur un mob avec cette puce pour lier son ADN au modèle."]
+			description: ["&fA blank chip ready to be programmed. &eRight-Click &fa mob with this chip to link its DNA to the model."]
 			id: "6C4C903E59E5A3F4"
 			tasks: [{
 				id: "6C8C2BED7A9E141F"
@@ -48,9 +48,9 @@
 		{
 			dependencies: ["6C4C903E59E5A3F4"]
 			description: [
-				"&fLa machine qui transforme les &bPrédictions &fen objets réels. "
+				"&fThe machine that transforms &bPredictions &finto real items. "
 				" "
-				"&7Choisissez la ressource que vous voulez (ex: Nether Star, Ender Pearl) et laissez la machine la synthétiser."
+				"&7Choose the resource you want (e.g., Nether Star, Ender Pearl) and let the machine synthesize it."
 			]
 			id: "32C8C150743E383C"
 			tasks: [{
@@ -65,9 +65,9 @@
 		{
 			dependencies: ["32C8C150743E383C"]
 			description: [
-				"&fC'est ici que la magie opère. Insérez votre &dData Model &fet de la &9Prediction Matrix &fpour lancer la simulation."
+				"&fThis is where the magic happens. Insert your &dData Model &fand a &9Prediction Matrix &fto launch the simulation."
 				" "
-				"&cNote : &fPlus le rang de votre modèle est élevé (Basic -> Self Aware), plus vous avez de chances de réussir la simulation."
+				"&cNote: &fThe higher your model's tier (Basic -> Self Aware), the higher your chances of a successful simulation."
 			]
 			id: "54F6992864EB361C"
 			tasks: [{
@@ -82,14 +82,14 @@
 		{
 			dependencies: ["54F6992864EB361C"]
 			description: [
-				"&fUne fois le rang &eSelf Aware &fatteint, vous avez 99% de chances d'obtenir une prédiction à chaque cycle."
+				"&fOnce the &eSelf Aware &ftier is reached, you have a 99% chance of obtaining a prediction every cycle."
 				" "
-				"&7C'est l'étape ultime pour une production de ressources parfaite."
+				"&7This is the ultimate step for perfect resource production."
 			]
 			id: "720FBCF466425497"
 			tasks: [{
 				id: "59044A958B538CF1"
-				title: "&e&lLe Rang : Self Aware"
+				title: "&e&lThe Tier: Self Aware"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -98,9 +98,9 @@
 		{
 			dependencies: ["720FBCF466425497"]
 			description: [
-				"&fGrâce aux addons, vous pouvez désormais numériser des entités normalement impossibles à capturer."
+				"&fThanks to addons, you can now digitize entities that are normally impossible to capture."
 				" "
-				"&aL'automatisation totale : &fDes animaux de la ferme aux boss les plus obscurs, rien n'échappe au réseau neuronal."
+				"&aTotal Automation: &fFrom farm animals to the most obscure bosses, nothing escapes the neural network."
 			]
 			id: "0FFD5669F07E2009"
 			tasks: [{
@@ -108,13 +108,13 @@
 				item: "hostilenetworks:prediction_matrix"
 				type: "item"
 			}]
-			title: "&a&lAny Mob : La Puce Universelle"
+			title: "&a&lAny Mob: The Universal Chip"
 			x: 0.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["0FFD5669F07E2009"]
-			description: ["&lil y en as trop bon courage&r ! "]
+			description: ["&lThere are way too many... good luck!&r"]
 			id: "38A9856ECBEF256D"
 			tasks: [
 				{
@@ -187,5 +187,5 @@
 			y: -6.0d
 		}
 	]
-	title: "&5&lSIMULATION DE COMBAT"
+	title: "&5COMBAT SIMULATION"
 }

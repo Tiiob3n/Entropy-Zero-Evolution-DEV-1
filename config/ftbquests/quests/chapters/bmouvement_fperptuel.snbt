@@ -22,19 +22,19 @@
 		{
 			dependencies: ["1B5CB4AEB0E2E7E1"]
 			description: [
-				"&7\"Fini le travail manuel au marteau.\""
+				"&7\"No more manual labor with hammers.\""
 				""
-				"La &6Presse Mécanique&f est votre premier outil d'usinage. Elle utilise la force de rotation pour aplatir les lingots en plaques."
+				"The &6Mechanical Press&f is your first machining tool. It uses rotational force to flatten ingots into plates."
 				""
-				"&eComment l'utiliser :&f"
+				"&eHow to use it:&f"
 				""
-				"Place la presse au-dessus d'un bloc solide ou d'un &bDepot&f."
+				"Place the press above a solid block or a &bDepot&f."
 				""
-				"Alimente-la en énergie rotative."
+				"Supply it with rotational energy."
 				""
-				"Jette un lingot (Fer, Cuivre, Zinc...) en dessous."
+				"Drop an ingot (Iron, Copper, Zinc...) underneath."
 				""
-				"&cNote importante :&f Dans ce pack, les marteaux ont été supprimés. La presse est désormais le &nseul moyen&f d'obtenir des plaques."
+				"&cImportant Note:&f In this pack, hammers have been removed. The press is now the &nonly way&f to obtain plates."
 			]
 			id: "2A7CA6F523FFF94F"
 			rewards: [{
@@ -48,20 +48,20 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "&6La Presse Mécanique"
+			title: "&6The Mechanical Press"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2A7CA6F523FFF94F"]
 			description: [
-				"&7\"Relier les points A et B n'a jamais été aussi satisfaisant.\""
+				"&7\"Connecting points A and B has never been so satisfying.\""
 				""
-				"Les &6Courroies&f sont les veines de votre usine. Elles permettent de transporter les items horizontalement ou en diagonale."
+				"&6Belts&f are the veins of your factory. They allow for the transport of items horizontally or diagonally."
 				""
-				"&cAttention :&f Dans ce pack, la table de craft est désactivée pour cet objet. Vous devez &6presser du Kelp séché&f sous votre &6Presse Mécanique&f pour obtenir ces connecteurs !"
+				"&cWarning:&f In this pack, the crafting table recipe for this item is disabled. You must &6press Dried Kelp&f under your &6Mechanical Press&f to obtain these connectors!"
 				""
-				"&eAstuce :&f Cliquez sur un &bAxe (Shaft)&f puis sur un autre pour les relier."
+				"&eTip:&f Click on one &bShaft&f and then another to link them."
 			]
 			id: "3D7128DB58F1E9D2"
 			rewards: [{
@@ -76,18 +76,18 @@
 				item: "create:belt_connector"
 				type: "item"
 			}]
-			title: "&6Courroies de Transport"
+			title: "&6Conveyor Belts"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["3D7128DB58F1E9D2"]
 			description: [
-				"&7\"Ne laissez plus vos lingots traîner par terre.\""
+				"&7\"Stop leaving your ingots lying on the ground.\""
 				""
-				"Le &bDépôt&f est un bloc statique qui retient un item pile en dessous de votre presse."
+				"The &bDepot&f is a static block that holds an item exactly underneath your press."
 				""
-				"Contrairement aux courroies, l'item ne bougera pas tant qu'il n'est pas récupéré, ce qui garantit que la presse fera son travail à chaque fois sans rater sa cible."
+				"Unlike belts, the item won't move until it's picked up, ensuring the press does its job every time without missing its target."
 			]
 			id: "7FE53165961A7060"
 			rewards: [{
@@ -102,22 +102,22 @@
 				item: "create:depot"
 				type: "item"
 			}]
-			title: "&bLe Support de Travail"
+			title: "&bThe Work Support"
 			x: 1.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7FE53165961A7060"]
 			description: [
-				"&7\"L'armature de vos premières machines.\""
+				"&7\"The framework for your first machines.\""
 				""
-				"Les &bAndesite Casings&f sont la base de la plupart des machines de cet âge."
+				"&bAndesite Casings&f are the foundation of most machines in this age."
 				""
-				"&eComment les fabriquer :&f"
+				"&eHow to craft them:&f"
 				""
-				"Posez du &bBois écorcé&f au sol."
+				"Place some &bStripped Wood&f on the ground."
 				""
-				"Utilisez de l'&6Alliage d'Andésite&f sur le bois avec un clic-droit."
+				"Use &6Andesite Alloy&f on the wood with a right-click."
 			]
 			id: "25909150A9B9E4C5"
 			rewards: [{
@@ -133,13 +133,13 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			title: "&bStructure en Andésite"
+			title: "&bAndesite Structure"
 			x: 2.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["25909150A9B9E4C5"]
-			description: ["Le &6Bassin&f est indispensable pour compacter des objets ou mélanger des alliages. Il permet de retenir les composants pendant que la presse ou le mélangeur font leur travail."]
+			description: ["The &6Basin&f is indispensable for compacting items or mixing alloys. It holds components in place while the press or mixer does its work."]
 			id: "379F680751C7300E"
 			rewards: [{
 				count: 4
@@ -153,19 +153,19 @@
 				item: "create:basin"
 				type: "item"
 			}]
-			title: "&6Le Bassin Industriel"
+			title: "&6The Industrial Basin"
 			x: 3.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["379F680751C7300E"]
 			description: [
-				"&7\"Tourner ne suffit plus, il faut brasser.\""
+				"&7\"Spinning is no longer enough; you must stir.\""
 				""
-				"Le &6Mélangeur&f permet de créer des alliages complexes."
+				"The &6Mechanical Mixer&f allows for the creation of complex alloys."
 				""
-				"&eInstallation :&f Placez-le au-dessus d'un &6Bassin&f."
-				"&cAttention :&f Il nécessite une vitesse de rotation élevée (&bMinimum 30 RPM&f). Utilisez des engrenages pour multiplier la vitesse de vos roues à eau !"
+				"&eSetup:&f Place it above a &6Basin&f."
+				"&cWarning:&f It requires high rotational speed (&bMinimum 30 RPM&f). Use gears to multiply the speed of your water wheels!"
 			]
 			id: "722C1629B67B25EC"
 			rewards: [{
@@ -179,18 +179,18 @@
 				item: "create:mechanical_mixer"
 				type: "item"
 			}]
-			title: "&6Le Mélangeur Mécanique"
+			title: "&6The Mechanical Mixer"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["722C1629B67B25EC"]
 			description: [
-				"&7\"L'alliage de la précision.\""
+				"&7\"The alloy of precision.\""
 				""
-				"Le &6Laiton&f est le métal de transition vers les composants avancés."
+				"&6Brass&f is the transition metal toward advanced components."
 				""
-				"&eRecette :&f Mélangez un lingot de &6Cuivre&f et un lingot de &6Zinc&f dans votre bassin avec le mélangeur en marche."
+				"&eRecipe:&f Mix one &6Copper Ingot&f and one &6Zinc Ingot&f in your basin with the mixer running."
 			]
 			id: "41B74802DD983EB5"
 			rewards: [{
@@ -205,7 +205,7 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			title: "&6Laiton Industriel"
+			title: "&6Industrial Brass"
 			x: 3.0d
 			y: -1.5d
 		}
@@ -215,11 +215,11 @@
 				"2A7CA6F523FFF94F"
 			]
 			description: [
-				"&7\"Laisser s'exprimer la brillance du quartz.\""
+				"&7\"Let the brilliance of quartz shine through.\""
 				""
-				"Pour fabriquer des composants électroniques, vous avez besoin de Quartz Poli."
+				"To manufacture electronic components, you need Polished Quartz."
 				""
-				"&eMéthode :&f Mettez du &ePapier de verre (Sandpaper)&f dans votre main secondaire, un Quartz du Nether dans votre main principale, et maintenez le clic-droit pour le polir."
+				"&eMethod:&f Put &eSandpaper&f in your off-hand, a Nether Quartz in your main hand, and hold right-click to polish it."
 			]
 			id: "0619C62BBB1CF519"
 			rewards: [{
@@ -240,16 +240,16 @@
 				}
 				type: "item"
 			}]
-			title: "&eLe Polissage Manuel"
+			title: "&eManual Polishing"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["0619C62BBB1CF519"]
 			description: [
-				"&7\"Le début de l'ère technologique.\""
+				"&7\"The start of the technological era.\""
 				""
-				"Combinez une &6Plaque de Fer&f et votre Rose Quartz pour créer ce composant. Il est le cerveau rudimentaire de vos machines intelligentes."
+				"Combine an &6Iron Plate&f and your Rose Quartz to create this component. It is the rudimentary brain of your intelligent machines."
 			]
 			id: "44C6A1342397EEE7"
 			tasks: [{
@@ -268,9 +268,9 @@
 				"41B74802DD983EB5"
 			]
 			description: [
-				"&7\"L'outil d'automatisation ultime.\""
+				"&7\"The ultimate automation tool.\""
 				""
-				"Le &dDéployeur&f utilise l'item qu'il tient sur le bloc devant lui. Il est indispensable pour assembler les mécanismes de précision que nous verrons ensuite."
+				"The &dDeployer&f uses the item it holds on the block in front of it. It is essential for assembling the precision mechanisms we will see next."
 			]
 			id: "5498FDA5A29ABFDB"
 			rewards: [{
@@ -286,27 +286,27 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			title: "&dLa Main Mécanique"
+			title: "&dThe Mechanical Hand"
 			x: 3.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["44C6A1342397EEE7"]
 			description: [
-				"&7\"L'horlogerie industrielle à son paroxysme.\""
+				"&7\"Industrial watchmaking at its peak.\""
 				""
-				"Le &bMécanisme de Précisionf ne se fabrique pas d'un coup. Il nécessite une &6Séquence d'Assemblage&f."
+				"The &bPrecision Mechanism&f cannot be crafted all at once. It requires an &6Assembly Sequence&f."
 				""
-				"&eInstallation recommandée :&f"
-				"Placez 3 Déployeurs au-dessus d'un tapis ou de dépôts. Faites passer une &6Plaque d'Or&f successivement sous les objets suivants :"
+				"&eRecommended Setup:&f"
+				"Place 3 Deployers over a belt or depots. Pass a &6Gold Plate&f successively under the following items:"
 				""
-				"1-Petit engrenage (Small Cogwheel)"
+				"1 - Small Cogwheel"
 				""
-				"2-Grand engrenage (Large Cogwheel)"
+				"2 - Large Cogwheel"
 				""
-				"3-Pépite de fer (Iron Nugget)"
+				"3 - Iron Nugget"
 				""
-				"&cAttention :&f Cette boucle doit être répétée &n5 fois&f sur la même plaque. Il y a 20% de chances que l'assemblage échoue et ne donne que des débris. Soyez patient !"
+				"&cWarning:&f This loop must be repeated &n5 times&f on the same plate. There is a 20% chance the assembly will fail and produce only scrap. Be patient!"
 			]
 			id: "42E12988B52F9A1E"
 			rewards: [{
@@ -327,11 +327,11 @@
 		{
 			dependencies: ["42E12988B52F9A1E"]
 			description: [
-				"&7\"Stocker la puissance liquide.\""
+				"&7\"Storing liquid power.\""
 				""
-				"Pour dompter la vapeur, vous devez d'abord savoir manipuler l'eau. Les &6Fluid Tanks&f peuvent être empilés pour créer d'énormes réservoirs."
+				"To tame steam, you must first know how to manipulate water. &6Fluid Tanks&f can be stacked to create massive reservoirs."
 				""
-				"&fIls serviront de base à votre future chaudière. Utilisez des &6Tuyaux (Pipes)&f et une &6Pompe Mécanique&f pour les remplir automatiquement."
+				"&fThey will serve as the base for your future boiler. Use &6Pipes&f and a &6Mechanical Pump&f to fill them automatically."
 			]
 			id: "256CFE304C6F4962"
 			rewards: [{
@@ -346,26 +346,26 @@
 				item: "create:fluid_tank"
 				type: "item"
 			}]
-			title: "&6Le Réservoir à Fluides"
+			title: "&6The Fluid Tank"
 			x: -2.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["256CFE304C6F4962"]
 			description: [
-				"&7\"La puissance de l'eau chauffée.\""
+				"&7\"The power of heated water.\""
 				""
-				"Le &6Steam Engine&f transforme la pression de la vapeur en force de rotation colossale."
+				"The &6Steam Engine&f transforms steam pressure into colossal rotational force."
 				""
-				"&eComment l'activer :&f"
+				"&eHow to activate it:&f"
 				""
-				"Placez le moteur sur un &bFluid Tank&f (qui sert de chaudière)."
+				"Place the engine on a &bFluid Tank&f (which acts as a boiler)."
 				""
-				"Pompez de l'Eau à l'intérieur du réservoir."
+				"Pump water into the tank."
 				""
-				"Placez une source de chaleur en dessous (Feu, Magma, ou mieux : un &cBrûleur de Blaze&f)."
+				"Place a heat source underneath (Fire, Magma, or better: a &cBlaze Burner&f)."
 				""
-				"Reliez l'arbre du piston à votre réseau !"
+				"Connect the piston shaft to your network!"
 			]
 			id: "030DC894D851E2B4"
 			rewards: [{
@@ -379,7 +379,7 @@
 				icon: "create:steam_engine"
 				id: "33F960ADA5A34C77"
 				item: "create:steam_engine"
-				title: "&6La Vapeur : Le Piston"
+				title: "&6Steam: The Piston"
 				type: "item"
 			}]
 			x: -2.5d
@@ -388,11 +388,11 @@
 		{
 			dependencies: ["030DC894D851E2B4"]
 			description: [
-				"&7\"Tchou-tchou !\""
+				"&7\"Choo-choo!\""
 				""
-				"Posez ce sifflet sur votre chaudière et reliez-le à une commande (levier ou bouton)."
+				"Place this whistle on your boiler and link it to a control (lever or button)."
 				""
-				"&fPlus la pression dans votre chaudière est élevée, plus le son sera puissant. C'est le symbole ultime de votre réussite industrielle dans cet âge !"
+				"&fThe higher the pressure in your boiler, the louder the sound. It's the ultimate symbol of your industrial success in this age!"
 			]
 			id: "273D5CC543FDE307"
 			tasks: [{
@@ -400,24 +400,24 @@
 				item: "create:steam_whistle"
 				type: "item"
 			}]
-			title: "&cLe Sifflet de Vapeur"
+			title: "&cThe Steam Whistle"
 			x: -2.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["256CFE304C6F4962"]
 			description: [
-				"&7\"Certaines machines ont soif de chaleur.\""
+				"&7\"Some machines thirst for heat.\""
 				""
-				"Vous allez avoir besoin de Lave en grande quantité. Deux écoles s'offrent à vous :"
+				"You are going to need Lava in large quantities. Two schools of thought are available to you:"
 				""
-				"&e1. La méthode patiente (Overworld) :&f"
-				"Placez de la lave au-dessus d'une &bPointed Dripstone&f qui goutte dans un &bChaudron&f. C'est gratuit, mais lent."
+				"&e1. The Patient Method (Overworld):&f"
+				"Place lava above a &bPointed Dripstone&f that drips into a &bCauldron&f. It's free, but slow."
 				""
-				"&e2. Le pompage massif (Nether) :&f"
-				"Utilisez une &6Hose Pulley&f au-dessus d'un lac de lave géant dans le Nether. Si le lac est assez grand (plus de 10 000 blocs), Create le considérera comme &binfinif !"
+				"&e2. Massive Pumping (Nether):&f"
+				"Use a &6Hose Pulley&f over a giant lava lake in the Nether. If the lake is large enough (over 10,000 blocks), Create will consider it &binfinite!&f"
 				""
-				"&fUtilisez l'&5Ender Tank&f pour synchroniser les fluides entre les dimensions. Posez-en un dans le Nether (en sortie de pompe) et un à votre base (en entrée de vos réservoirs)."
+				"&fUse the &5Ender Tank&f to synchronize fluids across dimensions. Place one in the Nether (at the pump outlet) and one at your base (at the tank inlet)."
 			]
 			icon: "minecraft:lava_bucket"
 			id: "704FE248339070EE"
@@ -433,24 +433,24 @@
 				item: "minecraft:lava_bucket"
 				type: "item"
 			}]
-			title: "&6L'Énergie Géothermique"
+			title: "&6Geothermal Energy"
 			x: -4.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["704FE248339070EE"]
 			description: [
-				"&7\"La physique n'est qu'une suggestion.\""
+				"&7\"Physics is merely a suggestion.\""
 				""
-				"Les &5Ender Tanks&f partagent leur contenu selon leur code couleur."
+				"&5Ender Tanks&f share their contents according to their color code."
 				""
-				"&bConfiguration :&f"
+				"&bConfiguration:&f"
 				""
-				"Utilisez des teintures sur les pads de couleur pour changer de réseau."
+				"Use dyes on the color pads to change networks."
 				""
-				"Utilisez un &bdiamond&f sur le loquet pour rendre le tank &nprivé&f."
+				"Use a &bdiamond&f on the latch to make the tank &nprivate&f."
 				""
-				"Gérez le mode Entrée/Sortie en cliquant sur le cadran central."
+				"Manage Input/Output mode by clicking the central dial."
 			]
 			id: "327B8B0014624E5F"
 			rewards: [{
@@ -465,24 +465,24 @@
 				item: "enderstorage:ender_tank"
 				type: "item"
 			}]
-			title: "&5Transport Dimensionnel"
+			title: "&5Dimensional Transport"
 			x: -4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["722C1629B67B25EC"]
 			description: [
-				"&7\"Capturer l'enfer dans une cage.\""
+				"&7\"Capturing hell in a cage.\""
 				""
-				"Pour fabriquer du &6Laiton&f ou générer de la &6Vapeur&f, un simple feu ne suffira pas. Vous avez besoin d'une chaleur contrôlée et intense."
+				"To manufacture &6Brass&f or generate &6Steam&f, a simple fire won't suffice. You need controlled and intense heat."
 				""
-				"&eProcédure :&f"
+				"&eProcedure:&f"
 				""
-				"Fabriquez un Brûleur vide."
+				"Craft an empty burner."
 				""
-				"Trouvez un Blaze (Nether ou Spawner) et faites un &bclic-droit&f sur lui avec le brûleur en main."
+				"Find a Blaze (Nether or Spawner) and &bright-click&f on it with the burner in hand."
 				""
-				"Félicitations, vous avez un esclave thermique !"
+				"Congratulations, you have a thermal slave!"
 			]
 			icon: "create:empty_blaze_burner"
 			id: "6DBEAC33B8273C80"
@@ -499,7 +499,7 @@
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			title: "&cLe Brûleur de Blaze"
+			title: "&cThe Blaze Burner"
 			x: 5.0d
 			y: -3.0d
 		}
@@ -509,14 +509,14 @@
 				"6DBEAC33B8273C80"
 			]
 			description: [
-				"&7\"Un Blaze affamé est un Blaze inutile.\""
+				"&7\"A hungry Blaze is a useless Blaze.\""
 				""
-				"Pour que votre machine à vapeur tourne en continu, votre Blaze doit rester allumé. Vous pouvez lui donner du charbon à la main, mais la méthode industrielle est préférable."
+				"To keep your steam engine running continuously, your Blaze must stay lit. You can feed it coal by hand, but the industrial method is better."
 				""
-				"&eAutomatisation :&f"
-				"Utilisez un &dDéployeur&f pointé vers le Blaze avec des seaux de lave (ou du charbon) pour le nourrir automatiquement."
+				"&eAutomation:&f"
+				"Use a &dDeployer&f pointed at the Blaze with lava buckets (or coal) to feed it automatically."
 				""
-				"&fSi vous avez de la lave infinie via vos &5Ender Tanks&f, c'est le moment de créer une boucle infinie de carburant !"
+				"&fIf you have infinite lava via your &5Ender Tanks&f, it's time to create an infinite fuel loop!"
 			]
 			id: "56DCD8C19D39B29D"
 			rewards: [{
@@ -530,18 +530,18 @@
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			title: "&6Alimentation Automatique"
+			title: "&6Automatic Feeding"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["56DCD8C19D39B29D"]
 			description: [
-				"&7\"Sous pression.\""
+				"&7\"Under pressure.\""
 				""
-				"Assemblez vos réservoirs en un bloc (ex: 2x2). C'est ici que l'eau va bouillir."
+				"Assemble your tanks into a block (e.g., 2x2). This is where the water will boil."
 				""
-				"&fPlus vous avez de &6Brûleurs de Blaze&f actifs en dessous et plus votre apport en eau est constant, plus le niveau de votre chaudière augmentera, permettant d'alimenter plusieurs Steam Engines à pleine puissance."
+				"&fThe more &6Blaze Burners&f you have active underneath and the more constant your water supply, the higher your boiler level will rise, allowing you to power several Steam Engines at full capacity."
 			]
 			id: "5493EDA09C0A6CBF"
 			rewards: [{
@@ -554,7 +554,7 @@
 				count: 4L
 				id: "4E61E44E24E79395"
 				item: "create:fluid_tank"
-				title: "&6La Chaudière à Vapeur"
+				title: "&6The Steam Boiler"
 				type: "item"
 			}]
 			x: 0.0d
@@ -563,20 +563,20 @@
 		{
 			dependencies: ["42E12988B52F9A1E"]
 			description: [
-				"&7\"Voir l'invisible a un prix.\""
+				"&7\"Seeing the invisible has a price.\""
 				""
-				"Porter ces &bLunettes d'Ingénieur&f change tout, mais leur fabrication demande une précision extrême."
+				"Wearing these &bEngineer's Goggles&f changes everything, but crafting them requires extreme precision."
 				""
-				"&eLigne d'assemblage requise :&f"
-				"Utilisez une &6Plaque d'Or&f et faites-lui subir la séquence suivante via vos &dDéployeurs&f :"
+				"&eAssembly Line Required:&f"
+				"Use a &6Gold Plate&f and subject it to the following sequence via your &dDeployers&f:"
 				""
-				"&fVerre&f (x2)"
+				"&fGlass&f (x2)"
 				""
-				"&fTube Électronique&f"
+				"&fElectron Tube&f"
 				""
-				"&fMécanisme de Précision&f"
+				"&fPrecision Mechanism&f"
 				""
-				"&fUne fois équipées, vous verrez le Stress, les Fluides et le RPM de vos machines d'un simple regard."
+				"&fOnce equipped, you will see the Stress, Fluids, and RPM of your machines at a glance."
 			]
 			id: "1BDB4525F07B452D"
 			rewards: [
@@ -599,10 +599,10 @@
 				item: "create:goggles"
 				type: "item"
 			}]
-			title: "&bVision d'Ingénieur"
+			title: "&bEngineer's Vision"
 			x: 0.0d
 			y: -4.5d
 		}
 	]
-	title: "&bMécanique &fdu Mouvement"
+	title: "&bMechanical &fMotion"
 }

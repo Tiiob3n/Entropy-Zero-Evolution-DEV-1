@@ -26,12 +26,12 @@
 		{
 			dependencies: ["604613590598BFAF"]
 			description: [
-				"&fBienvenue ! Pour vous aider à bien démarrer, choisissez un objet de soutien utilitaire."
+				"&fWelcome! To help you get started on the right foot, choose a utility support item."
 				" "
-				"&fRéfléchissez bien, un seul choix est possible :"
-				""
-				"&d- Netherite Backpack :&f Pour les explorateurs (stockage massif dès le départ)."
-				"&e- Time in a Bottle :&f Pour les ingénieurs (accélère le temps de vos machines)."
+				"&fThink carefully, you can only make one choice:"
+				" "
+				"&d- Netherite Backpack:&f For explorers (massive storage from the start)."
+				"&e- Time in a Bottle:&f For engineers (accelerates the time of your machines)."
 			]
 			id: "465F0FBCE0785C70"
 			rewards: [{
@@ -42,10 +42,10 @@
 			}]
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "&eChoisissez votre spécialisation"
+			subtitle: "&eChoose your specialization"
 			tasks: [{
 				id: "1B916E189DBAFE7E"
-				title: "&6&lÉquipement de Départ"
+				title: "&6&lStarter Gear"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -53,13 +53,13 @@
 		}
 		{
 			description: [
-				"&fIl y a des siècles, l'humanité avait atteint la &bSingularité Thermique&f. L'énergie était gratuite, les machines pensaient pour nous, et la matière n'était qu'un jouet."
+				"&fCenturies ago, humanity had reached the &bThermal Singularity&f. Energy was free, machines thought for us, and matter was nothing but a toy."
 				" "
-				"&fPuis, le &c\"Grand Gel\"&f est arrivé. En une seconde, la conductivité a chuté à zéro. Les circuits ont grillé, les usines se sont figées, et le savoir s'est évaporé dans le froid industriel."
+				"&fThen, the &c\"Great Freeze\"&f arrived. In a second, conductivity dropped to zero. Circuits fried, factories froze, and knowledge evaporated into the industrial cold."
 				" "
-				"&fVous vous réveillez dans les ruines de cet ancien monde. Votre mission n'est pas seulement de survivre, mais de &6reconstruire la chaîne du savoir&f. De la pierre à la vapeur, de la vapeur à l'atome."
+				"&fYou wake up in the ruins of this ancient world. Your mission is not just to survive, but to &6rebuild the chain of knowledge&f. From stone to steam, from steam to the atom."
 				" "
-				"&e&nVotre objectif :&r&f Redonner vie à la technologie. Mais attention... la nature a repris ses droits, et elle ne compte pas se laisser domestiquer si facilement."
+				"&e&nYour objective:&r&f Breathe life back into technology. But beware... nature has reclaimed its rights, and it won't be tamed so easily."
 			]
 			id: "0505D6A0280E26B1"
 			rewards: [{
@@ -69,10 +69,10 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&8L'Effondrement de la Singularité"
+			subtitle: "&8The Collapse of the Singularity"
 			tasks: [{
 				id: "48A64927BAA43517"
-				title: "&7&lFragment d'Histoire"
+				title: "&7&lHistory Fragment"
 				type: "checkmark"
 			}]
 			x: 0.5d
@@ -81,16 +81,16 @@
 		{
 			dependencies: ["0505D6A0280E26B1"]
 			description: [
-				"&fDans ce monde, la coopération est possible, mais la protection est vitale."
+				"&fIn this world, cooperation is possible, but protection is vital."
 				" "
-				"&6&l1. Créez votre Team :&r"
-				"&fOuvrez votre inventaire et cliquez sur l'icône &b\"My Team\"&f (en haut à gauche). Cela vous permet d'inviter des amis et de partager vos quêtes."
+				"&6&l1. Create your Team:&r"
+				"&fOpen your inventory and click the &b\"My Team\"&f icon (top left). This allows you to invite friends and share your quests."
 				" "
-				"&6&l2. Réclamez vos Chunks (Claims) :&r"
-				"&fCliquez sur l'icône de la &aCarte (Map)&f. Faites un &eclic-gauche&f sur les carrés pour \"Claim\" un territoire (personne ne pourra casser vos blocs ou ouvrir vos coffres)."
+				"&6&l2. Claim your Chunks:&r"
+				"&fClick the &aMap&f icon. &eLeft-click&f the squares to \"Claim\" a territory (no one can break your blocks or open your chests)."
 				" "
-				"&6&l3. Le Chunk Loading :&r"
-				"&fFaites &eShift + clic-gauche&f sur un chunk déjà réclamé pour le garder actif même quand vous êtes absent. Très utile pour que vos machines de l'&2Âge 2&f continuent de tourner !"
+				"&6&l3. Chunk Loading:&r"
+				"&fPress &eShift + Left-click&f on a claimed chunk to keep it active even when you are away. Very useful for your &2Age 2&f machines to keep running!"
 			]
 			id: "1CC29CFD9D4298A1"
 			rewards: [{
@@ -99,60 +99,60 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&7Sécurisez votre complexe industriel"
+			subtitle: "&7Secure your industrial complex"
 			tasks: [{
 				id: "0C716BED64F0108E"
-				title: "&bGestion du Territoire : Teams & Claims"
+				title: "&bTerritory Management: Teams & Claims"
 				type: "checkmark"
 			}]
-			title: "&bGestion du Territoire : Teams et Claims"
+			title: "&bTerritory Management: Teams and Claims"
 			x: -1.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1CC29CFD9D4298A1"]
 			description: [
-				"&fL'ingénierie est une science exacte, mais des imprévus peuvent arriver."
+				"&fEngineering is an exact science, but the unexpected can happen."
 				" "
-				"&fSi vous identifiez une &cinstabilité&f, un &6conflit de craft&f ou si une donnée de JEI vous semble erronée :"
+				"&fIf you identify an &cinstability&f, a &6crafting conflict&f, or if JEI data seems incorrect:"
 				" "
-				"&7- Vérifiez vos protocoles (et vos outils)."
-				"&7- Envoyez un rapport détaillé sur le &9Discord officiel&f."
+				"&7- Verify your protocols (and your tools)."
+				"&7- Send a detailed report on the &9official Discord&f."
 				" "
-				"&fVos retours permettent de maintenir l'intégrité de ce système pour tous les futurs ingénieurs."
-				""
-				""
-				""
-				""
-				"{\"text\": \"Cliquez ici pour rejoindre le Discord !\", \"color\": \"blue\", \"clickEvent\": {\"action\": \"open_url\", \"value\": \"https://discord.gg/TjUG4A965U\"}}"
+				"&fYour feedback helps maintain the integrity of this system for all future engineers."
+				" "
+				" "
+				" "
+				" "
+				"{\"text\": \"Click here to join the Discord!\", \"color\": \"blue\", \"clickEvent\": {\"action\": \"open_url\", \"value\": \"https://discord.gg/TjUG4A965U\"}}"
 			]
 			id: "3DA3D8B38A1CA66F"
 			shape: "gear"
-			subtitle: "&7Amélioration continue du complexe"
+			subtitle: "&7Continuous complex improvement"
 			tasks: [{
 				id: "395A11ED2D73892F"
-				title: "&cSupport & Signalements"
+				title: "&cSupport & Reporting"
 				type: "checkmark"
 			}]
-			title: "&cSupport et Rapport de Terrain"
+			title: "&cSupport and Field Report"
 			x: 0.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["3DA3D8B38A1CA66F"]
 			description: [
-				"&fDans ce pack, le savoir est votre meilleure arme. Voici les commandes de base pour naviguer dans l'interface :"
+				"&fIn this pack, knowledge is your best weapon. Here are the basic commands to navigate the interface:"
 				" "
-				"&6&lSur un objet dans l'inventaire ou JEI :&r"
-				"&e- Touche [R] :&f Affiche la &bRecette&f de l'objet."
-				"&e- Touche [U] :&f Affiche les &dUtilisations&f de l'objet."
-				"&e- Touche [A] :&f &6Épingle&f l'objet à gauche de l'écran (très utile pour suivre un craft long)."
+				"&6&lOn an item in inventory or JEI:&r"
+				"&e- [R] Key:&f Shows the &bRecipe&f of the item."
+				"&e- [U] Key:&f Shows the &dUses&f of the item."
+				"&e- [A] Key:&f &6Pins&f the item to the left of the screen (very useful for tracking long crafts)."
 				" "
-				"&6&lGestion d'inventaire :&r"
-				"&e- [Ctrl] + Clic :&f (Si configuré) déplace tous les objets identiques."
-				"&e- Touche [Espace] :&f Dans la barre de recherche JEI pour vider la recherche."
+				"&6&lInventory Management:&r"
+				"&e- [Ctrl] + Click:&f (If configured) moves all identical items."
+				"&e- [Space] Key:&f In the JEI search bar to clear your search."
 				" "
-				"&7&oAstuce : Si vous cherchez un mod spécifique dans JEI, tapez \"@\" suivi du nom du mod (ex: @powah).&r"
+				"&7&oTip: If you are looking for a specific mod in JEI, type \"@\" followed by the mod name (ex: @powah).&r"
 			]
 			id: "604613590598BFAF"
 			rewards: [{
@@ -161,17 +161,17 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&7Maîtrisez votre interface"
+			subtitle: "&7Master your interface"
 			tasks: [{
 				id: "4B4463DA63157B34"
-				title: "&bLa Bible JEI & Raccourcis"
+				title: "&bThe JEI Bible & Shortcuts"
 				type: "checkmark"
 			}]
-			title: "&bLa Bible JEI et Raccourcis"
+			title: "&bThe JEI Bible and Shortcuts"
 			x: 2.0d
 			y: 0.0d
 		}
 	]
-	subtitle: ["&bInitialisation &fdu Système"]
+	subtitle: ["&bSystem &fInitialization"]
 	title: "&d&lWELCOME"
 }

@@ -27,28 +27,28 @@
 		{
 			dependencies: ["1B99BDC7A0A3DBB8"]
 			description: [
-				"&7La technologie de l'Âge 7 vous a mené aux confins de l'espace, mais pour stabiliser l'antimatière, vous devez puiser dans l'énergie vitale."
+				"&7The technology of Age 7 has led you to the edges of space, but to stabilize antimatter, you must tap into life energy itself."
 				""
-				"&7Le &aLexica Botania &7est votre nouveau guide. Commencez par créer une &fPure Daisy &7pour obtenir du &eLivingwood &7et de la &eLivingrock&7."
+				"&7The &aLexica Botania &7is your new guide. Start by creating a &fPure Daisy &7to obtain &eLivingwood &7and &eLivingrock&7."
 			]
 			id: "3FB90A7691BB63E9"
-			subtitle: "&8Le savoir est le premier pas"
+			subtitle: "&8Knowledge is the first step"
 			tasks: [{
 				consume_items: false
 				id: "514ACA25F7F91C85"
 				item: "botania:lexicon"
 				type: "item"
 			}]
-			title: "&6L'Héritage d'Alfheim"
+			title: "&6The Legacy of Alfheim"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3FB90A7691BB63E9"]
 			description: [
-				"&7Fini de courir après les fleurs sauvages. Utilisez la technologie des &6Botany Pots &7pour miniaturiser les biomes."
+				"&7No more running after wild flowers. Use &6Botany Pots &7technology to miniaturize biomes."
 				""
-				"&cNote : &7Automatisez les 16 couleurs dès maintenant. Les recettes de l'Âge 8 demandent des &lmilliers &r&7de pétales."
+				"&cNote: &7Automate all 16 colors right now. Age 8 recipes will require &lthousands &r&7of petals."
 			]
 			id: "255A08510B1013DC"
 			rewards: [{
@@ -56,20 +56,20 @@
 				item: "storagedrawers:controller"
 				type: "item"
 			}]
-			subtitle: "&8L'Horticulture Industrielle"
+			subtitle: "&8Industrial Horticulture"
 			tasks: [{
 				consume_items: false
 				id: "7E3BE3B6F214A632"
 				item: "botanypots:terracotta_hopper_botany_pot"
 				type: "item"
 			}]
-			title: "&2Culture de Masse &7(Botany Pots)"
+			title: "&2Mass Cultivation &7(Botany Pots)"
 			x: 1.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["255A08510B1013DC"]
-			description: ["&7Reliez vos &6Botany Pots &7à des &bStorage Drawers &7via le Controller. C'est la seule façon de gérer le flux massif de ressources nécessaire pour vos futurs rituels."]
+			description: ["&7Link your &6Botany Pots &7to &bStorage Drawers &7via the Controller. This is the only way to manage the massive resource flow needed for your future rituals."]
 			id: "72550820824F6F38"
 			rewards: [{
 				count: 16
@@ -77,23 +77,23 @@
 				item: "botania:fertilizer"
 				type: "item"
 			}]
-			subtitle: "&816 couleurs, un seul réseau"
+			subtitle: "&816 colors, one network"
 			tasks: [{
 				consume_items: false
 				id: "579BDF8A51B292C2"
 				item: "storagedrawers:oak_full_drawers_1"
 				type: "item"
 			}]
-			title: "&bLogistique des Pétales &7(Drawers)"
+			title: "&bPetal Logistics &7(Drawers)"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["72550820824F6F38"]
 			description: [
-				"&7Le &bMana Pool &7est votre batterie magique. Pour le remplir, utilisez des &eEndoflames &7(Charbon) ou des &6Rosa Arcana &7(XP)."
+				"&7The &bMana Pool &7is your magical battery. To fill it, use &eEndoflames &7(Coal) or &6Rosa Arcana &7(XP)."
 				""
-				"&7Utilisez un &aMana Spreader &7pour diriger le flux. Pensez aux &6Mana Lens &7pour augmenter la portée !"
+				"&7Use a &aMana Spreader &7to direct the flow. Consider &6Mana Lenses &7to increase the range!"
 			]
 			id: "543AAA514038D0AA"
 			rewards: [{
@@ -101,7 +101,7 @@
 				item: "botania:mana_tablet"
 				type: "item"
 			}]
-			subtitle: "&8Stocker l'énergie de la Terre"
+			subtitle: "&8Storing Earth's Energy"
 			tasks: [
 				{
 					consume_items: false
@@ -122,29 +122,29 @@
 					type: "item"
 				}
 			]
-			title: "&dLe Flux Primaire"
+			title: "&dThe Primal Flux"
 			x: 1.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["543AAA514038D0AA"]
-			description: ["&7Le &dRunic Altar &7est nécessaire pour infuser la matière. Placez les items, attendez l'absorption du mana, puis jetez une &fLivingrock &7et utilisez votre baguette."]
+			description: ["&7The &dRunic Altar &7is necessary to infuse matter. Place the items, wait for mana absorption, then throw a &fLivingrock &7and use your wand."]
 			id: "219A0C69E1D6924F"
-			subtitle: "&8Le premier processeur magique"
+			subtitle: "&8The first magical processor"
 			tasks: [{
 				consume_items: false
 				id: "6A7CC45774ACED82"
 				item: "botania:runic_altar"
 				type: "item"
 			}]
-			title: "&dLe Runic Altar"
+			title: "&dThe Runic Altar"
 			x: 0.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["219A0C69E1D6924F"]
 			id: "6F3F1A872E3F3665"
-			subtitle: "&8Eau, Feu, Terre et Air"
+			subtitle: "&8Water, Fire, Earth, and Air"
 			tasks: [
 				{
 					consume_items: false
@@ -171,15 +171,15 @@
 					type: "item"
 				}
 			]
-			title: "&3Runes de Niveau 1"
+			title: "&3Tier 1 Runes"
 			x: 1.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6F3F1A872E3F3665"]
-			description: ["&7Plus complexes, ces runes exigent les runes élémentaires comme composants. Elles servent à stabiliser les alliages avancés."]
+			description: ["&7More complex, these runes require elemental runes as components. They are used to stabilize advanced alloys."]
 			id: "64428DE1DE090253"
-			subtitle: "&8L'emprise du temps"
+			subtitle: "&8The grip of time"
 			tasks: [
 				{
 					consume_items: false
@@ -206,19 +206,19 @@
 					type: "item"
 				}
 			]
-			title: "&5Runes de Niveau 2"
+			title: "&5Tier 2 Runes"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["64428DE1DE090253"]
 			description: [
-				"&7Fini d'attendre 1 minute à côté de votre fleur. La version mécanique transforme les blocs &lautomatiquement&r."
+				"&7No more waiting 1 minute next to your flower. The mechanical version transforms blocks &lautomatically&r."
 				""
-				"&cCraft : &7Exige des &9Plaques de Resonarium&7."
+				"&cCrafting: &7Requires &9Resonarium Plates&7."
 			]
 			id: "477EC8B892A2B42A"
-			subtitle: "&8Transformation instantanée"
+			subtitle: "&8Instant transformation"
 			tasks: [{
 				consume_items: false
 				id: "50C04B3C657054F0"
@@ -231,9 +231,9 @@
 		}
 		{
 			dependencies: ["477EC8B892A2B42A"]
-			description: ["&7Automatise la création des fleurs fonctionnelles. Reliez-la à votre stock de pétales AE2 pour ne plus jamais manquer de génératrices."]
+			description: ["&7Automates the creation of functional flowers. Link it to your AE2 petal stock to never run out of generators."]
 			id: "0201F6A30228AE6A"
-			subtitle: "&8Fleurs en série"
+			subtitle: "&8Mass-produced flowers"
 			tasks: [{
 				consume_items: false
 				id: "59952C283444101B"
@@ -246,9 +246,9 @@
 		}
 		{
 			dependencies: ["0201F6A30228AE6A"]
-			description: ["&7Cette machine est le cœur de votre usine. Elle réalise les rituels de l'autel runique sans aucune intervention manuelle."]
+			description: ["&7This machine is the heart of your factory. It performs Runic Altar rituals without any manual intervention."]
 			id: "51E27ED1F39401DB"
-			subtitle: "&8L'usine à runes"
+			subtitle: "&8The Rune Factory"
 			tasks: [{
 				consume_items: false
 				id: "1ADF466492137661"
@@ -261,9 +261,9 @@
 		}
 		{
 			dependencies: ["51E27ED1F39401DB"]
-			description: ["&7Permet d'infuser des items (Mana Diamond, Mana Pearl) de manière industrielle sans les jeter un par un dans l'eau."]
+			description: ["&7Allows for industrial-scale item infusion (Mana Diamond, Mana Pearl) without throwing them one by one into the water."]
 			id: "2CA14BB6C85EE0D3"
-			subtitle: "&8L'infusion de masse"
+			subtitle: "&8Mass Infusion"
 			tasks: [{
 				consume_items: false
 				id: "2F97027C64110D4A"
@@ -277,15 +277,15 @@
 		{
 			dependencies: ["2CA14BB6C85EE0D3"]
 			description: [
-				"&7Le portail vers Alfheim est un &6Puits d'Échange &7(La dimension est &cDésactivée&7)."
+				"&7The portal to Alfheim is an &6Exchange Well &7(The dimension itself is &cDisabled&7)."
 				""
-				"&fRequis : &71x Portail, 3x Glowstone Livingwood, 8x Livingwood."
+				"&fRequired: &71x Portal, 3x Glowstone Livingwood, 8x Livingwood."
 			]
 			id: "024B994AA7C5AD58"
-			subtitle: "&8Construire l'impossible"
+			subtitle: "&8Building the Impossible"
 			tasks: [{
 				id: "4339F1C5B247D48E"
-				title: "&6La Structure du Portail"
+				title: "&6The Portal Structure"
 				type: "checkmark"
 			}]
 			x: 1.5d
@@ -294,9 +294,9 @@
 		{
 			dependencies: ["024B994AA7C5AD58"]
 			description: [
-				"&7Placez ces deux pylônes sur deux &bMana Pools &7pour alimenter le portail."
+				"&7Place these two pylons on two &bMana Pools &7to power the portal."
 				""
-				"&6Coût : &7Il faut &b1/2 bassin &7pour l'ouverture. Une fois ouvert, jetez votre fer pour obtenir de l'&bElementium&7."
+				"&6Cost: &7It takes &b1/2 pool &7to open. Once open, throw your iron in to obtain &bElementium&7."
 			]
 			id: "017332F5DC6311A8"
 			rewards: [{
@@ -305,7 +305,7 @@
 				item: "botania:pixie_dust"
 				type: "item"
 			}]
-			subtitle: "&8Alimenter la faille"
+			subtitle: "&8Powering the Rift"
 			tasks: [{
 				consume_items: false
 				count: 2L
@@ -313,13 +313,13 @@
 				item: "botania:natura_pylon"
 				type: "item"
 			}]
-			title: "&bLes Natura Pylons"
+			title: "&bNatura Pylons"
 			x: 0.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["017332F5DC6311A8"]
-			description: ["&7Échangez vos diamants et vos perles de mana contre les matériaux ultimes d'Alfheim. Ces derniers sont requis pour les &6mana cell &7AE2."]
+			description: ["&7Exchange your mana diamonds and pearls for ultimate Alfheim materials. These are required for AE2 &6mana cells&7."]
 			id: "7AB4804459EA75C6"
 			tasks: [
 				{
@@ -337,13 +337,13 @@
 					type: "item"
 				}
 			]
-			title: "&3L'Échange Elfe"
+			title: "&3The Elven Exchange"
 			x: 1.5d
 			y: -13.0d
 		}
 		{
 			dependencies: ["7AB4804459EA75C6"]
-			description: ["&7Stockez des millions d'unités de mana dans un seul disque. Fini les rangées de bassins !"]
+			description: ["&7Store millions of mana units in a single disk. No more rows of pools!"]
 			id: "3F78EA1CD6286BC1"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -368,13 +368,13 @@
 		{
 			dependencies: ["3F78EA1CD6286BC1"]
 			description: [
-				"&7Maîtrisez les Sparks pour déplacer le mana entre vos pools et vos machines."
+				"&7Master Sparks to move mana between your pools and machines."
 				""
-				"&cRecessive : &7Vide le pool. "
-				"&bDominant : &7Remplit le pool."
+				"&cRecessive: &7Empties the pool. "
+				"&bDominant: &7Fills the pool."
 			]
 			id: "46E3E3E1998CE7CE"
-			subtitle: "&8Logistique sans fil"
+			subtitle: "&8Wireless Logistics"
 			tasks: [
 				{
 					id: "6D7A467EF9893353"
@@ -387,15 +387,15 @@
 					type: "item"
 				}
 			]
-			title: "&6Sparks et Augments"
+			title: "&6Sparks and Augments"
 			x: 1.5d
 			y: -15.0d
 		}
 		{
 			dependencies: ["46E3E3E1998CE7CE"]
-			description: ["&7Utilisez la &eTerra Plate &7entourée de 4 &dGaia Pylons&7. Un lingot coûte &b1 bassin entier&7."]
+			description: ["&7Use the &eTerra Plate &7surrounded by 4 &dGaia Pylons&7. One ingot costs &b1 full pool&7."]
 			id: "41820C01B08F5792"
-			subtitle: "&8L'alliage suprême"
+			subtitle: "&8The Supreme Alloy"
 			tasks: [{
 				count: 16L
 				id: "287B07D688C3F8F6"
@@ -408,9 +408,9 @@
 		}
 		{
 			dependencies: ["41820C01B08F5792"]
-			description: ["&7Battez le Guardian I pour obtenir les &dGaia Spirits&7."]
+			description: ["&7Defeat Guardian I to obtain &dGaia Spirits&7."]
 			id: "090AD762B434E990"
-			subtitle: "&8Esprit de Gaia"
+			subtitle: "&8Gaia Spirit"
 			tasks: [{
 				consume_items: false
 				count: 4L
@@ -424,14 +424,14 @@
 		}
 		{
 			dependencies: ["090AD762B434E990"]
-			description: ["&7Utilisez un &dGaia Ingot &7sur le beacon. C'est ici que vous obtiendrez le &6Dice of Fate&7."]
+			description: ["&7Use a &dGaia Ingot &7on the beacon. This is where you will obtain the &6Dice of Fate&7."]
 			id: "185CF2CE54D18874"
 			rewards: [{
 				id: "348807EF2ADCEF25"
 				item: "botania:gaia_ingot"
 				type: "item"
 			}]
-			subtitle: "&8Le Boss de l'Antimatière"
+			subtitle: "&8The Antimatter Boss"
 			tasks: [{
 				id: "0A5DC333251BF02B"
 				title: "&l&4Gaia Guardian II"
@@ -442,11 +442,11 @@
 		}
 		{
 			dependencies: ["185CF2CE54D18874"]
-			description: ["&7Ouvrez vos dés. Vous &lDEVEZ &r&7obtenir l'&6Anneau d'Odin&7. Sans lui, impossible de stabiliser la &dMaster Key &7de l'Âge 9."]
+			description: ["&7Open your dice. You &lMUST &r&7obtain the &6Ring of Odin&7. Without it, stabilizing the Age 9 &dMaster Key &7is impossible."]
 			id: "66B26C147C27F8F3"
 			shape: "pentagon"
 			size: 2.0d
-			subtitle: "&8L'Élite de la Destinée"
+			subtitle: "&8Elite of Destiny"
 			tasks: [{
 				id: "4686B138111A7773"
 				item: {
@@ -463,10 +463,10 @@
 				}
 				type: "item"
 			}]
-			title: "&6L'Anneau d'Odin"
+			title: "&6The Ring of Odin"
 			x: 1.5d
 			y: -19.0d
 		}
 	]
-	title: "&5L'Industrialisation de la Magie Florale"
+	title: "&5Industrializing Floral Magic"
 }

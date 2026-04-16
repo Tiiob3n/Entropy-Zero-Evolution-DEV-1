@@ -2,7 +2,8 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "6lartifacts"
-	group: ""
+	group: "3BF6D2B95CD1CAD4"
+	icon: "artifacts:crystal_heart"
 	id: "6813CAAAF19187E6"
 	images: [{
 		height: 5.0d
@@ -12,14 +13,15 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	order_index: 6
+	order_index: 4
 	quest_links: [ ]
 	quests: [{
 		description: [
-			"&fLes &6Artefacts &fne se fabriquent pas, ils se méritent. Explorez les donjons, les pyramides et les ruines pour dénicher ces objets uniques."
+			"&f&6Artifacts &fcannot be crafted; they must be earned. Explore dungeons, pyramids, and ruins to uncover these unique items."
 			" "
-			"&7Chaque artefact occupe un slot &eCurios &7spécifique."
+			"&7Each artifact occupies a specific &eCurios &7slot."
 		]
+		icon: "artifacts:crystal_heart"
 		id: "65B5E05EC92F1F1E"
 		rewards: [{
 			exclude_from_claim_all: true
@@ -29,11 +31,11 @@
 		}]
 		tasks: [{
 			id: "5ABFD83DF88A24D1"
-			title: "&6&lLa Puissance des Anciens"
+			title: "&6&lPower of the Ancients"
 			type: "checkmark"
 		}]
 		x: 0.0d
 		y: 0.0d
 	}]
-	title: "&6&lARTIFACTS"
+	title: "&6ARTIFACTS"
 }

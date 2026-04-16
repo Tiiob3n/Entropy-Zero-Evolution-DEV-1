@@ -38,9 +38,9 @@
 		{
 			dependencies: ["5DF9C8126C6AEE00"]
 			description: [
-				"&fAvant de lancer des sorts, vous devez cultiver la magie. Plantez des &bMana Blooms&f pour obtenir des fibres magiques."
+				"&fBefore casting spells, you must cultivate magic. Plant &bMana Blooms&f to obtain magical fibers."
 				" "
-				"&7Ces fibres sont la base de tous vos futurs vêtements de mage."
+				"&7These fibers are the foundation of all your future mage attire."
 			]
 			id: "23EA2D82F2410CB5"
 			rewards: [{
@@ -49,23 +49,23 @@
 				item: "ars_nouveau:magebloom"
 				type: "item"
 			}]
-			subtitle: "&7Le début de votre voyage mystique."
+			subtitle: "&7The beginning of your mystical journey."
 			tasks: [{
 				consume_items: false
 				id: "0131F3E8F97CE7E7"
 				item: "ars_nouveau:magebloom_crop"
 				type: "item"
 			}]
-			title: "&b✨ Fibres de l'Aube"
+			title: "&b✨ Fibers of the Dawn"
 			x: -5.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["23EA2D82F2410CB5"]
 			description: [
-				"&fUtilisez vos ressources de l'Age 6 et vos fibres pour lier ce livre."
+				"&fUse your Age 6 resources and your fibers to bind this book."
 				" "
-				"&7C'est ici que vous concevrez vos premiers sorts de minage et de combat."
+				"&7This is where you will design your first mining and combat spells."
 			]
 			id: "133B4004BCEE8D60"
 			rewards: [{
@@ -74,58 +74,58 @@
 				item: "ars_nouveau:blank_parchment"
 				type: "item"
 			}]
-			subtitle: "&7Écrire votre propre destin."
+			subtitle: "&7Writing your own destiny."
 			tasks: [{
 				consume_items: false
 				id: "1560BE0355778ABD"
 				item: "ars_nouveau:novice_spell_book"
 				type: "item"
 			}]
-			title: "&b📘 Le Savoir Interdit"
+			title: "&b📘 Forbidden Knowledge"
 			x: -6.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["133B4004BCEE8D60"]
 			description: [
-				"&fEn exposant du Lapis ou de l'Améthyste à de la magie pure, vous obtenez des &3Source Gems&f."
+				"&fBy exposing Lapis or Amethyst to pure magic, you obtain &3Source Gems&f."
 				" "
-				"&7C'est la monnaie et le carburant principal de ce chapitre."
+				"&7This is the primary currency and fuel for this chapter."
 			]
 			id: "2922C8C63578AE68"
-			subtitle: "&7Solidifier l'invisible."
+			subtitle: "&7Solidifying the invisible."
 			tasks: [{
 				id: "39B28D1DCFD2A6DB"
 				item: "ars_nouveau:source_gem"
 				type: "item"
 			}]
-			title: "&3💎 Éclats de Source"
+			title: "&3💎 Source Gems"
 			x: -7.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["2922C8C63578AE68"]
-			description: ["&fLe mana s'évapore s'il n'est pas contenu. Fabriquez une &bSource Jar&f pour stocker l'énergie ambiante."]
+			description: ["&fMana evaporates if it is not contained. Craft a &bSource Jar&f to store ambient energy."]
 			id: "1BA55521C5E98280"
 			rewards: [{
 				id: "15684C0F723DC374"
 				item: "ars_nouveau:arcane_pedestal"
 				type: "item"
 			}]
-			subtitle: "&7Accumuler la puissance."
+			subtitle: "&7Accumulating power."
 			tasks: [{
 				consume_items: false
 				id: "44413C3E4DD58A44"
 				item: "ars_nouveau:source_jar"
 				type: "item"
 			}]
-			title: "&bStockage Éthéré"
+			title: "&bEthereal Storage"
 			x: -8.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["1BA55521C5E98280"]
-			description: ["&fCe lien transforme la croissance des plantes en &3Source&f. Placez-le près de vos Mana Blooms pour remplir vos Jars automatiquement."]
+			description: ["&fThis link transforms plant growth into &3Source&f. Place it near your Mana Blooms to fill your Jars automatically."]
 			id: "59F088D5A41758BC"
 			rewards: [{
 				id: "3137C38F02EA154E"
@@ -138,16 +138,16 @@
 				item: "ars_nouveau:agronomic_sourcelink"
 				type: "item"
 			}]
-			title: "&2Agronomie Mystique"
+			title: "&2Mystical Agronomy"
 			x: -9.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["59F088D5A41758BC"]
 			description: [
-				"&fLe coeur de votre laboratoire. Cet appareil permet de transmuter des objets technologiques en artefacts magiques puissants."
+				"&fThe heart of your laboratory. This device allows you to transmute technological items into powerful magical artifacts."
 				" "
-				"&c⚠Conseil : &7Placez des piédestaux tout autour."
+				"&c⚠Tip: &7Place pedestals all around it."
 			]
 			id: "00CEF4AA0B0E9BE2"
 			rewards: [{
@@ -162,13 +162,13 @@
 				item: "ars_nouveau:enchanting_apparatus"
 				type: "item"
 			}]
-			title: "&dL'Apparatus d'Enchantement"
+			title: "&dThe Enchanting Apparatus"
 			x: -10.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["00CEF4AA0B0E9BE2"]
-			description: ["&fUtilisez l'Apparatus pour transformer vos fibres en tissu magique. Indispensable pour votre armure."]
+			description: ["&fUse the Apparatus to transform your fibers into magical cloth. Essential for your armor."]
 			icon: {
 				Count: 1
 				id: "ars_nouveau:battlemage_hood"
@@ -183,45 +183,45 @@
 				item: "ars_nouveau:magebloom_fiber"
 				type: "item"
 			}]
-			subtitle: "&7Porter la protection des arcanes."
+			subtitle: "&7Wearing arcane protection."
 			tasks: [{
 				consume_items: false
 				id: "6251C46B7FC142B5"
 				item: "ars_nouveau:magebloom_fiber"
 				type: "item"
 			}]
-			title: "&5Tissu de Mage"
+			title: "&5Mage Cloth"
 			x: -11.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["0AAA722AC62F22EB"]
-			description: ["&fVous êtes prêt. Préparez le rituel pour invoquer la Chimère. Ce combat ne sera pas technologique, mais spirituel."]
+			description: ["&fYou are ready. Prepare the ritual to summon the Chimera. This combat will not be technological, but spiritual."]
 			id: "33AF2AD9C9E13C58"
 			rewards: [{
 				id: "640DDB3EBE0CEE52"
 				item: "ars_nouveau:ritual_brazier"
 				type: "item"
 			}]
-			subtitle: "&7Appeler l'au-delà."
+			subtitle: "&7Calling from beyond."
 			tasks: [{
 				consume_items: false
 				id: "1CA25768EFAD0CF6"
 				item: "ars_nouveau:ritual_wilden_summon"
 				type: "item"
 			}]
-			title: "&6Le Rituel d'Invocation"
+			title: "&6The Summoning Ritual"
 			x: -12.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["33AF2AD9C9E13C58"]
 			description: [
-				"&fVaincre ce gardien des arcanes est la preuve que vous maîtrisez la magie de cet âge."
+				"&fDefeating this arcane guardian is proof that you have mastered the magic of this age."
 				" "
-				"En terrassant la bête, vous récupérez des fragments d'énergie pure. Ces fragments sont nécessaires pour stabiliser les portails interdimensionnels à venir."
+				"By slaying the beast, you recover fragments of pure energy. These fragments are necessary to stabilize the interdimensional portals to come."
 				" "
-				"&eTerminer cette quête est indispensable pour comprendre comment ouvrir le portail du Twilight."
+				"&eCompleting this quest is essential to understanding how to open the Twilight portal."
 			]
 			id: "096B2D31695A121A"
 			rewards: [{
@@ -229,30 +229,30 @@
 				item: "ars_nouveau:wilden_spike"
 				type: "item"
 			}]
-			subtitle: "&7Le test final de l'apprenti."
+			subtitle: "&7The apprentice's final test."
 			tasks: [{
 				consume_items: false
 				id: "4A06E5C0D42A9935"
 				item: "ars_nouveau:wilden_tribute"
 				type: "item"
 			}]
-			title: "&4BOSS : Wilden Chimera"
+			title: "&4BOSS: Wilden Chimera"
 			x: -13.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["6E163DB401627DEA"]
-			description: ["&fLa boussole classique est inutile ici. Fabriquez une &aCarte Magique&f pour localiser les structures des Seigneurs de la Forêt."]
+			description: ["&fA classic compass is useless here. Craft a &aMagic Map&f to locate the structures of the Forest Lords."]
 			id: "684FAFF7FA6F234C"
 			rewards: [{
 				id: "5069A7BDE62971CC"
 				item: "twilightforest:raw_venison"
 				type: "item"
 			}]
-			subtitle: "&7Ne pas se perdre entre les arbres."
+			subtitle: "&7Don't get lost between the trees."
 			tasks: [{
 				id: "40C50F8FFF64A839"
-				title: "&aSe Repérer dans le Noir"
+				title: "&aNavigating the Dark"
 				type: "checkmark"
 			}]
 			x: -16.0d
@@ -261,9 +261,9 @@
 		{
 			dependencies: ["684FAFF7FA6F234C"]
 			description: [
-				"&fTrouvez la cour du Naga. Esquivez ses charges et frappez sa tête."
+				"&fFind the Naga's courtyard. Dodge its charges and strike its head."
 				" "
-				"&6Loot : &fSes écailles serviront à renforcer les boucliers thermiques de la fusée."
+				"&6Loot: &fIts scales will be used to reinforce the rocket's heat shields."
 			]
 			id: "5E45A73FAD8D50BB"
 			rewards: [{
@@ -272,20 +272,20 @@
 				item: "twilightforest:naga_scale"
 				type: "item"
 			}]
-			subtitle: "&2Le serpent des ruines."
+			subtitle: "&2The serpent of the ruins."
 			tasks: [{
 				consume_items: false
 				id: "130780B75C8D873B"
 				item: "twilightforest:naga_trophy"
 				type: "item"
 			}]
-			title: "&4BOSS : Le Naga"
+			title: "&4BOSS: The Naga"
 			x: -16.0d
 			y: -13.5d
 		}
 		{
 			dependencies: ["5E45A73FAD8D50BB"]
-			description: ["&fMontez au sommet de la tour. Vous devrez renvoyer ses propres projectiles à la &4Lich&r pour briser sa protection."]
+			description: ["&fClimb to the top of the tower. You must reflect her own projectiles back at the &4Lich&r to break her protection."]
 			id: "3103418BEC452671"
 			rewards: [{
 				id: "2CC96A6BB38A30A5"
@@ -298,27 +298,27 @@
 				}
 				type: "item"
 			}]
-			subtitle: "&7Brisez les boucliers."
+			subtitle: "&7Break the shields."
 			tasks: [{
 				consume_items: false
 				id: "4FF7AB80B67A129B"
 				item: "twilightforest:lich_trophy"
 				type: "item"
 			}]
-			title: "&dLes Remparts de la Liche"
+			title: "&dThe Lich's Battlements"
 			x: -16.0d
 			y: -14.5d
 		}
 		{
 			dependencies: ["3103418BEC452671"]
-			description: ["&fTrouvez des &2feuilles&r &0d'acier&r dans les &lcoffres&r ou les &lgrottes.&r C'est un métal léger, parfait pour les circuits de navigation."]
+			description: ["&fFind &2Stealeaf&r in &lchests&r or &lcaves.&r It is a light metal, perfect for navigation circuits."]
 			id: "5463DC97C0E0E200"
 			rewards: [{
 				id: "11618238665DE0D9"
 				item: "mysticalagriculture:steeleaf_seeds"
 				type: "item"
 			}]
-			subtitle: "&7Fusionner la nature et le fer."
+			subtitle: "&7Merging nature and iron."
 			tasks: [{
 				consume_items: false
 				count: 4L
@@ -326,83 +326,83 @@
 				item: "twilightforest:steeleaf_ingot"
 				type: "item"
 			}]
-			title: "&6L'Acier du Crépuscule"
+			title: "&6Twilight Steel"
 			x: -16.0d
 			y: -15.5d
 		}
 		{
 			dependencies: ["5463DC97C0E0E200"]
-			description: ["&fDescendez dans les grottes de &6champignons.&r Trouvez la &4bête&r et récupérez sa &ahache.&r"]
+			description: ["&fDescend into the &6mushroom caves.&r Find the &4beast&r and recover its &aaxe.&r"]
 			id: "5ADAACA78B1C78D0"
 			rewards: [{
 				id: "18DD04562E3F252F"
 				item: "twilightforest:meef_stroganoff"
 				type: "item"
 			}]
-			subtitle: "&cAu fond des ténèbres."
+			subtitle: "&cDeep in the darkness."
 			tasks: [{
 				consume_items: false
 				id: "3AB2DE95E9078759"
 				item: "twilightforest:minoshroom_trophy"
 				type: "item"
 			}]
-			title: "&4BOSS : Le Minoshroom"
+			title: "&4BOSS: The Minoshroom"
 			x: -16.0d
 			y: -16.5d
 		}
 		{
 			dependencies: ["5ADAACA78B1C78D0"]
-			description: ["&fL'épreuve de force brute. Son sang est si puissant qu'il peut alimenter des &6réacteurs&r &bnucléaires...&r ou &9spatiaux.&r"]
+			description: ["&fThe test of brute force. Its blood is so powerful it can power &6nuclear&r or &9space&r &breactors.&r"]
 			id: "1D0E5BECA37A6550"
 			rewards: [{
 				id: "4C87FB266C11353F"
 				item: "twilightforest:fiery_blood"
 				type: "item"
 			}]
-			subtitle: "&7Le sang des titans."
+			subtitle: "&7The blood of titans."
 			tasks: [{
 				consume_items: false
 				id: "2EFC9452FC4E60EE"
 				item: "twilightforest:hydra_trophy"
 				type: "item"
 			}]
-			title: "&cBOSS FINAL : L'Hydre"
+			title: "&cBOSS FINAL: The Hydra"
 			x: -16.0d
 			y: -17.5d
 		}
 		{
 			dependencies: ["1D0E5BECA37A6550"]
-			description: ["&fEn utilisant le &cFiery Blood &fde l'Hydre sur un &bEcho Shard&f, vous créez une clé capable de percer le Sculk."]
+			description: ["&fBy using the Hydra's &cFiery Blood &fon an &bEcho Shard&f, you create a key capable of piercing the Sculk."]
 			id: "0DDC17AACA30D9FF"
 			rewards: [{
 				id: "7929A501DC4F7CB3"
 				item: "deeperdarker:soul_dust"
 				type: "item"
 			}]
-			subtitle: "&7Forger la clé du néant."
+			subtitle: "&7Forging the key to the void."
 			tasks: [{
 				consume_items: false
 				id: "035567C8D9E40DB1"
 				item: "deeperdarker:heart_of_the_deep"
 				type: "item"
 			}]
-			title: "&8Le Cœur des Ténèbres"
+			title: "&8The Heart of the Deep"
 			x: -21.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["0DDC17AACA30D9FF"]
-			description: ["&fTrouvez une Ancient City. Allumez le portail central avec le Cœur."]
+			description: ["&fFind an Ancient City. Light the central portal with the Heart."]
 			id: "1653D9E05F73DD41"
 			rewards: [{
 				id: "7F4A7BE568E0CE01"
 				item: "croptopia:cranberry_juice"
 				type: "item"
 			}]
-			subtitle: "&7Entrer dans la dimension du Sculk."
+			subtitle: "&7Enter the Sculk dimension."
 			tasks: [{
 				id: "32BA8BAA4955C7E8"
-				title: "&5Au-delà de la Réalité"
+				title: "&5Beyond Reality"
 				type: "checkmark"
 			}]
 			x: -20.5d
@@ -410,7 +410,7 @@
 		}
 		{
 			dependencies: ["1653D9E05F73DD41"]
-			description: ["&fCe cristal vibre à une fréquence qui annule la gravité. Essentiel pour le décollage de la fusée."]
+			description: ["&fThis crystal vibrates at a frequency that cancels gravity. Essential for rocket takeoff."]
 			id: "1C2E6C0D2675B090"
 			rewards: [{
 				count: 4
@@ -418,31 +418,31 @@
 				item: "deeperdarker:reinforced_echo_shard"
 				type: "item"
 			}]
-			subtitle: "&7Miner l'impossible."
+			subtitle: "&7Mining the impossible."
 			tasks: [{
 				consume_items: false
 				id: "1D80614881F69088"
 				item: "deeperdarker:resonarium"
 				type: "item"
 			}]
-			title: "&9Le Cristal de Résonance"
+			title: "&9The Resonance Crystal"
 			x: -19.5d
 			y: -20.0d
 		}
 		{
 			dependencies: ["1C2E6C0D2675B090"]
-			description: ["&fTuez un Warden dans son propre royaume. Son essence est nécessaire pour le processeur de bord de la fusée."]
+			description: ["&fKill a Warden in its own realm. Its essence is required for the rocket's onboard processor."]
 			id: "54C67ED444CB8B11"
 			rewards: [{
 				id: "78FA5A5519524C16"
 				item: "deeperdarker:soul_crystal"
 				type: "item"
 			}]
-			subtitle: "&7Ne faites pas un bruit."
+			subtitle: "&7Do not make a sound."
 			tasks: [{
 				entity: "minecraft:warden"
 				id: "0D96260F787953FA"
-				title: "&4KILL BOSS : Le Warden de l'Otherside"
+				title: "&4KILL BOSS: The Warden of the Otherside"
 				type: "kill"
 				value: 1L
 			}]
@@ -452,9 +452,9 @@
 		{
 			dependencies: ["54C67ED444CB8B11"]
 			description: [
-				"&fOubliez la table de craft classique. Pour manipuler les alliages abyssaux et les plaques thermiques, il vous faut une station de travail capable de supporter des tonnes de pression."
+				"&fForget the classic crafting table. To handle abyssal alloys and thermal plates, you need a workstation capable of withstanding tons of pressure."
 				" "
-				"&7Utilise l'acier de la Liche et les circuits de l'Age 6."
+				"&7Uses Lich steel and Age 6 circuits."
 			]
 			id: "6B8CC04F18388ECB"
 			rewards: [{
@@ -468,7 +468,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "&7Votre nouveau bureau."
+			subtitle: "&7Your new desk."
 			tasks: [{
 				consume_items: false
 				id: "5F1E19F5A82806ED"
@@ -482,9 +482,9 @@
 		{
 			dependencies: ["6B8CC04F18388ECB"]
 			description: [
-				"&fEn compressant le &9Resonarium &fpur avec la pression thermique de l'Hydre, vous obtenez une plaque capable de dévier les débris spatiaux et de contenir l'énergie du vide."
+				"&fBy compressing pure &9Resonarium &fwith the thermal pressure of the Hydra, you obtain a plate capable of deflecting space debris and containing vacuum energy."
 				" "
-				"&7Ce matériau est le seul capable de protéger la structure interne de la fusée lors de la traversée de la ceinture de radiations."
+				"&7This material is the only thing capable of protecting the rocket's internal structure when crossing the radiation belt."
 			]
 			id: "611E3211493B0662"
 			rewards: [{
@@ -493,20 +493,20 @@
 				item: "deeperdarker:resonarium_plate"
 				type: "item"
 			}]
-			subtitle: "&7Densité abyssale."
+			subtitle: "&7Abyssal density."
 			tasks: [{
 				consume_items: false
 				id: "3098A60E8C1D064F"
 				item: "deeperdarker:resonarium_plate"
 				type: "item"
 			}]
-			title: "&5Blindage en Resonarium"
+			title: "&5Resonarium Armor Plating"
 			x: -16.0d
 			y: -26.0d
 		}
 		{
 			dependencies: ["611E3211493B0662"]
-			description: ["&fUne simple armure ne suffira pas sur la lune. Vous devez tresser des &5Fibres de Mage &favec du blindage technique pour créer une combinaison pressurisée."]
+			description: ["&fA simple armor won't suffice on the moon. You must weave &5Mage Fibers &fwith technical plating to create a pressurized suit."]
 			id: "6B426FAA605CD106"
 			rewards: [{
 				count: 3
@@ -514,7 +514,7 @@
 				item: "beyond_earth:oxygen_tank"
 				type: "item"
 			}]
-			subtitle: "&7Mage, mais avec de l'oxygène."
+			subtitle: "&7Mage, but with oxygen."
 			tasks: [
 				{
 					consume_items: false
@@ -566,40 +566,40 @@
 					type: "item"
 				}
 			]
-			title: "&bProtection de l'Astronaute"
+			title: "&bAstronaut Protection"
 			x: -16.0d
 			y: -25.0d
 		}
 		{
 			dependencies: ["6B426FAA605CD106"]
-			description: ["&fMélangez votre &bHydrogène Mekanism &favec de la &3Source Liquide &fpour obtenir un carburant capable de déchirer l'atmosphère."]
+			description: ["&fMix your &bMekanism Hydrogen &fwith &3Liquid Source &fto obtain a fuel capable of tearing through the atmosphere."]
 			id: "7226D3210E298B3C"
 			rewards: [{
 				id: "190327E57BDD2505"
 				item: "beyond_earth:steel_tank"
 				type: "item"
 			}]
-			subtitle: "&7Plus que de l'essence."
+			subtitle: "&7More than just gasoline."
 			tasks: [{
 				consume_items: false
 				id: "50BEAFE6843A2725"
 				item: "beyond_earth:fuel_bucket"
 				type: "item"
 			}]
-			title: "&3Fuel de l'Infini"
+			title: "&3Infinity Fuel"
 			x: -16.0d
 			y: -24.0d
 		}
 		{
 			dependencies: ["7226D3210E298B3C"]
-			description: ["&fPréparez une zone de &l&43x3&r&r pour accueillir votre engin. Assurez-vous d'avoir dégagé la vue vers le ciel."]
+			description: ["&fPrepare a &l&43x3&r&r area to house your craft. Make sure you have a clear view of the sky."]
 			id: "0B6A78A26D06FD47"
 			rewards: [{
 				id: "5BC8F52E7DE761BB"
 				item: "beyond_earth:flag"
 				type: "item"
 			}]
-			subtitle: "&7Le dernier arrêt avant le ciel."
+			subtitle: "&7The last stop before the sky."
 			tasks: [{
 				consume_items: false
 				count: 9L
@@ -614,9 +614,9 @@
 		{
 			dependencies: ["0B6A78A26D06FD47"]
 			description: [
-				"&fC'est le moment. Utilisez toutes les pièces : Nez, Ailerons, Coque et Moteur."
+				"&fThis is the moment. Use all the parts: Nose Cone, Fins, Shell, and Engine."
 				" "
-				"&c⚠ AVERTISSEMENT : &fVérifiez une dernière fois vos réservoirs d'oxygène dans votre inventaire de combinaison (Shift + C)."
+				"&c⚠ WARNING: &fCheck your oxygen tanks one last time in your suit inventory (Shift + C)."
 			]
 			id: "3A8CFA72D3C41262"
 			rewards: [{
@@ -628,7 +628,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "&dObjectif : La Lune."
+			subtitle: "&dObjective: The Moon."
 			tasks: [{
 				consume_items: false
 				id: "7D87BFBF5ABEFC7B"
@@ -639,46 +639,46 @@
 				}
 				type: "item"
 			}]
-			title: "&l&fASSEMBLAGE FINAL"
+			title: "&l&fFINAL ASSEMBLY"
 			x: -16.0d
 			y: -22.0d
 		}
 		{
 			dependencies: ["3A8CFA72D3C41262"]
 			description: [
-				"&fLe silence est total. La terre semble si petite d'ici. Vous avez dompté la magie, vaincu les seigneurs de la forêt et survécu aux abysses."
+				"&fThe silence is total. Earth seems so small from here. You have tamed magic, defeated forest lords, and survived the abyss."
 				" "
-				"&b&oBienvenue dans&r &ll'Âge 8&r."
+				"&b&oWelcome to&r &lAge 8&r."
 			]
 			id: "1B99BDC7A0A3DBB8"
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
 				id: "477EFB54D556131F"
-				title: "&l&e🌕 DESTINATION : LA LUNE"
+				title: "&l&e🌕 DESTINATION: THE MOON"
 				type: "checkmark"
 			}]
-			title: "&l&eDESTINATION : LA LUNE"
+			title: "&l&eDESTINATION: THE MOON"
 			x: -16.0d
 			y: -20.0d
 		}
 		{
 			dependencies: ["096B2D31695A121A"]
 			description: [
-				"&fLe diamant est le seul cristal connu capable de canaliser assez d'énergie pour déchirer le voile vers le Crépuscule."
+				"&fDiamond is the only known crystal capable of channeling enough energy to tear the veil toward the Twilight."
 				" "
-				"&7Procédure :"
-				"1. Creusez un bassin de &b2x2&7 rempli d'eau stagnante."
-				"2. Entourez-le de &dfleurs&7 (8 minimum)."
-				"3. Jetez un &bDiamant&7 dans l'eau."
+				"&7Procedure:"
+				"1. Dig a &b2x2&7 pool filled with stagnant water."
+				"2. Surround it with &dflowers&7 (8 minimum)."
+				"3. Throw a &bDiamond&7 into the water."
 				" "
-				"&cAttention : &fUne fois là-bas, vos machines auront besoin de ressources locales pour fonctionner. Préparez-vous au combat."
+				"&cWarning: &fOnce there, your machines will need local resources to function. Prepare for combat."
 			]
 			id: "6E163DB401627DEA"
 			tasks: [
 				{
 					id: "7FB7FC2E63626FB7"
-					title: "&2Le Rituel du Bosquet"
+					title: "&2The Ritual of the Grove"
 					type: "checkmark"
 				}
 				{
@@ -692,5 +692,5 @@
 			y: -11.5d
 		}
 	]
-	title: "&dConquérir les mondes&7, &3décrocher la lune"
+	title: "&dConquering Worlds&7, &3Reaching for the Moon"
 }

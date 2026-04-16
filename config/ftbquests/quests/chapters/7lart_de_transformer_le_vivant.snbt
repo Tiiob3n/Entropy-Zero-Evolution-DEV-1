@@ -40,11 +40,11 @@
 		{
 			dependencies: ["451D11D4EE5DC9EB"]
 			description: [
-				"&fPour transformer le vivant, vous avez besoin d'une lame capable de trancher au niveau cellulaire. Oubliez le silex ou le fer brut."
+				"&fTo transform living matter, you need a blade capable of slicing at a cellular level. Forget flint or crude iron."
 				" "
-				"&fForgez un &fCouteau en Acier&f. Cet outil vous permettra d'obtenir des découpes parfaites sur la planche à découper et de récolter des ressources organiques rares sur la faune et la flore."
+				"&fForge a &fSteel Knife&f. This tool will allow you to get perfect cuts on the cutting board and harvest rare organic resources from fauna and flora."
 				" "
-				"&7Astuce : Le couteau est l'outil principal pour débuter dans Farmer's Delight. Gardez-le toujours sur vous."
+				"&7Tip: The knife is the primary tool to start in Farmer's Delight. Always keep it on you."
 			]
 			id: "2FCC0A01193B3A86"
 			rewards: [{
@@ -54,7 +54,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "&7Plus qu'un simple couteau"
+			subtitle: "&7More than just a knife"
 			tasks: [{
 				consume_items: false
 				id: "2BF9DCFA806C99E3"
@@ -67,16 +67,16 @@
 				}
 				type: "item"
 			}]
-			title: "&d&lL'Art de la Découpe"
+			title: "&d&lThe Art of the Cut"
 			x: 1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["2FCC0A01193B3A86"]
 			description: [
-				"&fLa cuisson traditionnelle au feu de camp est terminée. La &6Marmite (Cooking Pot)&f permet de combiner plusieurs ingrédients pour créer des plats riches en nutriments et en effets bénéfiques."
+				"&fTraditional campfire cooking is over. The &6Cooking Pot&f allows you to combine multiple ingredients to create nutrient-rich dishes with beneficial effects."
 				" "
-				"&fPlacez-la sur une source de chaleur (un four, un feu de camp ou un brûleur de Create) pour commencer vos mélanges."
+				"&fPlace it on a heat source (a furnace, campfire, or Create burner) to start your mixtures."
 			]
 			id: "7E591DCA7E41BEDF"
 			rewards: [{
@@ -85,23 +85,23 @@
 				item: "minecraft:bowl"
 				type: "item"
 			}]
-			subtitle: "&7Le Cooking Pot"
+			subtitle: "&7The Cooking Pot"
 			tasks: [{
 				consume_items: false
 				id: "4681F8A3B237F8B5"
 				item: "farmersdelight:cooking_pot"
 				type: "item"
 			}]
-			title: "&5Alchimie des Saveurs"
+			title: "&5Alchemy of Flavors"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7E591DCA7E41BEDF"]
 			description: [
-				"&fPour cultiver des produits de qualité supérieure, la terre ordinaire ne suffit pas. Vous devez créer du &6Rich Soil&f."
+				"&fTo grow high-quality products, ordinary soil isn't enough. You must create &6Rich Soil&f."
 				" "
-				"&fCe mélange riche en nutriments booste la croissance de vos plantes. Combinez du compost et de la terre pour obtenir ce substrat idéal."
+				"&fThis nutrient-dense mix boosts the growth of your plants. Combine compost and dirt to obtain this ideal substrate."
 			]
 			id: "47AE2996AEBC14B5"
 			rewards: [{
@@ -116,16 +116,16 @@
 				item: "farmersdelight:rich_soil"
 				type: "item"
 			}]
-			title: "&2Terre Fertile"
+			title: "&2Fertile Earth"
 			x: -1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["47AE2996AEBC14B5"]
 			description: [
-				"&fBeaucoup de vos futurs plats demanderont des bases liquides ou des huiles. Utilisez vos mécanismes pour presser des graines ou des végétaux."
+				"&fMany of your future dishes will require liquid bases or oils. Use your mechanisms to press seeds or plants."
 				" "
-				"&7Astuce : Préparez un stock de bouteilles en verre, vous allez en avoir besoin pour stocker vos extraits."
+				"&7Tip: Prepare a stock of glass bottles, you will need them to store your extracts."
 			]
 			id: "0B4A160C4D4ADBC9"
 			rewards: [{
@@ -139,16 +139,16 @@
 				item: "minecraft:glass_bottle"
 				type: "item"
 			}]
-			title: "&ePresse à Froid"
+			title: "&eCold Press"
 			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0B4A160C4D4ADBC9"]
 			description: [
-				"&fRien ne se perd, tout se transforme. En tant qu'ingénieur culinaire, vous devez apprendre à gérer vos biodéchets."
+				"&fNothing is lost, everything is transformed. As a culinary engineer, you must learn to manage your bio-waste."
 				" "
-				"&fRassemblez vos restes (paille, os, nourriture gâtée) pour fabriquer du &aCompost Organique&f. Laissez-le reposer au soleil ou accélérez sa décomposition pour obtenir le substrat ultime."
+				"&fGather your remains (straw, bones, spoiled food) to manufacture &aOrganic Compost&f. Let it sit in the sun or accelerate its decomposition to obtain the ultimate substrate."
 			]
 			id: "72BEF5D80B8E9171"
 			rewards: [{
@@ -163,16 +163,16 @@
 				item: "farmersdelight:organic_compost"
 				type: "item"
 			}]
-			title: "&aCycle de la Vie : Le Compost"
+			title: "&aCycle of Life: Compost"
 			x: -1.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["72BEF5D80B8E9171"]
 			description: [
-				"&fLe feu de camp, c'est pour les survivants. Pour un chef, il faut une chaleur constante et contrôlée."
+				"&fCampfires are for survivors. For a chef, you need constant and controlled heat."
 				" "
-				"&fLe &6Stove (Poêle)&f est l'outil parfait. Il sert de source de chaleur permanente pour votre marmite et vous permet même de griller jusqu'à 6 aliments simultanément sur sa plaque supérieure."
+				"&fThe &6Stove&f is the perfect tool. It serves as a permanent heat source for your pot and even allows you to grill up to 6 items simultaneously on its top plate."
 			]
 			id: "4722DEF006F19494"
 			rewards: [{
@@ -186,18 +186,18 @@
 				item: "farmersdelight:stove"
 				type: "item"
 			}]
-			title: "&6Maîtrise Thermique"
+			title: "&6Thermal Mastery"
 			x: -1.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["4722DEF006F19494"]
 			description: [
-				"&fMaintenant que vous produisez des ingrédients de qualité, il faut les stocker avec classe. Le &bFrigo&f est la pièce maîtresse de votre laboratoire culinaire."
+				"&fNow that you are producing quality ingredients, you must store them with style. The &bFridge&f is the centerpiece of your culinary laboratory."
 				" "
-				"&fEn plus de stocker vos denrées, il peut être &3teint&f pour correspondre à votre esthétique. Mais son vrai pouvoir réside dans sa capacité à se connecter à une &6Cooking Table&f."
+				"&fIn addition to storing your goods, it can be &3dyed&f to match your aesthetic. But its true power lies in its ability to connect to a &6Cooking Table&f."
 				" "
-				"&7Astuce : Placez plusieurs frigos les uns sur les autres pour augmenter votre capacité de stockage réfrigérée !"
+				"&7Tip: Stack multiple fridges on top of each other to increase your refrigerated storage capacity!"
 			]
 			id: "07D5060463773601"
 			rewards: [
@@ -223,16 +223,16 @@
 				item: "cookingforblockheads:fridge"
 				type: "item"
 			}]
-			title: "&bPréservation Moléculaire"
+			title: "&bMolecular Preservation"
 			x: -1.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["07D5060463773601"]
 			description: [
-				"&fLe Frigo est plein, mais comment s'y retrouver ? La &6Cooking Table&f est l'ordinateur central de votre cuisine."
+				"&fThe fridge is full, but how do you find anything? The &6Cooking Table&f is the central computer of your kitchen."
 				" "
-				"&fElle scanne tous vos frigos et coffres adjacents pour vous dire instantanément ce que vous pouvez cuisiner. Plus besoin de chercher vos œufs pendant 10 minutes."
+				"&fIt scans all your adjacent fridges and chests to tell you instantly what you can cook. No more searching for your eggs for 10 minutes."
 			]
 			id: "15EBC6D49F47BEE6"
 			rewards: [{
@@ -246,16 +246,16 @@
 				item: "cookingforblockheads:cooking_table"
 				type: "item"
 			}]
-			title: "&6Le Cerveau de la Cuisine"
+			title: "&6The Kitchen Brain"
 			x: -1.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["15EBC6D49F47BEE6"]
 			description: [
-				"&fPour vos jus et vos huiles, oubliez le mortier et le pilon. Utilisez votre &6Mechanical Press&f sur des cannes à sucre, des fruits ou des graines de citrouille."
+				"&fFor your juices and oils, forget the mortar and pestle. Use your &6Mechanical Press&f on sugar canes, fruits, or pumpkin seeds."
 				" "
-				"&fRécupérez le précieux liquide dans un bassin en dessous. C'est la première étape pour des boissons de haute qualité."
+				"&fCollect the precious liquid in a basin below. This is the first step towards high-quality beverages."
 			]
 			id: "7BFFC90D93B2B902"
 			rewards: [{
@@ -269,18 +269,18 @@
 				title: "mechanical_press"
 				type: "checkmark"
 			}]
-			title: "&eExtraction à Froid"
+			title: "&eCold Extraction"
 			x: -1.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["7BFFC90D93B2B902"]
 			description: [
-				"&fRemplir des fioles à la main ? Trop archaïque. Le &bSpout&f va transférer vos jus directement du bassin vers les bouteilles qui défilent sur vos tapis roulants."
+				"&fFilling vials by hand? Too archaic. The &bSpout&f will transfer your juices directly from the basin to the bottles moving on your belts."
 				" "
-				"&fC'est ainsi que vous créerez vos &6Apple Juice&f ou &6Hot Cocoa&f de manière industrielle."
+				"&fThis is how you will create your &6Apple Juice&f or &6Hot Cocoa&f industrially."
 				" "
-				"&7Note : Assurez-vous d'avoir une pompe et des tuyaux pour relier votre source de liquide au Spout."
+				"&7Note: Make sure you have a pump and pipes to connect your liquid source to the Spout."
 			]
 			id: "4A07915A7534DA72"
 			rewards: [{
@@ -301,9 +301,9 @@
 		{
 			dependencies: ["4A07915A7534DA72"]
 			description: [
-				"&fCertaines préparations comme la &ePâte à pain (Dough)&f ou les sauces onctueuses demandent un mélange vigoureux sous chaleur contrôlée."
+				"&fCertain preparations like &eDough&f or smooth sauces require vigorous mixing under controlled heat."
 				" "
-				"&fUtilisez le &5Mechanical Mixer&f au-dessus d'un bassin chauffé par un &dBlaze Burner&f pour automatiser les recettes de Farmer's Delight les plus complexes."
+				"&fUse the &5Mechanical Mixer&f over a basin heated by a &dBlaze Burner&f to automate the most complex Farmer's Delight recipes."
 			]
 			id: "1FFBE3DFB945EFD3"
 			rewards: [{
@@ -317,21 +317,21 @@
 				item: "create:mechanical_mixer"
 				type: "item"
 			}]
-			title: "&5Émulsions et Mélanges"
+			title: "&5Emulsions and Blends"
 			x: -1.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["1FFBE3DFB945EFD3"]
 			description: [
-				"&fPresser un melon à la main ? Trop de pertes. Faire bouillir du lait dans une simple tasse ? Trop instable."
+				"&fPressing a melon by hand? Too much waste. Boiling milk in a simple cup? Too unstable."
 				" "
-				"&fDésormais, pour obtenir du &aJus de Melon&f ou des &fBouteilles de Lait&f, vous devrez utiliser la puissance du &6Mechanical Mixer&f."
+				"&fFrom now on, to obtain &aMelon Juice&f or &fMilk Bottles&f, you must use the power of the &6Mechanical Mixer&f."
 				" "
-				"&7- &eJus de Melon :&7 Mélange simple à froid."
-				"&7- &eLait en Bouteille :&7 Nécessite une source de &cChaleur&7 (Blaze Burner) pour le conditionnement."
+				"&7- &eMelon Juice:&7 Simple cold mixing."
+				"&7- &eMilk Bottle:&7 Requires a &cHeat&7 source (Blaze Burner) for packaging."
 				" "
-				"&fC'est le prix à payer pour une qualité constante."
+				"&fThis is the price for constant quality."
 			]
 			id: "463B8C96B37D9196"
 			tasks: [
@@ -348,16 +348,16 @@
 					type: "item"
 				}
 			]
-			title: "&bL'Industrie du Rafraîchissement"
+			title: "&bThe Refreshment Industry"
 			x: -1.5d
 			y: -8.5d
 		}
 		{
 			dependencies: ["463B8C96B37D9196"]
 			description: [
-				"&fCroptopia apporte une variété de fruits immense. Mais attention : pour extraire leurs vitamines, le passage au &6Mechanical Mixer&f est obligatoire."
+				"&fCroptopia brings an immense variety of fruits. But beware: to extract their vitamins, passing through the &6Mechanical Mixer&f is mandatory."
 				" "
-				"&fConfigurez votre ligne de production pour traiter les Oranges, Citrons et Raisins. Chaque fruit doit être pressé avec une bouteille vide pour obtenir le breuvage final."
+				"&fConfigure your production line to process Oranges, Lemons, and Grapes. Each fruit must be pressed with an empty bottle to get the final beverage."
 			]
 			id: "7EBB8ABEB54B0F7F"
 			rewards: [
@@ -384,16 +384,16 @@
 					type: "item"
 				}
 			]
-			title: "&6&lL'Empire des Vergers"
+			title: "&6&lThe Orchard Empire"
 			x: -3.0d
 			y: -8.5d
 		}
 		{
 			dependencies: ["7EBB8ABEB54B0F7F"]
 			description: [
-				"&fL'huile est la base de la cuisine moléculaire et de la lubrification mécanique. Utilisez la &6Mechanical Press&f sur les Olives ou les Graines de Tournesol de Croptopia."
+				"&fOil is the base for molecular cooking and mechanical lubrication. Use the &6Mechanical Press&f on Olives or Sunflower Seeds from Croptopia."
 				" "
-				"&fCe liquide gras sera essentiel pour vos futures recettes de friture et certains composants de haute technologie."
+				"&fThis fatty liquid will be essential for your future frying recipes and high-tech components."
 			]
 			id: "18C3457A4ECA5CB4"
 			rewards: [{
@@ -407,16 +407,16 @@
 				item: "croptopia:olive_oil"
 				type: "item"
 			}]
-			title: "&eL'Or Liquide"
+			title: "&eLiquid Gold"
 			x: -3.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["18C3457A4ECA5CB4"]
 			description: [
-				"&fMême les poissons d'Aquaculture 2 ont un rôle à jouer dans votre usine. En découpant vos prises sur la &eCutting Board&f, vous obtenez des filets, mais aussi des restes."
+				"&fEven the fish from Aquaculture 2 have a role in your factory. By slicing your catch on the &eCutting Board&f, you get choice fillets, but also scraps."
 				" "
-				"&fPassez ces restes au Mixer pour en extraire des huiles de poisson ou utilisez les filets pour des plats de sushis automatisés."
+				"&fRun these scraps through the Mixer to extract fish oils or use the fillets for automated sushi dishes."
 			]
 			id: "6637870B7B6E3E1C"
 			rewards: [{
@@ -436,18 +436,18 @@
 				}
 				type: "item"
 			}]
-			title: "&bOméga-3 et Mécanique"
+			title: "&bOmega-3 and Mechanics"
 			x: -3.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["6637870B7B6E3E1C"]
 			description: [
-				"&fVotre Mixer ne sert plus seulement à faire de l'Andesite Alloy. Il est devenu votre barman personnel."
+				"&fYour Mixer is no longer just for making Andesite Alloy. It has become your personal bartender."
 				" "
-				"&fTous les jus de &eCroptopia&f ont été retirés des recettes manuelles. Si vous voulez un rafraîchissement, il faudra passer par vos cuves."
+				"&fAll juices from &eCroptopia&f have been removed from manual recipes. If you want a refreshment, you'll have to go through your vats."
 				" "
-				"&7Astuce : Automatisez la livraison des bouteilles vides avec un tapis roulant pour ne jamais être à sec !"
+				"&7Tip: Automate the delivery of empty bottles with a belt to never run dry!"
 			]
 			id: "5FEE27940D32EB55"
 			tasks: [
@@ -464,16 +464,16 @@
 					type: "item"
 				}
 			]
-			title: "&6&lMixologie Moléculaire"
+			title: "&6&lMolecular Mixology"
 			x: -3.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["5FEE27940D32EB55"]
 			description: [
-				"&fPêcher, c'est bien. Transformer, c'est mieux. Aquaculture 2 vous offre des poissons variés, mais c'est votre industrie qui les rend utiles."
+				"&fFishing is good. Transforming is better. Aquaculture 2 offers varied fish, but it is your industry that makes them useful."
 				" "
-				"&fUtilisez votre &eCouteau à Filet&f pour obtenir des pièces de choix, et n'oubliez pas : même un poisson peut finir en huile industrielle via votre Mixer chauffé."
+				"&fUse your &eFillet Knife&f to get prime cuts, and don't forget: even a fish can end up as industrial oil through your heated Mixer."
 			]
 			id: "7A2C26DAF59ADACF"
 			tasks: [{
@@ -483,16 +483,16 @@
 				item: "aquaculture:fish_fillet_raw"
 				type: "item"
 			}]
-			title: "&b&lRessources Marines"
+			title: "&b&lMarine Resources"
 			x: -3.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["7A2C26DAF59ADACF"]
 			description: [
-				"&fAssembler un sushi demande une précision millimétrée. Vos mains tremblent ? Laissez les &6Mechanical Crafters&f s'en charger."
+				"&fAssembling sushi requires millimeter precision. Your hands shaking? Let the &6Mechanical Crafters&f handle it."
 				" "
-				"&fCombinez le &eRiz de Croptopia&f, les &bFilets d'Aquaculture&f et les &2Algues séchées&f dans une grille de 3x3 crafters pour produire des sushis en série."
+				"&fCombine &eCroptopia Rice&f, &bAquaculture Fillets&f, and &2Dried Kelp&f in a 3x3 crafter grid to produce mass sushi."
 			]
 			id: "4F2BC24802658A05"
 			rewards: [{
@@ -508,16 +508,16 @@
 				item: "croptopia:sushi"
 				type: "item"
 			}]
-			title: "&b&lGastronomie Nipponne Automatisée"
+			title: "&b&lAutomated Japanese Gastronomy"
 			x: -3.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["4F2BC24802658A05"]
 			description: [
-				"&fUn burger, c'est une superposition de couches. Pourquoi ne pas créer une ligne de montage ?"
+				"&fA burger is a layering job. Why not create an assembly line?"
 				" "
-				"&fLe &eMechanical Crafter&f configuré verticalement permet de simuler une presse à burger parfaite. Pain, steak, salade... le compte est bon."
+				"&fThe &eMechanical Crafter&f configured vertically simulates a perfect burger press. Bun, patty, lettuce... the math adds up."
 			]
 			id: "499022C1B4C07C11"
 			rewards: [{
@@ -532,16 +532,16 @@
 				item: "croptopia:hamburger"
 				type: "item"
 			}]
-			title: "&6&lLe Fast-Food Industriel"
+			title: "&6&lIndustrial Fast-Food"
 			x: -3.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["499022C1B4C07C11"]
 			description: [
-				"&fSi vous voulez que votre usine de sushis tourne à plein régime, il vous faut des prises constantes. "
+				"&fTo keep your sushi line running at full speed, you need constant catches."
 				" "
-				"&fFabriquez une &3Neptunium Toolbox&f pour organiser vos appâts et vos lignes. Une fois vos stocks pleins, déversez-les dans vos tapis roulants."
+				"&fCraft a &3Neptunium Toolbox&f to organize your baits and lines. Once your stocks are full, dump them into your belts."
 			]
 			id: "3B4E28CE46B72D41"
 			rewards: [{
@@ -556,16 +556,16 @@
 				item: "aquaculture:neptunium_ingot"
 				type: "item"
 			}]
-			title: "&3&lL'Arsenal du Pêcheur Expert"
+			title: "&3&lThe Expert Fisherman's Arsenal"
 			x: -3.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3B4E28CE46B72D41"]
 			description: [
-				"&fAlimenter une ligne de production de sushis demande un flux constant de poisson. Placez un &6Deployer&f avec un &bCouteau à Filet&f au-dessus d'une &eCutting Board&f."
+				"&fFeeding a sushi line requires a constant flow of fish. Place a &6Deployer&f with a &bFillet Knife&f over a &eCutting Board&f."
 				" "
-				"&fEnvoyez vos prises d'Aquaculture sur le tapis roulant : le Deployer s'occupera de lever les filets automatiquement pour vous."
+				"&fSend your Aquaculture catches on the belt: the Deployer will take care of automatically filleting them for you."
 			]
 			id: "1B8374BBD3E1F6FC"
 			rewards: [{
@@ -581,17 +581,17 @@
 				item: "aquaculture:fish_fillet_raw"
 				type: "item"
 			}]
-			title: "&b&lBoucherie Marine Automatisée"
+			title: "&b&lAutomated Marine Butchery"
 			x: -3.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["1B8374BBD3E1F6FC"]
 			description: [
-				"&fLe sel et le sucre sont les catalyseurs de la gastronomie moléculaire. Utilisez votre &6Millstone (Meule)&f ou votre &6Crushing Wheels&f pour transformer les ressources brutes."
+				"&fSalt and sugar are the catalysts of molecular gastronomy. Use your &6Millstone&f or &6Crushing Wheels&f to transform raw resources."
 				" "
-				"&7- &fSel :&7 Broyez les blocs de roche saline ou évaporez l'eau de mer."
-				"&7- &eSucre :&7 Pulvérisez la canne à sucre pour un rendement optimal."
+				"&7- &fSalt:&7 Grind saline rock blocks or evaporate sea water."
+				"&7- &eSugar:&7 Pulverize sugar cane for optimal yield."
 			]
 			id: "36A3A4B9F3539F56"
 			rewards: [{
@@ -614,16 +614,16 @@
 					type: "item"
 				}
 			]
-			title: "&e&lCristallisation et Saveurs"
+			title: "&e&lCrystallization and Flavors"
 			x: -3.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["36A3A4B9F3539F56"]
 			description: [
-				"&fVotre ligne de montage de Burgers et de Sushis tourne à plein régime ? Vous ne pouvez plus tout garder dans vos poches."
+				"&fIs your Burger and Sushi assembly line at full speed? You can't keep everything in your pockets anymore."
 				" "
-				"&fReliez la sortie de vos Mechanical Crafters directement à un &3Frigo&f via des entonnoirs ou des tapis roulants. Votre &6Cooking Table&f piochera dedans automatiquement pour vos futurs festins."
+				"&fConnect the output of your Mechanical Crafters directly to a &3Fridge&f via hoppers or belts. Your &6Cooking Table&f will draw from it automatically for your future feasts."
 			]
 			id: "67F79F67D222C47B"
 			rewards: [{
@@ -634,7 +634,7 @@
 			}]
 			tasks: [{
 				id: "5EE61FCB487265A9"
-				title: "&3&lLogistique du Froid"
+				title: "&3&lCold Chain Logistics"
 				type: "checkmark"
 			}]
 			x: -3.0d
@@ -643,11 +643,11 @@
 		{
 			dependencies: ["67F79F67D222C47B"]
 			description: [
-				"&fVous avez automatisé les champs, filtré les huiles, pressé les fruits et fileté les poissons. Il est temps de mettre vos machines à l'épreuve ultime."
+				"&fYou have automated fields, filtered oils, pressed fruits, and filleted fish. It's time to put your machines to the ultimate test."
 				" "
-				"&fLe &dBig Breakfast&f n'est pas qu'un repas, c'est une prouesse d'ingénierie biologique. Il nécessite une grille de &625 Mechanical Crafters&f pour assembler parfaitement chaque calorie."
+				"&fThe &dBig Breakfast&f is not just a meal; it's a bio-engineering feat. It requires a grid of &625 Mechanical Crafters&f to perfectly assemble every calorie."
 				" "
-				"&cDéfi :&f Réussir à produire ce plat marque la fin de votre dépendance au travail manuel. Votre corps est maintenant prêt pour les radiations et les énergies lourdes de l'Âge 4."
+				"&cChallenge:&f Successfully producing this dish marks the end of your dependence on manual labor. Your body is now ready for the radiation and heavy energies of Age 4."
 			]
 			id: "1E09F2E7F1D84260"
 			rewards: [{
@@ -655,7 +655,7 @@
 				criterion: ""
 				icon: "megacells:bulk_cell_component"
 				id: "2A09C53E8832CAD6"
-				title: "&6[Accès à l'Âge 4 Débloqué]"
+				title: "&6[Access to Age 4 Unlocked]"
 				type: "advancement"
 			}]
 			shape: "gear"
@@ -666,10 +666,10 @@
 				item: "croptopia:the_big_breakfast"
 				type: "item"
 			}]
-			title: "&d&lLe Big Breakfast : Le Petit-Déjeuner des Champions"
+			title: "&d&lThe Big Breakfast: Champions' Meal"
 			x: -6.0d
 			y: -1.0d
 		}
 	]
-	title: "&5Gastronomie &fMoléculaire"
+	title: "&5Molecular &fGastronomy"
 }
