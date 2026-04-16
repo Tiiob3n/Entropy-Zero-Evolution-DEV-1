@@ -173,10 +173,6 @@
   "ars_nouveau": {
     "mob_jar": true
   },
-  "beyond_earth": {
-    "block": true,
-    "entity": true
-  },
   "jadeaddons": {
     "equipment_requirement": ""
   },

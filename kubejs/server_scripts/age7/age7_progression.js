@@ -6,6 +6,12 @@ ServerEvents.recipes(event => {
     const FIERY_BLOOD = 'twilightforest:fiery_blood'
     const RESONARIUM = 'deeperdarker:resonarium'
     const RESONARIUM_PLATE = 'deeperdarker:resonarium_plate'
+    
+    // Matériaux pour les paliers supérieurs
+    const DESH_PLATE = 'ad_astra:desh_plate'         // Lune
+    const OSTRICH_PLATE = 'ad_astra:ostrum_plate'     // Mars 
+    const CALORITE_PLATE = 'ad_astra:calorite_plate' // Vénus
+    const NITRO = 'powah:crystal_nitro'
 
     // --- 1. ARS NOUVEAU ---
     event.remove({ output: 'ars_nouveau:novice_spell_book' })
@@ -31,9 +37,9 @@ ServerEvents.recipes(event => {
         H: FIERY_BLOOD
     })
 
-    // --- 3. BEYOND EARTH (NASA Workbench) ---
-    event.remove({ output: 'beyond_earth:nasa_workbench' })
-    event.shaped('beyond_earth:nasa_workbench', [
+    // --- 3. AD ASTRA (Structure & Nettoyage) ---
+    event.remove({ output: 'ad_astra:nasa_workbench' })
+    event.shaped('ad_astra:nasa_workbench', [
         'SSS',
         'LCL',
         'LTL'
@@ -44,17 +50,79 @@ ServerEvents.recipes(event => {
         T: 'minecraft:crafting_table'
     })
 
-    // --- 4. LA FUSÉE T1 ---
-    event.remove({ output: 'beyond_earth:rocket' })
-    event.shaped('beyond_earth:rocket', [
+    // --- 4. FUSÉES (CREATE MECHANICAL CRAFTING) ---
+    
+    const rockets = [
+        'ad_astra:tier_1_rocket', 
+        'ad_astra:tier_2_rocket', 
+        'ad_astra:tier_3_rocket', 
+        'ad_astra:tier_4_rocket'
+    ]
+    rockets.forEach(id => event.remove({ output: id }))
+    event.remove({ type: 'ad_astra:nasa_workbench' })
+
+    // FUSÉE TIER 1 (Objectif : Lune)
+    event.recipes.create.mechanical_crafting('ad_astra:tier_1_rocket', [
         '  N  ',
         ' PPP ',
         ' PPP ',
-        'A F A'
+        ' PFP ',
+        'A   A'
     ], {
-        N: 'beyond_earth:rocket_nose_cone',
-        P: RESONARIUM_PLATE,
-        A: 'beyond_earth:rocket_fin',
-        F: 'beyond_earth:engine_frame' 
+        N: 'ad_astra:rocket_nose_cone',
+        P: RESONARIUM_PLATE, 
+        A: 'ad_astra:rocket_fin',
+        F: 'ad_astra:engine_frame'
+    })
+
+    // FUSÉE TIER 2 (Objectif : Mars)
+    event.recipes.create.mechanical_crafting('ad_astra:tier_2_rocket', [
+        '  N  ',
+        ' HCH ',
+        ' PPP ',
+        ' PFP ',
+        'A E A'
+    ], {
+        N: 'ad_astra:rocket_nose_cone',
+        H: 'immersiveengineering:heavy_engineering',
+        C: 'powah:dielectric_casing',
+        P: DESH_PLATE,
+        A: 'ad_astra:rocket_fin',
+        F: 'ad_astra:engine_frame',
+        E: 'ad_astra:steel_engine'
+    })
+
+    // FUSÉE TIER 3 (Objectif : Vénus)
+    event.recipes.create.mechanical_crafting('ad_astra:tier_3_rocket', [
+        '  N  ',
+        ' RSR ',
+        ' PPP ',
+        ' PFP ',
+        'A E A'
+    ], {
+        N: 'ad_astra:rocket_nose_cone',
+        R: 'mekanism:alloy_reinforced',
+        S: 'powah:capacitor_niotic',
+        P: OSTRICH_PLATE,
+        A: 'ad_astra:rocket_fin',
+        F: 'ad_astra:engine_frame',
+        E: 'ad_astra:desh_engine'
+    })
+
+    // FUSÉE TIER 4 (Objectif : Glacio)
+    event.recipes.create.mechanical_crafting('ad_astra:tier_4_rocket', [
+        '  N  ',
+        ' TAT ',
+        ' PPP ',
+        ' PFP ',
+        'A E A'
+    ], {
+        N: 'ad_astra:rocket_nose_cone',
+        T: NITRO,
+        A: 'mekanism:alloy_atomic',
+        P: CALORITE_PLATE,
+        A: 'ad_astra:rocket_fin',
+        F: 'ad_astra:engine_frame',
+        E: 'ad_astra:ostrum_engine'
     })
 })

@@ -13,7 +13,7 @@
 			rotation: 0.0d
 			width: 30.0d
 			x: -16.0d
-			y: -19.5d
+			y: -21.5d
 		}
 		{
 			height: 1.0d
@@ -461,7 +461,7 @@
 				id: "057480583F4BCF8B"
 				item: {
 					Count: 1
-					id: "beyond_earth:hammer"
+					id: "ad_astra:hammer"
 					tag: {
 						Damage: 0
 					}
@@ -477,7 +477,7 @@
 			}]
 			title: "&6NASA Workbench"
 			x: -16.0d
-			y: -27.0d
+			y: -30.0d
 		}
 		{
 			dependencies: ["6B8CC04F18388ECB"]
@@ -502,7 +502,7 @@
 			}]
 			title: "&5Resonarium Armor Plating"
 			x: -16.0d
-			y: -26.0d
+			y: -29.0d
 		}
 		{
 			dependencies: ["611E3211493B0662"]
@@ -579,7 +579,7 @@
 			]
 			title: "&bAstronaut Protection"
 			x: -16.0d
-			y: -25.0d
+			y: -28.0d
 		}
 		{
 			dependencies: ["6B426FAA605CD106"]
@@ -599,7 +599,7 @@
 			}]
 			title: "&3Infinity Fuel"
 			x: -16.0d
-			y: -24.0d
+			y: -27.0d
 		}
 		{
 			dependencies: ["7226D3210E298B3C"]
@@ -620,24 +620,22 @@
 			}]
 			title: "&eRocket Launch Pad"
 			x: -16.0d
-			y: -23.0d
+			y: -26.0d
 		}
 		{
 			dependencies: ["0B6A78A26D06FD47"]
 			description: [
-				"&fThis is the moment. Use all the parts: Nose Cone, Fins, Shell, and Engine."
-				" "
-				"&c⚠ WARNING: &fCheck your oxygen tanks one last time in your suit inventory (Shift + C)."
+				"&fThis is the moment. Use all the parts: &bNose Cone&f, &bFins&f, &bShell&f, and &bEngine&f."
+				""
+				"&c&l⚠ WARNING: &7Check your oxygen tanks one last time in your suit inventory &e(Shift + C)&7."
+				""
+				"&fThe Moon is waiting for your first steps."
 			]
 			id: "3A8CFA72D3C41262"
 			rewards: [{
-				id: "6CACA74340250DFB"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_1_rover"
-					tag: { }
-				}
-				type: "item"
+				id: "1B09A2306537ACC8"
+				type: "xp"
+				xp: 500
 			}]
 			subtitle: "&dObjective: The Moon."
 			tasks: [{
@@ -648,18 +646,21 @@
 					id: "ad_astra:tier_1_rocket"
 					tag: { }
 				}
+				title: "&6&lFINAL ASSEMBLY"
 				type: "item"
 			}]
 			title: "&l&fFINAL ASSEMBLY"
 			x: -16.0d
-			y: -22.0d
+			y: -25.0d
 		}
 		{
-			dependencies: ["3A8CFA72D3C41262"]
+			dependencies: ["46A74DAA71D9C48E"]
 			description: [
-				"&fThe silence is total. Earth seems so small from here. You have tamed magic, defeated forest lords, and survived the abyss."
-				" "
-				"&b&oWelcome to&r &lAge 8&r."
+				"&7The silence is total. Earth seems like a distant memory from these frozen wastes. You have tamed magic, defeated forest lords, and survived the deepest abyss."
+				""
+				"&fYou are now standing at the edge of the known solar system."
+				""
+				"&6Welcome to &lAge 8&r."
 			]
 			id: "1B99BDC7A0A3DBB8"
 			shape: "gear"
@@ -669,7 +670,7 @@
 				title: "&l&e🌕 DESTINATION: THE MOON"
 				type: "checkmark"
 			}]
-			title: "&l&eDESTINATION: THE MOON"
+			title: "&l&eDESTINATION: GLACIO"
 			x: -16.0d
 			y: -20.0d
 		}
@@ -701,6 +702,132 @@
 			]
 			x: -16.0d
 			y: -11.5d
+		}
+		{
+			dependencies: ["3A8CFA72D3C41262"]
+			description: [
+				"&7Earth is now behind you. To survive the harsh atmosphere of &cMars&7, your Tier 1 technology won't be enough."
+				""
+				"&fUpgrade your hull with &6Desh&f and reinforce your engines."
+				""
+				"&bObjective: &fBuild the &eTier 2 Rocket&f and prepare for a long-distance flight."
+			]
+			id: "2DFD0CEE96317211"
+			rewards: [
+				{
+					count: 8
+					id: "3D42661D84B23092"
+					item: "ad_astra:desh_ingot"
+					type: "item"
+				}
+				{
+					id: "2E7A4C095FF82CB8"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "&6The Red Frontier"
+			tasks: [{
+				consume_items: false
+				id: "11CC0C41343AB826"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				title: "&c&lDESTINATION: MARS"
+				type: "item"
+			}]
+			title: "&c&lDESTINATION: MARS"
+			x: -16.0d
+			y: -24.0d
+		}
+		{
+			dependencies: ["2DFD0CEE96317211"]
+			description: [
+				"&7You are heading into the most hostile environment yet. High pressure, corrosive clouds, and extreme heat."
+				""
+				"&fOnly &bOstrum&f and advanced circuits can protect your vessel."
+				""
+				"&6Objective: &fCraft the &eTier 3 Rocket&f. Make sure your thermal padding is ready."
+			]
+			id: "7CB598BA64225301"
+			rewards: [
+				{
+					count: 8
+					id: "7556E78639B58BE8"
+					item: "ad_astra:ostrum_ingot"
+					type: "item"
+				}
+				{
+					id: "7168BADACCAE11F9"
+					type: "xp"
+					xp: 500
+				}
+			]
+			subtitle: "&dHellish Pressure"
+			tasks: [{
+				consume_items: false
+				id: "6EC5194766AB1BD1"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				title: "&5&lDESTINATION: VENUS"
+				type: "item"
+			}]
+			title: "&5&lDESTINATION: VENUS"
+			x: -16.0d
+			y: -23.0d
+		}
+		{
+			dependencies: ["7CB598BA64225301"]
+			description: [
+				"&7The silence is total. Earth seems so small from here. You have tamed magic, defeated forest lords, and survived the abyss."
+				""
+				"&fYou are now at the final frontier. Use &4Nitro&f and &cCalorite&f to power this ultimate machine."
+				""
+				"&3Welcome to Age 8."
+			]
+			id: "46A74DAA71D9C48E"
+			rewards: [
+				{
+					count: 8
+					id: "3DC7C260A338E4AD"
+					item: "ad_astra:calorite_ingot"
+					type: "item"
+				}
+				{
+					id: "4AB017A1ECA50C25"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					id: "77C15C0958701B71"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_1_rover"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "&fThe Frozen Silence"
+			tasks: [{
+				consume_items: false
+				id: "72EBB05699C0A7E6"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				title: "&b&lDESTINATION: GLACIO"
+				type: "item"
+			}]
+			title: "&b&lDESTINATION: GLACIO"
+			x: -16.0d
+			y: -21.5d
 		}
 	]
 	title: "&dConquering Worlds&7, &3Reaching for the Moon"

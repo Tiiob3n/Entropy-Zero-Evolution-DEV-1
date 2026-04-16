@@ -28,10 +28,6 @@
 			description: [
 				"&fWelcome! To help you get started on the right foot, choose a utility support item."
 				" "
-				"&fThink carefully, you can only make one choice:"
-				" "
-				"&d- Netherite Backpack:&f For explorers (massive storage from the start)."
-				"&e- Time in a Bottle:&f For engineers (accelerates the time of your machines)."
 			]
 			id: "465F0FBCE0785C70"
 			rewards: [{

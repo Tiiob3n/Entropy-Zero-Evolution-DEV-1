@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
   // --- 1. NETTOYAGE DE L'ACIER (Fours et Create) ---
   const aciersInutiles = [
     'samurai_dynasty:steel_ingot',
-    'beyond_earth:steel_ingot'
+    'ad_astra:steel_ingot'
   ]
 
   aciersInutiles.forEach(steel => {

@@ -43,7 +43,7 @@
 - [ ] **Croptopia** & **Farmer's Delight**
 
 ## 🔮 Magie & Exploration
-- [ ] **Botania** (+ Machinery)
+- [ ] **Botania** (+ Machinery + kubejs) 
 - [ ] **Ars Nouveau**
 - [ ] **Occultism**
 - [ ] **Mahou Tsukai**

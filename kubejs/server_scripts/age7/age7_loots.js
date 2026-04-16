@@ -9,7 +9,7 @@ LootJS.modifiers(event => {
 
     event.addEntityLootModifier("twilightforest:hydra")
         .addWeightedLoot([5, 12], "twilightforest:fiery_blood")
-        .addLoot("beyond_earth:desh_ingot"); 
+        .addLoot("ad_astra:desh_ingot"); 
 
     event.addEntityLootModifier("minecraft:warden")
         .addLoot("deeperdarker:soul_crystal")
