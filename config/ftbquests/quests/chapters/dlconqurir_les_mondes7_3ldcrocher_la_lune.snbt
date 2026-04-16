@@ -4,12 +4,12 @@
 	default_quest_shape: ""
 	filename: "dlconqurir_les_mondes7_3ldcrocher_la_lune"
 	group: "5D7D2F535F714310"
-	icon: "beyond_earth:moon_globe"
+	icon: "ad_astra:moon_globe"
 	id: "688E11F1DFC9E781"
 	images: [
 		{
 			height: 30.0d
-			image: "beyond_earth:textures/painting/moon.png"
+			image: "ad_astra:textures/painting/moon.png"
 			rotation: 0.0d
 			width: 30.0d
 			x: -16.0d
@@ -472,7 +472,7 @@
 			tasks: [{
 				consume_items: false
 				id: "5F1E19F5A82806ED"
-				item: "beyond_earth:nasa_workbench"
+				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
 			title: "&6NASA Workbench"
@@ -506,12 +506,24 @@
 		}
 		{
 			dependencies: ["611E3211493B0662"]
-			description: ["&fA simple armor won't suffice on the moon. You must weave &5Mage Fibers &fwith technical plating to create a pressurized suit."]
+			description: ["&fA simple armor won't suffice on the moon."]
+			icon: {
+				Count: 1
+				id: "ad_astra:space_suit"
+				tag: {
+					BotariumData: {
+						StoredFluids: [{
+							Amount: 1000L
+							Fluid: "ad_astra:oxygen"
+						}]
+					}
+					Damage: 0
+				}
+			}
 			id: "6B426FAA605CD106"
 			rewards: [{
-				count: 3
 				id: "24C566380FE692FD"
-				item: "beyond_earth:oxygen_tank"
+				item: "ad_astra:oxygen_distributor"
 				type: "item"
 			}]
 			subtitle: "&7Mage, but with oxygen."
@@ -521,7 +533,7 @@
 					id: "2C5852269A2AF8B5"
 					item: {
 						Count: 1
-						id: "beyond_earth:space_helmet"
+						id: "ad_astra:space_helmet"
 						tag: {
 							Damage: 0
 						}
@@ -533,10 +545,9 @@
 					id: "4A34E04F8E6C6072"
 					item: {
 						Count: 1
-						id: "beyond_earth:space_suit"
+						id: "ad_astra:space_suit"
 						tag: {
 							Damage: 0
-							Oxygen: 0
 						}
 					}
 					type: "item"
@@ -546,7 +557,7 @@
 					id: "52B0C5FD3859303B"
 					item: {
 						Count: 1
-						id: "beyond_earth:space_pants"
+						id: "ad_astra:space_pants"
 						tag: {
 							Damage: 0
 						}
@@ -558,7 +569,7 @@
 					id: "10C3488B8953B7EB"
 					item: {
 						Count: 1
-						id: "beyond_earth:space_boots"
+						id: "ad_astra:space_boots"
 						tag: {
 							Damage: 0
 						}
@@ -576,14 +587,14 @@
 			id: "7226D3210E298B3C"
 			rewards: [{
 				id: "190327E57BDD2505"
-				item: "beyond_earth:steel_tank"
+				item: "ad_astra:steel_tank"
 				type: "item"
 			}]
 			subtitle: "&7More than just gasoline."
 			tasks: [{
 				consume_items: false
 				id: "50BEAFE6843A2725"
-				item: "beyond_earth:fuel_bucket"
+				item: "ad_astra:fuel_bucket"
 				type: "item"
 			}]
 			title: "&3Infinity Fuel"
@@ -596,7 +607,7 @@
 			id: "0B6A78A26D06FD47"
 			rewards: [{
 				id: "5BC8F52E7DE761BB"
-				item: "beyond_earth:flag"
+				item: "ad_astra:cyan_flag"
 				type: "item"
 			}]
 			subtitle: "&7The last stop before the sky."
@@ -604,7 +615,7 @@
 				consume_items: false
 				count: 9L
 				id: "174B5E39140306C5"
-				item: "beyond_earth:rocket_launch_pad"
+				item: "ad_astra:launch_pad"
 				type: "item"
 			}]
 			title: "&eRocket Launch Pad"
@@ -623,7 +634,7 @@
 				id: "6CACA74340250DFB"
 				item: {
 					Count: 1
-					id: "beyond_earth:rover"
+					id: "ad_astra:tier_1_rover"
 					tag: { }
 				}
 				type: "item"
@@ -634,7 +645,7 @@
 				id: "7D87BFBF5ABEFC7B"
 				item: {
 					Count: 1
-					id: "beyond_earth:rocket"
+					id: "ad_astra:tier_1_rocket"
 					tag: { }
 				}
 				type: "item"

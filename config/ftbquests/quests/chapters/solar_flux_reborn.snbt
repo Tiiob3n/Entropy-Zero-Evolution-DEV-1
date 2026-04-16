@@ -6,7 +6,7 @@
 	id: "66250D1C4A71A7FA"
 	images: [{
 		height: 10.0d
-		image: "beyond_earth:textures/gui/util/solar_panel_sun.png"
+		image: "advanced_ae:block/crafting/quantum_internal_formed_face"
 		rotation: 0.0d
 		width: 10.0d
 		x: 2.0d
