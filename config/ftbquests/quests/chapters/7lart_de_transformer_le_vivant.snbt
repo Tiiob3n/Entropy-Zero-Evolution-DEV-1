@@ -8,6 +8,32 @@
 	hide_quest_until_deps_visible: true
 	icon: "farmersdelight:roast_chicken_block"
 	id: "6348EA3C195450D5"
+	images: [
+		{
+			height: 1.0d
+			image: "farmersdelight:item/cooking_pot"
+			rotation: 0.0d
+			width: 1.0d
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			height: 20.0d
+			image: "farmersdelight:block/basket_top"
+			rotation: 0.0d
+			width: 20.0d
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			height: 15.0d
+			image: "farmersdelight:block/cherry_cabinet_front"
+			rotation: 0.0d
+			width: 15.0d
+			x: -2.5d
+			y: -3.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -632,7 +658,7 @@
 				title: "&6[Accès à l'Âge 4 Débloqué]"
 				type: "advancement"
 			}]
-			shape: "diamond"
+			shape: "gear"
 			size: 2.0d
 			tasks: [{
 				consume_items: false
@@ -641,8 +667,8 @@
 				type: "item"
 			}]
 			title: "&d&lLe Big Breakfast : Le Petit-Déjeuner des Champions"
-			x: -3.0d
-			y: 3.0d
+			x: -6.0d
+			y: -1.0d
 		}
 	]
 	title: "&5Gastronomie &fMoléculaire"

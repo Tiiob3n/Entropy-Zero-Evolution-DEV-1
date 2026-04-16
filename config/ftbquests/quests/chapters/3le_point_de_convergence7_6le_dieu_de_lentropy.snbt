@@ -1,0 +1,894 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3le_point_de_convergence7_6le_dieu_de_lentropy"
+	group: "205A5F1622510366"
+	icon: "entropy:primordial_inertia_shard"
+	id: "440A4E1326429744"
+	images: [
+		{
+			height: 15.0d
+			image: "kubejs:item/logoentropy"
+			rotation: 0.0d
+			width: 15.0d
+			x: 2.0d
+			y: -23.5d
+		}
+		{
+			height: 1.0d
+			image: "tetra:block/arcane_fire_1"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "tetra:block/arcane_fire_1"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "cyclic:block/fire/fire_frost_layer_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			height: 1.0d
+			image: "cyclic:block/fire/fire_frost_layer_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			image: "cyclic:block/fire/fire_frost_layer_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			height: 1.0d
+			image: "cyclic:block/fire/fire_frost_layer_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "cyclic:block/fire/fire_frost_layer_0"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			height: 1.0d
+			image: "tetra:block/arcane_fire_1"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "tetra:block/arcane_fire_1"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "tetra:block/arcane_fire_1"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			height: 4.0d
+			image: "mahoutsukai:block/black_fire_layer_0"
+			rotation: 0.0d
+			width: 4.0d
+			x: 2.0d
+			y: -14.5d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_1off.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -21.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_1on.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -19.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_2off.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -17.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_2on.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -15.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_3off.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -13.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_3on.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -11.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_4off.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -9.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_4on.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -7.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_5off.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_5on.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_6off.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_6on.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_7off.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: 3.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_7on.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_8off.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: 7.0d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/draconic/draconic_core_8on.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -7.0d
+			y: 9.0d
+		}
+		{
+			height: 5.0d
+			image: "entropy:textures/draconic/draconic_title.png"
+			rotation: 0.0d
+			width: 25.0d
+			x: 18.0d
+			y: -17.5d
+		}
+		{
+			height: 5.0d
+			image: "entropy:textures/draconic/draconic_reactor_off_down.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 11.0d
+			y: -11.5d
+		}
+		{
+			height: 5.0d
+			image: "entropy:textures/draconic/draconic_reactor_off_up.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 16.5d
+			y: -12.0d
+		}
+		{
+			height: 5.0d
+			image: "entropy:textures/draconic/draconic_reactor_on_down.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 22.5d
+			y: -12.0d
+		}
+		{
+			height: 5.0d
+			image: "entropy:textures/draconic/draconic_reactor_on_up.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 28.0d
+			y: -12.5d
+		}
+		{
+			height: 15.0d
+			image: "draconicadditions:item/modules/alt/unstable_chaos"
+			rotation: 0.0d
+			width: 15.0d
+			x: 19.0d
+			y: -3.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["66B26C147C27F8F3"]
+			description: [
+				"&fLe &5Draconium &fest la fondation de votre divinité. On raconte qu'il est né du souffle des premiers dragons."
+				" "
+				"&7Où le trouver ?"
+				"&8- &eLune &8et &aAstéroïdes &7(Beyond Earth)"
+				"&8- &dDimension de l'End"
+				" "
+				"&c⚠️ Note : &fIl est rare, mais vital pour la suite."
+			]
+			id: "18F96154D719FF23"
+			rewards: [{
+				count: 8
+				id: "3711506A484A3975"
+				item: "draconicevolution:draconium_dust"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "01304ED2BEE5F2EA"
+				item: "draconicevolution:draconium_ingot"
+				type: "item"
+			}]
+			title: "&5Minerai de l'Infini"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["18F96154D719FF23"]
+			description: [
+				"&fLa table de craft est désormais un jouet du passé. L'&dInfusion &futilise des courants d'énergie brute pour fusionner la matière."
+				" "
+				"&bInstallation :"
+				"&fPlacez le &3Core &fau centre et entourez-le d'&bInjecteurs&f. Chaque injecteur doit être alimenté en &6RF&f."
+			]
+			id: "4F78B36CBBC17760"
+			rewards: [{
+				id: "54EC35EACB045E35"
+				item: "draconicevolution:draconium_core"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					count: 8L
+					id: "40B4FC6F63DD1D65"
+					item: "draconicevolution:basic_crafting_injector"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6FF7D2F3E16BF281"
+					item: { Count: 8, id: "draconicevolution:crafting_core" }
+					type: "item"
+				}
+			]
+			title: "&dCoeur d'Infusion"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4F78B36CBBC17760"]
+			description: [
+				"&fEn combinant vos connaissances de l'&3Atome &f(Age 6) et la &dMagie &f(Age 7), vous obtenez votre premier noyau de haute densité."
+				" "
+				"&eUtilité : &fC'est le composant de base pour l'équipement de &6Tier 1 &fde Draconic."
+			]
+			id: "5C1D6A6EF528E302"
+			rewards: [{
+				id: "121011C70C7E7612"
+				item: "draconicevolution:wyvern_energy_core"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				count: 32L
+				id: "63F1A227EE83D7B5"
+				item: "draconicevolution:wyvern_core"
+				type: "item"
+			}]
+			title: "&6Puissance de la Wyvern"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C1D6A6EF528E302"]
+			description: ["&fCette armure ne s'use pas, elle consomme de l'énergie (RF) pour maintenir un bouclier autour de vous."]
+			id: "6822DC937529C054"
+			tasks: [
+				{
+					consume_items: false
+					id: "4F67658512396E7C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								energy: {
+									energy: 0
+								}
+								module_host: {
+									modules: [ ]
+									properties: { }
+									provider_id: [I;
+										-412278722
+										66473793
+										-1959143280
+										374064484
+									]
+								}
+							}
+						}
+						id: "draconicevolution:wyvern_chestpiece"
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7D97EFA28F55626D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								energy: {
+									energy: 0
+								}
+								module_host: {
+									modules: [ ]
+									properties: {
+										mining_speed: {
+											hud: 1b
+											value: 1.0d
+										}
+									}
+									provider_id: [I;
+										2115577468
+										1224362623
+										-1921148905
+										-1336228292
+									]
+								}
+							}
+						}
+						id: "draconicevolution:wyvern_pickaxe"
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5D6FF651ADB4B852"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								energy: {
+									energy: 0
+								}
+								module_host: {
+									modules: [ ]
+									properties: { }
+									provider_id: [I;
+										-459194478
+										-2126494531
+										-1979023424
+										776357337
+									]
+								}
+							}
+						}
+						id: "draconicevolution:wyvern_sword"
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0A831CD19E58DAB4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								energy: {
+									energy: 0
+								}
+								module_host: {
+									modules: [ ]
+									properties: { }
+									provider_id: [I;
+										1069838854
+										-1648999158
+										-1235472734
+										893178440
+									]
+								}
+							}
+						}
+						id: "draconicevolution:wyvern_bow"
+					}
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "220567E84673613C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								energy: {
+									energy: 0
+								}
+								module_host: {
+									modules: [ ]
+									properties: { }
+									provider_id: [I;
+										1323376178
+										1626620607
+										-1441960696
+										1999795435
+									]
+								}
+							}
+						}
+						id: "draconicadditions:wyvern_necklace"
+					}
+					type: "item"
+				}
+			]
+			title: "&eProtection Absolue"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6822DC937529C054"]
+			description: [
+				"&fPour l'Age 9, les batteries classiques sont dérisoires. Vous avez besoin de stocker des &bQuadrillons de RF&f."
+				" "
+				"&7Construisez la structure multi-bloc du &3Energy Core&7. Plus vous l'agrandissez, plus votre capacité devient infinie."
+			]
+			id: "6BE1072C6862724D"
+			tasks: [{
+				consume_items: false
+				id: "37826CF4BA9E6544"
+				item: "draconicevolution:energy_core"
+				type: "item"
+			}]
+			title: "&bLa Sphère d'Énergie"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6BE1072C6862724D"]
+			description: [
+				"&fLe générateur ultime. Il manipule l'instabilité du &cChaos &fpour produire une énergie colossale."
+				" "
+				"&4DANGER CRITIQUE :"
+				"&cSi la température dépasse 8000°C ou si le bouclier tombe à 0%, le réacteur explosera."
+				"&4L'explosion peut raser votre base entière sur des centaines de blocs."
+			]
+			icon: "draconicevolution:reactor_stabilizer"
+			id: "47B1EB79825AA9F1"
+			tasks: [
+				{
+					consume_items: false
+					id: "4F6B79F287CF7169"
+					item: "draconicevolution:reactor_core"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "714DA94C0A1655ED"
+					item: "draconicevolution:reactor_stabilizer"
+					type: "item"
+				}
+			]
+			title: "&4Le Réacteur Draconique"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["47B1EB79825AA9F1"]
+			description: [
+				"&fLe passage au &cTier Supérieur&f. Ce noyau palpite d'une énergie instable qui doit être domptée par un rituel d'infusion complexe."
+				" "
+				"&eIngrédient clé : &fNécessite souvent un &4Dragon Heart &fou une explosion contrôlée."
+			]
+			id: "225D9A340DD84259"
+			tasks: [{
+				consume_items: false
+				count: 12L
+				id: "29612E4203D2ECAB"
+				item: "draconicevolution:awakened_core"
+				type: "item"
+			}]
+			title: "&cAwakened Core"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["225D9A340DD84259"]
+			description: [
+				"&fLe défi final de combat. Voyagez à &b10 000 blocs &fdans l'End pour débusquer le &4Gardien du Chaos&f."
+				" "
+				"&7Ses cristaux le protègent. Détruisez-les avant de l'attaquer, ou votre mort sera instantanée."
+			]
+			id: "0B4230E3749BDBD3"
+			tasks: [
+				{
+					id: "113C5FE2BE66E372"
+					title: "&4BOSS : Le Gardien du Chaos"
+					type: "checkmark"
+				}
+				{
+					consume_items: false
+					id: "6FFF211847281E79"
+					item: "draconicevolution:chaos_shard"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0B4230E3749BDBD3"]
+			description: [
+				"&fVaincre le Gardien est un exploit, le farmer est une corvée. Utilisez vos &4Small Chaos Fragments &fpour synthétiser la vie."
+				" "
+				"&aFélicitations : &fVous pouvez désormais produire du &cChaos &fvia vos fermes de &2Mystical Agriculture&f."
+			]
+			id: "47D149167DE0EC34"
+			tasks: [{
+				consume_items: false
+				id: "17E5F5446C0A7823"
+				item: "entropy:chaos_seeds"
+				type: "item"
+			}]
+			title: "&bAutomatisation Mystique"
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["47D149167DE0EC34"]
+			description: [
+				"&fLe vide de l'espace contient une force : le &8Neutronium&f. Ces collecteurs sont les seuls capables de le condenser."
+				" "
+				"&7Préparez-vous à une attente éternelle... ou multipliez les collecteurs par cent."
+			]
+			id: "5677751DCCFF0785"
+			tasks: [{
+				consume_items: false
+				id: "037600806BC62302"
+				item: "avaritia:neutron_collector"
+				type: "item"
+			}]
+			title: "&8Singularités de l'Entropy"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5677751DCCFF0785"]
+			description: [
+				"&fLe point de rupture de la physique. Ce lingot pèse plus que toutes les étoiles de la galaxie réunies."
+				" "
+				"&6Craft : &fUtilisez votre giga-structure de &eMechanical Crafters &f(Create) pour l'assembler."
+			]
+			id: "328432BBB84114EC"
+			shape: "heart"
+			size: 2.0d
+			tasks: [{
+				consume_items: false
+				id: "63B31ABC3FAD0706"
+				item: "avaritia:infinity_ingot"
+				type: "item"
+			}]
+			title: "&fInfinity Ingot"
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["328432BBB84114EC"]
+			description: [
+				"&fVous y êtes. Le sommet de l'aventure &3Entropy&f."
+				" "
+				"&fCet éclat contient l'équilibre parfait entre le &cChaos&f, l'&dArcane &fet la &bScience&f."
+				" "
+				"&b&k!!! &6VOUS AVEZ ATTEINT LA PERFECTION &b&k!!!"
+			]
+			id: "427FBB44E2780268"
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "616C4854DFAFCF82"
+				item: "entropy:primordial_inertia_shard"
+				type: "item"
+			}]
+			title: "&b&lL'ÉCLAT DE L'INERTIE PRIMORDIALE"
+			x: 2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["427FBB44E2780268"]
+			description: [
+				"&fCette lame ne coupe pas la matière, elle &cefface &fl'existence de ce qu'elle touche."
+				" "
+				"&7Utilisez vos &bMechanical Crafters &7pour forger cette arme capable de terrasser n'importe quelle entité en un seul coup."
+			]
+			id: "5634B69D28C8FFA5"
+			rewards: [{
+				id: "3E158DE7E347FFC7"
+				item: "entropy:primordial_inertia_shard"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "262EF86A54DE8A84"
+				item: {
+					Count: 1
+					id: "avaritia:infinity_sword"
+					tag: {
+						mode: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "&4Sword of the Cosmos"
+			x: 3.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["427FBB44E2780268"]
+			description: [
+				"&fUne pioche capable de miner des chunks entiers en un instant. Rien ne résiste à sa puissance de minage divine."
+				" "
+				"&4Attention : &fL'utiliser sans précaution peut transformer votre paysage en gruyère spatial."
+			]
+			id: "4439438868B91C83"
+			rewards: [{
+				id: "741439E521492278"
+				item: "entropy:primordial_inertia_shard"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "76E575FE5E031584"
+				item: {
+					Count: 1
+					id: "avaritia:infinity_pickaxe"
+					tag: {
+						mode: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "&6World Breaker"
+			x: 5.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["427FBB44E2780268"]
+			description: [
+				"&fPorter cette armure, c'est devenir &bimmortel&f. Vous ne craignez plus le vide, le chaos, ni même les commandes de destruction du serveur."
+				" "
+				"&7Chaque pièce demande un &dÉclat d'Inertie &7central pour lier les lingots d'Infini entre eux."
+			]
+			id: "2CA49AE013F9BFDB"
+			rewards: [{
+				count: 4
+				id: "19F24D67D5F02C65"
+				item: "entropy:primordial_inertia_shard"
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: false
+					id: "73AE8FD95DD8E4D1"
+					item: "avaritia:infinity_helmet"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "311AAD5408A319BA"
+					item: "avaritia:infinity_chestplate"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4793C5A884CD2EC7"
+					item: "avaritia:infinity_pants"
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "59869515C380421D"
+					item: "avaritia:infinity_boots"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["427FBB44E2780268"]
+			description: ["&fUn seau qui contient tous les fluides de l'univers en quantité infinie. Une fois rempli, il ne se videra jamais."]
+			id: "31CCA3A841ECC68A"
+			rewards: [{
+				count: 64
+				id: "6244B7F8929D48E2"
+				item: "avaritia:neutron"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "5999F2C58CF2AB4C"
+				item: "avaritia:infinity_bucket"
+				type: "item"
+			}]
+			title: "&9Infinity Bucket"
+			x: -2.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["427FBB44E2780268"]
+			description: ["&fLe goulot d'étranglement de vos tuyaux appartient au passé. Ce module permet un transfert &dinstantané &fet &binfini &fde n'importe quelle ressource."]
+			id: "79AD71D1A402661C"
+			rewards: [{
+				id: "70C6AA79ADE6F884"
+				item: "entropy:primordial_inertia_shard"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "5D7774D1BC348485"
+				item: "pipez:infinity_upgrade"
+				type: "item"
+			}]
+			title: "&eInfinity Upgrade (Pipez)"
+			x: 6.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["427FBB44E2780268"]
+			description: ["&fPourquoi s'embêter avec des chiffres ? Ce module rend la capacité de vos tiroirs &6illimitée&f."]
+			id: "125FD50CE0BDFB09"
+			rewards: [
+				{
+					id: "74255DC8677ABFAF"
+					item: "avaritia:infinity_chest"
+					type: "item"
+				}
+				{
+					id: "343C77136927CFE0"
+					item: {
+						Count: 1
+						id: "industrialforegoing:infinity_backpack"
+						tag: {
+							CanCharge: 1b
+							Energy: 0L
+							Selected: "POOR"
+							Special: 0b
+							Tanks: { }
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: false
+				id: "3A47358131B6A01E"
+				item: "storagedrawers:creative_storage_upgrade"
+				type: "item"
+			}]
+			title: "&dCreative Storage Upgrade"
+			x: 6.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["427FBB44E2780268"]
+			description: ["&fLe cœur noir de la galaxie. C'est l'un des composants les plus denses jamais créés."]
+			id: "7AE10E532D238E57"
+			rewards: [{
+				id: "622D6C04A66A0431"
+				item: "avaritia:upgrade_smithing_template"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "71FFB86E7A73A872"
+				item: "avaritia:eternal_singularity"
+				type: "item"
+			}]
+			title: "&5Eternal Singularity"
+			x: -2.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["427FBB44E2780268"]
+			description: ["&fLe combustible parfait. Une source de chaleur qui ne s'éteindra jamais, symbolisant la fin de votre quête énergétique."]
+			id: "14320DFD9E85BC97"
+			tasks: [{
+				consume_items: false
+				id: "4B8A89C6F47DE291"
+				item: "avaritia:blaze_cube"
+				type: "item"
+			}]
+			title: "&6Blaze Cube"
+			x: 0.5d
+			y: -16.5d
+		}
+	]
+	title: "&3Le point de convergence&7, &6le Dieu de l'Entropy"
+}

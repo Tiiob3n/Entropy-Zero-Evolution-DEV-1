@@ -1,0 +1,191 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5lsimulation_de_combat"
+	group: ""
+	id: "4D64996BFCD1AEB8"
+	images: [{
+		height: 20.0d
+		image: "hostilenetworks:block/simulation_chamber_north"
+		rotation: 0.0d
+		width: 20.0d
+		x: 0.0d
+		y: -2.5d
+	}]
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&fCeci est votre outil de capture de données. Insérez un &7Model Framework &fà l'intérieur et partez au combat."
+				" "
+				"&7Tuez le mob correspondant pour que le modèle apprenne ses schémas de comportement."
+			]
+			id: "0FBD55E9778D0724"
+			tasks: [{
+				consume_items: false
+				id: "2AD72B3D562D1A47"
+				item: "hostilenetworks:deep_learner"
+				type: "item"
+			}]
+			title: "&f&lDeep Learner"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0FBD55E9778D0724"]
+			description: ["&fUne puce vierge prête à être programmée. Faites un &eClic Droit &fsur un mob avec cette puce pour lier son ADN au modèle."]
+			id: "6C4C903E59E5A3F4"
+			tasks: [{
+				id: "6C8C2BED7A9E141F"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
+			title: "&7&lModel Framework"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6C4C903E59E5A3F4"]
+			description: [
+				"&fLa machine qui transforme les &bPrédictions &fen objets réels. "
+				" "
+				"&7Choisissez la ressource que vous voulez (ex: Nether Star, Ender Pearl) et laissez la machine la synthétiser."
+			]
+			id: "32C8C150743E383C"
+			tasks: [{
+				id: "7DA2FC1912B8C24F"
+				item: "hostilenetworks:loot_fabricator"
+				type: "item"
+			}]
+			title: "&b&lLoot Fabricator"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["32C8C150743E383C"]
+			description: [
+				"&fC'est ici que la magie opère. Insérez votre &dData Model &fet de la &9Prediction Matrix &fpour lancer la simulation."
+				" "
+				"&cNote : &fPlus le rang de votre modèle est élevé (Basic -> Self Aware), plus vous avez de chances de réussir la simulation."
+			]
+			id: "54F6992864EB361C"
+			tasks: [{
+				id: "505872F86F91FBC6"
+				item: "hostilenetworks:sim_chamber"
+				type: "item"
+			}]
+			title: "&d&lSimulation Chamber"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["54F6992864EB361C"]
+			description: [
+				"&fUne fois le rang &eSelf Aware &fatteint, vous avez 99% de chances d'obtenir une prédiction à chaque cycle."
+				" "
+				"&7C'est l'étape ultime pour une production de ressources parfaite."
+			]
+			id: "720FBCF466425497"
+			tasks: [{
+				id: "59044A958B538CF1"
+				title: "&e&lLe Rang : Self Aware"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["720FBCF466425497"]
+			description: [
+				"&fGrâce aux addons, vous pouvez désormais numériser des entités normalement impossibles à capturer."
+				" "
+				"&aL'automatisation totale : &fDes animaux de la ferme aux boss les plus obscurs, rien n'échappe au réseau neuronal."
+			]
+			id: "0FFD5669F07E2009"
+			tasks: [{
+				id: "5BF1F8256A01D0AA"
+				item: "hostilenetworks:prediction_matrix"
+				type: "item"
+			}]
+			title: "&a&lAny Mob : La Puce Universelle"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0FFD5669F07E2009"]
+			description: ["&lil y en as trop bon courage&r ! "]
+			id: "38A9856ECBEF256D"
+			tasks: [
+				{
+					id: "2ADDC19210E02E3C"
+					item: {
+						Count: 1
+						id: "hostilenetworks:prediction"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:twilightforest/naga"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "471DB01BB6BF4E0F"
+					item: {
+						Count: 1
+						id: "hostilenetworks:prediction"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:warden"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79ACEB82B6DB12F9"
+					item: {
+						Count: 1
+						id: "hostilenetworks:prediction"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:twilightforest/ur_ghast"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "17EB4DA4348FE237"
+					item: {
+						Count: 1
+						id: "hostilenetworks:prediction"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:ender_dragon"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3572D91885683CC3"
+					item: {
+						Count: 1
+						id: "hostilenetworks:prediction"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:twilightforest/lich"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -6.0d
+		}
+	]
+	title: "&5&lSIMULATION DE COMBAT"
+}

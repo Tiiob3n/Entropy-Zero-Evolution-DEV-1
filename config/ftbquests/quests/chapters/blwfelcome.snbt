@@ -12,25 +12,15 @@
 		tag: { }
 	}
 	id: "077C19C03D2DBDB3"
-	images: [
-		{
-			height: 5.0d
-			image: "kubejs:item/tiiob3nn"
-			rotation: 0.0d
-			width: 6.0d
-			x: 0.5d
-			y: -4.5d
-		}
-		{
-			height: 6.0d
-			image: "kubejs:item/logoentropy"
-			rotation: 0.0d
-			width: 6.0d
-			x: 0.5d
-			y: 0.0d
-		}
-	]
-	order_index: 1
+	images: [{
+		height: 5.0d
+		image: "kubejs:item/tiiob3nn"
+		rotation: 0.0d
+		width: 6.0d
+		x: 0.5d
+		y: -4.5d
+	}]
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

@@ -1,0 +1,243 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5lle_grimoire_de_sang"
+	group: ""
+	id: "2470569888D95A3C"
+	images: [
+		{
+			height: 2.0d
+			image: "entropy:textures/mahou/mahou_tsukai.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 8.5d
+			y: -11.0d
+		}
+		{
+			height: 15.0d
+			image: "mahoutsukai:block/mahoujin_changeable_fae"
+			rotation: 0.0d
+			width: 15.0d
+			x: 8.5d
+			y: -4.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&fTout commence par une entaille. La &cdague sacrificielle &fpermet de tracer des cercles de sang au sol."
+				" "
+				"&7Faites un &eClic Droit &7pour vous blesser et créer un &6Mahoujin &7(Cercle Magique). C'est la base de tous vos futurs rituels."
+			]
+			id: "09683944E58CF02F"
+			tasks: [{
+				consume_items: false
+				id: "338EAE61C8194114"
+				item: "mahoutsukai:dagger"
+				type: "item"
+			}]
+			title: "&c&lL'Offrande de Soi"
+			x: 14.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["09683944E58CF02F"]
+			description: [
+				"&fCe livre contient la liste de tous les rituels et les ingrédients nécessaires."
+				" "
+				"&bAstuce : &fEn faisant un &eClic Droit &fsur un cercle au sol avec ce livre, vous identifierez le sort que vous préparez."
+			]
+			id: "7A0AB1FD22049E9E"
+			tasks: [{
+				consume_items: false
+				id: "405844A9F601DC8C"
+				item: "mahoutsukai:guidebook"
+				type: "item"
+			}]
+			title: "&5&lLe Savoir Perdu"
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A0AB1FD22049E9E"]
+			description: [
+				"&fVotre réserve de Mana n'est pas fixe. Chaque fois que vous dépensez du &bMana&f, votre capacité maximale augmente légèrement."
+				" "
+				"&7Pratiquez régulièrement pour dépasser les &d10 000 &7de Mana nécessaires aux rituels divins."
+			]
+			id: "529A63DDA61EBBAB"
+			tasks: [{
+				id: "671D0B97A13B79E5"
+				title: "&b&lAtteindre 200 de Mana Max"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["529A63DDA61EBBAB"]
+			description: [
+				"&fVotre corps a des limites. Pour stocker plus de puissance, infusez votre mana dans des diamants."
+				" "
+				"&7Maintenez &6Shift + Clic Droit &7avec un diamant pour y transférer votre réserve personnelle."
+			]
+			id: "5D70DA944BE8669A"
+			tasks: [{
+				consume_items: false
+				id: "092AB3550F8A5571"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_GEM_STORED_MANA: 0
+						}
+					}
+					id: "mahoutsukai:attuned_diamond"
+				}
+				type: "item"
+			}]
+			title: "&d&lStockage Éthéré"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5D70DA944BE8669A"]
+			description: ["&fLe &5Circuit &fest un bloc capable de stocker l'énergie de tous les mages alentours. Indispensable pour alimenter vos machines magiques."]
+			id: "348440100FDDF404"
+			tasks: [{
+				consume_items: false
+				id: "06BC1DFFD3ABE580"
+				item: "mahoutsukai:mana_circuit"
+				type: "item"
+			}]
+			title: "&5&lCircuit de Mana"
+			x: 4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["348440100FDDF404"]
+			description: ["&fL'arme légendaire de la projection. Jetez une épée enchantée dans un lac après le rituel de &6Power Consolidation &fpour l'obtenir."]
+			id: "7B83B141F17505B3"
+			tasks: [{
+				id: "68FF888FF8987BBF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_ATTACK_CAP: 10000.0d
+							MAHOUTSUKAI_ATTACK_DAMAGE: 3.0f
+						}
+					}
+					id: "mahoutsukai:caliburn"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&f&lCaliburn : La Voie Royale"
+			x: 8.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["7B83B141F17505B3"]
+			description: [
+				"&fObtenue en sacrifiant un loup apprivoisé avec &fCaliburn&f."
+				" "
+				"&cLe Pouvoir Absolu : &fEn tuant des villageois (contre du mana), les dégâts de Morgan augmentent &eSANS LIMITE&f. Elle peut atteindre des milliers de points d'attaque."
+			]
+			id: "794AECBB88F861CD"
+			tasks: [{
+				id: "43E59A2D3E641EAF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_ATTACK_CAP: 10000.0d
+							MAHOUTSUKAI_ATTACK_DAMAGE: 3.0f
+						}
+					}
+					id: "mahoutsukai:morgan"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&4&lMorgan : La Chute du Roi"
+			x: 12.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["794AECBB88F861CD"]
+			description: ["&fPercevez les lignes de faille de la réalité. Frapper un ennemi sur ses &clignes de mort &finflige des dégâts critiques ignorant toute armure."]
+			id: "12B4730D38E26205"
+			tasks: [{
+				id: "730CEB3A9327431C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_CASTER_NAME: ""
+						}
+					}
+					id: "mahoutsukai:scroll_mystic_eyes"
+				}
+				type: "item"
+			}]
+			title: "&1&lYeux de Perception de Mort"
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12B4730D38E26205"]
+			description: ["&fOuvrez les portes de votre dimension de poche et faites pleuvoir des &edizaines d'épées dorées &fsur vos ennemis."]
+			id: "3FA02F226C50567D"
+			tasks: [{
+				id: "2D80B7D1A05711F9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_CASTER_NAME: ""
+						}
+					}
+					id: "mahoutsukai:scroll_treasury_projection"
+				}
+				type: "item"
+			}]
+			title: "&e&lTreasury Projection"
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3FA02F226C50567D"]
+			description: [
+				"&fCe rituel aspire l'énergie vitale de tout ce qui meurt dans son périmètre. "
+				" "
+				"&6Le combo parfait : &fPlacez-le sur un spawner à mobs pour remplir vos circuits automatiquement."
+			]
+			id: "372CEECD48EFCD94"
+			tasks: [{
+				id: "409431390D0D2FCF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_CASTER_NAME: ""
+						}
+					}
+					id: "mahoutsukai:scroll_boundary_drain_life"
+				}
+				type: "item"
+			}]
+			title: "&c&lBoundary Transfer"
+			x: 8.5d
+			y: -5.5d
+		}
+	]
+	subtitle: ["&fPlongez dans les arts interdits de la &dProjection &fet de la &cMagie du Sang&f. Ici, la puissance se paie en essence vitale."]
+	title: "&5&lLE GRIMOIRE DE SANG"
+}

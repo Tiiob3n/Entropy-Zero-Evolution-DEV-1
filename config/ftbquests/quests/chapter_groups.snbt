@@ -9,7 +9,6 @@
 		{ id: "02C4846B8E67A62E", title: "&6&lAge 6 : &fDigital Logistics" }
 		{ id: "5D7D2F535F714310", title: "&4&lAge 7 : &fEthereal Arcanes" }
 		{ id: "266D924F90F87D99", title: "&2&lAge 8 : &fBotanical Industry" }
-		{ id: "205A5F1622510366", title: "&3&lAge 9 : &fCosmic Odyssey" }
-		{ id: "10C001DDF2C76B70", title: "&c&lAge 10 : &fFinal Apotheosis" }
+		{ id: "205A5F1622510366", title: "&b&lAge 9 : Réalité Transcendantale" }
 	]
 }

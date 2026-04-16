@@ -1,0 +1,163 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "dlle_stockage_dimensionnel"
+	group: ""
+	id: "3E1488E25F21E9E7"
+	images: [{
+		height: 10.0d
+		image: "immersiveengineering:block/metal/storage_uranium_side"
+		rotation: 0.0d
+		width: 10.0d
+		x: -1.5d
+		y: -2.5d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "2553B13F5B65A687"
+			tasks: [{
+				consume_items: false
+				id: "39932604865EB73F"
+				item: "pocketstorage:psu_1"
+				type: "item"
+			}]
+			title: "&6&lPocket Storage Tier 1"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2553B13F5B65A687"]
+			id: "2AB3FFBF6C1D1894"
+			tasks: [{
+				consume_items: false
+				id: "7409173E60D20816"
+				item: "pocketstorage:psu_2"
+				type: "item"
+			}]
+			title: "&6&lPocket Storage Tier 2"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2AB3FFBF6C1D1894"]
+			id: "38E0E04CA33A9708"
+			tasks: [{
+				consume_items: false
+				id: "57578A3E256EEB0C"
+				item: "pocketstorage:psu_3"
+				type: "item"
+			}]
+			title: "&6&lPocket Storage Tier 3"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["38E0E04CA33A9708"]
+			icon: "pocketstorage:psu_4"
+			id: "5D45D262F4FB2BD4"
+			tasks: [{
+				consume_items: false
+				id: "508E9ED6B394381E"
+				item: "pocketstorage:psu_4"
+				type: "item"
+			}]
+			title: "&6&lPocket Storage Tier 4"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			id: "519EE3276ADC31E7"
+			tasks: [{
+				consume_items: false
+				id: "686967320989CD2A"
+				item: "dankstorage:dank_1"
+				type: "item"
+			}]
+			title: "&7&lLe Dank 1"
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["519EE3276ADC31E7"]
+			id: "2834330585E36DED"
+			tasks: [{
+				consume_items: false
+				id: "1F409D8B8B6ED6F2"
+				item: "dankstorage:dank_2"
+				type: "item"
+			}]
+			title: "&7&lLe Dank 2"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2834330585E36DED"]
+			id: "5BE22D55A3437991"
+			tasks: [{
+				consume_items: false
+				id: "4616864FB7C7E111"
+				item: "dankstorage:dank_3"
+				type: "item"
+			}]
+			title: "&7&lLe Dank 3"
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5BE22D55A3437991"]
+			id: "5E9D9C0D6AAD3D1B"
+			tasks: [{
+				consume_items: false
+				id: "630AE2382081E9DC"
+				item: "dankstorage:dank_4"
+				type: "item"
+			}]
+			title: "&7&lLe Dank 4"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5E9D9C0D6AAD3D1B"]
+			id: "50F68866B8E9A25F"
+			tasks: [{
+				consume_items: false
+				id: "595AF5829025B2FD"
+				item: "dankstorage:dank_5"
+				type: "item"
+			}]
+			title: "&7&lLe Dank 5"
+			x: -2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["50F68866B8E9A25F"]
+			id: "4417E281D4A0E76E"
+			tasks: [{
+				consume_items: false
+				id: "7925598AD9432FCD"
+				item: "dankstorage:dank_6"
+				type: "item"
+			}]
+			title: "&7&lLe Dank 6"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4417E281D4A0E76E"]
+			id: "7E8AA59E527F9D53"
+			tasks: [{
+				consume_items: false
+				id: "00BB170F36C2353F"
+				item: "dankstorage:dank_7"
+				type: "item"
+			}]
+			title: "&7&lLe Dank 7"
+			x: -2.0d
+			y: -2.5d
+		}
+	]
+	subtitle: ["&fMarre d'avoir les poches pleines de terre et de gravier ? Apprenez à compresser l'espace pour transporter des &dmilliers d'items &fdans une seule main."]
+	title: "&d&lLE STOCKAGE DIMENSIONNEL"
+}

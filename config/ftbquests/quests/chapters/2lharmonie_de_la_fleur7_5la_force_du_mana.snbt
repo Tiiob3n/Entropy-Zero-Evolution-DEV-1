@@ -13,10 +13,19 @@
 		}
 	}
 	id: "60BBB04A3A1E59DC"
+	images: [{
+		height: 25.0d
+		image: "botania:block/alfheim_portal_activated"
+		rotation: 0.0d
+		width: 20.0d
+		x: 1.0d
+		y: -9.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["1B99BDC7A0A3DBB8"]
 			description: [
 				"&7La technologie de l'Âge 7 vous a mené aux confins de l'espace, mais pour stabiliser l'antimatière, vous devez puiser dans l'énergie vitale."
 				""
@@ -35,6 +44,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["3FB90A7691BB63E9"]
 			description: [
 				"&7Fini de courir après les fleurs sauvages. Utilisez la technologie des &6Botany Pots &7pour miniaturiser les biomes."
 				""
@@ -54,10 +64,11 @@
 				type: "item"
 			}]
 			title: "&2Culture de Masse &7(Botany Pots)"
-			x: 0.0d
+			x: 1.5d
 			y: -1.0d
 		}
 		{
+			dependencies: ["255A08510B1013DC"]
 			description: ["&7Reliez vos &6Botany Pots &7à des &bStorage Drawers &7via le Controller. C'est la seule façon de gérer le flux massif de ressources nécessaire pour vos futurs rituels."]
 			id: "72550820824F6F38"
 			rewards: [{
@@ -78,6 +89,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["72550820824F6F38"]
 			description: [
 				"&7Le &bMana Pool &7est votre batterie magique. Pour le remplir, utilisez des &eEndoflames &7(Charbon) ou des &6Rosa Arcana &7(XP)."
 				""
@@ -111,10 +123,11 @@
 				}
 			]
 			title: "&dLe Flux Primaire"
-			x: 0.0d
+			x: 1.5d
 			y: -3.0d
 		}
 		{
+			dependencies: ["543AAA514038D0AA"]
 			description: ["&7Le &dRunic Altar &7est nécessaire pour infuser la matière. Placez les items, attendez l'absorption du mana, puis jetez une &fLivingrock &7et utilisez votre baguette."]
 			id: "219A0C69E1D6924F"
 			subtitle: "&8Le premier processeur magique"
@@ -129,6 +142,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["219A0C69E1D6924F"]
 			id: "6F3F1A872E3F3665"
 			subtitle: "&8Eau, Feu, Terre et Air"
 			tasks: [
@@ -158,10 +172,11 @@
 				}
 			]
 			title: "&3Runes de Niveau 1"
-			x: 0.0d
+			x: 1.5d
 			y: -5.0d
 		}
 		{
+			dependencies: ["6F3F1A872E3F3665"]
 			description: ["&7Plus complexes, ces runes exigent les runes élémentaires comme composants. Elles servent à stabiliser les alliages avancés."]
 			id: "64428DE1DE090253"
 			subtitle: "&8L'emprise du temps"
@@ -196,6 +211,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["64428DE1DE090253"]
 			description: [
 				"&7Fini d'attendre 1 minute à côté de votre fleur. La version mécanique transforme les blocs &lautomatiquement&r."
 				""
@@ -210,10 +226,11 @@
 				type: "item"
 			}]
 			title: "&dMechanical Pure Daisy"
-			x: 0.0d
+			x: 1.5d
 			y: -7.0d
 		}
 		{
+			dependencies: ["477EC8B892A2B42A"]
 			description: ["&7Automatise la création des fleurs fonctionnelles. Reliez-la à votre stock de pétales AE2 pour ne plus jamais manquer de génératrices."]
 			id: "0201F6A30228AE6A"
 			subtitle: "&8Fleurs en série"
@@ -228,6 +245,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["0201F6A30228AE6A"]
 			description: ["&7Cette machine est le cœur de votre usine. Elle réalise les rituels de l'autel runique sans aucune intervention manuelle."]
 			id: "51E27ED1F39401DB"
 			subtitle: "&8L'usine à runes"
@@ -238,10 +256,11 @@
 				type: "item"
 			}]
 			title: "&dMechanical Runic Altar"
-			x: 0.0d
+			x: 1.5d
 			y: -9.0d
 		}
 		{
+			dependencies: ["51E27ED1F39401DB"]
 			description: ["&7Permet d'infuser des items (Mana Diamond, Mana Pearl) de manière industrielle sans les jeter un par un dans l'eau."]
 			id: "2CA14BB6C85EE0D3"
 			subtitle: "&8L'infusion de masse"
@@ -256,6 +275,7 @@
 			y: -10.0d
 		}
 		{
+			dependencies: ["2CA14BB6C85EE0D3"]
 			description: [
 				"&7Le portail vers Alfheim est un &6Puits d'Échange &7(La dimension est &cDésactivée&7)."
 				""
@@ -268,10 +288,11 @@
 				title: "&6La Structure du Portail"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: -11.0d
 		}
 		{
+			dependencies: ["024B994AA7C5AD58"]
 			description: [
 				"&7Placez ces deux pylônes sur deux &bMana Pools &7pour alimenter le portail."
 				""
@@ -297,6 +318,7 @@
 			y: -12.0d
 		}
 		{
+			dependencies: ["017332F5DC6311A8"]
 			description: ["&7Échangez vos diamants et vos perles de mana contre les matériaux ultimes d'Alfheim. Ces derniers sont requis pour les &6mana cell &7AE2."]
 			id: "7AB4804459EA75C6"
 			tasks: [
@@ -316,10 +338,11 @@
 				}
 			]
 			title: "&3L'Échange Elfe"
-			x: 0.0d
+			x: 1.5d
 			y: -13.0d
 		}
 		{
+			dependencies: ["7AB4804459EA75C6"]
 			description: ["&7Stockez des millions d'unités de mana dans un seul disque. Fini les rangées de bassins !"]
 			id: "3F78EA1CD6286BC1"
 			rewards: [{
@@ -343,6 +366,7 @@
 			y: -14.0d
 		}
 		{
+			dependencies: ["3F78EA1CD6286BC1"]
 			description: [
 				"&7Maîtrisez les Sparks pour déplacer le mana entre vos pools et vos machines."
 				""
@@ -364,10 +388,11 @@
 				}
 			]
 			title: "&6Sparks et Augments"
-			x: 0.0d
+			x: 1.5d
 			y: -15.0d
 		}
 		{
+			dependencies: ["46E3E3E1998CE7CE"]
 			description: ["&7Utilisez la &eTerra Plate &7entourée de 4 &dGaia Pylons&7. Un lingot coûte &b1 bassin entier&7."]
 			id: "41820C01B08F5792"
 			subtitle: "&8L'alliage suprême"
@@ -382,6 +407,7 @@
 			y: -16.0d
 		}
 		{
+			dependencies: ["41820C01B08F5792"]
 			description: ["&7Battez le Guardian I pour obtenir les &dGaia Spirits&7."]
 			id: "090AD762B434E990"
 			subtitle: "&8Esprit de Gaia"
@@ -393,10 +419,11 @@
 				type: "item"
 			}]
 			title: "&4Gaia Guardian I"
-			x: 0.0d
+			x: 1.5d
 			y: -17.0d
 		}
 		{
+			dependencies: ["090AD762B434E990"]
 			description: ["&7Utilisez un &dGaia Ingot &7sur le beacon. C'est ici que vous obtiendrez le &6Dice of Fate&7."]
 			id: "185CF2CE54D18874"
 			rewards: [{
@@ -414,8 +441,11 @@
 			y: -18.0d
 		}
 		{
+			dependencies: ["185CF2CE54D18874"]
 			description: ["&7Ouvrez vos dés. Vous &lDEVEZ &r&7obtenir l'&6Anneau d'Odin&7. Sans lui, impossible de stabiliser la &dMaster Key &7de l'Âge 9."]
 			id: "66B26C147C27F8F3"
+			shape: "pentagon"
+			size: 2.0d
 			subtitle: "&8L'Élite de la Destinée"
 			tasks: [{
 				id: "4686B138111A7773"
@@ -434,7 +464,7 @@
 				type: "item"
 			}]
 			title: "&6L'Anneau d'Odin"
-			x: 0.0d
+			x: 1.5d
 			y: -19.0d
 		}
 	]

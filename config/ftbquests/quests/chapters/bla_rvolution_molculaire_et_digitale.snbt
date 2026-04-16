@@ -8,6 +8,32 @@
 	hide_quest_until_deps_visible: true
 	icon: "ae2:spatial_cell_component_128"
 	id: "19AC7D1D0CE539A6"
+	images: [
+		{
+			height: 3.0d
+			image: "mekanism:block/thermal_evaporation_controller_on_led"
+			rotation: 0.0d
+			width: 3.0d
+			x: -9.0d
+			y: -14.5d
+		}
+		{
+			height: 2.0d
+			image: "entropy:textures/mek/mek_title.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: -19.5d
+			y: -17.0d
+		}
+		{
+			height: 50.0d
+			image: "ftbquests:block/barrier_open"
+			rotation: 0.0d
+			width: 50.0d
+			x: -15.0d
+			y: -9.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

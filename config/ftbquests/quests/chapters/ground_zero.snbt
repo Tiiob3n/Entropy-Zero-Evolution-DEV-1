@@ -7,6 +7,24 @@
 	hide_quest_until_deps_complete: true
 	icon: "minecraft:dead_bush"
 	id: "5C34CDA04714FE6A"
+	images: [
+		{
+			height: 12.0d
+			image: "ars_nouveau:textures/gui/create_paper.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "cyclic:block/fan/fan_blades_on"
+			rotation: 0.0d
+			width: 1.0d
+			x: -3.5d
+			y: -4.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

@@ -1,0 +1,26 @@
+{
+	id: "1CD5191424A85445"
+	loot_size: 1
+	order_index: 19
+	rewards: [
+		{ item: "artifacts:everlasting_beef" }
+		{ item: "artifacts:plastic_drinking_hat" }
+		{ item: "artifacts:night_vision_goggles" }
+		{ item: "artifacts:villager_hat" }
+		{ item: "artifacts:chorus_totem" }
+		{ item: "artifacts:power_glove" }
+		{ item: "artifacts:running_shoes" }
+		{ item: "artifacts:umbrella" }
+		{ item: "artifacts:thorn_pendant" }
+		{ item: "artifacts:anglers_hat" }
+		{ item: "artifacts:scarf_of_invisibility" }
+		{ item: "artifacts:cross_necklace" }
+		{ item: "artifacts:panic_necklace" }
+		{ item: "artifacts:crystal_heart" }
+		{ item: "artifacts:helium_flamingo" }
+		{ item: "artifacts:shock_pendant" }
+		{ item: "artifacts:flame_pendant" }
+		{ item: "artifacts:snowshoes" }
+	]
+	title: "artifacts"
+}

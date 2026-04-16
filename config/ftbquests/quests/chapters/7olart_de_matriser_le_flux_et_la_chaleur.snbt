@@ -6,6 +6,24 @@
 	group: "38F7ABC9B17F7967"
 	icon: "thermalendergy:melodium_ingot"
 	id: "03C30CBD0F6EE59D"
+	images: [
+		{
+			height: 25.0d
+			image: "thermal:block/cells/energy_cell_bottom"
+			rotation: 0.0d
+			width: 25.0d
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			height: 15.0d
+			image: "thermal:block/devices/device_fisher_active"
+			rotation: 0.0d
+			width: 15.0d
+			x: 10.0d
+			y: -2.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

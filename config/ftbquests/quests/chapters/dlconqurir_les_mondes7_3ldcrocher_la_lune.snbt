@@ -6,6 +6,32 @@
 	group: "5D7D2F535F714310"
 	icon: "beyond_earth:moon_globe"
 	id: "688E11F1DFC9E781"
+	images: [
+		{
+			height: 30.0d
+			image: "beyond_earth:textures/painting/moon.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: -16.0d
+			y: -19.5d
+		}
+		{
+			height: 1.0d
+			image: "cyclic:item/fireball"
+			rotation: 0.0d
+			width: 1.0d
+			x: -15.5d
+			y: -20.5d
+		}
+		{
+			height: 1.0d
+			image: "cyclic:item/fireball_dark"
+			rotation: 0.0d
+			width: 1.0d
+			x: -16.5d
+			y: -19.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

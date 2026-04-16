@@ -4,7 +4,15 @@
 	filename: "solar_flux_reborn"
 	group: ""
 	id: "66250D1C4A71A7FA"
-	order_index: 0
+	images: [{
+		height: 10.0d
+		image: "beyond_earth:textures/gui/util/solar_panel_sun.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: 2.0d
+		y: 1.5d
+	}]
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -136,7 +144,7 @@
 				item: "solarflux:sp_avaritia.neutronium"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -148,8 +156,8 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 0.0d
+			y: 1.5d
 		}
 	]
-	title: "Solar Flux Reborn"
+	title: "&6&lLA CONQUÊTE SOLAIRE"
 }

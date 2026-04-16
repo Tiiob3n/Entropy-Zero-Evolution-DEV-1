@@ -8,6 +8,14 @@
 	hide_quest_until_deps_visible: true
 	icon: "create:large_water_wheel"
 	id: "318A7F5023619DD5"
+	images: [{
+		height: 20.0d
+		image: "create:block/copper_casing"
+		rotation: 0.0d
+		width: 20.0d
+		x: 0.0d
+		y: -2.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

@@ -1,0 +1,39 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6lartifacts"
+	group: ""
+	id: "6813CAAAF19187E6"
+	images: [{
+		height: 5.0d
+		image: "betterarcheology:item/penetrating_strike_artifact"
+		rotation: 0.0d
+		width: 5.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"&fLes &6Artefacts &fne se fabriquent pas, ils se méritent. Explorez les donjons, les pyramides et les ruines pour dénicher ces objets uniques."
+			" "
+			"&7Chaque artefact occupe un slot &eCurios &7spécifique."
+		]
+		id: "65B5E05EC92F1F1E"
+		rewards: [{
+			exclude_from_claim_all: true
+			id: "458E23EE2AA6CCE7"
+			table_id: 2077594377406403653L
+			type: "random"
+		}]
+		tasks: [{
+			id: "5ABFD83DF88A24D1"
+			title: "&6&lLa Puissance des Anciens"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "&6&lARTIFACTS"
+}

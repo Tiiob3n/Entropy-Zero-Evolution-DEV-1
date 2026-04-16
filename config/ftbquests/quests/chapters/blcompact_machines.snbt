@@ -1,0 +1,129 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "blcompact_machines"
+	group: ""
+	id: "2E2FE9E78D6D553D"
+	images: [
+		{
+			height: 20.0d
+			image: "extradisks:block/advanced_machine_casing"
+			rotation: 0.0d
+			width: 20.0d
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			height: 7.0d
+			image: "xycraft_core:block/cloudfx_translucent"
+			rotation: 0.0d
+			width: 7.0d
+			x: 0.0d
+			y: -2.5d
+		}
+	]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&fBienvenue dans la première étape de la miniaturisation. Ce bloc contient une dimension de &b3x3x3&f."
+				" "
+				"&7Idéal pour isoler un petit système de câbles ou une micro-ferme."
+			]
+			id: "6B3055F800F81EC7"
+			tasks: [{
+				consume_items: false
+				id: "50FB70C198D35946"
+				item: "compactmachines:machine_tiny"
+				type: "item"
+			}]
+			title: "&b&lTiny Compact Machine"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B3055F800F81EC7"]
+			id: "3C0CCC59902F0495"
+			tasks: [{
+				consume_items: false
+				id: "6B4DDAAD433D9A94"
+				item: "compactmachines:machine_small"
+				type: "item"
+			}]
+			title: "&b&lSmall Compact Machine"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3C0CCC59902F0495"]
+			id: "5DCC199212252C0E"
+			tasks: [{
+				consume_items: false
+				id: "2C21712A0B3711F1"
+				item: "compactmachines:machine_normal"
+				type: "item"
+			}]
+			title: "&b&lNormal Compact Machine"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5DCC199212252C0E"]
+			id: "6A2492191A3C1258"
+			tasks: [{
+				consume_items: false
+				id: "4BD93F74DE39AE9A"
+				item: "compactmachines:machine_large"
+				type: "item"
+			}]
+			title: "&b&lLarge Compact Machine"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6A2492191A3C1258"]
+			id: "3B8BF26F6696A98B"
+			tasks: [{
+				consume_items: false
+				id: "3E235F3B31C4FE3E"
+				item: "compactmachines:machine_giant"
+				type: "item"
+			}]
+			title: "&b&lGiant Compact Machine"
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3B8BF26F6696A98B"]
+			id: "31FAFE4B787042E2"
+			tasks: [{
+				consume_items: false
+				id: "4A354D5E8BC19F0F"
+				item: "compactmachines:machine_maximum"
+				type: "item"
+			}]
+			title: "&b&lMaximum Compact Machine"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6B3055F800F81EC7"]
+			description: [
+				"&fC'est votre clé d'entrée. Faites un &eClic Droit &fsur une Compact Machine avec cet outil pour être &fminiaturisé &fet projeté à l'intérieur."
+				" "
+				"&cAttention : &fN'oubliez pas de le garder sur vous pour ressortir !"
+			]
+			id: "0D10BDF49B954EEC"
+			tasks: [{
+				id: "63C32253F07C2BAB"
+				item: "compactmachines:personal_shrinking_device"
+				type: "item"
+			}]
+			title: "&f&lPersonal Shrinking Device"
+			x: -2.5d
+			y: 0.0d
+		}
+	]
+	title: "&b&lCOMPACT MACHINES"
+}

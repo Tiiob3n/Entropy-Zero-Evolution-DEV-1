@@ -8,6 +8,40 @@
 	hide_quest_until_deps_visible: true
 	icon: "alltheores:steel_ingot"
 	id: "1939B6C18EEBC6D7"
+	images: [
+		{
+			height: 25.0d
+			image: "entropy:textures/immersive/immersive_back2.png"
+			rotation: 0.0d
+			width: 25.0d
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			height: 1.0d
+			image: "entropy:textures/immersive/immersive_title.png"
+			rotation: 0.0d
+			width: 25.0d
+			x: -3.5d
+			y: -14.5d
+		}
+		{
+			height: 25.0d
+			image: "immersiveengineering:block/conveyor/conveyor"
+			rotation: 0.0d
+			width: 1.0d
+			x: -14.5d
+			y: -6.5d
+		}
+		{
+			height: 25.0d
+			image: "immersiveengineering:block/conveyor/conveyor"
+			rotation: 0.0d
+			width: 1.0d
+			x: 7.5d
+			y: -6.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -1107,7 +1141,7 @@
 				"&cAttention :&f Cet objet est gourmand en énergie... laissez-le se charger dans votre inventaire avant de l'utiliser sur vos machines !"
 			]
 			id: "451D11D4EE5DC9EB"
-			shape: "diamond"
+			shape: "gear"
 			size: 2.0d
 			subtitle: "&7La forme contient le fond"
 			tasks: [{
@@ -1121,8 +1155,8 @@
 				type: "item"
 			}]
 			title: "&e&lMaîtrise Temporelle : Chronos"
-			x: -6.0d
-			y: -12.0d
+			x: 2.0d
+			y: -13.0d
 		}
 	]
 	title: "&dComplexité &fIndustrielle"
