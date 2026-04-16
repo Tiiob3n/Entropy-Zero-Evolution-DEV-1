@@ -1,7 +1,7 @@
 type = last_world
 
 last_world {
-  is_server = false
-  world = C:/Users/benja/curseforge/minecraft/Instances/Entropy-Zero-Evolution-DEV-1/saves/DevWorld
+  is_server = true
+  world = playgamingroom.fr:25565
 }
 
