@@ -56,3 +56,14 @@ MODLIST.md
 config/cucumber-tags.json
 config/apotheosis/names.cfg
 config/apotheosis/names.cfg
+.curseclient
+config/apotheosis/names.cfg
+config/cucumber-tags.json
+config/InventoryHUD/curios.json
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-type-sort-order.ini
+config/jei/recipe-category-sort-order.ini
+config/packetfixer.properties
+config/powah.json5
+minecraftinstance.json
+MODLIST.md
