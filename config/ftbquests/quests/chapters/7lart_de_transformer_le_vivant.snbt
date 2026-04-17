@@ -1,5 +1,5 @@
 {
-	consume_items: false
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "7lart_de_transformer_le_vivant"
@@ -56,7 +56,7 @@
 			size: 2.0d
 			subtitle: "&7More than just a knife"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "2BF9DCFA806C99E3"
 				item: {
 					Count: 1
@@ -87,7 +87,7 @@
 			}]
 			subtitle: "&7The Cooking Pot"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "4681F8A3B237F8B5"
 				item: "farmersdelight:cooking_pot"
 				type: "item"
@@ -111,7 +111,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "58CE1214EB747CBE"
 				item: "farmersdelight:rich_soil"
 				type: "item"
@@ -158,7 +158,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "181F87558A1C0FCC"
 				item: "farmersdelight:organic_compost"
 				type: "item"
@@ -181,7 +181,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "78CE3F8C03DDF762"
 				item: "farmersdelight:stove"
 				type: "item"
@@ -218,7 +218,7 @@
 				}
 			]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "73428A111E4CBD18"
 				item: "cookingforblockheads:fridge"
 				type: "item"
@@ -241,7 +241,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "525C8CEA56F3665C"
 				item: "cookingforblockheads:cooking_table"
 				type: "item"
@@ -290,7 +290,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "73F6166A79C9038E"
 				item: "create:spout"
 				type: "item"
@@ -312,7 +312,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "0C74970336DA2AE2"
 				item: "create:mechanical_mixer"
 				type: "item"
@@ -336,13 +336,13 @@
 			id: "463B8C96B37D9196"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "583AD58393B76E26"
 					item: "farmersdelight:melon_juice"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "48351B63F91C7F9E"
 					item: "farmersdelight:milk_bottle"
 					type: "item"
@@ -425,7 +425,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "67EA7682ED398803"
 				item: {
 					Count: 1
@@ -452,13 +452,13 @@
 			id: "5FEE27940D32EB55"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "55FEBDD90CCB24B4"
 					item: "croptopia:orange_juice"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "48C1A65C4D8B4065"
 					item: "croptopia:apple_juice"
 					type: "item"
@@ -477,7 +477,7 @@
 			]
 			id: "7A2C26DAF59ADACF"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 8L
 				id: "78C954B363597D79"
 				item: "aquaculture:fish_fillet_raw"
@@ -502,7 +502,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 16L
 				id: "66C02E272FEDBBB7"
 				item: "croptopia:sushi"
@@ -527,7 +527,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "7AC3192A9F9551D3"
 				item: "croptopia:hamburger"
 				type: "item"
@@ -551,7 +551,7 @@
 				type: "random"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "508378B73B123736"
 				item: "aquaculture:neptunium_ingot"
 				type: "item"
@@ -575,7 +575,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 32L
 				id: "4DEE4600D180E000"
 				item: "aquaculture:fish_fillet_raw"
@@ -601,7 +601,7 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					count: 16L
 					id: "074D15BC17FEB269"
 					item: "croptopia:salt"
@@ -661,7 +661,7 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "10B8D9E65CE314A6"
 				item: "croptopia:the_big_breakfast"
 				type: "item"

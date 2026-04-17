@@ -23,7 +23,7 @@
 			]
 			id: "0FBD55E9778D0724"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "2AD72B3D562D1A47"
 				item: "hostilenetworks:deep_learner"
 				type: "item"

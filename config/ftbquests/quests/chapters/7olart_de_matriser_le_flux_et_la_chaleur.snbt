@@ -1,5 +1,5 @@
 {
-	consume_items: false
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "7olart_de_matriser_le_flux_et_la_chaleur"
@@ -47,7 +47,7 @@
 			size: 2.0d
 			subtitle: "&7\"Strong as steel, or almost.\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "17581A20737C23FD"
 				item: "thermal:machine_frame"
 				type: "item"
@@ -72,7 +72,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 16L
 				id: "4AA681CFF2792B65"
 				item: "pipez:item_pipe"
@@ -99,7 +99,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "43473BE253ECAE1C"
 				item: "mysticalagriculture:invar_seeds"
 				type: "item"
@@ -126,31 +126,31 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "321657AB7EEA1E72"
 					item: "fluxnetworks:flux_dust"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "065F961604736D79"
 					item: "fluxnetworks:flux_core"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "34F51679B1FC4A55"
 					item: "fluxnetworks:flux_controller"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "09E51B4DC7B9C4CB"
 					item: "fluxnetworks:flux_plug"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "22974CE79ACA61DC"
 					item: "fluxnetworks:flux_point"
 					type: "item"
@@ -175,7 +175,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "7F741FAE67ACE784"
 				item: "thermal:machine_pulverizer"
 				type: "item"
@@ -199,7 +199,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "663070D6B80BE94A"
 				item: "thermal:machine_smelter"
 				type: "item"
@@ -222,7 +222,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "1144DF8E02272807"
 				item: "thermal:machine_bottler"
 				type: "item"
@@ -249,13 +249,13 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "4CCD57883A38FBB7"
 					item: "thermal:upgrade_augment_1"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "44E9377362A65C8C"
 					item: "thermal:upgrade_augment_2"
 					type: "item"
@@ -282,7 +282,7 @@
 			}]
 			subtitle: "&7\"The end of amateur tinkering.\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 4L
 				id: "54DACF20CE627713"
 				item: "thermal:signalum_ingot"
@@ -308,7 +308,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "17E146CFF7586194"
 				item: {
 					Count: 1
@@ -350,7 +350,7 @@
 			size: 2.0d
 			subtitle: "&7\"The pinnacle of thermal technology.\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 4L
 				id: "7D3ACE775BA0586A"
 				item: "thermal:enderium_ingot"
@@ -370,13 +370,13 @@
 			id: "70D297B0F264539A"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "7B7CA38EFAADAACA"
 					item: "thermalendergy:prismalium_ingot"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "383B930564BC77F0"
 					item: "thermalendergy:endergy_upgrade_1"
 					type: "item"
@@ -396,13 +396,13 @@
 			id: "087662EBD74EC801"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "6F98705D747E4545"
 					item: "thermalendergy:melodium_ingot"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "01EDB0590B43B5F3"
 					item: "thermalendergy:endergy_upgrade_2"
 					type: "item"
@@ -422,13 +422,13 @@
 			id: "23CDE754DFB13C91"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "04579E7F3B3BEA4C"
 					item: "thermalendergy:stellarium_ingot"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "436DA158A06B8F9A"
 					item: "thermalendergy:endergy_upgrade_3"
 					type: "item"

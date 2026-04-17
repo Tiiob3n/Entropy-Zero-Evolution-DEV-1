@@ -301,7 +301,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 16L
 				id: "01304ED2BEE5F2EA"
 				item: "draconicevolution:draconium_ingot"
@@ -327,14 +327,14 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					count: 8L
 					id: "40B4FC6F63DD1D65"
 					item: "draconicevolution:basic_crafting_injector"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "6FF7D2F3E16BF281"
 					item: { Count: 8, id: "draconicevolution:crafting_core" }
 					type: "item"
@@ -358,7 +358,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 32L
 				id: "63F1A227EE83D7B5"
 				item: "draconicevolution:wyvern_core"
@@ -374,7 +374,7 @@
 			id: "6822DC937529C054"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "4F67658512396E7C"
 					item: {
 						Count: 1
@@ -400,7 +400,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "7D97EFA28F55626D"
 					item: {
 						Count: 1
@@ -431,7 +431,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "5D6FF651ADB4B852"
 					item: {
 						Count: 1
@@ -457,7 +457,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "0A831CD19E58DAB4"
 					item: {
 						Count: 1
@@ -483,7 +483,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "220567E84673613C"
 					item: {
 						Count: 1
@@ -522,7 +522,7 @@
 			]
 			id: "6BE1072C6862724D"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "37826CF4BA9E6544"
 				item: "draconicevolution:energy_core"
 				type: "item"
@@ -544,13 +544,13 @@
 			id: "47B1EB79825AA9F1"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "4F6B79F287CF7169"
 					item: "draconicevolution:reactor_core"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "714DA94C0A1655ED"
 					item: "draconicevolution:reactor_stabilizer"
 					type: "item"
@@ -569,7 +569,7 @@
 			]
 			id: "225D9A340DD84259"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 12L
 				id: "29612E4203D2ECAB"
 				item: "draconicevolution:awakened_core"
@@ -594,7 +594,7 @@
 					type: "checkmark"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "6FFF211847281E79"
 					item: "draconicevolution:chaos_shard"
 					type: "item"
@@ -612,7 +612,7 @@
 			]
 			id: "47D149167DE0EC34"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "17E5F5446C0A7823"
 				item: "entropy:chaos_seeds"
 				type: "item"
@@ -630,7 +630,7 @@
 			]
 			id: "5677751DCCFF0785"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "037600806BC62302"
 				item: "avaritia:neutron_collector"
 				type: "item"
@@ -650,7 +650,7 @@
 			shape: "heart"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "63B31ABC3FAD0706"
 				item: "avaritia:infinity_ingot"
 				type: "item"
@@ -694,7 +694,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "262EF86A54DE8A84"
 				item: {
 					Count: 1
@@ -723,7 +723,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "76E575FE5E031584"
 				item: {
 					Count: 1
@@ -754,25 +754,25 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "73AE8FD95DD8E4D1"
 					item: "avaritia:infinity_helmet"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "311AAD5408A319BA"
 					item: "avaritia:infinity_chestplate"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "4793C5A884CD2EC7"
 					item: "avaritia:infinity_pants"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "59869515C380421D"
 					item: "avaritia:infinity_boots"
 					type: "item"
@@ -792,7 +792,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "5999F2C58CF2AB4C"
 				item: "avaritia:infinity_bucket"
 				type: "item"
@@ -811,7 +811,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "5D7774D1BC348485"
 				item: "pipez:infinity_upgrade"
 				type: "item"
@@ -847,7 +847,7 @@
 				}
 			]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "3A47358131B6A01E"
 				item: "storagedrawers:creative_storage_upgrade"
 				type: "item"
@@ -866,7 +866,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "71FFB86E7A73A872"
 				item: "avaritia:eternal_singularity"
 				type: "item"
@@ -880,7 +880,7 @@
 			description: ["&fThe perfect fuel. A heat source that will never go out, symbolizing the end of your energetic quest."]
 			id: "14320DFD9E85BC97"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "4B8A89C6F47DE291"
 				item: "avaritia:blaze_cube"
 				type: "item"

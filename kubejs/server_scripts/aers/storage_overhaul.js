@@ -59,7 +59,19 @@ ServerEvents.recipes(event => {
     dissolve('appflux:core_16m', ['appflux:core_4m', 'appflux:core_4m', 'appflux:core_4m', 'ae2:engineering_processor', 'mekanism:alloy_elite'], redstone, 8000, 700, 'appflux_16m')
     dissolve('appflux:core_64m', ['appflux:core_16m', 'appflux:core_16m', 'appflux:core_16m', 'ae2:engineering_processor', 'mekanism:alloy_ultimate'], glowstone, 8000, 800, 'appflux_64m')
     dissolve('appflux:core_256m', ['appflux:core_64m', 'appflux:core_64m', 'appflux:core_64m', 'ae2:engineering_processor', 'mekanism:alloy_atomic'], glowstone, 16000, 1000, 'appflux_256m')
-
+// ==========================================
+    // 💎 APPLIED ENERGISTICS 2 (Standard Components)
+    // Fluide : Redstone | Quartz -> Fluix
+    // ==========================================
+    
+    // Dissolve(Sortie, [Composants], Fluide, Quantité, Temps, Nom_ID)
+    dissolve('ae2:cell_component_1k', ['ae2:certus_quartz_crystal', 'ae2:certus_quartz_crystal', 'ae2:certus_quartz_crystal', 'ae2:logic_processor', 'minecraft:redstone'], redstone, 100, 100, 'ae2_1k')
+    dissolve('ae2:cell_component_4k', ['ae2:cell_component_1k', 'ae2:cell_component_1k', 'ae2:cell_component_1k', 'ae2:logic_processor', 'ae2:fluix_crystal'], redstone, 200, 150, 'ae2_4k')
+    dissolve('ae2:cell_component_16k', ['ae2:cell_component_4k', 'ae2:cell_component_4k', 'ae2:cell_component_4k', 'ae2:calculation_processor', 'ae2:fluix_crystal'], redstone, 300, 200, 'ae2_16k')
+    dissolve('ae2:cell_component_64k', ['ae2:cell_component_16k', 'ae2:cell_component_16k', 'ae2:cell_component_16k', 'ae2:calculation_processor', 'ae2:sky_dust'], redstone, 400, 250, 'ae2_64k')
+    
+    // Le Tier 256k d'AE2 
+    dissolve('ae2:cell_component_256k', ['ae2:cell_component_64k', 'ae2:cell_component_64k', 'ae2:cell_component_64k', 'ae2:engineering_processor', 'minecraft:diamond'], redstone, 500, 300, 'ae2_256k')
     // ==========================================
     // 🌌 MEGACELLS (L'Ultra End-Game AE2)
     // Fluide : Ether Gas

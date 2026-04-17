@@ -1,5 +1,5 @@
 {
-	consume_items: false
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "2lharmonie_de_la_fleur7_5la_force_du_mana"
@@ -34,7 +34,7 @@
 			id: "3FB90A7691BB63E9"
 			subtitle: "&8Knowledge is the first step"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "514ACA25F7F91C85"
 				item: "botania:lexicon"
 				type: "item"
@@ -58,7 +58,7 @@
 			}]
 			subtitle: "&8Industrial Horticulture"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "7E3BE3B6F214A632"
 				item: "botanypots:terracotta_hopper_botany_pot"
 				type: "item"
@@ -79,7 +79,7 @@
 			}]
 			subtitle: "&816 colors, one network"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "579BDF8A51B292C2"
 				item: "storagedrawers:oak_full_drawers_1"
 				type: "item"
@@ -104,19 +104,19 @@
 			subtitle: "&8Storing Earth's Energy"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "1CD03D7BD6CFDB39"
 					item: "botania:mana_pool"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "23DEE2167A54F780"
 					item: "botania:mana_spreader"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "011131627A476258"
 					item: "botania:endoflame"
 					type: "item"
@@ -132,7 +132,7 @@
 			id: "219A0C69E1D6924F"
 			subtitle: "&8The first magical processor"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "6A7CC45774ACED82"
 				item: "botania:runic_altar"
 				type: "item"
@@ -147,25 +147,25 @@
 			subtitle: "&8Water, Fire, Earth, and Air"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "2758BB7375F59EFE"
 					item: "botania:rune_water"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "51E0860769526898"
 					item: "botania:rune_fire"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "490D076FEECF13F3"
 					item: "botania:rune_earth"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "4FA77494803BB1BB"
 					item: "botania:rune_air"
 					type: "item"
@@ -182,25 +182,25 @@
 			subtitle: "&8The grip of time"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "0A5B8F09CCCF739D"
 					item: "botania:rune_autumn"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "7CB3BC695286C6A1"
 					item: "botania:rune_spring"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "6CD18F9C16750E38"
 					item: "botania:rune_winter"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "57B76C9CF0F526B4"
 					item: "botania:rune_summer"
 					type: "item"
@@ -220,7 +220,7 @@
 			id: "477EC8B892A2B42A"
 			subtitle: "&8Instant transformation"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "50C04B3C657054F0"
 				item: "botanicalmachinery:mechanical_daisy"
 				type: "item"
@@ -235,7 +235,7 @@
 			id: "0201F6A30228AE6A"
 			subtitle: "&8Mass-produced flowers"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "59952C283444101B"
 				item: "botanicalmachinery:mechanical_apothecary"
 				type: "item"
@@ -250,7 +250,7 @@
 			id: "51E27ED1F39401DB"
 			subtitle: "&8The Rune Factory"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "1ADF466492137661"
 				item: "botanicalmachinery:mechanical_runic_altar"
 				type: "item"
@@ -265,7 +265,7 @@
 			id: "2CA14BB6C85EE0D3"
 			subtitle: "&8Mass Infusion"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "2F97027C64110D4A"
 				item: "botanicalmachinery:mechanical_mana_pool"
 				type: "item"
@@ -307,7 +307,7 @@
 			}]
 			subtitle: "&8Powering the Rift"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 2L
 				id: "15CDA33104A7F57F"
 				item: "botania:natura_pylon"
@@ -323,14 +323,14 @@
 			id: "7AB4804459EA75C6"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					count: 36L
 					id: "303D589FD9FFD187"
 					item: "botania:dragonstone"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 12L
 					id: "1B84F6606EF0E151"
 					item: "botania:dreamwood_log"
@@ -352,7 +352,7 @@
 				type: "random"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "0BAC8FB961DEE074"
 				item: {
 					Count: 1
@@ -412,7 +412,7 @@
 			id: "090AD762B434E990"
 			subtitle: "&8Gaia Spirit"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 4L
 				id: "693D8318F8005DCE"
 				item: { Count: 2, id: "botania:life_essence" }

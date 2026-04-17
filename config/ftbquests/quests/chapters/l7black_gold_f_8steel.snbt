@@ -1,5 +1,5 @@
 {
-	consume_items: false
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "l7black_gold_f_8steel"
@@ -81,7 +81,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 32L
 				id: "526BABA42240FD7A"
 				item: "tconstruct:grout"
@@ -153,7 +153,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 27L
 				id: "4F96A4C0865D83BF"
 				item: "immersiveengineering:cokebrick"
@@ -207,25 +207,25 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "6F051ABFEF96563E"
 					item: "tconstruct:seared_drain"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "01D6A75AC9912EEC"
 					item: "tconstruct:seared_table"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "61A632CD53D5131D"
 					item: "tconstruct:seared_basin"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "548C18ED5FBD86A7"
 					item: "tconstruct:seared_faucet"
 					type: "item"
@@ -296,7 +296,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 16L
 				icon: "immersiveengineering:treated_wood_horizontal"
 				id: "22F77E10D40A5273"
@@ -325,7 +325,7 @@
 				xp: 100
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 8L
 				id: "4EC65DB693D31BB1"
 				item: "immersiveengineering:alloy_smelter"
@@ -350,7 +350,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 16L
 				id: "46F373B9338DD1F8"
 				item: "alltheores:invar_ingot"
@@ -373,7 +373,7 @@
 			]
 			id: "610A23F2BF94DEF7"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 27L
 				id: "46D89E80D459D1F1"
 				item: "immersiveengineering:blastbrick"
@@ -392,7 +392,7 @@
 			]
 			id: "11D5910891BB45CC"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "2671B7F5CAE2972C"
 				item: "alltheores:steel_ingot"
 				type: "item"
@@ -418,32 +418,32 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "5EC4D2DE4ACB60AA"
 					item: "immersiveengineering:heavy_engineering"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "498E0ECD76F9A998"
 					item: "minecraft:piston"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "39A0DF488E55B2F0"
 					item: "immersiveengineering:rs_engineering"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 2L
 					id: "0C22D4D5B533E02F"
 					item: { Count: 2, id: "immersiveengineering:conveyor_basic" }
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 2L
 					id: "07DACC245BC6A9F1"
 					item: { Count: 2, id: "immersiveengineering:steel_scaffolding_standard" }
@@ -495,7 +495,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "6594588EB9DBC06D"
 				item: "immersiveengineering:dynamo"
 				type: "item"
@@ -521,7 +521,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "2B87FF4248DDE5A7"
 				item: "immersiveengineering:watermill"
 				type: "item"
@@ -540,14 +540,14 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "0F9A1B0E2E13F98F"
 					item: "immersiveengineering:windmill"
 					only_from_crafting: true
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 4L
 					id: "2C0F31626240AE85"
 					item: { Count: 4, id: "immersiveengineering:windmill_sail" }
@@ -613,7 +613,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "318023073E7B0FC7"
 				item: "immersiveengineering:capacitor_lv"
 				type: "item"
@@ -628,25 +628,25 @@
 			id: "7B96A048F280DD6E"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "6443066466D76C6A"
 					item: "toms_storage:ts.storage_terminal"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "2276C176363F6431"
 					item: "toms_storage:ts.inventory_connector"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "6D16319A3157BCAB"
 					item: "toms_storage:ts.crafting_terminal"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 10L
 					id: "3CF496E2D926E892"
 					item: "toms_storage:ts.inventory_cable"
@@ -691,34 +691,34 @@
 			]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					count: 10L
 					id: "3C059295A38F00BF"
 					item: "immersiveengineering:light_engineering"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "5D356A134ABFEE5A"
 					item: "immersiveengineering:rs_engineering"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 10L
 					id: "515FB2F6121984FA"
 					item: { Count: 10, id: "immersiveengineering:steel_scaffolding_standard" }
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 8L
 					id: "73D77BE361BC3ABA"
 					item: { Count: 8, id: "immersiveengineering:steel_fence" }
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 9L
 					id: "1656A589EBC326C7"
 					item: { Count: 9, id: "minecraft:hopper" }
@@ -744,7 +744,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 16L
 				id: "1F2893BCEE526B25"
 				item: "powah:dielectric_paste"
@@ -769,7 +769,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 2L
 				id: "5FC180D499015996"
 				item: "powah:dielectric_casing"
@@ -791,7 +791,7 @@
 			id: "4BE539672AD9F359"
 			subtitle: "&7Hot stuff!"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "3E5A1922666802DE"
 				item: "powah:thermo_generator_starter"
 				type: "item"
@@ -819,13 +819,13 @@
 			subtitle: "&7The electrical ritual"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "1DC9D60AB8B4267B"
 					item: "powah:energizing_orb"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 2L
 					id: "30FD53364CFF5A9C"
 					item: "powah:energizing_rod_starter"
@@ -848,13 +848,13 @@
 			id: "3AF368A322BBAC02"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "45EDEF8D77781C7B"
-				table_id: 323217218064538611L
-				type: "choice"
+				id: "5B8F88E1A2FA3EA4"
+				table_id: 299590067093682297L
+				type: "random"
 			}]
 			subtitle: "&7When Steel meets Lightning"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "193B64EBD405853A"
 				item: "powah:steel_energized"
 				type: "item"
@@ -878,7 +878,7 @@
 				type: "random"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 8L
 				icon: "mysticalagriculture:steel_essence"
 				id: "7E37F9272E27BA15"
@@ -906,7 +906,7 @@
 			}]
 			subtitle: "&7Lava on a stick"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "0D938FB22D83196F"
 				item: "powah:crystal_blazing"
 				type: "item"
@@ -931,7 +931,7 @@
 			}]
 			subtitle: "&7Diamond under high voltage"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "490781E18511E1B2"
 				item: "powah:crystal_niotic"
 				type: "item"
@@ -956,7 +956,7 @@
 			}]
 			subtitle: "&7The power of the Emerald"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "380C8B7E25EB9CDC"
 				item: "powah:crystal_spirited"
 				type: "item"
@@ -981,7 +981,7 @@
 			}]
 			subtitle: "&7Energy beyond limits"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "60770327CA5A8699"
 				item: "powah:crystal_nitro"
 				type: "item"
@@ -1059,7 +1059,7 @@
 			subtitle: "&7From fragility to immortality"
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "3334B138BD4B94FA"
 					item: {
 						Count: 1
@@ -1071,7 +1071,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "337FFC5CC30C95C4"
 					item: {
 						Count: 1
@@ -1083,7 +1083,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "4D50248D95C99CDD"
 					item: {
 						Count: 1
@@ -1095,7 +1095,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "470FF34B2EE815BA"
 					item: {
 						Count: 1
@@ -1107,7 +1107,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "2D9A3D3D2A85A024"
 					item: {
 						Count: 1
@@ -1145,7 +1145,7 @@
 			size: 2.0d
 			subtitle: "&7The form contains the content"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "43B179C822C887C2"
 				item: {
 					Count: 1

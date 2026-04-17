@@ -1,5 +1,5 @@
 {
-	consume_items: false
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ground_zero"
@@ -72,7 +72,7 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					count: 10L
 					icon: "minecraft:stick"
 					id: "67D2DEFA1DCAB4DD"
@@ -80,7 +80,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 10L
 					id: "514822FBBBA83B0E"
 					item: "minecraft:flint"
@@ -102,7 +102,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 4L
 				id: "0B493D5684EC00AA"
 				item: "tconstruct:pattern"
@@ -124,13 +124,13 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "7E4F5EFF133E30A6"
 					item: "tconstruct:part_builder"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "6DE3F6886279F66E"
 					item: "tconstruct:tinker_station"
 					type: "item"
@@ -152,7 +152,7 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "3E11E01D6399BEB7"
 					item: {
 						Count: 1
@@ -164,7 +164,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "271DF64C999705DB"
 					item: {
 						Count: 1
@@ -176,7 +176,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "5F1C5AA1C247353C"
 					item: {
 						Count: 1
@@ -222,7 +222,7 @@
 			]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "6C3DA8A2C511579D"
 					item: {
 						Count: 1
@@ -262,7 +262,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "4C780EE1263B2070"
 					item: {
 						Count: 1
@@ -302,7 +302,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "2D73D79926935953"
 					item: {
 						Count: 1
@@ -377,7 +377,7 @@
 			]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "5B5C451ECB52616F"
 					item: {
 						Count: 1
@@ -389,7 +389,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "143C6A8FE4E0D26F"
 					item: {
 						Count: 1
@@ -411,7 +411,7 @@
 				"&7Stone is useful, but it doesn't spin. To enter the era of rotation, you need a composite material."
 				""
 				" "
-				"&fMix &8Andesite &fwith &6Iron Nuggets &f(or Flint, depending on your settings) to obtain &6Andesite Alloy&f."
+				"&fMix &8Andesite &fwith &6Flint, to obtain &6Andesite Alloy&f."
 				" "
 				"&8This alloy is the foundation of all the shafts and gears we are about to build."
 			]
@@ -424,8 +424,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
-				icon: { Count: 16, id: "create:andesite_alloy" }
+				consume_items: true
+				count: 16L
+				icon: "create:andesite_alloy"
 				id: "73CD4841A72FAA77"
 				item: "create:shaft"
 				type: "item"
@@ -451,7 +452,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 8L
 				icon: "create:shaft"
 				id: "1AC30A115242444F"
@@ -488,7 +489,7 @@
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "22A979374DE98188"
 				item: "create:water_wheel"
 				type: "item"

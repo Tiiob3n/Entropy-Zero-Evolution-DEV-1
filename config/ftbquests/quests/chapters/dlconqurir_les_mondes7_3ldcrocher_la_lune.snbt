@@ -1,5 +1,5 @@
 {
-	consume_items: false
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "dlconqurir_les_mondes7_3ldcrocher_la_lune"
@@ -51,7 +51,7 @@
 			}]
 			subtitle: "&7The beginning of your mystical journey."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "0131F3E8F97CE7E7"
 				item: "ars_nouveau:magebloom_crop"
 				type: "item"
@@ -76,7 +76,7 @@
 			}]
 			subtitle: "&7Writing your own destiny."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "1560BE0355778ABD"
 				item: "ars_nouveau:novice_spell_book"
 				type: "item"
@@ -114,7 +114,7 @@
 			}]
 			subtitle: "&7Accumulating power."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "44413C3E4DD58A44"
 				item: "ars_nouveau:source_jar"
 				type: "item"
@@ -133,7 +133,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "4FCC267657EF40D0"
 				item: "ars_nouveau:agronomic_sourcelink"
 				type: "item"
@@ -157,7 +157,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "37FC490DBAD6FDC2"
 				item: "ars_nouveau:enchanting_apparatus"
 				type: "item"
@@ -185,7 +185,7 @@
 			}]
 			subtitle: "&7Wearing arcane protection."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "6251C46B7FC142B5"
 				item: "ars_nouveau:magebloom_fiber"
 				type: "item"
@@ -205,7 +205,7 @@
 			}]
 			subtitle: "&7Calling from beyond."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "1CA25768EFAD0CF6"
 				item: "ars_nouveau:ritual_wilden_summon"
 				type: "item"
@@ -231,7 +231,7 @@
 			}]
 			subtitle: "&7The apprentice's final test."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "4A06E5C0D42A9935"
 				item: "ars_nouveau:wilden_tribute"
 				type: "item"
@@ -274,7 +274,7 @@
 			}]
 			subtitle: "&2The serpent of the ruins."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "130780B75C8D873B"
 				item: "twilightforest:naga_trophy"
 				type: "item"
@@ -300,7 +300,7 @@
 			}]
 			subtitle: "&7Break the shields."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "4FF7AB80B67A129B"
 				item: "twilightforest:lich_trophy"
 				type: "item"
@@ -320,7 +320,7 @@
 			}]
 			subtitle: "&7Merging nature and iron."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 4L
 				id: "07CE337AB49E7555"
 				item: "twilightforest:steeleaf_ingot"
@@ -341,7 +341,7 @@
 			}]
 			subtitle: "&cDeep in the darkness."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "3AB2DE95E9078759"
 				item: "twilightforest:minoshroom_trophy"
 				type: "item"
@@ -361,7 +361,7 @@
 			}]
 			subtitle: "&7The blood of titans."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "2EFC9452FC4E60EE"
 				item: "twilightforest:hydra_trophy"
 				type: "item"
@@ -381,7 +381,7 @@
 			}]
 			subtitle: "&7Forging the key to the void."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "035567C8D9E40DB1"
 				item: "deeperdarker:heart_of_the_deep"
 				type: "item"
@@ -420,7 +420,7 @@
 			}]
 			subtitle: "&7Mining the impossible."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "1D80614881F69088"
 				item: "deeperdarker:resonarium"
 				type: "item"
@@ -470,7 +470,7 @@
 			}]
 			subtitle: "&7Your new desk."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "5F1E19F5A82806ED"
 				item: "ad_astra:nasa_workbench"
 				type: "item"
@@ -495,7 +495,7 @@
 			}]
 			subtitle: "&7Abyssal density."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "3098A60E8C1D064F"
 				item: "deeperdarker:resonarium_plate"
 				type: "item"
@@ -529,7 +529,7 @@
 			subtitle: "&7Mage, but with oxygen."
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "2C5852269A2AF8B5"
 					item: {
 						Count: 1
@@ -541,7 +541,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "4A34E04F8E6C6072"
 					item: {
 						Count: 1
@@ -553,7 +553,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "52B0C5FD3859303B"
 					item: {
 						Count: 1
@@ -565,7 +565,7 @@
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "10C3488B8953B7EB"
 					item: {
 						Count: 1
@@ -592,7 +592,7 @@
 			}]
 			subtitle: "&7More than just gasoline."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "50BEAFE6843A2725"
 				item: "ad_astra:fuel_bucket"
 				type: "item"
@@ -612,7 +612,7 @@
 			}]
 			subtitle: "&7The last stop before the sky."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 9L
 				id: "174B5E39140306C5"
 				item: "ad_astra:launch_pad"
@@ -639,7 +639,7 @@
 			}]
 			subtitle: "&dObjective: The Moon."
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "7D87BFBF5ABEFC7B"
 				item: {
 					Count: 1
@@ -694,7 +694,7 @@
 					type: "checkmark"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "3D213657DD99BE88"
 					item: "minecraft:diamond"
 					type: "item"
@@ -728,7 +728,7 @@
 			]
 			subtitle: "&6The Red Frontier"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "11CC0C41343AB826"
 				item: {
 					Count: 1
@@ -767,7 +767,7 @@
 			]
 			subtitle: "&dHellish Pressure"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "6EC5194766AB1BD1"
 				item: {
 					Count: 1
@@ -815,7 +815,7 @@
 			]
 			subtitle: "&fThe Frozen Silence"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "72EBB05699C0A7E6"
 				item: {
 					Count: 1

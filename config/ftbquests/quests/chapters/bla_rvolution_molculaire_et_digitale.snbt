@@ -1,50 +1,29 @@
 {
-	consume_items: false
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "bla_rvolution_molculaire_et_digitale"
 	group: "02C4846B8E67A62E"
-	hide_quest_until_deps_complete: true
-	hide_quest_until_deps_visible: true
 	icon: "ae2:spatial_cell_component_128"
 	id: "19AC7D1D0CE539A6"
-	images: [
-		{
-			height: 3.0d
-			image: "mekanism:block/thermal_evaporation_controller_on_led"
-			rotation: 0.0d
-			width: 3.0d
-			x: -9.0d
-			y: -14.5d
-		}
-		{
-			height: 2.0d
-			image: "entropy:textures/mek/mek_title.png"
-			rotation: 0.0d
-			width: 15.0d
-			x: -19.5d
-			y: -17.0d
-		}
-		{
-			height: 50.0d
-			image: "ftbquests:block/barrier_open"
-			rotation: 0.0d
-			width: 50.0d
-			x: -15.0d
-			y: -9.0d
-		}
-	]
+	images: [{
+		height: 100.0d
+		image: "mekanism_extras:block/models/multipart/opaque/cosmic_logistical_transporter"
+		rotation: 0.0d
+		width: 100.0d
+		x: -0.5d
+		y: -11.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["323D227A8C597AFE"]
 			description: [
-				"&fAge 6 finally begins. Your first objective is this machine. Without it, you're stuck."
+				"&fAge 6 marks the end of tinkering. Atomic engineering begins here."
 				" "
-				"&fThe &5Infuser&f will allow you to modify your ingots at an atomic level. I've toughened the recipe with &bEnderium&f and &6Signalum&f to make sure you've mastered Age 5 before coming here."
+				"&fThe &5Metallurgic Infuser&f allows you to alter the very structure of your ingots. Its recipe has been heavily modified: &bSignalum&f and &6Enderium&f prove you have mastered Age 5."
 				" "
-				"&cWarning:&f It draws a massive amount of RF. Check your cables before plugging it in."
+				"&cWarning:&f This machine is a power sink. Do not plug it into an unstable network."
 			]
 			id: "1B0E5CC52EB833ED"
 			rewards: [{
@@ -53,11 +32,11 @@
 				item: "mekanism:ingot_osmium"
 				type: "item"
 			}]
-			shape: "square"
+			shape: "hexagon"
 			size: 2.0d
-			subtitle: "&7\"Done playing around with basic alloys\""
+			subtitle: "&7\"Done playing with basic alloys\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "3989EDCFA5EDF822"
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
@@ -69,11 +48,9 @@
 		{
 			dependencies: ["1B0E5CC52EB833ED"]
 			description: [
-				"&fInject &4Redstone&f into &6Signalum&f using your Infuser to obtain your first circuits."
+				"&fRudimentary circuits are no longer enough. By forcing the infusion of &4Redstone&f into &6Signalum&f, you obtain a circuit capable of handling industrial calculations."
 				" "
-				"&fThis small component is the building block for almost every machine in Mekanism and Industrial Foregoing."
-				" "
-				"&eAdvice:&f Prepare a significant amount, as they also serve as the base for higher-tier circuits."
+				"&ePro tip:&f Automate this immediately. You will consume thousands of them."
 			]
 			id: "530A24267E6293D5"
 			rewards: [{
@@ -82,9 +59,9 @@
 				item: "minecraft:redstone_block"
 				type: "item"
 			}]
-			subtitle: "&7\"The central component of electronics\""
+			subtitle: "&7\"The lifeblood of modern electronics\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 12L
 				id: "4A6A2AC9ADDEB5A3"
 				item: "mekanism:basic_control_circuit"
@@ -97,11 +74,9 @@
 		{
 			dependencies: ["530A24267E6293D5"]
 			description: [
-				"&fPlastic is indispensable for what follows. The first step consists of extracting liquid &fLatex&f."
+				"&fSteel and iron are too rigid for micro-components. You need synthetic polymers."
 				" "
-				"&fPlace the &fFluid Extractor&f facing a log. It will slowly harvest the sap needed for rubber production."
-				" "
-				"&bTo Know:&f Acacia wood offers the best yield, but keep in mind that the log will eventually break after extraction."
+				"&fPlace the &fFluid Extractor&f facing a log. Acacia offers the best yield, but nature always eventually yields to industrial pressure."
 			]
 			id: "2791A3116E0A9590"
 			rewards: [{
@@ -110,25 +85,23 @@
 				item: "minecraft:acacia_log"
 				type: "item"
 			}]
-			subtitle: "&7\"Harvesting natural polymers\""
+			subtitle: "&7\"Bleeding nature for science\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "079CE4A900A33545"
 				item: "industrialforegoing:fluid_extractor"
 				type: "item"
 			}]
 			title: "&fIndustrial Sap"
-			x: 0.0d
+			x: -2.0d
 			y: -3.0d
 		}
 		{
-			dependencies: ["2791A3116E0A9590"]
+			dependencies: ["530A24267E6293D5"]
 			description: [
-				"&fThe &eEnrichment Chamber&f is a versatile tool for material processing."
+				"&fEnrichment is no longer an option; it's a vital necessity."
 				" "
-				"&fIt allows you to double your ores by turning them into dust, but it will mostly be used here to process industrial components like dry rubber."
-				" "
-				"&fThe recipe has been updated to include &bPrismalium&f, marking your technological progression."
+				"&fThe &eEnrichment Chamber&f doesn't just double your ores. It condenses soft materials (like rubber) and prepares the dust needed for your future alloys."
 			]
 			id: "690F21C5F1AC6397"
 			rewards: [{
@@ -137,25 +110,26 @@
 				item: "mekanism:dust_quartz"
 				type: "item"
 			}]
-			subtitle: "&7\"Optimizing matter\""
+			subtitle: "&7\"Density in its purest form\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "12F9AB6418F22ECA"
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
 			title: "&eMolecular Refinement"
-			x: 0.0d
-			y: -4.5d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["690F21C5F1AC6397"]
+			dependencies: [
+				"2791A3116E0A9590"
+				"690F21C5F1AC6397"
+			]
 			description: [
 				"&fTo obtain industrial-grade &fPlastic&f, simple smelting is no longer enough."
 				" "
-				"&fYou must now process your &7Tiny Dry Rubber&f in the &eEnrichment Chamber&f. This process yields dense rubber ready for machine frame fabrication."
-				" "
-				"&cReminder:&f You must combine 9 units of Tiny Rubber to obtain one Dry Rubber sheet."
+				"&fYou must process your &7Tiny Dry Rubber&f in the Mekanism &eEnrichment Chamber&f. This crossover process provides dense rubber ready for machining."
 			]
 			id: "48552183D62FD8E7"
 			rewards: [{
@@ -164,23 +138,23 @@
 				item: "industrialforegoing:tinydryrubber"
 				type: "item"
 			}]
-			subtitle: "&7\"Transitioning to synthetic polymers\""
+			subtitle: "&7\"Transitioning to polymers\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "4ADE7511B678E97D"
 				item: "industrialforegoing:dryrubber"
 				type: "item"
 			}]
-			title: "&dReal Plastic"
-			x: 0.0d
-			y: -6.0d
+			title: "&dHigh-Density Plastic"
+			x: -2.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["48552183D62FD8E7"]
+			dependencies: ["690F21C5F1AC6397"]
 			description: [
-				"&fSome advanced materials require the injection of pressurized gaseous Osmium to be finalized."
+				"&fSome advanced materials require the injection of pressurized gaseous Osmium."
 				" "
-				"&fThe &bOsmium Compressor&f is essential to access the second tier of Mekanism alloys and to unlock early digital storage technologies."
+				"&fThe &bOsmium Compressor&f is essential to access Tier 2 Mekanism alloys."
 			]
 			id: "2C9058DB5B6799BA"
 			rewards: [{
@@ -189,25 +163,23 @@
 				table_id: 5871764666515020368L
 				type: "choice"
 			}]
-			subtitle: "&7\"High-density alloys\""
+			subtitle: "&7\"Alloys under pressure\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "20128757BF72A1E5"
 				item: "mekanism:osmium_compressor"
 				type: "item"
 			}]
 			title: "&bOsmium Compression"
-			x: 0.0d
-			y: -7.5d
+			x: 2.0d
+			y: -4.5d
 		}
 		{
-			dependencies: ["2C9058DB5B6799BA"]
+			dependencies: ["48552183D62FD8E7"]
 			description: [
-				"&fThe &7Pity Machine Frame&f is the starting point for all your complex machines."
+				"&fThe &7Pity Machine Frame&f is the starting point for your complex machines."
 				" "
-				"&fBy combining your freshly enriched &fPlastic&f with &6Invar&f alloys, you obtain a structure capable of supporting advanced electronic components."
-				" "
-				"&fThis frame will serve as the base for your first steps into digital storage."
+				"&fBy combining your brand-new &fPlastic&f with &6Invar&f alloys, you get a structure capable of withstanding intense vibrations."
 			]
 			id: "5BADD0A3338E9F8B"
 			rewards: [{
@@ -216,24 +188,43 @@
 				item: "industrialforegoing:dryrubber"
 				type: "item"
 			}]
-			subtitle: "&7\"A solid base for industry\""
+			subtitle: "&7\"A solid foundation for industry\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "4DC174A1D6FA129D"
 				item: "industrialforegoing:machine_frame_pity"
 				type: "item"
 			}]
 			title: "&7The Pity Frame"
-			x: 0.0d
-			y: -8.5d
+			x: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5BADD0A3338E9F8B"]
-			description: [
-				"&fTo move to the next level, you must combine your &7Pity Frames&f with Mekanism's &aInfused Alloy&f."
-				" "
-				"&fAdding &bPrismalium&f helps stabilize internal components for more efficient gathering machines."
+			description: ["&fThe &6Precision Sawmill&f isn't just a wood gadget. It maximizes yield, but will mostly be useful for cutting certain technological components with laser precision."]
+			id: "27899A7E7D9E400E"
+			rewards: [{
+				count: 8
+				id: "23B3186AB7A89F8B"
+				item: "alltheores:steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "6D74162C7944C117"
+				item: "mekanism:precision_sawmill"
+				type: "item"
+			}]
+			title: "&6Precision Cutting"
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"5BADD0A3338E9F8B"
+				"2C9058DB5B6799BA"
 			]
+			description: ["&fThe technological branches are converging. To reach the next level, you must combine your &7Pity Frames&f with Mekanism's &aInfused Alloy&f."]
 			id: "1487AFC19C5CF684"
 			rewards: [{
 				count: 4
@@ -241,23 +232,25 @@
 				item: "mekanism:alloy_infused"
 				type: "item"
 			}]
-			subtitle: "&7\"Combining infusion and prism\""
+			shape: "rsquare"
+			size: 1.2d
+			subtitle: "&7\"The alliance of plastics and metallurgy\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "495AA4BDF78B0456"
 				item: "industrialforegoing:machine_frame_simple"
 				type: "item"
 			}]
 			title: "&eMechanical Evolution"
 			x: 0.0d
-			y: -9.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["1487AFC19C5CF684"]
 			description: [
-				"&fThis frame is required for high-tech machines. It uses &6Reinforced Alloy&f (obtained via the Osmium Compressor) and the precious &dMelodium&f."
+				"&fThis frame uses the &6Reinforced Alloy&f and the precious &dMelodium&f."
 				" "
-				"&fWith this frame, you can begin automating Ether extraction and complex chemical processing."
+				"&fIt is the gateway to heavy chemical automation and Ether extraction."
 			]
 			id: "35FF6E9B36EE25B0"
 			rewards: [{
@@ -268,21 +261,21 @@
 			}]
 			subtitle: "&7\"The resonance of Melodium\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "080689111F305437"
 				item: "industrialforegoing:machine_frame_advanced"
 				type: "item"
 			}]
-			title: "&6The Reinforced Structure"
+			title: "&6Reinforced Structure"
 			x: 0.0d
-			y: -10.5d
+			y: -9.0d
 		}
 		{
 			dependencies: ["35FF6E9B36EE25B0"]
 			description: [
-				"&fHere is the ultimate Industrial Foregoing frame. It requires total mastery of the atom with &cAtomic Alloy&f and the stellar power of &6Stellarium&f."
+				"&fThe ultimate Industrial Foregoing frame. It demands total mastery of the atom with &cAtomic Alloy&f and the stellar power of &6Stellarium&f."
 				" "
-				"&fThis is the indispensable base for Laser Drills and machines capable of bending reality."
+				"&fThis is the essential foundation for machines capable of bending reality."
 			]
 			id: "67780A5DBCFC950F"
 			rewards: [{
@@ -293,21 +286,21 @@
 			}]
 			subtitle: "&7\"The brilliance of Stellarium\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "6602291B532AF1D4"
 				item: "industrialforegoing:machine_frame_supreme"
 				type: "item"
 			}]
-			title: "&cThe Industrial Peak"
+			title: "&cThe Industrial Pinnacle"
 			x: 0.0d
-			y: -11.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["67780A5DBCFC950F"]
 			description: [
-				"&fThe &dDissolution Chamber&f is the next step for Industrial Foregoing. It allows mixing fluids with items to create advanced components."
+				"&fThe &dDissolution Chamber&f is the bottleneck of this Age. It allows mixing fluids with items to create the ultimate digital and chemical components."
 				" "
-				"&fThis is where you will manufacture your future tiers of Machine Frames and your first Ether components."
+				"&fThis is where the tree branches out again: Storage or Energy?"
 			]
 			id: "484D33F95BCD2619"
 			rewards: [{
@@ -316,9 +309,11 @@
 				item: "industrialforegoing:dryrubber"
 				type: "item"
 			}]
-			subtitle: "&7\"Complex molecular blends\""
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "&7\"The primordial soup of data\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "32E9383C757F0699"
 				item: "industrialforegoing:dissolution_chamber"
 				type: "item"
@@ -329,11 +324,7 @@
 		}
 		{
 			dependencies: ["484D33F95BCD2619"]
-			description: [
-				"&fTo go further with Mekanism, you are going to need &bBrine&f and &eLithium&f."
-				" "
-				"&fBuild a thermal evaporation tower. The taller it is, the more efficient it becomes. It will be the pillar of your chemical production for Tier 2 and 3 alloys."
-			]
+			description: ["&fBuild a thermal evaporation tower. The taller it is, the more efficient it becomes. It will be the pillar of your chemical production (&bBrine&f and &eLithium&f)."]
 			id: "03D3FE9A23F93194"
 			rewards: [{
 				count: 16
@@ -343,131 +334,21 @@
 			}]
 			subtitle: "&7\"Extracting brine from the sun\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "360AD5FF02F135B7"
 				item: "mekanism:thermal_evaporation_controller"
 				type: "item"
 			}]
 			title: "&eSolar Evaporation"
-			x: 0.0d
-			y: -14.0d
+			x: 2.0d
+			y: -12.5d
 		}
 		{
-			dependencies: ["03D3FE9A23F93194"]
+			dependencies: ["484D33F95BCD2619"]
 			description: [
-				"&fWhether you chose &bRefined Storage&f or &dApplied Energistics 2&f, it's time to manufacture your first storage components."
+				"&fThe &bElectrolytic Separator&f is your first step into gas manipulation. Separate water into &lHydrogen&r and &lOxygen&r."
 				" "
-				"&fUse &fPlastic&f and your &aCircuits&f to stabilize the storage matrix. This is just the beginning; capacities will climb very quickly!"
-			]
-			id: "0BF72E3F47A48087"
-			rewards: [{
-				count: 4
-				id: "3412341D321D1766"
-				item: "mekanism:basic_control_circuit"
-				type: "item"
-			}]
-			subtitle: "&7\"Your first bytes of storage\""
-			tasks: [
-				{
-					consume_items: false
-					id: "276AC89F4BD15D92"
-					item: "ae2:cell_component_1k"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "56D307EF84F8478A"
-					item: "refinedstorage:1k_storage_part"
-					type: "item"
-				}
-			]
-			x: 0.0d
-			y: -15.5d
-		}
-		{
-			dependencies: ["0BF72E3F47A48087"]
-			description: [
-				"&fThe &bInscriber&f is indispensable for AE2. This is where you will press your logic, calculation, and engineering processors."
-				" "
-				"&fThe recipe now requires a &eSimple Machine Frame&f to withstand the pressure needed for engraving Fluix crystals."
-			]
-			id: "0C0F04FFE178B53B"
-			rewards: [{
-				id: "23B1211ACF2D6DFD"
-				item: "ae2:silicon_press"
-				type: "item"
-			}]
-			subtitle: "&7\"Pressing silicon\""
-			tasks: [{
-				consume_items: false
-				id: "7804CED0ADB0F900"
-				item: "ae2:inscriber"
-				type: "item"
-			}]
-			title: "&bData Engraving"
-			x: -1.5d
-			y: -15.0d
-		}
-		{
-			dependencies: ["0BF72E3F47A48087"]
-			description: [
-				"&fFor Refined Storage, forget the crafting table. You must use the &dDissolution Chamber&f and liquid &fLatex&f to bind your processors."
-				" "
-				"&fIt's more complex, but it guarantees far more stable components for your storage network."
-			]
-			id: "37D48A6A81B8DC6C"
-			rewards: [{
-				count: 8
-				id: "25114BFACAF9B7EC"
-				item: "refinedstorage:processor_binding"
-				type: "item"
-			}]
-			subtitle: "&7\"The path of Dissolution\""
-			tasks: [{
-				consume_items: false
-				id: "353D02DDE7E1B5C5"
-				item: "refinedstorage:basic_processor"
-				type: "item"
-			}]
-			title: "&3Processor Chemistry"
-			x: -1.5d
-			y: -16.0d
-		}
-		{
-			dependencies: [
-				"37D48A6A81B8DC6C"
-				"0C0F04FFE178B53B"
-			]
-			description: [
-				"&fThe &6Precision Sawmill&f isn't just a gadget. It allows you to maximize your wood yield, but it will be mostly useful for cutting certain technological components later."
-				" "
-				"&fIt relies on IF frame technology for perfect stability."
-			]
-			id: "27899A7E7D9E400E"
-			rewards: [{
-				count: 8
-				id: "23B3186AB7A89F8B"
-				item: "alltheores:steel_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: false
-				id: "6D74162C7944C117"
-				item: "mekanism:precision_sawmill"
-				type: "item"
-			}]
-			title: "&6Precision Cutting"
-			x: -3.0d
-			y: -15.5d
-		}
-		{
-			dependencies: ["27899A7E7D9E400E"]
-			description: [
-				"&fThe &bElectrolytic Separator&f is your first step into gas manipulation. By injecting water, you will separate molecules to obtain two essential gases."
-				" "
-				"&lHydrogen&r will serve as fuel or a reactant, while &lOxygen&r will be the key to increasing your ore yield."
-				" "
-				"&eTip:&f Remember to manage gas excess (Dump Idle) if one of the two tanks is full, otherwise the machine will stop."
+				"&eTip:&f Manage your excess gas well (Dump Idle) or the machine will stop."
 			]
 			id: "7EFD2B7C0C33622F"
 			rewards: [{
@@ -478,24 +359,18 @@
 			}]
 			subtitle: "&7\"Breaking molecules\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "3D444D62EA4A1CBB"
 				item: "mekanism:electrolytic_separator"
 				type: "item"
 			}]
 			title: "&bElectrolytic Separation"
-			x: -4.0d
-			y: -15.5d
+			x: 4.0d
+			y: -12.5d
 		}
 		{
 			dependencies: ["7EFD2B7C0C33622F"]
-			description: [
-				"&fBy sending the &lOxygen&r produced by your separator into the &2Purification Chamber&f, you move to Tier 3 ore processing."
-				" "
-				"&fThis process transforms your raw ores into &aClumps&f, allowing you to obtain more ingots than with simple enrichment."
-				" "
-				"&cNote:&f This tier requires an &6Advanced Machine Frame&f because the oxygen pressure needed is much higher than in a classic enrichment chamber."
-			]
+			description: ["&fSend the &lOxygen&r into the &2Purification Chamber&f to reach Tier 3 ore processing (Clumps)."]
 			id: "2470497FEEE6DBE4"
 			rewards: [{
 				id: "1A4B72446DC675B6"
@@ -504,362 +379,21 @@
 			}]
 			subtitle: "&7\"Oxygen as a catalyst\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "4DEE6DF27FE3FF15"
 				item: "mekanism:purification_chamber"
 				type: "item"
 			}]
 			title: "&2The Path of Purification (x3)"
-			x: -5.0d
-			y: -15.5d
+			x: 4.0d
+			y: -14.0d
 		}
 		{
-			dependencies: ["2470497FEEE6DBE4"]
+			dependencies: ["7EFD2B7C0C33622F"]
 			description: [
-				"&fThe &eEnergy Tablet&f is the base component for all advanced Mekanism machines and tools."
+				"&fBurn some Mystical Agriculture biomass. Use the &2PRC&f to combine Bio Fuel, Water, and Hydrogen."
 				" "
-				"&fThanks to &eLithium&f extracted from your towers, you can finally manufacture dense storage cells capable of powering your future Laser Drills and digital network."
-			]
-			id: "4736084EC8EEC933"
-			rewards: [{
-				count: 4
-				id: "53261663411C328A"
-				item: "mekanism:dust_lithium"
-				type: "item"
-			}]
-			subtitle: "&7\"Condensing the power of Lithium\""
-			tasks: [{
-				consume_items: false
-				id: "4D51AE4A037FD562"
-				item: "mekanism:energy_tablet"
-				type: "item"
-			}]
-			title: "&eMobile Energy Storage"
-			x: -6.0d
-			y: -15.5d
-		}
-		{
-			dependencies: ["4736084EC8EEC933"]
-			description: [
-				"&fFor AE2, passing through the &dDissolution Chamber&f is now mandatory to assemble your processors."
-				" "
-				"&fLiquid &eLithium&f acts here as a thermal stabilizer, allowing you to solder circuit boards without enduring data loss."
-			]
-			id: "76D7E1B54C44B4B5"
-			rewards: [{
-				count: 8
-				id: "02AF58ED6FE37C79"
-				item: "ae2:printed_silicon"
-				type: "item"
-			}]
-			subtitle: "&7\"High-temperature calculations\""
-			tasks: [{
-				consume_items: false
-				id: "4892C5434A9382FC"
-				item: "ae2:calculation_processor"
-				type: "item"
-			}]
-			x: -7.0d
-			y: -15.5d
-		}
-		{
-			dependencies: ["76D7E1B54C44B4B5"]
-			description: [
-				"&fIf you chose Applied Energistics, prepare to manipulate increasingly dense components."
-				" "
-				"&fTo assemble &b16k&f and &b64k&f components, the crafting table has become too imprecise. You must immerse your processors in the &dDissolution Chamber&f."
-				" "
-				"&bBrine&f is used to stabilize Fluix for the 16k tier, while &eLithium&f is indispensable to reach 64k without matrix collapse."
-			]
-			id: "4A3343ECAB2F0D12"
-			rewards: [{
-				count: 8
-				id: "3FDDB7C91D1C9DAA"
-				item: "ae2:fluix_smart_cable"
-				type: "item"
-			}]
-			subtitle: "&7\"The art of spatial compression\""
-			tasks: [
-				{
-					consume_items: false
-					id: "17E7C3FF6A636BDC"
-					item: "ae2:cell_component_64k"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "5EA350298108739B"
-					item: "ae2:cell_component_16k"
-					type: "item"
-				}
-			]
-			title: "&dThe Energistics Matrix"
-			x: -8.0d
-			y: -17.5d
-		}
-		{
-			dependencies: ["76D7E1B54C44B4B5"]
-			description: [
-				"&fRefined Storage focuses on simplicity, but high capacity still demands seriousness."
-				" "
-				"&fThe &dDissolution Chamber&f is used here to \"solder\" Redstone circuits under high pressure. Using &bBrine&f allows creating perfect connections for your 16k Storage Parts."
-				" "
-				"&fFor the 64k tier, the injection of liquid &eLithium&f aligns electrons and ensures your millions of items don't end up as a system error."
-			]
-			id: "6FDE5B25480A8F93"
-			rewards: [{
-				count: 16
-				id: "306FCC2FE080B059"
-				item: "refinedstorage:quartz_enriched_iron"
-				type: "item"
-			}]
-			subtitle: "&7\"Optimizing data flows\""
-			tasks: [
-				{
-					consume_items: false
-					id: "02538854533CBF76"
-					item: "refinedstorage:64k_storage_part"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "1E3A8894412C78FF"
-					item: "refinedstorage:16k_storage_part"
-					type: "item"
-				}
-			]
-			title: "&bRefined Architecture"
-			x: -8.0d
-			y: -13.5d
-		}
-		{
-			dependencies: ["6FDE5B25480A8F93"]
-			description: [
-				"&fRefined Storage bets on direct efficiency. The &bCrafter&f is the unique block you need to teach recipes to your network."
-				" "
-				"&fPlace it against a Mekanism machine to automate circuits, or leave it alone for classic table crafts."
-				" "
-				"&cWarning:&f Its fabrication requires a robust &8Steel Casing&f to handle the infernal cadences you're about to impose on it."
-			]
-			id: "42FEBA52A772EDE4"
-			rewards: [{
-				count: 16
-				id: "50178B2B413EA2AC"
-				item: "refinedstorage:pattern"
-				type: "item"
-			}]
-			subtitle: "&7\"Delegating manual labor\""
-			tasks: [{
-				consume_items: false
-				id: "0F9847E85FD50EBF"
-				item: "refinedstorage:crafter"
-				type: "item"
-			}]
-			title: "&bIndustrial Automation"
-			x: -10.0d
-			y: -13.5d
-		}
-		{
-			dependencies: ["4A3343ECAB2F0D12"]
-			description: [
-				"&fThe Pattern Provider isn't enough: AE2 needs computing power to plan complex crafts. &eCrafting Units&f are the building blocks of your future crafting processors."
-				" "
-				"&fThe more crafting storage you stack (1k, 4k Co-processors), the more tasks your system can handle simultaneously."
-			]
-			id: "4927ED706C9C9068"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4A9A2C490C833E81"
-				table_id: 5871764666515020368L
-				type: "random"
-			}]
-			subtitle: "&7\"Setting up a crafting CPU\""
-			tasks: [{
-				consume_items: false
-				id: "130F8BD067DDCA01"
-				item: "ae2:crafting_unit"
-				type: "item"
-			}]
-			title: "&eThe Calculation Brain (AE2)"
-			x: -9.0d
-			y: -17.5d
-		}
-		{
-			dependencies: ["4927ED706C9C9068"]
-			description: [
-				"&fApplied Energistics doesn't just store, it forges. To automate your crafts, you will need two key components:"
-				" "
-				"* &bThe Pattern Provider:&f The brain. It holds your recipes (Patterns) and distributes resources."
-				"* &bThe Molecular Assembler:&f The arms. This is where items are assembled instantly."
-				" "
-				"&6Note:&f Don't forget to build a &eCrafting Unit&f to give your system some RAM!"
-			]
-			id: "08C919E3A48AE1B5"
-			rewards: [{
-				count: 16
-				id: "1BD37F04D700FB51"
-				item: "ae2:blank_pattern"
-				type: "item"
-			}]
-			subtitle: "&7\"Assembly by thought\""
-			tasks: [
-				{
-					consume_items: false
-					id: "5B091B1E89DBE483"
-					item: "ae2:pattern_provider"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "422A537EFC15175E"
-					item: "ae2:molecular_assembler"
-					type: "item"
-				}
-			]
-			title: "&dMolecular Logistics"
-			x: -10.0d
-			y: -17.5d
-		}
-		{
-			dependencies: ["08C919E3A48AE1B5"]
-			description: [
-				"&fAre your Molecular Assemblers and Inscribers too slow? It's time to juice them up."
-				" "
-				"&f&dAcceleration Cards&f allow processing operations much faster. By combining them with a universal &9Interface&f (which handles items and fluids), your AE2 network becomes the heart of your factory."
-				" "
-				"&6Tip:&f The Interface can also be used to maintain a constant stock of resources in a machine."
-			]
-			id: "5284C8B75E0955C5"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "53D1E3771EE834B3"
-				table_id: 8684226449189553635L
-				type: "random"
-			}]
-			subtitle: "&7\"Reducing latency to a minimum\""
-			tasks: [
-				{
-					consume_items: false
-					id: "662078CF6B9D03D3"
-					item: "ae2:speed_card"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "1DC93CD338B41874"
-					item: "ae2:interface"
-					type: "item"
-				}
-			]
-			title: "&dMatrix Acceleration"
-			x: -11.0d
-			y: -16.0d
-		}
-		{
-			dependencies: ["42FEBA52A772EDE4"]
-			description: [
-				"&fFor Refined Storage to keep up with Mekanism's pace, you must move into high gear."
-				" "
-				"&fThe &bFluid Interface&f allows you to export and import your Mekanism gases and liquids as if they were simple dirt blocks. Couple this with &eSpeed Upgrades&f in your Crafters, and you'll never see the progress bar move again."
-			]
-			id: "08A8357924E9E01D"
-			rewards: [{
-				count: 16
-				id: "02054DC48C28A596"
-				item: "refinedstorage:quartz_enriched_iron"
-				type: "item"
-			}]
-			subtitle: "&7\"Optimizing transfers\""
-			tasks: [
-				{
-					consume_items: false
-					id: "53AB762746CA6010"
-					item: "refinedstorage:speed_upgrade"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "3A79DE067BFA9758"
-					item: "refinedstorage:fluid_interface"
-					type: "item"
-				}
-			]
-			title: "&bLiquid Data Flow"
-			x: -11.0d
-			y: -15.0d
-		}
-		{
-			dependencies: [
-				"5284C8B75E0955C5"
-				"08A8357924E9E01D"
-			]
-			description: [
-				"&fAutocrafting is installed, but it will quickly hit a wall: the Metallurgic Infuser."
-				" "
-				"&fThis machine cannot change gases on its own. If you send Diamond while it contains Redstone, everything stops. The solution? &lDedicate one machine per infusion type.&r"
-				" "
-				"&fUse the &6Logistical Sorter&f to direct the right items to the right infusers. This is the secret of a factory that never sleeps."
-			]
-			id: "01109A7DB4009978"
-			rewards: [{
-				count: 16
-				id: "7584F70D98A724A5"
-				item: "mekanism:basic_logistical_transporter"
-				type: "item"
-			}]
-			subtitle: "&7\"Dedicate to conquer\""
-			tasks: [
-				{
-					consume_items: false
-					id: "5ECB10585DB77A3E"
-					item: "mekanism:logistical_sorter"
-					type: "item"
-				}
-				{
-					consume_items: false
-					count: 4L
-					id: "046723A14526A0E3"
-					item: { Count: 4, id: "mekanism:metallurgic_infuser" }
-					type: "item"
-				}
-			]
-			title: "&6The Assembly Line"
-			x: -12.5d
-			y: -15.5d
-		}
-		{
-			dependencies: ["01109A7DB4009978"]
-			description: [
-				"&fFor your assembly line to function, each machine must know what to do with its finished items."
-				" "
-				"&fThe &eConfigurator&f is the indispensable tool. Shift-click on a pipe to change its mode, or use it on a machine to define inputs (blue) and outputs (red)."
-				" "
-				"&6The Perfect Setting:&f Set your infusers to &lAuto-Eject: ON&r. Your circuits will return directly to your terminal as soon as they are ready."
-			]
-			id: "379F6E1A55677D94"
-			rewards: [{
-				count: 4
-				id: "71CA41FBE0F4CF4B"
-				item: "mekanism:alloy_infused"
-				type: "item"
-			}]
-			subtitle: "&7\"Mastering the flow\""
-			tasks: [{
-				consume_items: false
-				id: "0D980F7CF2049401"
-				item: "mekanism:configurator"
-				type: "item"
-			}]
-			title: "&eThe Conductor"
-			x: -13.5d
-			y: -15.5d
-		}
-		{
-			dependencies: ["379F6E1A55677D94"]
-			description: [
-				"&fThanks to your &aMystical Agriculture&f seeds, you have access to infinite biomass. But burning it as-is is inefficient."
-				" "
-				"&fUse the &2PRC&f to combine Bio Fuel, Water, and Hydrogen. You will obtain &6Substrate&f (useful for upgrades) and especially &dEthylene&f, an extremely flammable gas."
+				"&fYou will obtain &6Substrate&f and &dEthylene&f, an extremely flammable gas."
 			]
 			id: "7B30DCBC9AC53DB5"
 			rewards: [{
@@ -869,31 +403,19 @@
 				type: "item"
 			}]
 			subtitle: "&7\"Turning plants into Watts\""
-			tasks: [
-				{
-					consume_items: false
-					id: "779E7181415F4DCD"
-					item: "mekanism:pressurized_reaction_chamber"
-					type: "item"
-				}
-				{
-					consume_items: false
-					id: "4B6C948C97A95DC7"
-					item: "mekanism:electrolytic_separator"
-					type: "item"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				id: "779E7181415F4DCD"
+				item: "mekanism:pressurized_reaction_chamber"
+				type: "item"
+			}]
 			title: "&2Green Fuel"
-			x: -14.5d
-			y: -15.5d
+			x: 5.5d
+			y: -12.5d
 		}
 		{
 			dependencies: ["7B30DCBC9AC53DB5"]
-			description: [
-				"&fThe &eGas-Burning Generator&f is one of the most profitable machines in the mod. Inject Ethylene into it and it will produce massive amounts of energy."
-				" "
-				"&fCouple several of them to power your assembly line and storage systems without ever looking at your battery."
-			]
+			description: ["&fThe &eGas-Burning Generator&f is incredibly powerful. Inject Ethylene into it to power your upcoming autocrafting network."]
 			id: "28E908A5A6680A5A"
 			rewards: [{
 				count: 8
@@ -903,21 +425,21 @@
 			}]
 			subtitle: "&7\"The end of energy problems\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "42D1488746ABBADB"
 				item: "mekanismgenerators:gas_burning_generator"
 				type: "item"
 			}]
 			title: "&eLiquid Fire"
-			x: -15.5d
-			y: -15.5d
+			x: 5.5d
+			y: -14.0d
 		}
 		{
 			dependencies: ["28E908A5A6680A5A"]
 			description: [
-				"&fTired of waiting in front of your machines? It's time to manufacture &lSpeed Upgrades&r in mass."
+				"&fTired of waiting? Mass-produce &lSpeed Upgrades&r."
 				" "
-				"&fEach machine can receive 8. Careful, this also multiplies energy consumption by 10! I hope your Ethylene production is solid."
+				"&fWarning, this multiplies consumption by 10. Make sure your Ethylene production can keep up!"
 			]
 			id: "5FD7A9B176C4DAC6"
 			rewards: [{
@@ -928,25 +450,462 @@
 			}]
 			subtitle: "&7\"10x faster\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 8L
 				id: "543615CB26CB3F0A"
 				item: "mekanism:upgrade_speed"
 				type: "item"
 			}]
 			title: "&bThe Race for Speed"
-			x: -16.5d
+			x: 5.5d
 			y: -15.5d
 		}
 		{
-			dependencies: ["5FD7A9B176C4DAC6"]
-			description: [
-				"&fWhy bother with a diamond pickaxe when you can have a mining laser?"
-				" "
-				"&fThe &dMeka-Tool&f is modular. Via a Modification Station, you can add 3x3 mining, Silk Touch mode, or even a teleportation function."
-				" "
-				"&6Note:&f It requires energy to function; charge it in an energy cube."
+			dependencies: [
+				"03D3FE9A23F93194"
+				"5FD7A9B176C4DAC6"
 			]
+			description: [
+				"&fThe &eEnergy Tablet&f is required for all advanced Mekanism machines."
+				" "
+				"&fUsing the &eLithium&f extracted from your towers, craft these dense storage cells."
+			]
+			id: "4736084EC8EEC933"
+			rewards: [{
+				count: 4
+				id: "53261663411C328A"
+				item: "mekanism:dust_lithium"
+				type: "item"
+			}]
+			subtitle: "&7\"Condensing the power of Lithium\""
+			tasks: [{
+				consume_items: true
+				id: "4D51AE4A037FD562"
+				item: "mekanism:energy_tablet"
+				type: "item"
+			}]
+			title: "&eMobile Energy Storage"
+			x: 2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["484D33F95BCD2619"]
+			description: ["&fIt's time to craft your first digital storage components. Use &fPlastic&f and your &aCircuits&f to stabilize the matrix via the Dissolution Chamber."]
+			id: "0BF72E3F47A48087"
+			rewards: [{
+				count: 4
+				id: "3412341D321D1766"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			subtitle: "&7\"Your first bytes of storage\""
+			tasks: [
+				{
+					consume_items: true
+					id: "276AC89F4BD15D92"
+					item: "ae2:cell_component_1k"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "56D307EF84F8478A"
+					item: "refinedstorage:1k_storage_part"
+					type: "item"
+				}
+			]
+			title: "&bDigital Architect"
+			x: -2.0d
+			y: -12.5d
+		}
+		{
+			dependencies: ["0BF72E3F47A48087"]
+			description: ["&fThe &bInscriber&f is indispensable for AE2."]
+			id: "0C0F04FFE178B53B"
+			rewards: [{
+				id: "23B1211ACF2D6DFD"
+				item: "ae2:silicon_press"
+				type: "item"
+			}]
+			subtitle: "&7\"Pressing silicon\""
+			tasks: [{
+				consume_items: true
+				id: "7804CED0ADB0F900"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			title: "&bData Engraving"
+			x: -3.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0BF72E3F47A48087"]
+			description: ["&fFor Refined Storage, forget the crafting table. You must use the &dDissolution Chamber&f and liquid &fLatex&f to bind your processors."]
+			id: "37D48A6A81B8DC6C"
+			rewards: [{
+				count: 8
+				id: "25114BFACAF9B7EC"
+				item: "refinedstorage:processor_binding"
+				type: "item"
+			}]
+			subtitle: "&7\"The path of Dissolution\""
+			tasks: [{
+				consume_items: true
+				id: "353D02DDE7E1B5C5"
+				item: "refinedstorage:basic_processor"
+				type: "item"
+			}]
+			title: "&3Processor Chemistry"
+			x: -3.5d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"0C0F04FFE178B53B"
+				"37D48A6A81B8DC6C"
+				"03D3FE9A23F93194"
+			]
+			description: ["&f&cCROSS-DEPENDENCY:&f For AE2, assembling high-tier processors requires &eLithium&f or &bBrine&f from your Mekanism towers as a thermal stabilizer."]
+			id: "76D7E1B54C44B4B5"
+			rewards: [{
+				count: 8
+				id: "02AF58ED6FE37C79"
+				item: "ae2:printed_silicon"
+				type: "item"
+			}]
+			subtitle: "&7\"High-temperature calculations\""
+			tasks: [{
+				consume_items: true
+				id: "4892C5434A9382FC"
+				item: "ae2:calculation_processor"
+				type: "item"
+			}]
+			title: "&eAdvanced Circuits"
+			x: -2.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["76D7E1B54C44B4B5"]
+			description: ["&fImmerse your processors in the &dDissolution Chamber&f. &bBrine&f stabilizes Fluix for the 16k, while &eLithium&f is vital to reach 64k."]
+			id: "4A3343ECAB2F0D12"
+			rewards: [{
+				count: 8
+				id: "3FDDB7C91D1C9DAA"
+				item: "ae2:fluix_smart_cable"
+				type: "item"
+			}]
+			subtitle: "&7\"The art of spatial compression\""
+			tasks: [
+				{
+					consume_items: true
+					id: "17E7C3FF6A636BDC"
+					item: "ae2:cell_component_64k"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "5EA350298108739B"
+					item: "ae2:cell_component_16k"
+					type: "item"
+				}
+			]
+			title: "&dEnergistics Matrix"
+			x: -3.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["76D7E1B54C44B4B5"]
+			description: ["&fThe same principle applies to Refined Storage. Wire your circuits under high pressure."]
+			id: "6FDE5B25480A8F93"
+			rewards: [{
+				count: 16
+				id: "306FCC2FE080B059"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			subtitle: "&7\"Optimizing data flows\""
+			tasks: [
+				{
+					consume_items: true
+					id: "02538854533CBF76"
+					item: "refinedstorage:64k_storage_part"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1E3A8894412C78FF"
+					item: "refinedstorage:16k_storage_part"
+					type: "item"
+				}
+			]
+			title: "&bRefined Architecture"
+			x: -3.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["4A3343ECAB2F0D12"]
+			description: ["&fAE2 doesn't just store, it forges. Automate your crafting with &bPattern Providers&f and &bMolecular Assemblers&f."]
+			id: "08C919E3A48AE1B5"
+			rewards: [{
+				count: 16
+				id: "1BD37F04D700FB51"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
+			subtitle: "&7\"Assembly by thought\""
+			tasks: [
+				{
+					consume_items: true
+					id: "5B091B1E89DBE483"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "422A537EFC15175E"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+			]
+			title: "&dMolecular Logistics"
+			x: -5.0d
+			y: -14.5d
+		}
+		{
+			dependencies: ["6FDE5B25480A8F93"]
+			description: ["&fThe RS &bCrafter&f teaches recipes to your network. Its &8Steel&f casing allows it to withstand hellish workloads."]
+			id: "42FEBA52A772EDE4"
+			rewards: [{
+				count: 16
+				id: "50178B2B413EA2AC"
+				item: "refinedstorage:pattern"
+				type: "item"
+			}]
+			subtitle: "&7\"Delegating manual labor\""
+			tasks: [{
+				consume_items: true
+				id: "0F9847E85FD50EBF"
+				item: "refinedstorage:crafter"
+				type: "item"
+			}]
+			title: "&bIndustrial Automation"
+			x: -5.0d
+			y: -15.5d
+		}
+		{
+			dependencies: ["08C919E3A48AE1B5"]
+			description: ["&fAE2 needs computing power to plan complex crafting operations."]
+			id: "4927ED706C9C9068"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A9A2C490C833E81"
+				table_id: 5871764666515020368L
+				type: "random"
+			}]
+			subtitle: "&7\"Building a crafting CPU\""
+			tasks: [{
+				consume_items: true
+				id: "130F8BD067DDCA01"
+				item: "ae2:crafting_unit"
+				type: "item"
+			}]
+			title: "&eThe Calculation Brain (AE2)"
+			x: -6.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["08C919E3A48AE1B5"]
+			description: ["&fBoost your assemblers with &dAcceleration Cards&f and the universal &9Interface&f."]
+			id: "5284C8B75E0955C5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "53D1E3771EE834B3"
+				table_id: 8684226449189553635L
+				type: "random"
+			}]
+			subtitle: "&7\"Reducing latency to a minimum\""
+			tasks: [
+				{
+					consume_items: true
+					id: "662078CF6B9D03D3"
+					item: "ae2:speed_card"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1DC93CD338B41874"
+					item: "ae2:interface"
+					type: "item"
+				}
+			]
+			title: "&dMatrix Acceleration"
+			x: -5.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["42FEBA52A772EDE4"]
+			description: ["&fStreamline Refined Storage. The &bFluid Interface&f exports gases and liquids like dirt blocks, and &eSpeed Upgrades&f make waiting a thing of the past."]
+			id: "08A8357924E9E01D"
+			rewards: [{
+				count: 16
+				id: "02054DC48C28A596"
+				item: "refinedstorage:quartz_enriched_iron"
+				type: "item"
+			}]
+			subtitle: "&7\"Optimizing transfers\""
+			tasks: [
+				{
+					consume_items: true
+					id: "53AB762746CA6010"
+					item: "refinedstorage:speed_upgrade"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3A79DE067BFA9758"
+					item: "refinedstorage:fluid_interface"
+					type: "item"
+				}
+			]
+			title: "&bLiquid Data Flow"
+			x: -6.5d
+			y: -17.0d
+		}
+		{
+			dependencies: ["4A3343ECAB2F0D12"]
+			description: ["&fCreating a singularity requires colossal pressure. By condensing 64 materials via the Dissolution Chamber."]
+			id: "349B29A223AC563B"
+			rewards: [{
+				count: 64
+				id: "10514A14F5691C42"
+				item: "ae2:matter_ball"
+				type: "item"
+			}]
+			subtitle: "&7\"64 condensed into 1\""
+			tasks: [{
+				consume_items: true
+				id: "2E9FA4C32C96ACAC"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			title: "&3Infinite Compression"
+			x: -3.5d
+			y: -17.0d
+		}
+		{
+			dependencies: ["349B29A223AC563B"]
+			description: ["&fThe &bQuantum Network Bridge&f allows you to link two AE2 networks, regardless of distance."]
+			id: "6A32C06A9223994F"
+			rewards: [{
+				count: 4
+				id: "270FDAAE40FF4A4B"
+				item: "ae2:singularity"
+				type: "item"
+			}]
+			subtitle: "&7\"Distance is but an illusion\""
+			tasks: [
+				{
+					consume_items: true
+					id: "10C2848FB31A3678"
+					item: "ae2:quantum_link"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "1D7FAC867EBC9E6D"
+					item: { Count: 8, id: "ae2:quantum_ring" }
+					type: "item"
+				}
+			]
+			title: "&bQuantum Entanglement"
+			x: -2.0d
+			y: -17.0d
+		}
+		{
+			dependencies: [
+				"5284C8B75E0955C5"
+				"08A8357924E9E01D"
+			]
+			description: [
+				"&fAutocrafting gets stuck on the Metallurgic Infuser (which doesn't purge its gases). Solution: &lDedicate one machine per infusion type.&r"
+				" "
+				"&fThe &6Logistical Sorter&f directs the right items to the right place."
+			]
+			id: "01109A7DB4009978"
+			rewards: [{
+				count: 16
+				id: "7584F70D98A724A5"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "&7\"Dedicate to conquer\""
+			tasks: [
+				{
+					consume_items: true
+					id: "5ECB10585DB77A3E"
+					item: "mekanism:logistical_sorter"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "046723A14526A0E3"
+					item: { Count: 4, id: "mekanism:metallurgic_infuser" }
+					type: "item"
+				}
+			]
+			title: "&6The Assembly Line"
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["01109A7DB4009978"]
+			description: ["&fThe &eConfigurator&f is the ultimate tool for pipe networks. Set your infusers to &lAuto-Eject: ON&r."]
+			id: "379F6E1A55677D94"
+			rewards: [{
+				count: 4
+				id: "71CA41FBE0F4CF4B"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			subtitle: "&7\"Mastering the flow\""
+			tasks: [{
+				consume_items: true
+				id: "0D980F7CF2049401"
+				item: "mekanism:configurator"
+				type: "item"
+			}]
+			title: "&eThe Conductor"
+			x: 0.0d
+			y: -17.5d
+		}
+		{
+			dependencies: [
+				"379F6E1A55677D94"
+				"4736084EC8EEC933"
+			]
+			description: ["&fBy infusing &8Refined Obsidian&f into your reinforced alloys, you obtain &dAtomic Alloy&f, the quintessence of Mekanism."]
+			id: "08A7FD79C31A44A0"
+			rewards: [{
+				count: 5
+				id: "059C39FDA8893A29"
+				item: "mekanism:ingot_refined_obsidian"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "79E92B44290B67D6"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			title: "&dThe Metallic Quintessence"
+			x: 0.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["08A7FD79C31A44A0"]
+			description: ["&fThe &dMeka-Tool&f is modular. Via a Modification Station, add 3x3 mining, Silk Touch, or teleportation."]
 			id: "5477269C45C54386"
 			rewards: [
 				{
@@ -960,10 +919,10 @@
 					type: "item"
 				}
 			]
-			subtitle: "&7\"The end-of-the-world tool\""
+			subtitle: "&7\"The doomsday tool\""
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "6693D9B603738127"
 					item: "mekanism:meka_tool"
 					type: "item"
@@ -975,40 +934,12 @@
 				}
 			]
 			title: "&dThe King of Mining"
-			x: -17.5d
-			y: -15.5d
-		}
-		{
-			dependencies: ["5477269C45C54386"]
-			description: [
-				"&fBy infusing &8Refined Obsidian&f into your reinforced alloys, you obtain &dAtomic Alloy&f."
-				" "
-				"&fThis is the most advanced component in Mekanism. It is necessary for all end-of-age machines and for your personal high-tier equipment."
-			]
-			id: "08A7FD79C31A44A0"
-			rewards: [{
-				count: 5
-				id: "059C39FDA8893A29"
-				item: "mekanism:ingot_refined_obsidian"
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: false
-				id: "79E92B44290B67D6"
-				item: "mekanism:alloy_atomic"
-				type: "item"
-			}]
-			title: "&dThe Metallic Quintessence"
-			x: -18.5d
-			y: -15.5d
+			x: 2.0d
+			y: -19.0d
 		}
 		{
 			dependencies: ["08A7FD79C31A44A0"]
-			description: [
-				"&fAtomic alloy was only the beginning. To reach the technological peaks of this Age, you must compress matter to &6Subatomic&f levels."
-				" "
-				"&fThese alloys require astronomical quantities of reactants. Your Infuser assembly line will have to run at full speed to supply these components."
-			]
+			description: ["&fAtomic alloy was only the beginning. Compress matter to a &6Subatomic&f level."]
 			id: "4659BFEE222BB330"
 			rewards: [{
 				count: 8
@@ -1019,29 +950,25 @@
 			subtitle: "&7\"Rewriting the laws of matter\""
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "43483D7F0AFBF8CF"
 					item: "evolvedmekanism:alloy_subatomic"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "5C3786CCCE1EBED4"
 					item: "evolvedmekanism:alloy_hypercharged"
 					type: "item"
 				}
 			]
 			title: "&dParticle Physics"
-			x: -19.5d
-			y: -15.5d
+			x: 0.0d
+			y: -20.5d
 		}
 		{
 			dependencies: ["4659BFEE222BB330"]
-			description: [
-				"&fElite circuits are no longer enough to manage your future teleportation systems or your MekaSuite. &bQuantum Control Circuits&f use the resonance of subatomic alloys to process billions of data points per second."
-				" "
-				"&fThey are the heart of everything related to Space-Time in this Age."
-			]
+			description: ["&fThe &bQuantum Control Circuits&f use the resonance of subatomic alloys to process billions of data points. The heart of Space-Time."]
 			id: "71D4EA9675422430"
 			rewards: [
 				{
@@ -1059,91 +986,24 @@
 			subtitle: "&7\"Real-time calculations\""
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "74B3D9E4936FAB47"
 					item: "evolvedmekanism:quantum_control_circuit"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "4D52CD98868C557A"
 					item: "evolvedmekanism:ingot_plaslitherite"
 					type: "item"
 				}
 			]
-			x: -20.5d
-			y: -15.5d
-		}
-		{
-			dependencies: ["349B29A223AC563B"]
-			description: [
-				"&fIs your factory starting to take up too much space? Or perhaps you want to mine in other dimensions while staying connected to your stock?"
-				" "
-				"&fThe &bQuantum Network Bridge&f allows linking two AE2 networks, regardless of distance. To build it, you'll need 1 &3Link Chamber&f surrounded by 8 &8Quantum Rings&f."
-				" "
-				"&6The Secret:&f To link the two bridges, explode a &fSingularity&f with Ender dust to obtain paired &dQuantum Entangled Singularities&f."
-			]
-			id: "6A32C06A9223994F"
-			rewards: [{
-				count: 4
-				id: "270FDAAE40FF4A4B"
-				item: "ae2:singularity"
-				type: "item"
-			}]
-			subtitle: "&7\"Distance is but an illusion\""
-			tasks: [
-				{
-					consume_items: false
-					id: "10C2848FB31A3678"
-					item: "ae2:quantum_link"
-					type: "item"
-				}
-				{
-					consume_items: false
-					count: 8L
-					id: "1D7FAC867EBC9E6D"
-					item: { Count: 8, id: "ae2:quantum_ring" }
-					type: "item"
-				}
-			]
-			title: "&bQuantum Entanglement"
-			x: -10.0d
-			y: -15.5d
-		}
-		{
-			dependencies: ["08C919E3A48AE1B5"]
-			description: [
-				"&fCreating a singularity requires colossal pressure. By using Ethylene as a propellant in your &5Dissolution Chamber&f, you can condense piles of matter into a tiny point."
-				" "
-				"&fThis is the ultimate step before teleporting items and energy across the multiverse."
-			]
-			id: "349B29A223AC563B"
-			rewards: [{
-				count: 64
-				id: "10514A14F5691C42"
-				item: "ae2:matter_ball"
-				type: "item"
-			}]
-			subtitle: "&7\"64 condensed into 1\""
-			tasks: [{
-				consume_items: false
-				id: "2E9FA4C32C96ACAC"
-				item: "ae2:singularity"
-				type: "item"
-			}]
-			title: "&3Infinite Compression"
-			x: -8.5d
-			y: -15.5d
+			x: 0.0d
+			y: -22.0d
 		}
 		{
 			dependencies: ["71D4EA9675422430"]
-			description: [
-				"&fAre your 1M disks starting to fill up? It's time to move to the next scale."
-				" "
-				"&f&dSingular Alloy&f allows stabilizing data at an unseen density. By combining your AE2 disks with &bQuantum Circuits&f, you can create 4M, 16M, and even 64M byte cells."
-				" "
-				"&6Note:&f Automating Singular Alloy is now &cMANDATORY&f to avoid drowning under chests."
-			]
+			description: ["&fThe &dSingular Alloy&f allows for absurd storage densities: 4M, 16M, and 64M bytes for your digital network."]
 			id: "090E81CBAA7A546B"
 			rewards: [{
 				count: 2
@@ -1151,27 +1011,20 @@
 				item: "evolvedmekanism:alloy_singular"
 				type: "item"
 			}]
-			subtitle: "&7\"Store entire planets\""
+			subtitle: "&7\"Storing entire planets\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "2546CE4620E7CCDB"
 				item: "megacells:cell_component_4m"
 				type: "item"
 			}]
 			title: "&dMultiverse Memory"
-			x: -21.5d
-			y: -15.5d
+			x: -2.0d
+			y: -22.0d
 		}
 		{
-			dependencies: ["090E81CBAA7A546B"]
-			description: [
-				"&fThe &eDense Control Circuit&f is the ultimate component for your end-of-age machines. It uses &6Plaslitherite&f as insulation to prevent your processors from melting under the heat of quantum calculations."
-				" "
-				"&fIt will be required for:"
-				"* Supermassive &bQIO Drives&f."
-				"* &dMekaSuite&f modules."
-				"* Future Antimatter injectors."
-			]
+			dependencies: ["71D4EA9675422430"]
+			description: ["&fThe &eDense Control Circuit&f keeps your quantum processors from melting. Required for the QIO network and Antimatter."]
 			id: "13F61A34151466EA"
 			rewards: [{
 				count: 4
@@ -1181,22 +1034,18 @@
 			}]
 			subtitle: "&7\"Infinite computing power\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "2A2D21071C525CF2"
 				item: "evolvedmekanism:dense_control_circuit"
 				type: "item"
 			}]
 			title: "&eDense Intelligence"
-			x: -22.5d
-			y: -15.5d
+			x: 0.0d
+			y: -23.5d
 		}
 		{
-			dependencies: ["04B12D95C063B2DA"]
-			description: [
-				"&fIf AE2 is the king of autocrafting, Mekanism's &3QIO&f system is the king of pure storage. A single &6Supermassive QIO Drive&f can hold more items than 1,000 chests."
-				" "
-				"&fUse your &5Dense Circuits&f to manufacture these disks and never worry about space again."
-			]
+			dependencies: ["13F61A34151466EA"]
+			description: ["&fMekanism &3QIO&f is the king of pure storage. A single Supermassive QIO Drive replaces 1000 chests."]
 			id: "284E6D4C6E51877A"
 			rewards: [
 				{
@@ -1217,18 +1066,18 @@
 			]
 			subtitle: "&7\"A God's inventory\""
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "37C30BEBFD785EFB"
 				item: "mekanism:qio_drive_supermassive"
 				type: "item"
 			}]
 			title: "&3QIO: The Storage King"
-			x: -24.5d
-			y: -15.5d
+			x: -2.0d
+			y: -23.5d
 		}
 		{
 			dependencies: ["13F61A34151466EA"]
-			description: ["Use your Hypercharged and Singular alloys to build this structure. Once finished, it will transform your Polonium into Antimatter at a 1:1 ratio!"]
+			description: ["&fUse your ultimate alloys to build this structure. It will transform your Polonium into Antimatter at a 1:1 ratio!"]
 			id: "04B12D95C063B2DA"
 			rewards: [{
 				id: "32F37659C717D339"
@@ -1237,27 +1086,27 @@
 			}]
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					count: 60L
 					id: "1D146EEB131EA3EB"
 					item: "mekanism:sps_casing"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 3L
 					id: "3531D29E99C1A49F"
 					item: { Count: 3, id: "mekanism:sps_port" }
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "5E8549DB13CBC9B7"
 					item: "mekanism:supercharged_coil"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					count: 123L
 					id: "6FE6D52B166041DB"
 					item: { Count: 123, id: "mekanism:structural_glass" }
@@ -1265,17 +1114,18 @@
 				}
 			]
 			title: "&bThe Antimatter Cradle"
-			x: -23.5d
-			y: -15.5d
+			x: 2.0d
+			y: -23.5d
 		}
 		{
-			dependencies: ["284E6D4C6E51877A"]
+			dependencies: [
+				"284E6D4C6E51877A"
+				"04B12D95C063B2DA"
+			]
 			description: [
-				"&fYou have tamed antimatter to forge the most advanced technological armor in existence. The &dMekaSuite&f offers you total invulnerability as long as it has energy."
+				"&fYou have tamed antimatter to forge the &dMekaSuite&f. Total invulnerability is yours."
 				" "
-				"&fThis is the peak of Age 6. However, keep in mind that this is only the beginning. The draconic energies awaiting you in Age 7 will make these components look like toys."
-				" "
-				"&6Prerequisites:&f You will need your entire machine park to maintain charge and manufacture modification modules."
+				"&fBut remember: the draconic energies of Age 7 will make these components look like toys."
 			]
 			id: "084020D016D5D81C"
 			rewards: [{
@@ -1297,48 +1147,44 @@
 			subtitle: "&7\"Cutting-edge science before the Dragon's awakening\""
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "1B91A95DDBE88D3E"
 					item: "mekanism:mekasuit_helmet"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "1233A01A7BF03180"
 					item: "mekanism:mekasuit_bodyarmor"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "3C409C8B616570B6"
 					item: "mekanism:mekasuit_pants"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "43F418AE3A2BD35F"
 					item: "mekanism:mekasuit_boots"
 					type: "item"
 				}
 			]
-			x: -26.0d
-			y: -15.5d
+			x: 0.0d
+			y: -25.0d
 		}
 		{
 			dependencies: ["084020D016D5D81C"]
 			description: [
-				"&fCongratulations! You have reached the pinnacle of Age 6 technology. But let's be honest: managing unstable reactors, waste barrels, and waiting for the sun for your activators is a thing of the past."
-				""
-				"&fThanks to the infusion of your &dExoversal Alloys&f and &bAntimatter Pellets&f, you can now bend nature to your will."
-				""
+				"&fCongratulations! You have reached the pinnacle of Age 6 technology."
+				" "
 				"&6&l⚠️ CULTIVATION PROTOCOL&r"
-				"&fThese technological seeds are too powerful for a classic greenhouse."
-				"&fThey will NOT work in the Garden Cloche."
-				"&fYou must use Thermal's &e&lPhytogenic Insolator&f."
-				""
-				"&f&lHow to automate:&r"
-				"&fThe machine consumes the seed to start the cycle, but it gives it back at &a100%&f at the end."
-				"&7(Tip: Use a loop pipe to automatically re-inject the seed into the input slot!)"
+				"&fThese technological seeds are too powerful for a classic greenhouse or Garden Cloche."
+				"&fYou MUST use Thermal's &e&lPhytogenic Insolator&f."
+				" "
+				"&f&lAutomation:&r"
+				"&fThe machine will return the seed at the end. Set up a pipe loop to re-inject it!"
 			]
 			id: "5DF9C8126C6AEE00"
 			rewards: [{
@@ -1351,27 +1197,27 @@
 			size: 2.0d
 			tasks: [
 				{
-					consume_items: false
+					consume_items: true
 					id: "739A45C1A113B9C4"
 					item: "entropy:antimatter_seeds"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "142C7D716245B49A"
 					item: "entropy:plutonium_seeds"
 					type: "item"
 				}
 				{
-					consume_items: false
+					consume_items: true
 					id: "2A2F69DE2D82DC5C"
 					item: "entropy:polonium_seeds"
 					type: "item"
 				}
 			]
 			title: "&6&lFINAL QUEST: &d&lNUCLEAR NATURE"
-			x: -29.0d
-			y: -15.5d
+			x: 0.0d
+			y: -27.0d
 		}
 	]
 	title: "&6Atomic Manipulation&f, &bDigital World"

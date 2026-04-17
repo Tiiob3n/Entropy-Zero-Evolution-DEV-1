@@ -1,5 +1,5 @@
 {
-	consume_items: false
+	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "bmouvement_fperptuel"
@@ -70,7 +70,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 16L
 				id: "05BB256E22011D84"
 				item: "create:belt_connector"
@@ -97,7 +97,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "2CD669022D59E26E"
 				item: "create:depot"
 				type: "item"
@@ -127,7 +127,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 4L
 				id: "681287802DD3A95C"
 				item: "create:andesite_casing"
@@ -148,7 +148,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "48C61E5A361A8A31"
 				item: "create:basin"
 				type: "item"
@@ -174,7 +174,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "136788E472E7382C"
 				item: "create:mechanical_mixer"
 				type: "item"
@@ -199,7 +199,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 12L
 				id: "19EC52512DD22560"
 				item: "create:brass_ingot"
@@ -229,7 +229,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "42F028C1DA5D0210"
 				item: {
 					Count: 1
@@ -253,7 +253,7 @@
 			]
 			id: "44C6A1342397EEE7"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 6L
 				id: "3CF7C5E48EA79B2A"
 				item: "create:electron_tube"
@@ -280,7 +280,7 @@
 				type: "random"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 3L
 				id: "79321C7A6BCE26E2"
 				item: "create:deployer"
@@ -316,7 +316,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "365D484ABF1F85F0"
 				item: "create:precision_mechanism"
 				type: "item"
@@ -341,7 +341,7 @@
 				type: "random"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "256FD4986B1B343E"
 				item: "create:fluid_tank"
 				type: "item"
@@ -374,7 +374,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 6L
 				icon: "create:steam_engine"
 				id: "33F960ADA5A34C77"
@@ -427,7 +427,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				icon: "minecraft:lava_bucket"
 				id: "711D662953283B64"
 				item: "minecraft:lava_bucket"
@@ -459,7 +459,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 2L
 				id: "0B4B5EFAFEDCF413"
 				item: "enderstorage:ender_tank"
@@ -493,7 +493,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 4L
 				id: "2373DC619366C429"
 				item: "create:empty_blaze_burner"
@@ -550,7 +550,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				count: 4L
 				id: "4E61E44E24E79395"
 				item: "create:fluid_tank"
@@ -594,7 +594,7 @@
 			shape: "rsquare"
 			size: 2.0d
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "00A019030C8E44D5"
 				item: "create:goggles"
 				type: "item"

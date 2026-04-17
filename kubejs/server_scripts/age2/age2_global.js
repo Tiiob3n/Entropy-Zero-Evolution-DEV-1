@@ -1,25 +1,6 @@
 ServerEvents.recipes(event => {
 
     // ========================================================================
-    // 1. OUTILS & DÉPART (Age 1 vers Age 2)
-    // ========================================================================
-    
-    // Suppression des outils en pierre classiques
-    event.remove({id: 'quark:tweaks/crafting/utility/tools/stone_axe'})
-    event.remove({id: 'quark:tweaks/crafting/utility/tools/stone_pickaxe'})
-    event.remove({output: 'minecraft:stone_axe'})
-    event.remove({output: 'minecraft:stone_pickaxe'})
-
-    // Définition des outils Tinkers en Flint pour les recettes
-    let flintPick = Item.of('tconstruct:pickaxe', '{tic_materials:["tconstruct:flint","tconstruct:flint","tconstruct:flint"]}').weakNBT()
-    let flintAxe = Item.of('tconstruct:hand_axe', '{tic_materials:["tconstruct:flint","tconstruct:flint","tconstruct:flint"]}').weakNBT()
-
-    // Nouvelles recettes d'outils (Nécessite Tinkers pour faire de la pierre)
-    event.shaped('minecraft:stone_axe', ['SS ', 'SP ', ' L '], { S: '#forge:stone', P: flintAxe, L: 'minecraft:stick' })
-    event.shaped('minecraft:stone_pickaxe', ['SSS', ' P ', ' L '], { S: '#forge:stone', P: flintPick, L: 'minecraft:stick' })
-
-
-    // ========================================================================
     // 2. FONDERIE & BRIQUES (Tinkers' Construct + IE)
     // ========================================================================
 

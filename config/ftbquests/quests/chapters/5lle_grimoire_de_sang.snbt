@@ -33,7 +33,7 @@
 			]
 			id: "09683944E58CF02F"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "338EAE61C8194114"
 				item: "mahoutsukai:dagger"
 				type: "item"
@@ -51,7 +51,7 @@
 			]
 			id: "7A0AB1FD22049E9E"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "405844A9F601DC8C"
 				item: "mahoutsukai:guidebook"
 				type: "item"
@@ -85,7 +85,7 @@
 			]
 			id: "5D70DA944BE8669A"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "092AB3550F8A5571"
 				item: {
 					Count: 1
@@ -107,7 +107,7 @@
 			description: ["&fThe &5Circuit &fis a block capable of storing the energy of all nearby mages. Essential for powering your magical machines."]
 			id: "348440100FDDF404"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "06BC1DFFD3ABE580"
 				item: "mahoutsukai:mana_circuit"
 				type: "item"

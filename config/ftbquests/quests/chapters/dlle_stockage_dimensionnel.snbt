@@ -18,7 +18,7 @@
 		{
 			id: "2553B13F5B65A687"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "39932604865EB73F"
 				item: "pocketstorage:psu_1"
 				type: "item"
@@ -31,7 +31,7 @@
 			dependencies: ["2553B13F5B65A687"]
 			id: "2AB3FFBF6C1D1894"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "7409173E60D20816"
 				item: "pocketstorage:psu_2"
 				type: "item"
@@ -44,7 +44,7 @@
 			dependencies: ["2AB3FFBF6C1D1894"]
 			id: "38E0E04CA33A9708"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "57578A3E256EEB0C"
 				item: "pocketstorage:psu_3"
 				type: "item"
@@ -58,7 +58,7 @@
 			icon: "pocketstorage:psu_4"
 			id: "5D45D262F4FB2BD4"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "508E9ED6B394381E"
 				item: "pocketstorage:psu_4"
 				type: "item"
@@ -70,7 +70,7 @@
 		{
 			id: "519EE3276ADC31E7"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "686967320989CD2A"
 				item: "dankstorage:dank_1"
 				type: "item"
@@ -83,7 +83,7 @@
 			dependencies: ["519EE3276ADC31E7"]
 			id: "2834330585E36DED"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "1F409D8B8B6ED6F2"
 				item: "dankstorage:dank_2"
 				type: "item"
@@ -96,7 +96,7 @@
 			dependencies: ["2834330585E36DED"]
 			id: "5BE22D55A3437991"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "4616864FB7C7E111"
 				item: "dankstorage:dank_3"
 				type: "item"
@@ -109,7 +109,7 @@
 			dependencies: ["2834330585E36DED"]
 			id: "5E9D9C0D6AAD3D1B"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "630AE2382081E9DC"
 				item: "dankstorage:dank_4"
 				type: "item"
@@ -122,7 +122,7 @@
 			dependencies: ["5E9D9C0D6AAD3D1B"]
 			id: "50F68866B8E9A25F"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "595AF5829025B2FD"
 				item: "dankstorage:dank_5"
 				type: "item"
@@ -135,7 +135,7 @@
 			dependencies: ["50F68866B8E9A25F"]
 			id: "4417E281D4A0E76E"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "7925598AD9432FCD"
 				item: "dankstorage:dank_6"
 				type: "item"
@@ -148,7 +148,7 @@
 			dependencies: ["4417E281D4A0E76E"]
 			id: "7E8AA59E527F9D53"
 			tasks: [{
-				consume_items: false
+				consume_items: true
 				id: "00BB170F36C2353F"
 				item: "dankstorage:dank_7"
 				type: "item"
