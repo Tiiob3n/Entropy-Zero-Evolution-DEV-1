@@ -65,20 +65,6 @@ ServerEvents.recipes(event => {
         S: 'thermal:signalum_ingot', G: 'minecraft:glass', F: 'industrialforegoing:machine_frame_simple'
     }).id('entropy:age6/rs_fluid_interface_expert')
 
-    event.remove({ output: 'refinedstorage:1k_storage_part' })
-    event.shaped('refinedstorage:1k_storage_part', ['SPS','PCP','SPS'], {
-        S: 'thermal:signalum_ingot', P: 'industrialforegoing:dry_rubber', C: 'mekanism:basic_control_circuit'
-    }).id('entropy:age6/rs_1k_part_expert')
-
-    event.remove({ output: 'refinedstorage:16k_storage_part' })
-    event.custom({
-        type: 'industrialforegoing:dissolution_chamber',
-        input: [{ item: 'refinedstorage:4k_storage_part' }, { item: 'refinedstorage:4k_storage_part' }, { item: 'refinedstorage:4k_storage_part' }, { item: 'thermal:signalum_ingot' }],
-        inputFluid: "{FluidName:\"mekanism:brine\",Amount:500}",
-        output: { item: 'refinedstorage:16k_storage_part', count: 1 },
-        processingTime: 300
-    }).id('entropy:age6/rs_16k_brine')
-
     // ========================================================================
     // --- 3. LOGISTIQUE : APPLIED ENERGISTICS 2 ---
     // ========================================================================
@@ -102,15 +88,6 @@ ServerEvents.recipes(event => {
     event.shaped('ae2:interface', ['EPE', 'PFP', 'EPE'], {
         E: 'thermal:enderium_ingot', P: 'ae2:calculation_processor', F: 'industrialforegoing:machine_frame_simple'
     }).id('entropy:age6/ae2_interface_expert')
-
-    event.remove({ output: 'ae2:cell_component_16k' })
-    event.custom({
-        type: 'industrialforegoing:dissolution_chamber',
-        input: [{ item: 'ae2:cell_component_4k' }, { item: 'ae2:cell_component_4k' }, { item: 'ae2:cell_component_4k' }, { item: 'ae2:calculation_processor' }, { item: 'thermal:signalum_ingot' }],
-        inputFluid: "{FluidName:\"mekanism:brine\",Amount:500}",
-        output: { item: 'ae2:cell_component_16k', count: 1 },
-        processingTime: 300
-    }).id('entropy:age6/ae2_16k_brine')
 
     event.remove({ output: 'ae2:singularity' })
     event.custom({

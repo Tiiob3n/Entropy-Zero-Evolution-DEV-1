@@ -8,8 +8,10 @@
 	hide_quest_until_deps_visible: true
 	icon: {
 		Count: 1
-		id: "gamingsog:gaming_sword_god"
-		tag: { }
+		id: "avaritia:infinity_sword"
+		tag: {
+			mode: { }
+		}
 	}
 	id: "077C19C03D2DBDB3"
 	images: [{
