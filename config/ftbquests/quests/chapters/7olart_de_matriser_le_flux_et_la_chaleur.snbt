@@ -37,12 +37,19 @@
 				"&fCombine them with a &bXychorium Gem&f to stabilize the &eMachine Frame&f. This block is the heart of all your future automations."
 			]
 			id: "0A06D46A16384B54"
-			rewards: [{
-				count: 8
-				id: "63DD978308DD0A4C"
-				item: "alltheores:nickel_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "63DD978308DD0A4C"
+					item: "alltheores:nickel_ingot"
+					type: "item"
+				}
+				{
+					id: "4626494B7FAE8365"
+					item: "thermal:machine_frame"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "&7\"Strong as steel, or almost.\""
@@ -66,14 +73,21 @@
 				"&7&oTip: Use a wrench to configure inputs and outputs!"
 			]
 			id: "44C7D911E985F936"
-			rewards: [{
-				id: "3F7F02551D8E034C"
-				item: "pipez:wrench"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3F7F02551D8E034C"
+					item: "pipez:wrench"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "58BC4DA5F0607D0A"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
-				count: 16L
 				id: "4AA681CFF2792B65"
 				item: "pipez:item_pipe"
 				type: "item"
@@ -92,12 +106,19 @@
 				"&fYou must sacrifice &eMachine Frames&f to create your seeds. Automate mechanical production first before moving to biological production."
 			]
 			id: "799F8D47971CF8ED"
-			rewards: [{
-				count: 4
-				id: "1DD13BB3C6FEF9D8"
-				item: "mysticalagriculture:tertium_essence"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "1DD13BB3C6FEF9D8"
+					item: "mysticalagriculture:tertium_essence"
+					type: "item"
+				}
+				{
+					id: "427409D0812C6D28"
+					item: "mysticalagriculture:invar_seeds"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "43473BE253ECAE1C"
@@ -118,12 +139,34 @@
 				"&fCreate your first &eFlux Plug&f (energy input) and &eFlux Point&f (energy output). Don't forget the &3Flux Controller&f to manage priorities and charge your inventory!"
 			]
 			id: "0C1B9AD68B7D9010"
-			rewards: [{
-				count: 8
-				id: "70E3C3F32289013C"
-				item: "fluxnetworks:flux_dust"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "70E3C3F32289013C"
+					item: "fluxnetworks:flux_dust"
+					type: "item"
+				}
+				{
+					id: "3E469CCC59F45415"
+					item: "fluxnetworks:flux_plug"
+					type: "item"
+				}
+				{
+					id: "63C4AA75285481EF"
+					item: "fluxnetworks:flux_point"
+					type: "item"
+				}
+				{
+					id: "6D0D98B7DC2B13B1"
+					item: "fluxnetworks:flux_core"
+					type: "item"
+				}
+				{
+					id: "2C370CB39A541D3E"
+					item: "fluxnetworks:flux_controller"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -168,12 +211,19 @@
 				"&fIt turns your ores into dust, often doubling your production, and allows you to obtain rare by-products like &7Nickel&f or &6Gold&f."
 			]
 			id: "3C6BC294D099B103"
-			rewards: [{
-				count: 2
-				id: "1A8D6DA7B578DF17"
-				item: "alltheores:invar_gear"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "1A8D6DA7B578DF17"
+					item: "alltheores:invar_gear"
+					type: "item"
+				}
+				{
+					id: "36A0FBF1C7C6E768"
+					item: "thermal:machine_pulverizer"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "7F741FAE67ACE784"
@@ -192,12 +242,19 @@
 				"&fThe &cInduction Smelter&f allows you to fuse metals to create alloys that are impossible to obtain otherwise. This is where you will create &6Signalum&f and &bEnderium&f required for Age 6."
 			]
 			id: "5BDE2C985A26B556"
-			rewards: [{
-				count: 64
-				id: "6B79086F31CD5C94"
-				item: "minecraft:sand"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 64
+					id: "6B79086F31CD5C94"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "5D816AADF02D24E8"
+					item: "thermal:machine_smelter"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "663070D6B80BE94A"
@@ -216,11 +273,18 @@
 				"&fThis is an essential machine for preparing Age 6 processors."
 			]
 			id: "3F4CE667ECB2B304"
-			rewards: [{
-				id: "3601DB50463BEE40"
-				item: "minecraft:bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3601DB50463BEE40"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+				{
+					id: "22DC30D12FDD8211"
+					item: "thermal:machine_bottler"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "1144DF8E02272807"
@@ -241,12 +305,24 @@
 				"&fEach tier requires a purer &bXychorium&f gem and more complex alloys."
 			]
 			id: "029C63777AB59494"
-			rewards: [{
-				count: 4
-				id: "7224BDE3D8490C15"
-				item: "alltheores:electrum_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7224BDE3D8490C15"
+					item: "alltheores:electrum_ingot"
+					type: "item"
+				}
+				{
+					id: "61FD467E2A7114E9"
+					item: "thermal:upgrade_augment_1"
+					type: "item"
+				}
+				{
+					id: "283C3EC06A6FB06E"
+					item: "thermal:upgrade_augment_2"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -275,11 +351,19 @@
 				"&fThis alloy is the foundation for your future energy storage systems and precision electronic components."
 			]
 			id: "66F1B5AB8A462CA5"
-			rewards: [{
-				id: "7AEBB9CF22ABCB29"
-				item: "thermal:signalum_gear"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7AEBB9CF22ABCB29"
+					item: "thermal:signalum_gear"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "15E799EADE8477A1"
+					item: "thermal:signalum_ingot"
+					type: "item"
+				}
+			]
 			subtitle: "&7\"The end of amateur tinkering.\""
 			tasks: [{
 				consume_items: true
@@ -368,6 +452,18 @@
 				"&fThis alloy allows you to create the &eEndergy Upgrade 1&f, exceeding standard speed limits."
 			]
 			id: "70D297B0F264539A"
+			rewards: [
+				{
+					id: "40C5D448DF678700"
+					item: "thermalendergy:prismalium_ingot"
+					type: "item"
+				}
+				{
+					id: "2179991F516DB662"
+					item: "thermalendergy:endergy_upgrade_1"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -394,6 +490,18 @@
 				"&fEssential for &eEndergy Upgrade 2&f."
 			]
 			id: "087662EBD74EC801"
+			rewards: [
+				{
+					id: "0B7178BBE674B0AC"
+					item: "thermalendergy:melodium_ingot"
+					type: "item"
+				}
+				{
+					id: "05E053DD8147F43D"
+					item: "thermalendergy:endergy_upgrade_2"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -420,6 +528,18 @@
 				"&fThe &eEndergy Upgrade 3&f represents absolute speed."
 			]
 			id: "23CDE754DFB13C91"
+			rewards: [
+				{
+					id: "76A429992518CBA6"
+					item: "thermalendergy:stellarium_ingot"
+					type: "item"
+				}
+				{
+					id: "690338A6CA8EE5D5"
+					item: "thermalendergy:endergy_upgrade_3"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true

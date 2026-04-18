@@ -29,12 +29,32 @@
 				"&f3. &eRight-click&f with the hammer on a &6Crafting Table&f placed on the ground to transform it."
 			]
 			id: "3C348580462EE4CA"
-			rewards: [{
-				count: 16
-				id: "32D70989E31F8F89"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "32D70989E31F8F89"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "6ECA20D38571BC62"
+					item: {
+						Count: 1
+						id: "tetra:modular_double"
+						tag: {
+							Damage: 0
+							"double/basic_hammer_left_material": "basic_hammer/oak"
+							"double/basic_hammer_right_material": "basic_hammer/oak"
+							"double/basic_handle_material": "basic_handle/stick"
+							"double/handle": "double/basic_handle"
+							"double/head_left": "double/basic_hammer_left"
+							"double/head_right": "double/basic_hammer_right"
+							id: "a35adfe5-7bbd-409b-a3fe-7e9d035a8f6c"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -75,11 +95,19 @@
 				"&fDescend below &eY=30&f. These gems will serve as stabilizers for your future XP machines."
 			]
 			id: "6434A2E4D707582D"
-			rewards: [{
-				id: "0C202C0FFD447808"
-				item: "xycraft_machines:collector"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0C202C0FFD447808"
+					item: "xycraft_machines:collector"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "33ABB291BF1629DE"
+					item: "xycraft_world:xychorium_gem_blue"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				count: 16L
@@ -99,12 +127,19 @@
 				"&fOnce placed, it will grind everything that passes before its blades to produce orbs and loot."
 			]
 			id: "38DA0D9207867CAD"
-			rewards: [{
-				icon: "mob_grinding_utils:absorption_hopper"
-				id: "325E08DDA4F6FF6D"
-				item: "mob_grinding_utils:fan"
-				type: "item"
-			}]
+			rewards: [
+				{
+					icon: "mob_grinding_utils:absorption_hopper"
+					id: "325E08DDA4F6FF6D"
+					item: "mob_grinding_utils:fan"
+					type: "item"
+				}
+				{
+					id: "5F039CCFEFDBABA1"
+					item: "mob_grinding_utils:saw"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "2DCA23A85FF2B3A6"
@@ -122,6 +157,11 @@
 				"Feed a chicken to obtain a golden egg capable of fertilizing grass into &aDelightful Dirt&f."
 			]
 			id: "5F72C1E72FDA916E"
+			rewards: [{
+				id: "21823083FE63E8A2"
+				item: "mob_grinding_utils:gm_chicken_feed"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				id: "100692D7C5A6B4BA"
@@ -140,6 +180,11 @@
 				"Warning: Monsters spawn here instantly in the dark!"
 			]
 			id: "375FC03A0D315416"
+			rewards: [{
+				id: "4D8A7462C7881DBB"
+				item: "mob_grinding_utils:gm_chicken_feed_cursed"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				id: "5010559106255F0E"
@@ -161,12 +206,19 @@
 				"&fThe &eAbsorption Hopper&f vacuums up all items and XP in an area around it. Configure it to send items to a chest and liquid XP to a tank."
 			]
 			id: "4389E8DF5B0A2D9D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "303F7A31D08F1389"
-				table_id: 5722004121165361493L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "303F7A31D08F1389"
+					table_id: 5722004121165361493L
+					type: "random"
+				}
+				{
+					id: "4E223D187A67D093"
+					item: "mob_grinding_utils:absorption_hopper"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "09C8BBEA51CA1F3D"
@@ -185,11 +237,18 @@
 				"&fThis is where you will keep your reserve of Knowledge for Age 5 crafting."
 			]
 			id: "4660FE349EA7B838"
-			rewards: [{
-				id: "71EA1B8C3E353175"
-				item: "mob_grinding_utils:xp_tap"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "71EA1B8C3E353175"
+					item: "mob_grinding_utils:xp_tap"
+					type: "item"
+				}
+				{
+					id: "4FEBC31F1E6B485F"
+					item: "mob_grinding_utils:tank"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "3EFE868793C81F60"
@@ -222,6 +281,11 @@
 				{
 					id: "6A3D966114308EA5"
 					item: "mob_grinding_utils:fan_upgrade_speed"
+					type: "item"
+				}
+				{
+					id: "2539D8CA2BC6C933"
+					item: "mob_grinding_utils:fan"
 					type: "item"
 				}
 			]

@@ -32,6 +32,11 @@
 				"&7Perform a &eRight-Click &7to wound yourself and create a &6Mahoujin &7(Magic Circle). This is the foundation of all your future rituals."
 			]
 			id: "09683944E58CF02F"
+			rewards: [{
+				id: "1915F152D396622E"
+				item: "mahoutsukai:dagger"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				id: "338EAE61C8194114"
@@ -50,6 +55,11 @@
 				"&bTip: &fBy &eRight-Clicking &fa circle on the ground with this book, you will identify the spell you are preparing."
 			]
 			id: "7A0AB1FD22049E9E"
+			rewards: [{
+				id: "1075C208F6E720BE"
+				item: "mahoutsukai:guidebook"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				id: "405844A9F601DC8C"
@@ -84,6 +94,19 @@
 				"&7Hold &6Shift + Right-Click &7with a diamond to transfer your personal reserve into it."
 			]
 			id: "5D70DA944BE8669A"
+			rewards: [{
+				id: "2A1CD9C2D1F6E7D2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_GEM_STORED_MANA: 0
+						}
+					}
+					id: "mahoutsukai:attuned_diamond"
+				}
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				id: "092AB3550F8A5571"
@@ -106,6 +129,11 @@
 			dependencies: ["5D70DA944BE8669A"]
 			description: ["&fThe &5Circuit &fis a block capable of storing the energy of all nearby mages. Essential for powering your magical machines."]
 			id: "348440100FDDF404"
+			rewards: [{
+				id: "5D73BDD5AB95202E"
+				item: "mahoutsukai:mana_circuit"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				id: "06BC1DFFD3ABE580"
@@ -120,7 +148,25 @@
 			dependencies: ["348440100FDDF404"]
 			description: ["&fThe legendary weapon of projection. Throw an enchanted sword into a lake after the &6Power Consolidation &fritual to obtain it."]
 			id: "7B83B141F17505B3"
+			rewards: [{
+				id: "11BFFB2B8B7A5AEE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_ATTACK_CAP: 10000.0d
+							MAHOUTSUKAI_ATTACK_DAMAGE: 3.0f
+						}
+					}
+					id: "mahoutsukai:caliburn"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
+				consume_items: true
 				id: "68FF888FF8987BBF"
 				item: {
 					Count: 1
@@ -149,7 +195,25 @@
 				"&cAbsolute Power: &fBy killing villagers (in exchange for mana), Morgan's damage increases &eWITHOUT LIMIT&f. It can reach thousands of attack points."
 			]
 			id: "794AECBB88F861CD"
+			rewards: [{
+				id: "2600C5839EDEDE38"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							MAHOUTSUKAI_ATTACK_CAP: 10000.0d
+							MAHOUTSUKAI_ATTACK_DAMAGE: 3.0f
+						}
+					}
+					id: "mahoutsukai:morgan"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
+				consume_items: true
 				id: "43E59A2D3E641EAF"
 				item: {
 					Count: 1

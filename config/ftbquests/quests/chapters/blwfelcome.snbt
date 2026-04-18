@@ -32,12 +32,23 @@
 				" "
 			]
 			id: "465F0FBCE0785C70"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7BBE14744363E1CD"
-				table_id: 8643277399109392176L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7BBE14744363E1CD"
+					table_id: 8643277399109392176L
+					type: "choice"
+				}
+				{
+					id: "3F8DD67CB8761802"
+					item: {
+						Count: 1
+						id: "naturescompass:naturescompass"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "&eChoose your specialization"
@@ -62,8 +73,8 @@
 			id: "0505D6A0280E26B1"
 			rewards: [{
 				count: 2
-				id: "530091A7B56EF3D6"
-				item: "farmersdelight:honey_glazed_ham_block"
+				id: "3F180A36EAE11707"
+				item: "croptopia:grilled_cheese"
 				type: "item"
 			}]
 			shape: "gear"

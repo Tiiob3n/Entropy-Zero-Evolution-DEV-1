@@ -79,12 +79,19 @@
 				"&fPlace it on a heat source (a furnace, campfire, or Create burner) to start your mixtures."
 			]
 			id: "7E591DCA7E41BEDF"
-			rewards: [{
-				count: 4
-				id: "34D710AD7C44E3F4"
-				item: "minecraft:bowl"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "34D710AD7C44E3F4"
+					item: "minecraft:bowl"
+					type: "item"
+				}
+				{
+					id: "5B1DA428B38AC125"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+			]
 			subtitle: "&7The Cooking Pot"
 			tasks: [{
 				consume_items: true
@@ -104,12 +111,19 @@
 				"&fThis nutrient-dense mix boosts the growth of your plants. Combine compost and dirt to obtain this ideal substrate."
 			]
 			id: "47AE2996AEBC14B5"
-			rewards: [{
-				count: 8
-				id: "15CE324A8965DBF9"
-				item: "minecraft:bone_meal"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "15CE324A8965DBF9"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					id: "6DDBC4816B0460EB"
+					item: "farmersdelight:rich_soil"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "58CE1214EB747CBE"
@@ -151,12 +165,19 @@
 				"&fGather your remains (straw, bones, spoiled food) to manufacture &aOrganic Compost&f. Let it sit in the sun or accelerate its decomposition to obtain the ultimate substrate."
 			]
 			id: "72BEF5D80B8E9171"
-			rewards: [{
-				count: 4
-				id: "6F3F0D685474D90F"
-				item: "farmersdelight:canvas"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "6F3F0D685474D90F"
+					item: "farmersdelight:canvas"
+					type: "item"
+				}
+				{
+					id: "7EF70AEE730E1F96"
+					item: "farmersdelight:organic_compost"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "181F87558A1C0FCC"
@@ -175,11 +196,18 @@
 				"&fThe &6Stove&f is the perfect tool. It serves as a permanent heat source for your pot and even allows you to grill up to 6 items simultaneously on its top plate."
 			]
 			id: "4722DEF006F19494"
-			rewards: [{
-				id: "4A59159D984173D9"
-				item: "farmersdelight:roast_chicken_block"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4A59159D984173D9"
+					item: "farmersdelight:roast_chicken_block"
+					type: "item"
+				}
+				{
+					id: "70C0B07A7300C356"
+					item: "farmersdelight:stove"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "78CE3F8C03DDF762"
@@ -216,6 +244,11 @@
 					item: "minecraft:yellow_dye"
 					type: "item"
 				}
+				{
+					id: "5006E1C4B37945A9"
+					item: "cookingforblockheads:fridge"
+					type: "item"
+				}
 			]
 			tasks: [{
 				consume_items: true
@@ -235,11 +268,18 @@
 				"&fIt scans all your adjacent fridges and chests to tell you instantly what you can cook. No more searching for your eggs for 10 minutes."
 			]
 			id: "15EBC6D49F47BEE6"
-			rewards: [{
-				id: "2B980AB9B3D77CDE"
-				item: "cookingforblockheads:heating_unit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2B980AB9B3D77CDE"
+					item: "cookingforblockheads:heating_unit"
+					type: "item"
+				}
+				{
+					id: "0E13E2AC8071BB76"
+					item: "cookingforblockheads:cooking_table"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "525C8CEA56F3665C"
@@ -283,12 +323,19 @@
 				"&7Note: Make sure you have a pump and pipes to connect your liquid source to the Spout."
 			]
 			id: "4A07915A7534DA72"
-			rewards: [{
-				count: 16
-				id: "0E828D4D3EDB9F41"
-				item: "minecraft:glass_bottle"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "0E828D4D3EDB9F41"
+					item: "minecraft:glass_bottle"
+					type: "item"
+				}
+				{
+					id: "6543FBA1D97838A7"
+					item: "create:spout"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "73F6166A79C9038E"
@@ -306,11 +353,18 @@
 				"&fUse the &5Mechanical Mixer&f over a basin heated by a &dBlaze Burner&f to automate the most complex Farmer's Delight recipes."
 			]
 			id: "1FFBE3DFB945EFD3"
-			rewards: [{
-				id: "5BEC22580C17B8F0"
-				item: "create:item_drain"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5BEC22580C17B8F0"
+					item: "create:item_drain"
+					type: "item"
+				}
+				{
+					id: "68A6A32A747CE272"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "0C74970336DA2AE2"
@@ -334,6 +388,18 @@
 				"&fThis is the price for constant quality."
 			]
 			id: "463B8C96B37D9196"
+			rewards: [
+				{
+					id: "329D7C6973B7D078"
+					item: "farmersdelight:melon_juice"
+					type: "item"
+				}
+				{
+					id: "3948004E5A2BFFE9"
+					item: "farmersdelight:milk_bottle"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -371,6 +437,11 @@
 					item: "croptopia:fruit_salad"
 					type: "item"
 				}
+				{
+					id: "2A75F1DF37FA89DA"
+					item: "croptopia:orange_juice"
+					type: "item"
+				}
 			]
 			tasks: [
 				{
@@ -396,12 +467,19 @@
 				"&fThis fatty liquid will be essential for your future frying recipes and high-tech components."
 			]
 			id: "18C3457A4ECA5CB4"
-			rewards: [{
-				count: 6
-				id: "0F24E1845B648195"
-				item: "create:fluid_pipe"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 6
+					id: "0F24E1845B648195"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "005E5FA3A6D91B3E"
+					item: "croptopia:olive_oil"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "48C3DB56A4B2064B"
 				item: "croptopia:olive_oil"
@@ -419,11 +497,24 @@
 				"&fRun these scraps through the Mixer to extract fish oils or use the fillets for automated sushi dishes."
 			]
 			id: "6637870B7B6E3E1C"
-			rewards: [{
-				id: "66D0FC7DE949AF4F"
-				item: "aquaculture:treasure_chest"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "66D0FC7DE949AF4F"
+					item: "aquaculture:treasure_chest"
+					type: "item"
+				}
+				{
+					id: "40381BA55D21C4E4"
+					item: {
+						Count: 1
+						id: "aquaculture:iron_fillet_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "67EA7682ED398803"
@@ -450,6 +541,18 @@
 				"&7Tip: Automate the delivery of empty bottles with a belt to never run dry!"
 			]
 			id: "5FEE27940D32EB55"
+			rewards: [
+				{
+					id: "1651EECD72F0F797"
+					item: "croptopia:apple_juice"
+					type: "item"
+				}
+				{
+					id: "67222560C3C0B989"
+					item: "croptopia:orange_juice"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -476,6 +579,12 @@
 				"&fUse your &eFillet Knife&f to get prime cuts, and don't forget: even a fish can end up as industrial oil through your heated Mixer."
 			]
 			id: "7A2C26DAF59ADACF"
+			rewards: [{
+				count: 8
+				id: "6B19C8E4547AEAB8"
+				item: "aquaculture:fish_fillet_raw"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				count: 8L
@@ -495,12 +604,20 @@
 				"&fCombine &eCroptopia Rice&f, &bAquaculture Fillets&f, and &2Dried Kelp&f in a 3x3 crafter grid to produce mass sushi."
 			]
 			id: "4F2BC24802658A05"
-			rewards: [{
-				count: 32
-				id: "37303444553029B4"
-				item: "minecraft:dried_kelp"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					id: "37303444553029B4"
+					item: "minecraft:dried_kelp"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "010D1E5D1518E53C"
+					item: "croptopia:sushi"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				count: 16L
@@ -520,12 +637,19 @@
 				"&fThe &eMechanical Crafter&f configured vertically simulates a perfect burger press. Bun, patty, lettuce... the math adds up."
 			]
 			id: "499022C1B4C07C11"
-			rewards: [{
-				count: 2
-				id: "714DBE089FC1D485"
-				item: "croptopia:french_fries"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "714DBE089FC1D485"
+					item: "croptopia:french_fries"
+					type: "item"
+				}
+				{
+					id: "093C310F01EB21FF"
+					item: "croptopia:hamburger"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "7AC3192A9F9551D3"
@@ -544,12 +668,19 @@
 				"&fCraft a &3Neptunium Toolbox&f to organize your baits and lines. Once your stocks are full, dump them into your belts."
 			]
 			id: "3B4E28CE46B72D41"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1093465497C0936E"
-				table_id: 8895710397881434876L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1093465497C0936E"
+					table_id: 8895710397881434876L
+					type: "random"
+				}
+				{
+					id: "7BDEEA851ED96895"
+					item: "aquaculture:neptunes_bounty"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "508378B73B123736"
@@ -568,12 +699,20 @@
 				"&fSend your Aquaculture catches on the belt: the Deployer will take care of automatically filleting them for you."
 			]
 			id: "1B8374BBD3E1F6FC"
-			rewards: [{
-				count: 5
-				id: "14E9A906A244E116"
-				item: "create:belt_connector"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "14E9A906A244E116"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "083E44D633DDE7B7"
+					item: "aquaculture:fish_fillet_raw"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				count: 32L
@@ -594,11 +733,25 @@
 				"&7- &eSugar:&7 Pulverize sugar cane for optimal yield."
 			]
 			id: "36A3A4B9F3539F56"
-			rewards: [{
-				id: "2067B73F6A733EC3"
-				item: "create:millstone"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2067B73F6A733EC3"
+					item: "create:millstone"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "30F35104705CCD00"
+					item: "croptopia:salt"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3C77DFA4C06A05AC"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -650,14 +803,21 @@
 				"&cChallenge:&f Successfully producing this dish marks the end of your dependence on manual labor. Your body is now ready for the radiation and heavy energies of Age 4."
 			]
 			id: "1E09F2E7F1D84260"
-			rewards: [{
-				advancement: "minecraft:story/root"
-				criterion: ""
-				icon: "megacells:bulk_cell_component"
-				id: "2A09C53E8832CAD6"
-				title: "&6[Access to Age 4 Unlocked]"
-				type: "advancement"
-			}]
+			rewards: [
+				{
+					advancement: "minecraft:story/root"
+					criterion: ""
+					icon: "megacells:bulk_cell_component"
+					id: "2A09C53E8832CAD6"
+					title: "&6[Access to Age 4 Unlocked]"
+					type: "advancement"
+				}
+				{
+					id: "32D7CDB795FFDD2A"
+					item: "croptopia:the_big_breakfast"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{

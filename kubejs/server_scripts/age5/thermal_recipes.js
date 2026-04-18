@@ -1,5 +1,28 @@
 ServerEvents.recipes(event => {
 
+    // ==========================================
+    // 🚫 SUPPRESSION AGRESSIVE DES CRAFTS MANUELS
+    // ==========================================
+    
+    // Signalum
+    event.remove({ output: 'thermal:signalum_ingot', type: 'minecraft:crafting_shapeless' })
+    event.remove({ output: 'thermal:signalum_ingot', type: 'minecraft:crafting_shaped' })
+    event.remove({ output: 'thermal:signalum_dust' })
+
+    // Enderium
+    event.remove({ output: 'thermal:enderium_ingot', type: 'minecraft:crafting_shapeless' })
+    event.remove({ output: 'thermal:enderium_ingot', type: 'minecraft:crafting_shaped' })
+    event.remove({ output: 'thermal:enderium_dust' })
+
+    // Lumium 
+    event.remove({ output: 'thermal:lumium_ingot', type: 'minecraft:crafting_shapeless' })
+    event.remove({ output: 'thermal:lumium_ingot', type: 'minecraft:crafting_shaped' })
+    event.remove({ output: 'thermal:lumium_dust' })
+
+    // ==========================================
+    // 🛠️ CRAFTS EXPERTS
+    // ==========================================
+
     // --- MACHINE FRAME ---
     event.remove({ output: 'thermal:machine_frame' })
     event.shaped('thermal:machine_frame', [
@@ -7,10 +30,10 @@ ServerEvents.recipes(event => {
         'SCS',
         'IXI'
     ], {
-        I: 'alltheores:invar_ingot',           
+        I: 'alltheores:invar_ingot',          
         X: 'xycraft_world:xychorium_gem_light', 
-        S: 'minecraft:quartz_block',           
-        C: 'create:brass_casing'               
+        S: 'minecraft:quartz_block',          
+        C: 'create:brass_casing'              
     }).id('entropy:age5/machine_frame_expert')
 
     // --- LOGISTIQUE PIPEZ ---
@@ -144,26 +167,22 @@ ServerEvents.recipes(event => {
     }).id('entropy:age5/upgrade_tier_3')
 
     // --- ALLIAGES DE BASE THERMAL (SMELTER ONLY) ---
-    event.remove({ output: 'thermal:signalum_dust' })
     event.custom({
         type: 'thermal:smelter',
         ingredients: [
             { item: 'minecraft:copper_ingot', count: 3 },
             { item: 'alltheores:silver_ingot', count: 1 },
-            { item: 'xycraft_world:xychorium_gem_red', count: 1 },
-            { item: 'minecraft:redstone_block', count: 1 }
+            { item: 'xycraft_world:xychorium_gem_red', count: 1 }
         ],
         result: [{ item: 'thermal:signalum_ingot', count: 4 }],
         energy: 15000
     }).id('entropy:age5/smelter_signalum_exclusive')
 
-    event.remove({ output: 'thermal:enderium_dust' })
     event.remove({ id: 'thermal:machines/smelter/smelter_alloy_enderium' })
     event.custom({
         type: 'thermal:smelter',
         ingredients: [
             { item: 'alltheores:lead_ingot', count: 3 },
-            { item: 'minecraft:diamond', count: 1 },
             { item: 'xycraft_world:xychorium_gem_dark', count: 1 },
             { item: 'minecraft:ender_pearl', count: 2 }
         ],
@@ -178,7 +197,7 @@ ServerEvents.recipes(event => {
         ingredients: [
             { item: 'thermal:enderium_ingot', count: 2 },
             { item: 'xycraft_world:xychorium_gem_light', count: 2 },
-            { item: 'minecraft:prismarine_shards', count: 4 }
+            { item: 'minecraft:prismarine_shard', count: 4 }
         ],
         result: [{ item: 'thermalendergy:prismalium_ingot', count: 2 }],
         energy: 30000

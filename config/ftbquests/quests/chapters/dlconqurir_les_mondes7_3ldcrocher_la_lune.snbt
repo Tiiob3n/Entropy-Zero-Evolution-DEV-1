@@ -68,12 +68,19 @@
 				"&7This is where you will design your first mining and combat spells."
 			]
 			id: "133B4004BCEE8D60"
-			rewards: [{
-				count: 2
-				id: "7A74802C123311F8"
-				item: "ars_nouveau:blank_parchment"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "7A74802C123311F8"
+					item: "ars_nouveau:blank_parchment"
+					type: "item"
+				}
+				{
+					id: "2CAA66FE6203C98B"
+					item: "ars_nouveau:novice_spell_book"
+					type: "item"
+				}
+			]
 			subtitle: "&7Writing your own destiny."
 			tasks: [{
 				consume_items: true
@@ -107,11 +114,18 @@
 			dependencies: ["2922C8C63578AE68"]
 			description: ["&fMana evaporates if it is not contained. Craft a &bSource Jar&f to store ambient energy."]
 			id: "1BA55521C5E98280"
-			rewards: [{
-				id: "15684C0F723DC374"
-				item: "ars_nouveau:arcane_pedestal"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "15684C0F723DC374"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+				{
+					id: "3D3607FD24188DDF"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+			]
 			subtitle: "&7Accumulating power."
 			tasks: [{
 				consume_items: true
@@ -127,11 +141,18 @@
 			dependencies: ["1BA55521C5E98280"]
 			description: ["&fThis link transforms plant growth into &3Source&f. Place it near your Mana Blooms to fill your Jars automatically."]
 			id: "59F088D5A41758BC"
-			rewards: [{
-				id: "3137C38F02EA154E"
-				item: "ars_nouveau:source_jar"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3137C38F02EA154E"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+				{
+					id: "5DFA0162EFB0621B"
+					item: "ars_nouveau:agronomic_sourcelink"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "4FCC267657EF40D0"
@@ -150,12 +171,19 @@
 				"&c⚠Tip: &7Place pedestals all around it."
 			]
 			id: "00CEF4AA0B0E9BE2"
-			rewards: [{
-				count: 2
-				id: "5AFB872C5A6DE644"
-				item: "ars_nouveau:arcane_pedestal"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "5AFB872C5A6DE644"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+				{
+					id: "67021FB322425F72"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "37FC490DBAD6FDC2"
@@ -266,12 +294,19 @@
 				"&6Loot: &fIts scales will be used to reinforce the rocket's heat shields."
 			]
 			id: "5E45A73FAD8D50BB"
-			rewards: [{
-				count: 8
-				id: "2C065486C4B146C1"
-				item: "twilightforest:naga_scale"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "2C065486C4B146C1"
+					item: "twilightforest:naga_scale"
+					type: "item"
+				}
+				{
+					id: "165CF970DC870EF3"
+					item: "twilightforest:naga_trophy"
+					type: "item"
+				}
+			]
 			subtitle: "&2The serpent of the ruins."
 			tasks: [{
 				consume_items: true
@@ -287,17 +322,24 @@
 			dependencies: ["5E45A73FAD8D50BB"]
 			description: ["&fClimb to the top of the tower. You must reflect her own projectiles back at the &4Lich&r to break her protection."]
 			id: "3103418BEC452671"
-			rewards: [{
-				id: "2CC96A6BB38A30A5"
-				item: {
-					Count: 1
-					id: "twilightforest:twilight_scepter"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "2CC96A6BB38A30A5"
+					item: {
+						Count: 1
+						id: "twilightforest:twilight_scepter"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6AF6F8D8FC2CA9CA"
+					item: "twilightforest:lich_trophy"
+					type: "item"
+				}
+			]
 			subtitle: "&7Break the shields."
 			tasks: [{
 				consume_items: true
@@ -334,11 +376,18 @@
 			dependencies: ["5463DC97C0E0E200"]
 			description: ["&fDescend into the &6mushroom caves.&r Find the &4beast&r and recover its &aaxe.&r"]
 			id: "5ADAACA78B1C78D0"
-			rewards: [{
-				id: "18DD04562E3F252F"
-				item: "twilightforest:meef_stroganoff"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "18DD04562E3F252F"
+					item: "twilightforest:meef_stroganoff"
+					type: "item"
+				}
+				{
+					id: "50F711CE9BC4B35D"
+					item: "twilightforest:minoshroom_trophy"
+					type: "item"
+				}
+			]
 			subtitle: "&cDeep in the darkness."
 			tasks: [{
 				consume_items: true
@@ -354,11 +403,18 @@
 			dependencies: ["5ADAACA78B1C78D0"]
 			description: ["&fThe test of brute force. Its blood is so powerful it can power &6nuclear&r or &9space&r &breactors.&r"]
 			id: "1D0E5BECA37A6550"
-			rewards: [{
-				id: "4C87FB266C11353F"
-				item: "twilightforest:fiery_blood"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4C87FB266C11353F"
+					item: "twilightforest:fiery_blood"
+					type: "item"
+				}
+				{
+					id: "2018C2ADE7B6680E"
+					item: "twilightforest:hydra_trophy"
+					type: "item"
+				}
+			]
 			subtitle: "&7The blood of titans."
 			tasks: [{
 				consume_items: true
@@ -459,13 +515,7 @@
 			id: "6B8CC04F18388ECB"
 			rewards: [{
 				id: "057480583F4BCF8B"
-				item: {
-					Count: 1
-					id: "ad_astra:hammer"
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
 			subtitle: "&7Your new desk."
@@ -521,11 +571,57 @@
 				}
 			}
 			id: "6B426FAA605CD106"
-			rewards: [{
-				id: "24C566380FE692FD"
-				item: "ad_astra:oxygen_distributor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "24C566380FE692FD"
+					item: "ad_astra:oxygen_distributor"
+					type: "item"
+				}
+				{
+					id: "0C33974060EAC9C5"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "31116EFA8B20A576"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4C1459D1DB0B180A"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6040E50DF5A8543B"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "&7Mage, but with oxygen."
 			tasks: [
 				{
@@ -605,11 +701,19 @@
 			dependencies: ["7226D3210E298B3C"]
 			description: ["&fPrepare a &l&43x3&r&r area to house your craft. Make sure you have a clear view of the sky."]
 			id: "0B6A78A26D06FD47"
-			rewards: [{
-				id: "5BC8F52E7DE761BB"
-				item: "ad_astra:cyan_flag"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5BC8F52E7DE761BB"
+					item: "ad_astra:cyan_flag"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "3B91E9D99AA37B41"
+					item: "ad_astra:launch_pad"
+					type: "item"
+				}
+			]
 			subtitle: "&7The last stop before the sky."
 			tasks: [{
 				consume_items: true
@@ -632,11 +736,22 @@
 				"&fThe Moon is waiting for your first steps."
 			]
 			id: "3A8CFA72D3C41262"
-			rewards: [{
-				id: "1B09A2306537ACC8"
-				type: "xp"
-				xp: 500
-			}]
+			rewards: [
+				{
+					id: "1B09A2306537ACC8"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "7AC12549DF7919F2"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_1_rocket"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			subtitle: "&dObjective: The Moon."
 			tasks: [{
 				consume_items: true
@@ -725,6 +840,15 @@
 					type: "xp"
 					xp: 500
 				}
+				{
+					id: "3A91507EFFB2D3C5"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_2_rocket"
+						tag: { }
+					}
+					type: "item"
+				}
 			]
 			subtitle: "&6The Red Frontier"
 			tasks: [{
@@ -763,6 +887,15 @@
 					id: "7168BADACCAE11F9"
 					type: "xp"
 					xp: 500
+				}
+				{
+					id: "1DBCCBD6E10397D0"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_3_rocket"
+						tag: { }
+					}
+					type: "item"
 				}
 			]
 			subtitle: "&dHellish Pressure"
@@ -808,6 +941,15 @@
 					item: {
 						Count: 1
 						id: "ad_astra:tier_1_rover"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "476EFB58B3DA3C95"
+					item: {
+						Count: 1
+						id: "ad_astra:tier_4_rocket"
 						tag: { }
 					}
 					type: "item"

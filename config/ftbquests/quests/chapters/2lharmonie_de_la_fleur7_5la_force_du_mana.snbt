@@ -130,6 +130,11 @@
 			dependencies: ["543AAA514038D0AA"]
 			description: ["&7The &dRunic Altar &7is necessary to infuse matter. Place the items, wait for mana absorption, then throw a &fLivingrock &7and use your wand."]
 			id: "219A0C69E1D6924F"
+			rewards: [{
+				id: "413A7437F3BEB140"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
 			subtitle: "&8The first magical processor"
 			tasks: [{
 				consume_items: true
@@ -218,6 +223,11 @@
 				"&cCrafting: &7Requires &9Resonarium Plates&7."
 			]
 			id: "477EC8B892A2B42A"
+			rewards: [{
+				id: "083E485ED3B60A58"
+				item: "botanicalmachinery:mechanical_daisy"
+				type: "item"
+			}]
 			subtitle: "&8Instant transformation"
 			tasks: [{
 				consume_items: true
@@ -233,6 +243,11 @@
 			dependencies: ["477EC8B892A2B42A"]
 			description: ["&7Automates the creation of functional flowers. Link it to your AE2 petal stock to never run out of generators."]
 			id: "0201F6A30228AE6A"
+			rewards: [{
+				id: "585C85CE55A24022"
+				item: "botanicalmachinery:mechanical_apothecary"
+				type: "item"
+			}]
 			subtitle: "&8Mass-produced flowers"
 			tasks: [{
 				consume_items: true
@@ -248,6 +263,11 @@
 			dependencies: ["0201F6A30228AE6A"]
 			description: ["&7This machine is the heart of your factory. It performs Runic Altar rituals without any manual intervention."]
 			id: "51E27ED1F39401DB"
+			rewards: [{
+				id: "6B0F2E411D91C38D"
+				item: "botanicalmachinery:mechanical_runic_altar"
+				type: "item"
+			}]
 			subtitle: "&8The Rune Factory"
 			tasks: [{
 				consume_items: true
@@ -263,6 +283,11 @@
 			dependencies: ["51E27ED1F39401DB"]
 			description: ["&7Allows for industrial-scale item infusion (Mana Diamond, Mana Pearl) without throwing them one by one into the water."]
 			id: "2CA14BB6C85EE0D3"
+			rewards: [{
+				id: "3702A26A6094D9F7"
+				item: "botanicalmachinery:mechanical_mana_pool"
+				type: "item"
+			}]
 			subtitle: "&8Mass Infusion"
 			tasks: [{
 				consume_items: true
@@ -299,12 +324,20 @@
 				"&6Cost: &7It takes &b1/2 pool &7to open. Once open, throw your iron in to obtain &bElementium&7."
 			]
 			id: "017332F5DC6311A8"
-			rewards: [{
-				count: 2
-				id: "1F71823A48751C57"
-				item: "botania:pixie_dust"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "1F71823A48751C57"
+					item: "botania:pixie_dust"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "06F45D5A34CBBC8D"
+					item: "botania:natura_pylon"
+					type: "item"
+				}
+			]
 			subtitle: "&8Powering the Rift"
 			tasks: [{
 				consume_items: true

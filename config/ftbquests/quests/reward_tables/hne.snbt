@@ -1,0 +1,74 @@
+{
+	id: "743745893734CB70"
+	loot_size: 1
+	order_index: 20
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "hostilenetworks:prediction"
+				tag: {
+					data_model: {
+						id: "hostilenetworks:twilightforest/goblin"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hostilenetworks:prediction"
+				tag: {
+					data_model: {
+						id: "hostilenetworks:twilightforest/giant"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hostilenetworks:prediction"
+				tag: {
+					data_model: {
+						id: "hostilenetworks:twilightforest/fire_beetle"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hostilenetworks:prediction"
+				tag: {
+					data_model: {
+						id: "hostilenetworks:twilightforest/deer"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hostilenetworks:prediction"
+				tag: {
+					data_model: {
+						id: "hostilenetworks:twilightforest/alpha_yeti"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "hostilenetworks:prediction"
+				tag: {
+					data_model: {
+						id: "hostilenetworks:twilightforest/troll"
+					}
+				}
+			}
+		}
+	]
+	title: "hne"
+}

@@ -82,7 +82,6 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 32L
 				id: "526BABA42240FD7A"
 				item: "tconstruct:grout"
 				type: "item"
@@ -99,23 +98,43 @@
 				"&bTip:&7 Place the &lHeater&r underneath to heat everything with coal!"
 			]
 			id: "3F45E06273E2C93F"
-			rewards: [{
-				id: "3F52984D362D0F99"
-				item: "minecraft:lava_bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3F52984D362D0F99"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "1361F5E00971C289"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "21D7F713A1A607C0"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+				{
+					id: "6AB4061F8305C93A"
+					item: "tconstruct:seared_fuel_gauge"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
+					consume_items: true
 					id: "4315E5F6A0BEC402"
 					item: "tconstruct:seared_melter"
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "599F6C0B560B6451"
 					item: "tconstruct:seared_heater"
 					type: "item"
 				}
 				{
+					consume_items: true
 					id: "06D2F77B020E75A9"
 					item: "tconstruct:seared_fuel_gauge"
 					type: "item"
@@ -141,17 +160,25 @@
 				"&cNote:&7 You need 27 bricks to build the oven. Automate this with hoppers!"
 			]
 			id: "40D58C0B0E39D3DF"
-			rewards: [{
-				id: "3CE709B5E8DA6E94"
-				item: {
-					Count: 1
-					id: "immersiveengineering:hammer"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "3CE709B5E8DA6E94"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 27
+					id: "0670EC56D29695EE"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				count: 27L
@@ -177,12 +204,19 @@
 				"3. Pour &l6 Brass ingots worth (540 mB)&r onto the brick."
 			]
 			id: "053D44877F9A01AA"
-			rewards: [{
-				count: 4
-				id: "2EA868337B1AC64A"
-				item: "create:brass_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "2EA868337B1AC64A"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+				{
+					id: "626D9245EDEFE47D"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "51388B4F70FC72C7"
 				item: "tconstruct:smeltery_controller"
@@ -199,12 +233,34 @@
 				"&fThis massive vat allows you to smelt entire stacks of ore, double your production, and most importantly, create complex alloys like Bronze or Invar."
 			]
 			id: "1898064789819285"
-			rewards: [{
-				count: 9
-				id: "272BE13E142B1E19"
-				item: "tconstruct:seared_glass"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 9
+					id: "272BE13E142B1E19"
+					item: "tconstruct:seared_glass"
+					type: "item"
+				}
+				{
+					id: "3C51A79943E95F7C"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "42512C389D2F9379"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "4D8465D7A63762E1"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+				{
+					id: "74143A3CFE7B2FC9"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -297,7 +353,6 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 16L
 				icon: "immersiveengineering:treated_wood_horizontal"
 				id: "22F77E10D40A5273"
 				item: "immersiveengineering:treated_wood_horizontal"
@@ -319,11 +374,19 @@
 				"2. Pour bronze over &lSeared Bricks&r (90mB) in the smeltery to obtain &lAlloy Bricks&r."
 			]
 			id: "72590741F37C3026"
-			rewards: [{
-				id: "3F0CC7A70F43329B"
-				type: "xp"
-				xp: 100
-			}]
+			rewards: [
+				{
+					id: "3F0CC7A70F43329B"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 8
+					id: "5538F7920507B530"
+					item: "immersiveengineering:alloy_smelter"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				count: 8L
@@ -370,8 +433,17 @@
 				"1. Place a &lCoke Brick&r in the Casting Basin."
 				""
 				"2. Pour &l90mB of Invar&r over it."
+				""
+				""
+				"You need 27 Bricks for multiblock."
 			]
 			id: "610A23F2BF94DEF7"
+			rewards: [{
+				count: 27
+				id: "604B84A70FC15C73"
+				item: "immersiveengineering:blastbrick"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
 				count: 27L
@@ -411,11 +483,40 @@
 				"&fThe &4Heavy Engineering Block&f is the centerpiece, proving you have finally mastered industrial steel."
 			]
 			id: "5F9B93403BBCD42E"
-			rewards: [{
-				id: "22A8C9CB326275C7"
-				item: "immersiveengineering:mold_gear"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "22A8C9CB326275C7"
+					item: "immersiveengineering:mold_gear"
+					type: "item"
+				}
+				{
+					id: "3A7A8B36C2D59F91"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "19BAE0CE033DBA88"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					id: "4A673EAF2BFDD75D"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "086D7F565AD849E9"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "015605C5F97E11E1"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -488,12 +589,19 @@
 				"&fPlace it facing a rotation source to start charging your machines."
 			]
 			id: "03EF5105D1AC52E2"
-			rewards: [{
-				count: 8
-				id: "46C52C0D33243CC2"
-				item: "immersiveengineering:connector_lv"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "46C52C0D33243CC2"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					id: "6BE8C083D0D83933"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "6594588EB9DBC06D"
@@ -515,11 +623,18 @@
 			]
 			icon: "immersiveengineering:watermill"
 			id: "6E3A8B5559305A98"
-			rewards: [{
-				id: "3AAA2AF8693C9FBF"
-				item: "minecraft:water_bucket"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "3AAA2AF8693C9FBF"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "5FFDA3302D9B726F"
+					item: "immersiveengineering:watermill"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "2B87FF4248DDE5A7"
@@ -532,12 +647,19 @@
 		{
 			dependencies: ["6E3A8B5559305A98"]
 			id: "7F27B4FF454F38D6"
-			rewards: [{
-				count: 4
-				id: "7CA5528B81F0FAFB"
-				item: "immersiveengineering:windmill_sail"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "7CA5528B81F0FAFB"
+					item: "immersiveengineering:windmill_sail"
+					type: "item"
+				}
+				{
+					id: "512DE4FD9153D313"
+					item: "immersiveengineering:windmill"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -626,6 +748,29 @@
 			dependencies: ["6EEED057A3DCB05A"]
 			icon: "toms_storage:ts.inventory_cable"
 			id: "7B96A048F280DD6E"
+			rewards: [
+				{
+					id: "345E0AABE6E124DA"
+					item: "toms_storage:ts.storage_terminal"
+					type: "item"
+				}
+				{
+					id: "0C3A1D42F7E820A8"
+					item: "toms_storage:ts.inventory_connector"
+					type: "item"
+				}
+				{
+					id: "671D7BC4CCD35060"
+					item: "toms_storage:ts.crafting_terminal"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "7890B79DB13979C4"
+					item: "toms_storage:ts.inventory_cable"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					consume_items: true
@@ -688,6 +833,35 @@
 					type: "xp_levels"
 					xp_levels: 20
 				}
+				{
+					count: 10
+					id: "07F45B49F39A3EA0"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "559B8170ACE5C82A"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "1385EADEEDCBCD7F"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "7214914EAD8D0C2C"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "58E870EA0085B840"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
 			]
 			tasks: [
 				{
@@ -707,21 +881,21 @@
 					consume_items: true
 					count: 10L
 					id: "515FB2F6121984FA"
-					item: { Count: 10, id: "immersiveengineering:steel_scaffolding_standard" }
+					item: "immersiveengineering:steel_scaffolding_standard"
 					type: "item"
 				}
 				{
 					consume_items: true
 					count: 8L
 					id: "73D77BE361BC3ABA"
-					item: { Count: 8, id: "immersiveengineering:steel_fence" }
+					item: "immersiveengineering:steel_fence"
 					type: "item"
 				}
 				{
 					consume_items: true
 					count: 9L
 					id: "1656A589EBC326C7"
-					item: { Count: 9, id: "minecraft:hopper" }
+					item: "minecraft:hopper"
 					type: "item"
 				}
 			]
@@ -738,7 +912,7 @@
 			]
 			id: "616E0CCC9EFF96E0"
 			rewards: [{
-				count: 8
+				count: 16
 				id: "1CBAAA3236D65F64"
 				item: "powah:dielectric_paste"
 				type: "item"
@@ -789,6 +963,11 @@
 				"&7Note: The more powerful the heat source, the more it produces!"
 			]
 			id: "4BE539672AD9F359"
+			rewards: [{
+				id: "28F6268210A22952"
+				item: "powah:thermo_generator_starter"
+				type: "item"
+			}]
 			subtitle: "&7Hot stuff!"
 			tasks: [{
 				consume_items: true
@@ -810,12 +989,25 @@
 				"&7Note: The Orb does not consume energy if it has nothing to transform."
 			]
 			id: "59F58D04A81A5AF6"
-			rewards: [{
-				count: 4
-				id: "38769325C1C7293A"
-				item: "powah:steel_energized"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "38769325C1C7293A"
+					item: "powah:steel_energized"
+					type: "item"
+				}
+				{
+					id: "11645DB4A836596D"
+					item: "powah:energizing_orb"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "742C0B7D28F5BEA0"
+					item: "powah:energizing_rod_starter"
+					type: "item"
+				}
+			]
 			subtitle: "&7The electrical ritual"
 			tasks: [
 				{
@@ -1000,14 +1192,22 @@
 				"&fThis is the mandatory starting point for creating all your magical seeds."
 			]
 			id: "746F9C492464BED6"
-			rewards: [{
-				count: 16
-				id: "2249EC1CE544B502"
-				item: "mysticalagriculture:prosperity_shard"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "2249EC1CE544B502"
+					item: "mysticalagriculture:prosperity_shard"
+					type: "item"
+				}
+				{
+					id: "3190D977D54C4880"
+					item: "mysticalagriculture:infusion_altar"
+					type: "item"
+				}
+			]
 			subtitle: "&7When electricity awakens plants"
 			tasks: [{
+				consume_items: true
 				id: "2AA1C57CE76980D4"
 				item: "mysticalagriculture:infusion_altar"
 				type: "item"
@@ -1024,17 +1224,26 @@
 				"&fForget steel for a moment: these supports must be carved from &8Polished Deepslate&f and topped with an &dAmethyst Shard&f to channel magical energy."
 			]
 			id: "3FC04D3671A1BFE1"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7DF12D7A90711E5A"
-				table_id: 3412653644065915627L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7DF12D7A90711E5A"
+					table_id: 3412653644065915627L
+					type: "random"
+				}
+				{
+					count: 8
+					id: "31A3042C1BA5E318"
+					item: "mysticalagriculture:infusion_pedestal"
+					type: "item"
+				}
+			]
 			subtitle: "&7Carved from the deep rock"
 			tasks: [{
+				consume_items: true
 				count: 8L
 				id: "6012AC97F7C384CA"
-				item: { Count: 8, id: "mysticalagriculture:infusion_pedestal" }
+				item: "mysticalagriculture:infusion_pedestal"
 				type: "item"
 			}]
 			title: "&5Crystalline Resonance: Pedestals"
@@ -1141,6 +1350,15 @@
 				"&cWarning:&f This item is energy-hungry... let it charge in your inventory before using it on your machines!"
 			]
 			id: "451D11D4EE5DC9EB"
+			rewards: [{
+				id: "78DB45A268D30A45"
+				item: {
+					Count: 1
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "&7The form contains the content"

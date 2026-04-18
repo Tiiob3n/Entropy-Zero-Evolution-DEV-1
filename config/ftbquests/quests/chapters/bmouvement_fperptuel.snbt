@@ -71,7 +71,6 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 16L
 				id: "05BB256E22011D84"
 				item: "create:belt_connector"
 				type: "item"
@@ -90,12 +89,19 @@
 				"Unlike belts, the item won't move until it's picked up, ensuring the press does its job every time without missing its target."
 			]
 			id: "7FE53165961A7060"
-			rewards: [{
-				count: 4
-				id: "370964141F08F52A"
-				item: "create:andesite_casing"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "370964141F08F52A"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+				{
+					id: "2B7CB7E306A8A780"
+					item: "create:depot"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "2CD669022D59E26E"
@@ -141,12 +147,19 @@
 			dependencies: ["25909150A9B9E4C5"]
 			description: ["The &6Basin&f is indispensable for compacting items or mixing alloys. It holds components in place while the press or mixer does its work."]
 			id: "379F680751C7300E"
-			rewards: [{
-				count: 4
-				id: "2B857A3F92B67C70"
-				item: "create:andesite_alloy"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "2B857A3F92B67C70"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "2A3C1B0CA8359A1C"
+					item: "create:basin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "48C61E5A361A8A31"
@@ -168,11 +181,18 @@
 				"&cWarning:&f It requires high rotational speed (&bMinimum 30 RPM&f). Use gears to multiply the speed of your water wheels!"
 			]
 			id: "722C1629B67B25EC"
-			rewards: [{
-				id: "5F01190A1CD1D73C"
-				item: "create:large_cogwheel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5F01190A1CD1D73C"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "1390C213C5112436"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				id: "136788E472E7382C"
@@ -200,7 +220,6 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 12L
 				id: "19EC52512DD22560"
 				item: "create:brass_ingot"
 				type: "item"
@@ -252,9 +271,13 @@
 				"Combine an &6Iron Plate&f and your Rose Quartz to create this component. It is the rudimentary brain of your intelligent machines."
 			]
 			id: "44C6A1342397EEE7"
+			rewards: [{
+				id: "15BE589E49959055"
+				item: "create:electron_tube"
+				type: "item"
+			}]
 			tasks: [{
 				consume_items: true
-				count: 6L
 				id: "3CF7C5E48EA79B2A"
 				item: "create:electron_tube"
 				type: "item"
@@ -273,15 +296,22 @@
 				"The &dDeployer&f uses the item it holds on the block in front of it. It is essential for assembling the precision mechanisms we will see next."
 			]
 			id: "5498FDA5A29ABFDB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5CABA4B6C3610CA0"
-				table_id: 7460110763542653050L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5CABA4B6C3610CA0"
+					table_id: 7460110763542653050L
+					type: "random"
+				}
+				{
+					count: 3
+					id: "5B8403EC6CC7FA17"
+					item: "create:deployer"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
-				count: 3L
 				id: "79321C7A6BCE26E2"
 				item: "create:deployer"
 				type: "item"
@@ -375,7 +405,6 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 6L
 				icon: "create:steam_engine"
 				id: "33F960ADA5A34C77"
 				item: "create:steam_engine"
@@ -395,6 +424,11 @@
 				"&fThe higher the pressure in your boiler, the louder the sound. It's the ultimate symbol of your industrial success in this age!"
 			]
 			id: "273D5CC543FDE307"
+			rewards: [{
+				id: "6121D652A37E31D0"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
 			tasks: [{
 				id: "0FFDA3AB8B6E471F"
 				item: "create:steam_whistle"
@@ -453,11 +487,19 @@
 				"Manage Input/Output mode by clicking the central dial."
 			]
 			id: "327B8B0014624E5F"
-			rewards: [{
-				id: "24316297B625A4FE"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "24316297B625A4FE"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "6A429741A2F47582"
+					item: "enderstorage:ender_tank"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
 				count: 2L
@@ -486,15 +528,21 @@
 			]
 			icon: "create:empty_blaze_burner"
 			id: "6DBEAC33B8273C80"
-			rewards: [{
-				count: 3
-				id: "386B8DCAD20594FB"
-				item: "minecraft:blaze_rod"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "386B8DCAD20594FB"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "251367AD0A20B729"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+			]
 			tasks: [{
 				consume_items: true
-				count: 4L
 				id: "2373DC619366C429"
 				item: "create:empty_blaze_burner"
 				type: "item"
@@ -519,13 +567,21 @@
 				"&fIf you have infinite lava via your &5Ender Tanks&f, it's time to create an infinite fuel loop!"
 			]
 			id: "56DCD8C19D39B29D"
-			rewards: [{
-				count: 16
-				id: "1C1D479E18200DE4"
-				item: "minecraft:charcoal"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "1C1D479E18200DE4"
+					item: "minecraft:charcoal"
+					type: "item"
+				}
+				{
+					id: "4BF12A028B898975"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
 			tasks: [{
+				consume_items: true
 				id: "77EC9C9B06D2840E"
 				item: "create:blaze_burner"
 				type: "item"
@@ -588,6 +644,11 @@
 				{
 					id: "5B1BAC35B2D6928B"
 					item: "create:stressometer"
+					type: "item"
+				}
+				{
+					id: "708C94E47BBA9B62"
+					item: "create:goggles"
 					type: "item"
 				}
 			]

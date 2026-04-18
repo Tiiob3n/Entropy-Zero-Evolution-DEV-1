@@ -37,7 +37,7 @@
 				{
 					count: 3
 					id: "5371253A729C0643"
-					item: "minecraft:apple"
+					item: "croptopia:cherry_pie"
 					type: "item"
 				}
 				{
@@ -425,7 +425,6 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 16L
 				icon: "create:andesite_alloy"
 				id: "73CD4841A72FAA77"
 				item: "create:shaft"
@@ -453,7 +452,6 @@
 			}]
 			tasks: [{
 				consume_items: true
-				count: 8L
 				icon: "create:shaft"
 				id: "1AC30A115242444F"
 				item: "create:shaft"

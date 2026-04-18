@@ -116,6 +116,12 @@
 			dependencies: ["0FFD5669F07E2009"]
 			description: ["&lThere are way too many... good luck!&r"]
 			id: "38A9856ECBEF256D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "29778B37F336A554"
+				table_id: 8374238487757769584L
+				type: "random"
+			}]
 			tasks: [
 				{
 					id: "2ADDC19210E02E3C"
@@ -177,6 +183,19 @@
 						tag: {
 							data_model: {
 								id: "hostilenetworks:twilightforest/lich"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E717F569202FA97"
+					item: {
+						Count: 1
+						id: "hostilenetworks:prediction"
+						tag: {
+							data_model: {
+								id: "hostilenetworks:twilightforest/minoshroom"
 							}
 						}
 					}
