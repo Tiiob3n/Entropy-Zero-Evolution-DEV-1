@@ -150,18 +150,17 @@
 		{
 			dependencies: ["3DA3D8B38A1CA66F"]
 			description: [
-				"&fIn this pack, knowledge is your best weapon. Here are the basic commands to navigate the interface:"
-				" "
-				"&6&lOn an item in inventory or JEI:&r"
-				"&e- [R] Key:&f Shows the &bRecipe&f of the item."
-				"&e- [U] Key:&f Shows the &dUses&f of the item."
-				"&e- [A] Key:&f &6Pins&f the item to the left of the screen (very useful for tracking long crafts)."
-				" "
-				"&6&lInventory Management:&r"
-				"&e- [Ctrl] + Click:&f (If configured) moves all identical items."
-				"&e- [Space] Key:&f In the JEI search bar to clear your search."
-				" "
-				"&7&oTip: If you are looking for a specific mod in JEI, type \"@\" followed by the mod name (ex: @powah).&r"
+				"Need to strip-mine without ruining your Overworld base? The Mining Dimension is your best friend, and it's available early!"
+				""
+				"It's a flat world perfectly suited for your first Quarries and massive resource gathering."
+				""
+				"&lHow to get there:&r"
+				""
+				"Place the Teleport Pad in the Overworld."
+				""
+				"Stand on it with empty hands."
+				""
+				"Sneak (Shift) to teleport!"
 			]
 			id: "604613590598BFAF"
 			rewards: [{
@@ -170,13 +169,13 @@
 				type: "item"
 			}]
 			shape: "gear"
-			subtitle: "&7Master your interface"
+			subtitle: "&7Ready for excavation!"
 			tasks: [{
 				id: "4B4463DA63157B34"
 				title: "&bThe JEI Bible & Shortcuts"
 				type: "checkmark"
 			}]
-			title: "&bThe JEI Bible and Shortcuts"
+			title: "&bThe Mining Dimension"
 			x: 2.0d
 			y: 0.0d
 		}

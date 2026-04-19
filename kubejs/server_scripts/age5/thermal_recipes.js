@@ -36,17 +36,73 @@ ServerEvents.recipes(event => {
         C: 'create:brass_casing'              
     }).id('entropy:age5/machine_frame_expert')
 
-    // --- LOGISTIQUE PIPEZ ---
+    // --- LOGISTIQUE ---
+    event.remove({ output: 'pipez:fluid_pipe' })
+    event.shaped('16x pipez:fluid_pipe', [
+        'BBB',
+        'RXR',
+        'BBB'
+    ], {
+        B: 'minecraft:redstone',
+        R: 'minecraft:bucket',
+        X: 'xycraft_world:xychorium_gem_blue'
+    }).id('entropy:age5/fluid_pipe_expert')
+
     event.remove({ output: 'pipez:item_pipe' })
     event.shaped('16x pipez:item_pipe', [
         'BBB',
         'RXR',
         'BBB'
     ], {
-        B: 'alltheores:bronze_ingot',
+        B: '#forge:ingots/bronze',
         R: 'minecraft:redstone',
         X: 'xycraft_world:xychorium_gem_blue'
     }).id('entropy:age5/item_pipe_expert')
+    
+    event.remove({ output: 'pipez:energy_pipe' })
+    event.shaped('16x pipez:energy_pipe', [
+        'BBB',
+        'RXR',
+        'BBB'
+    ], {
+        B: 'minecraft:redstone',
+        R: '#forge:ingots/steel',
+        X: 'xycraft_world:xychorium_gem_blue'
+    }).id('entropy:age5/energy_pipe_expert')
+
+    
+    event.remove({ output: 'cyclic:item_pipe' })
+    event.shaped('4x cyclic:item_pipe', [
+        'BBB',
+        'RXR',
+        'BBB'
+    ], {
+        B: '#forge:ingots/bronze',
+        R: 'minecraft:redstone',
+        X: 'xycraft_world:xychorium_gem_red'
+    }).id('entropy:age5/item_cyclic_expert')
+
+    event.remove({ output: 'cyclic:fluid_pipe' })
+    event.shaped('4x cyclic:fluid_pipe', [
+        'BBB',
+        'RXR',
+        'BBB'
+    ], {
+        B: 'minecraft:redstone',
+        R: 'minecraft:bucket',
+        X: 'xycraft_world:xychorium_gem_red'
+    }).id('entropy:age5/fluid_cyclic_expert')
+    
+    event.remove({ output: 'cyclic:energy_pipe' })
+    event.shaped('4x cyclic:energy_pipe', [
+        'BBB',
+        'RXR',
+        'BBB'
+    ], {
+        B: 'minecraft:redstone',
+        R: '#forge:ingots/steel',
+        X: 'xycraft_world:xychorium_gem_red'
+    }).id('entropy:age5/energy_cyclic_expert')
 
     // --- FLUX NETWORKS ---
     event.remove({ output: 'fluxnetworks:flux_dust' })

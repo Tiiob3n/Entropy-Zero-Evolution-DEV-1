@@ -383,7 +383,7 @@
 				{
 					count: 8
 					id: "5538F7920507B530"
-					item: "immersiveengineering:alloy_smelter"
+					item: "immersiveengineering:alloybrick"
 					type: "item"
 				}
 			]
@@ -391,7 +391,7 @@
 				consume_items: true
 				count: 8L
 				id: "4EC65DB693D31BB1"
-				item: "immersiveengineering:alloy_smelter"
+				item: "immersiveengineering:alloybrick"
 				type: "item"
 			}]
 			title: "&eThe Alloy Kiln"

@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
         'V',
         'B'
     ], {
-        B: 'croptopia:bun',
+        B: 'minecraft:bread',
         S: 'minecraft:cooked_beef',
         V: 'croptopia:lettuce'
     })
