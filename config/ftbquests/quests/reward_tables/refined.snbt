@@ -1,0 +1,12 @@
+{
+	id: "5D7AFD2822E828AC"
+	loot_size: 1
+	order_index: 21
+	rewards: [
+		{ item: "extrastorage:gold_crafter" }
+		{ item: "extrastorage:iron_crafter" }
+		{ item: "extrastorage:diamond_crafter" }
+		{ item: "extrastorage:netherite_crafter" }
+	]
+	title: "refined"
+}

@@ -1,9 +1,9 @@
 {
-	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "2lharmonie_de_la_fleur7_5la_force_du_mana"
 	group: "266D924F90F87D99"
+	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		id: "botania:twig_wand"
@@ -34,7 +34,7 @@
 			id: "3FB90A7691BB63E9"
 			subtitle: "&8Knowledge is the first step"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "514ACA25F7F91C85"
 				item: "botania:lexicon"
 				type: "item"
@@ -58,7 +58,7 @@
 			}]
 			subtitle: "&8Industrial Horticulture"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "7E3BE3B6F214A632"
 				item: "botanypots:terracotta_hopper_botany_pot"
 				type: "item"
@@ -79,7 +79,7 @@
 			}]
 			subtitle: "&816 colors, one network"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "579BDF8A51B292C2"
 				item: "storagedrawers:oak_full_drawers_1"
 				type: "item"
@@ -104,19 +104,19 @@
 			subtitle: "&8Storing Earth's Energy"
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "1CD03D7BD6CFDB39"
 					item: "botania:mana_pool"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "23DEE2167A54F780"
 					item: "botania:mana_spreader"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "011131627A476258"
 					item: "botania:endoflame"
 					type: "item"
@@ -130,14 +130,9 @@
 			dependencies: ["543AAA514038D0AA"]
 			description: ["&7The &dRunic Altar &7is necessary to infuse matter. Place the items, wait for mana absorption, then throw a &fLivingrock &7and use your wand."]
 			id: "219A0C69E1D6924F"
-			rewards: [{
-				id: "413A7437F3BEB140"
-				item: "botania:runic_altar"
-				type: "item"
-			}]
 			subtitle: "&8The first magical processor"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "6A7CC45774ACED82"
 				item: "botania:runic_altar"
 				type: "item"
@@ -152,25 +147,25 @@
 			subtitle: "&8Water, Fire, Earth, and Air"
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "2758BB7375F59EFE"
 					item: "botania:rune_water"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "51E0860769526898"
 					item: "botania:rune_fire"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "490D076FEECF13F3"
 					item: "botania:rune_earth"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "4FA77494803BB1BB"
 					item: "botania:rune_air"
 					type: "item"
@@ -187,25 +182,25 @@
 			subtitle: "&8The grip of time"
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "0A5B8F09CCCF739D"
 					item: "botania:rune_autumn"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "7CB3BC695286C6A1"
 					item: "botania:rune_spring"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "6CD18F9C16750E38"
 					item: "botania:rune_winter"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "57B76C9CF0F526B4"
 					item: "botania:rune_summer"
 					type: "item"
@@ -223,14 +218,9 @@
 				"&cCrafting: &7Requires &9Resonarium Plates&7."
 			]
 			id: "477EC8B892A2B42A"
-			rewards: [{
-				id: "083E485ED3B60A58"
-				item: "botanicalmachinery:mechanical_daisy"
-				type: "item"
-			}]
 			subtitle: "&8Instant transformation"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "50C04B3C657054F0"
 				item: "botanicalmachinery:mechanical_daisy"
 				type: "item"
@@ -243,14 +233,9 @@
 			dependencies: ["477EC8B892A2B42A"]
 			description: ["&7Automates the creation of functional flowers. Link it to your AE2 petal stock to never run out of generators."]
 			id: "0201F6A30228AE6A"
-			rewards: [{
-				id: "585C85CE55A24022"
-				item: "botanicalmachinery:mechanical_apothecary"
-				type: "item"
-			}]
 			subtitle: "&8Mass-produced flowers"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "59952C283444101B"
 				item: "botanicalmachinery:mechanical_apothecary"
 				type: "item"
@@ -263,14 +248,9 @@
 			dependencies: ["0201F6A30228AE6A"]
 			description: ["&7This machine is the heart of your factory. It performs Runic Altar rituals without any manual intervention."]
 			id: "51E27ED1F39401DB"
-			rewards: [{
-				id: "6B0F2E411D91C38D"
-				item: "botanicalmachinery:mechanical_runic_altar"
-				type: "item"
-			}]
 			subtitle: "&8The Rune Factory"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "1ADF466492137661"
 				item: "botanicalmachinery:mechanical_runic_altar"
 				type: "item"
@@ -283,14 +263,9 @@
 			dependencies: ["51E27ED1F39401DB"]
 			description: ["&7Allows for industrial-scale item infusion (Mana Diamond, Mana Pearl) without throwing them one by one into the water."]
 			id: "2CA14BB6C85EE0D3"
-			rewards: [{
-				id: "3702A26A6094D9F7"
-				item: "botanicalmachinery:mechanical_mana_pool"
-				type: "item"
-			}]
 			subtitle: "&8Mass Infusion"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "2F97027C64110D4A"
 				item: "botanicalmachinery:mechanical_mana_pool"
 				type: "item"
@@ -324,23 +299,15 @@
 				"&6Cost: &7It takes &b1/2 pool &7to open. Once open, throw your iron in to obtain &bElementium&7."
 			]
 			id: "017332F5DC6311A8"
-			rewards: [
-				{
-					count: 2
-					id: "1F71823A48751C57"
-					item: "botania:pixie_dust"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "06F45D5A34CBBC8D"
-					item: "botania:natura_pylon"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "1F71823A48751C57"
+				item: "botania:pixie_dust"
+				type: "item"
+			}]
 			subtitle: "&8Powering the Rift"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 2L
 				id: "15CDA33104A7F57F"
 				item: "botania:natura_pylon"
@@ -356,14 +323,14 @@
 			id: "7AB4804459EA75C6"
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					count: 36L
 					id: "303D589FD9FFD187"
 					item: "botania:dragonstone"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 12L
 					id: "1B84F6606EF0E151"
 					item: "botania:dreamwood_log"
@@ -385,7 +352,7 @@
 				type: "random"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "0BAC8FB961DEE074"
 				item: {
 					Count: 1
@@ -445,7 +412,7 @@
 			id: "090AD762B434E990"
 			subtitle: "&8Gaia Spirit"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 4L
 				id: "693D8318F8005DCE"
 				item: { Count: 2, id: "botania:life_essence" }

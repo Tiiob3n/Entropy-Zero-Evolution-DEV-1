@@ -26,24 +26,17 @@
 				"&cWarning:&f This machine is a power sink. Do not plug it into an unstable network."
 			]
 			id: "1B0E5CC52EB833ED"
-			rewards: [
-				{
-					count: 8
-					id: "1F6D63A7163A8C5B"
-					item: "mekanism:ingot_osmium"
-					type: "item"
-				}
-				{
-					id: "41813C942D9CF044"
-					item: "mekanism:metallurgic_infuser"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "1F6D63A7163A8C5B"
+				item: "mekanism:ingot_osmium"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "&7\"Done playing with basic alloys\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "3989EDCFA5EDF822"
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
@@ -68,7 +61,7 @@
 			}]
 			subtitle: "&7\"The lifeblood of modern electronics\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "4A6A2AC9ADDEB5A3"
 				item: "mekanism:basic_control_circuit"
 				type: "item"
@@ -85,22 +78,15 @@
 				"&fPlace the &fFluid Extractor&f facing a log. Acacia offers the best yield, but nature always eventually yields to industrial pressure."
 			]
 			id: "2791A3116E0A9590"
-			rewards: [
-				{
-					count: 16
-					id: "0434D65CB395B285"
-					item: "minecraft:acacia_log"
-					type: "item"
-				}
-				{
-					id: "51F46606D951A9B8"
-					item: "industrialforegoing:fluid_extractor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "0434D65CB395B285"
+				item: "minecraft:acacia_log"
+				type: "item"
+			}]
 			subtitle: "&7\"Bleeding nature for science\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "079CE4A900A33545"
 				item: "industrialforegoing:fluid_extractor"
 				type: "item"
@@ -117,22 +103,15 @@
 				"&fThe &eEnrichment Chamber&f doesn't just double your ores. It condenses soft materials (like rubber) and prepares the dust needed for your future alloys."
 			]
 			id: "690F21C5F1AC6397"
-			rewards: [
-				{
-					count: 8
-					id: "098691BB9759D833"
-					item: "mekanism:dust_quartz"
-					type: "item"
-				}
-				{
-					id: "36F1BCD10822965C"
-					item: "mekanism:enrichment_chamber"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "098691BB9759D833"
+				item: "mekanism:dust_quartz"
+				type: "item"
+			}]
 			subtitle: "&7\"Density in its purest form\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "12F9AB6418F22ECA"
 				item: "mekanism:enrichment_chamber"
 				type: "item"
@@ -160,7 +139,7 @@
 			}]
 			subtitle: "&7\"Transitioning to polymers\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "4ADE7511B678E97D"
 				item: "industrialforegoing:dryrubber"
 				type: "item"
@@ -177,22 +156,15 @@
 				"&fThe &bOsmium Compressor&f is essential to access Tier 2 Mekanism alloys."
 			]
 			id: "2C9058DB5B6799BA"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4A612DF741C0E4F3"
-					table_id: 5871764666515020368L
-					type: "choice"
-				}
-				{
-					id: "3F00E739F9FACE70"
-					item: "mekanism:osmium_compressor"
-					type: "item"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A612DF741C0E4F3"
+				table_id: 5871764666515020368L
+				type: "choice"
+			}]
 			subtitle: "&7\"Alloys under pressure\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "20128757BF72A1E5"
 				item: "mekanism:osmium_compressor"
 				type: "item"
@@ -209,22 +181,15 @@
 				"&fBy combining your brand-new &fPlastic&f with &6Invar&f alloys, you get a structure capable of withstanding intense vibrations."
 			]
 			id: "5BADD0A3338E9F8B"
-			rewards: [
-				{
-					count: 4
-					id: "14F6A2999286FD07"
-					item: "industrialforegoing:dryrubber"
-					type: "item"
-				}
-				{
-					id: "3DB978102B530F97"
-					item: "industrialforegoing:machine_frame_pity"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "14F6A2999286FD07"
+				item: "industrialforegoing:dryrubber"
+				type: "item"
+			}]
 			subtitle: "&7\"A solid foundation for industry\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "4DC174A1D6FA129D"
 				item: "industrialforegoing:machine_frame_pity"
 				type: "item"
@@ -237,21 +202,14 @@
 			dependencies: ["5BADD0A3338E9F8B"]
 			description: ["&fThe &6Precision Sawmill&f isn't just a wood gadget. It maximizes yield, but will mostly be useful for cutting certain technological components with laser precision."]
 			id: "27899A7E7D9E400E"
-			rewards: [
-				{
-					count: 8
-					id: "23B3186AB7A89F8B"
-					item: "alltheores:steel_ingot"
-					type: "item"
-				}
-				{
-					id: "6A16497A7E078D6A"
-					item: "mekanism:precision_sawmill"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "23B3186AB7A89F8B"
+				item: "alltheores:steel_ingot"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "6D74162C7944C117"
 				item: "mekanism:precision_sawmill"
 				type: "item"
@@ -267,24 +225,17 @@
 			]
 			description: ["&fThe technological branches are converging. To reach the next level, you must combine your &7Pity Frames&f with Mekanism's &aInfused Alloy&f."]
 			id: "1487AFC19C5CF684"
-			rewards: [
-				{
-					count: 4
-					id: "18C4BADDAB744E79"
-					item: "mekanism:alloy_infused"
-					type: "item"
-				}
-				{
-					id: "34D4D9655868573E"
-					item: "industrialforegoing:machine_frame_simple"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "18C4BADDAB744E79"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 1.2d
 			subtitle: "&7\"The alliance of plastics and metallurgy\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "495AA4BDF78B0456"
 				item: "industrialforegoing:machine_frame_simple"
 				type: "item"
@@ -301,22 +252,15 @@
 				"&fIt is the gateway to heavy chemical automation and Ether extraction."
 			]
 			id: "35FF6E9B36EE25B0"
-			rewards: [
-				{
-					count: 2
-					id: "32204D417F2EB979"
-					item: "thermalendergy:melodium_ingot"
-					type: "item"
-				}
-				{
-					id: "03D564ECDE4AD72E"
-					item: "industrialforegoing:machine_frame_advanced"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "32204D417F2EB979"
+				item: "thermalendergy:melodium_ingot"
+				type: "item"
+			}]
 			subtitle: "&7\"The resonance of Melodium\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "080689111F305437"
 				item: "industrialforegoing:machine_frame_advanced"
 				type: "item"
@@ -333,22 +277,14 @@
 				"&fThis is the essential foundation for machines capable of bending reality."
 			]
 			id: "67780A5DBCFC950F"
-			rewards: [
-				{
-					count: 2
-					id: "0CF2E80F85F4BEE3"
-					item: "mekanism:alloy_atomic"
-					type: "item"
-				}
-				{
-					id: "15E95115509D9FA5"
-					item: "industrialforegoing:machine_frame_supreme"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "0CF2E80F85F4BEE3"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
 			subtitle: "&7\"The brilliance of Stellarium\""
 			tasks: [{
-				consume_items: true
 				id: "6602291B532AF1D4"
 				item: "industrialforegoing:machine_frame_supreme"
 				type: "item"
@@ -365,24 +301,17 @@
 				"&fThis is where the tree branches out again: Storage or Energy?"
 			]
 			id: "484D33F95BCD2619"
-			rewards: [
-				{
-					count: 8
-					id: "082EF333D510F447"
-					item: "industrialforegoing:dryrubber"
-					type: "item"
-				}
-				{
-					id: "021239F0CD7DA9D7"
-					item: "industrialforegoing:dissolution_chamber"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "082EF333D510F447"
+				item: "industrialforegoing:dryrubber"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "&7\"The primordial soup of data\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "32E9383C757F0699"
 				item: "industrialforegoing:dissolution_chamber"
 				type: "item"
@@ -395,22 +324,15 @@
 			dependencies: ["484D33F95BCD2619"]
 			description: ["&fBuild a thermal evaporation tower. The taller it is, the more efficient it becomes. It will be the pillar of your chemical production (&bBrine&f and &eLithium&f)."]
 			id: "03D3FE9A23F93194"
-			rewards: [
-				{
-					count: 16
-					id: "3C36BDE405A02E06"
-					item: "mekanism:thermal_evaporation_block"
-					type: "item"
-				}
-				{
-					id: "15B4AA3BFAFA9E6D"
-					item: "mekanism:thermal_evaporation_controller"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "3C36BDE405A02E06"
+				item: "mekanism:thermal_evaporation_block"
+				type: "item"
+			}]
 			subtitle: "&7\"Extracting brine from the sun\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "360AD5FF02F135B7"
 				item: "mekanism:thermal_evaporation_controller"
 				type: "item"
@@ -427,22 +349,15 @@
 				"&eTip:&f Manage your excess gas well (Dump Idle) or the machine will stop."
 			]
 			id: "7EFD2B7C0C33622F"
-			rewards: [
-				{
-					count: 2
-					id: "726B0314AEC5EB4F"
-					item: "mekanism:upgrade_gas"
-					type: "item"
-				}
-				{
-					id: "028AB937B52F9ACA"
-					item: "mekanism:electrolytic_separator"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "726B0314AEC5EB4F"
+				item: "mekanism:upgrade_gas"
+				type: "item"
+			}]
 			subtitle: "&7\"Breaking molecules\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "3D444D62EA4A1CBB"
 				item: "mekanism:electrolytic_separator"
 				type: "item"
@@ -455,21 +370,14 @@
 			dependencies: ["7EFD2B7C0C33622F"]
 			description: ["&fSend the &lOxygen&r into the &2Purification Chamber&f to reach Tier 3 ore processing (Clumps)."]
 			id: "2470497FEEE6DBE4"
-			rewards: [
-				{
-					id: "1A4B72446DC675B6"
-					item: "mekanism:oxygen_bucket"
-					type: "item"
-				}
-				{
-					id: "52885A7F95F348D7"
-					item: "mekanism:purification_chamber"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "1A4B72446DC675B6"
+				item: "mekanism:oxygen_bucket"
+				type: "item"
+			}]
 			subtitle: "&7\"Oxygen as a catalyst\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "4DEE6DF27FE3FF15"
 				item: "mekanism:purification_chamber"
 				type: "item"
@@ -486,22 +394,15 @@
 				"&fYou will obtain &6Substrate&f and &dEthylene&f, an extremely flammable gas."
 			]
 			id: "7B30DCBC9AC53DB5"
-			rewards: [
-				{
-					count: 32
-					id: "00EAFBA523C3CDCB"
-					item: "mekanism:bio_fuel"
-					type: "item"
-				}
-				{
-					id: "1A276821A750B3CB"
-					item: "mekanism:pressurized_reaction_chamber"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 32
+				id: "00EAFBA523C3CDCB"
+				item: "mekanism:bio_fuel"
+				type: "item"
+			}]
 			subtitle: "&7\"Turning plants into Watts\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "779E7181415F4DCD"
 				item: "mekanism:pressurized_reaction_chamber"
 				type: "item"
@@ -514,22 +415,15 @@
 			dependencies: ["7B30DCBC9AC53DB5"]
 			description: ["&fThe &eGas-Burning Generator&f is incredibly powerful. Inject Ethylene into it to power your upcoming autocrafting network."]
 			id: "28E908A5A6680A5A"
-			rewards: [
-				{
-					count: 8
-					id: "2AF6E79D6B951600"
-					item: "mekanism:upgrade_energy"
-					type: "item"
-				}
-				{
-					id: "7C096B1719E2C258"
-					item: "mekanismgenerators:gas_burning_generator"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "2AF6E79D6B951600"
+				item: "mekanism:upgrade_energy"
+				type: "item"
+			}]
 			subtitle: "&7\"The end of energy problems\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "42D1488746ABBADB"
 				item: "mekanismgenerators:gas_burning_generator"
 				type: "item"
@@ -562,7 +456,7 @@
 			]
 			subtitle: "&7\"10x faster\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 8L
 				id: "543615CB26CB3F0A"
 				item: "mekanism:upgrade_speed"
@@ -583,22 +477,15 @@
 				"&fUsing the &eLithium&f extracted from your towers, craft these dense storage cells."
 			]
 			id: "4736084EC8EEC933"
-			rewards: [
-				{
-					count: 4
-					id: "53261663411C328A"
-					item: "mekanism:dust_lithium"
-					type: "item"
-				}
-				{
-					id: "4348B33497610E48"
-					item: "mekanism:energy_tablet"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "53261663411C328A"
+				item: "mekanism:dust_lithium"
+				type: "item"
+			}]
 			subtitle: "&7\"Condensing the power of Lithium\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "4D51AE4A037FD562"
 				item: "mekanism:energy_tablet"
 				type: "item"
@@ -620,13 +507,13 @@
 			subtitle: "&7\"Your first bytes of storage\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "276AC89F4BD15D92"
 					item: "ae2:cell_component_1k"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "56D307EF84F8478A"
 					item: "refinedstorage:1k_storage_part"
 					type: "item"
@@ -640,21 +527,14 @@
 			dependencies: ["0BF72E3F47A48087"]
 			description: ["&fThe &bInscriber&f is indispensable for AE2."]
 			id: "0C0F04FFE178B53B"
-			rewards: [
-				{
-					id: "23B1211ACF2D6DFD"
-					item: "ae2:silicon_press"
-					type: "item"
-				}
-				{
-					id: "4E936160A3DE44EA"
-					item: "ae2:inscriber"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "23B1211ACF2D6DFD"
+				item: "ae2:silicon_press"
+				type: "item"
+			}]
 			subtitle: "&7\"Pressing silicon\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "7804CED0ADB0F900"
 				item: "ae2:inscriber"
 				type: "item"
@@ -675,7 +555,7 @@
 			}]
 			subtitle: "&7\"The path of Dissolution\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "353D02DDE7E1B5C5"
 				item: "refinedstorage:basic_processor"
 				type: "item"
@@ -700,7 +580,7 @@
 			}]
 			subtitle: "&7\"High-temperature calculations\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "4892C5434A9382FC"
 				item: "ae2:calculation_processor"
 				type: "item"
@@ -722,13 +602,13 @@
 			subtitle: "&7\"The art of spatial compression\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "17E7C3FF6A636BDC"
 					item: "ae2:cell_component_64k"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "5EA350298108739B"
 					item: "ae2:cell_component_16k"
 					type: "item"
@@ -751,13 +631,13 @@
 			subtitle: "&7\"Optimizing data flows\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "02538854533CBF76"
 					item: "refinedstorage:64k_storage_part"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "1E3A8894412C78FF"
 					item: "refinedstorage:16k_storage_part"
 					type: "item"
@@ -771,34 +651,24 @@
 			dependencies: ["4A3343ECAB2F0D12"]
 			description: ["&fAE2 doesn't just store, it forges. Automate your crafting with &bPattern Providers&f and &bMolecular Assemblers&f."]
 			id: "08C919E3A48AE1B5"
-			rewards: [
-				{
-					count: 16
-					id: "1BD37F04D700FB51"
-					item: "ae2:blank_pattern"
-					type: "item"
-				}
-				{
-					id: "256CC31EF8558B0C"
-					item: "ae2:molecular_assembler"
-					type: "item"
-				}
-				{
-					id: "70EF3F3A7D467807"
-					item: "ae2:pattern_provider"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "1BD37F04D700FB51"
+				item: "ae2:blank_pattern"
+				type: "item"
+			}]
 			subtitle: "&7\"Assembly by thought\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
+					count: 4L
 					id: "5B091B1E89DBE483"
 					item: "ae2:pattern_provider"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
+					count: 4L
 					id: "422A537EFC15175E"
 					item: "ae2:molecular_assembler"
 					type: "item"
@@ -820,14 +690,15 @@
 					type: "item"
 				}
 				{
-					id: "0FD4210F70340CB7"
-					item: "extrastorage:iron_crafter"
-					type: "item"
+					exclude_from_claim_all: true
+					id: "1D7423BF63851C75"
+					table_id: 6735974541512157356L
+					type: "random"
 				}
 			]
 			subtitle: "&7\"Delegating manual labor\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "0F9847E85FD50EBF"
 				item: "refinedstorage:crafter"
 				type: "item"
@@ -848,7 +719,7 @@
 			}]
 			subtitle: "&7\"Building a crafting CPU\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "130F8BD067DDCA01"
 				item: "ae2:crafting_unit"
 				type: "item"
@@ -870,13 +741,13 @@
 			subtitle: "&7\"Reducing latency to a minimum\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "662078CF6B9D03D3"
 					item: "ae2:speed_card"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "1DC93CD338B41874"
 					item: "ae2:interface"
 					type: "item"
@@ -899,13 +770,13 @@
 			subtitle: "&7\"Optimizing transfers\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "53AB762746CA6010"
 					item: "refinedstorage:speed_upgrade"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "3A79DE067BFA9758"
 					item: "refinedstorage:fluid_interface"
 					type: "item"
@@ -927,7 +798,7 @@
 			}]
 			subtitle: "&7\"64 condensed into 1\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "2E9FA4C32C96ACAC"
 				item: "ae2:singularity"
 				type: "item"
@@ -940,38 +811,26 @@
 			dependencies: ["349B29A223AC563B"]
 			description: ["&fThe &bQuantum Network Bridge&f allows you to link two AE2 networks, regardless of distance."]
 			id: "6A32C06A9223994F"
-			rewards: [
-				{
-					count: 4
-					id: "270FDAAE40FF4A4B"
-					item: "ae2:singularity"
-					type: "item"
-				}
-				{
-					id: "59B76B4EE38FBBE2"
-					item: "ae2:quantum_link"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "276AD011AA47DE97"
-					item: "ae2:quantum_ring"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "270FDAAE40FF4A4B"
+				item: "ae2:singularity"
+				type: "item"
+			}]
 			subtitle: "&7\"Distance is but an illusion\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
+					count: 2L
 					id: "10C2848FB31A3678"
 					item: "ae2:quantum_link"
 					type: "item"
 				}
 				{
-					consume_items: true
-					count: 8L
+					consume_items: false
+					count: 16L
 					id: "1D7FAC867EBC9E6D"
-					item: { Count: 8, id: "ae2:quantum_ring" }
+					item: "ae2:quantum_ring"
 					type: "item"
 				}
 			]
@@ -1008,13 +867,13 @@
 			subtitle: "&7\"Dedicate to conquer\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "5ECB10585DB77A3E"
 					item: "mekanism:logistical_sorter"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "046723A14526A0E3"
 					item: "mekanism:metallurgic_infuser"
 					type: "item"
@@ -1028,22 +887,15 @@
 			dependencies: ["01109A7DB4009978"]
 			description: ["&fThe &eConfigurator&f is the ultimate tool for pipe networks. Set your infusers to &lAuto-Eject: ON&r."]
 			id: "379F6E1A55677D94"
-			rewards: [
-				{
-					count: 4
-					id: "71CA41FBE0F4CF4B"
-					item: "mekanism:alloy_infused"
-					type: "item"
-				}
-				{
-					id: "230E2A0CEB642F7E"
-					item: "mekanism:configurator"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "71CA41FBE0F4CF4B"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
 			subtitle: "&7\"Mastering the flow\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "0D980F7CF2049401"
 				item: "mekanism:configurator"
 				type: "item"
@@ -1073,7 +925,7 @@
 				}
 			]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "79E92B44290B67D6"
 				item: "mekanism:alloy_atomic"
 				type: "item"
@@ -1098,21 +950,11 @@
 					item: "mekanism:module_energy_unit"
 					type: "item"
 				}
-				{
-					id: "4323418F1C305877"
-					item: "mekanism:meka_tool"
-					type: "item"
-				}
-				{
-					id: "3C49CE1233038FB9"
-					item: "mekanism:modification_station"
-					type: "item"
-				}
 			]
 			subtitle: "&7\"The doomsday tool\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "6693D9B603738127"
 					item: "mekanism:meka_tool"
 					type: "item"
@@ -1152,13 +994,13 @@
 			subtitle: "&7\"Rewriting the laws of matter\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "43483D7F0AFBF8CF"
 					item: "evolvedmekanism:alloy_subatomic"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "5C3786CCCE1EBED4"
 					item: "evolvedmekanism:alloy_hypercharged"
 					type: "item"
@@ -1198,13 +1040,13 @@
 			subtitle: "&7\"Real-time calculations\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "74B3D9E4936FAB47"
 					item: "evolvedmekanism:quantum_control_circuit"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "4D52CD98868C557A"
 					item: "evolvedmekanism:ingot_plaslitherite"
 					type: "item"
@@ -1217,19 +1059,12 @@
 			dependencies: ["71D4EA9675422430"]
 			description: ["&fThe &dSingular Alloy&f allows for absurd storage densities: 4M, 16M, and 64M bytes for your digital network."]
 			id: "090E81CBAA7A546B"
-			rewards: [
-				{
-					count: 2
-					id: "257C2328720F66DA"
-					item: "evolvedmekanism:alloy_singular"
-					type: "item"
-				}
-				{
-					id: "1A3671F87E804523"
-					item: "megacells:cell_component_4m"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "257C2328720F66DA"
+				item: "evolvedmekanism:alloy_singular"
+				type: "item"
+			}]
 			subtitle: "&7\"Storing entire planets\""
 			tasks: [{
 				consume_items: false
@@ -1260,7 +1095,7 @@
 			]
 			subtitle: "&7\"Infinite computing power\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "2A2D21071C525CF2"
 				item: "evolvedmekanism:dense_control_circuit"
 				type: "item"
@@ -1289,15 +1124,10 @@
 					item: "mekanism:portable_qio_dashboard"
 					type: "item"
 				}
-				{
-					id: "1D8CA5A296675CC7"
-					item: "mekanism:qio_drive_supermassive"
-					type: "item"
-				}
 			]
 			subtitle: "&7\"A God's inventory\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "37C30BEBFD785EFB"
 				item: "mekanism:qio_drive_supermassive"
 				type: "item"
@@ -1310,59 +1140,34 @@
 			dependencies: ["13F61A34151466EA"]
 			description: ["&fUse your ultimate alloys to build this structure. It will transform your Polonium into Antimatter at a 1:1 ratio!"]
 			id: "04B12D95C063B2DA"
-			rewards: [
-				{
-					id: "32F37659C717D339"
-					item: "mekanism:pellet_antimatter"
-					type: "item"
-				}
-				{
-					count: 60
-					id: "15D96DCAC4581DF2"
-					item: "mekanism:sps_casing"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "35088E7A32B1B0B1"
-					item: "mekanism:sps_port"
-					type: "item"
-				}
-				{
-					id: "52957E8B11198574"
-					item: "mekanism:supercharged_coil"
-					type: "item"
-				}
-				{
-					count: 123
-					id: "061A7343BDCF58CC"
-					item: "mekanism:structural_glass"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "32F37659C717D339"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					count: 60L
 					id: "1D146EEB131EA3EB"
 					item: "mekanism:sps_casing"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 3L
 					id: "3531D29E99C1A49F"
 					item: { Count: 3, id: "mekanism:sps_port" }
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "5E8549DB13CBC9B7"
 					item: "mekanism:supercharged_coil"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					count: 123L
 					id: "6FE6D52B166041DB"
 					item: { Count: 123, id: "mekanism:structural_glass" }
@@ -1384,66 +1189,44 @@
 				"&fBut remember: the draconic energies of Age 7 will make these components look like toys."
 			]
 			id: "084020D016D5D81C"
-			rewards: [
-				{
-					id: "56C599C21ABEA238"
-					item: {
-						Count: 1
-						id: "mekanism:ultimate_energy_cube"
-						tag: {
-							mekData: {
-								EnergyContainers: [{
-									Container: 0b
-									stored: "256000000"
-								}]
-							}
+			rewards: [{
+				id: "56C599C21ABEA238"
+				item: {
+					Count: 1
+					id: "mekanism:ultimate_energy_cube"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "256000000"
+							}]
 						}
 					}
-					type: "item"
 				}
-				{
-					id: "0EF028B5FE3B8F3F"
-					item: "mekanism:mekasuit_helmet"
-					type: "item"
-				}
-				{
-					id: "003FCCB96B53941F"
-					item: "mekanism:mekasuit_bodyarmor"
-					type: "item"
-				}
-				{
-					id: "396A7A9EAAE660B3"
-					item: "mekanism:mekasuit_boots"
-					type: "item"
-				}
-				{
-					id: "05DC249171A580AD"
-					item: "mekanism:mekasuit_pants"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			subtitle: "&7\"Cutting-edge science before the Dragon's awakening\""
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "1B91A95DDBE88D3E"
 					item: "mekanism:mekasuit_helmet"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "1233A01A7BF03180"
 					item: "mekanism:mekasuit_bodyarmor"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "3C409C8B616570B6"
 					item: "mekanism:mekasuit_pants"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "43F418AE3A2BD35F"
 					item: "mekanism:mekasuit_boots"
 					type: "item"
@@ -1465,46 +1248,29 @@
 				"&fThe machine will return the seed at the end. Set up a pipe loop to re-inject it!"
 			]
 			id: "5DF9C8126C6AEE00"
-			rewards: [
-				{
-					count: 3
-					id: "37C207A97BD2A179"
-					item: "mysticalagradditions:insanium_farmland"
-					type: "item"
-				}
-				{
-					id: "1CB46BDD80A3AFBD"
-					item: "entropy:polonium_seeds"
-					type: "item"
-				}
-				{
-					id: "6F814EFC1B270561"
-					item: "entropy:plutonium_seeds"
-					type: "item"
-				}
-				{
-					id: "1FF6B371DAE49DCA"
-					item: "entropy:antimatter_seeds"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 3
+				id: "37C207A97BD2A179"
+				item: "mysticalagradditions:insanium_farmland"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "739A45C1A113B9C4"
 					item: "entropy:antimatter_seeds"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "142C7D716245B49A"
 					item: "entropy:plutonium_seeds"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "2A2F69DE2D82DC5C"
 					item: "entropy:polonium_seeds"
 					type: "item"

@@ -38,7 +38,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "338EAE61C8194114"
 				item: "mahoutsukai:dagger"
 				type: "item"
@@ -61,7 +61,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "405844A9F601DC8C"
 				item: "mahoutsukai:guidebook"
 				type: "item"
@@ -108,7 +108,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "092AB3550F8A5571"
 				item: {
 					Count: 1
@@ -135,7 +135,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "06BC1DFFD3ABE580"
 				item: "mahoutsukai:mana_circuit"
 				type: "item"
@@ -166,7 +166,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "68FF888FF8987BBF"
 				item: {
 					Count: 1
@@ -213,7 +213,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "43E59A2D3E641EAF"
 				item: {
 					Count: 1

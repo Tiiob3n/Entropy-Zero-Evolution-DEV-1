@@ -1,11 +1,9 @@
 {
-	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "bmouvement_fperptuel"
 	group: "22ADDA28ACA492F0"
 	hide_quest_until_deps_complete: true
-	hide_quest_until_deps_visible: true
 	icon: "create:large_water_wheel"
 	id: "318A7F5023619DD5"
 	images: [{
@@ -70,7 +68,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "05BB256E22011D84"
 				item: "create:belt_connector"
 				type: "item"
@@ -103,7 +101,7 @@
 				}
 			]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "2CD669022D59E26E"
 				item: "create:depot"
 				type: "item"
@@ -133,7 +131,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 4L
 				id: "681287802DD3A95C"
 				item: "create:andesite_casing"
@@ -161,7 +159,7 @@
 				}
 			]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "48C61E5A361A8A31"
 				item: "create:basin"
 				type: "item"
@@ -181,20 +179,13 @@
 				"&cWarning:&f It requires high rotational speed (&bMinimum 30 RPM&f). Use gears to multiply the speed of your water wheels!"
 			]
 			id: "722C1629B67B25EC"
-			rewards: [
-				{
-					id: "5F01190A1CD1D73C"
-					item: "create:large_cogwheel"
-					type: "item"
-				}
-				{
-					id: "1390C213C5112436"
-					item: "create:mechanical_mixer"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "5F01190A1CD1D73C"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "136788E472E7382C"
 				item: "create:mechanical_mixer"
 				type: "item"
@@ -219,7 +210,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "19EC52512DD22560"
 				item: "create:brass_ingot"
 				type: "item"
@@ -248,7 +239,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "42F028C1DA5D0210"
 				item: {
 					Count: 1
@@ -277,7 +268,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "3CF7C5E48EA79B2A"
 				item: "create:electron_tube"
 				type: "item"
@@ -311,7 +302,7 @@
 				}
 			]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "79321C7A6BCE26E2"
 				item: "create:deployer"
 				type: "item"
@@ -346,7 +337,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "365D484ABF1F85F0"
 				item: "create:precision_mechanism"
 				type: "item"
@@ -371,7 +362,7 @@
 				type: "random"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "256FD4986B1B343E"
 				item: "create:fluid_tank"
 				type: "item"
@@ -404,7 +395,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				icon: "create:steam_engine"
 				id: "33F960ADA5A34C77"
 				item: "create:steam_engine"
@@ -461,7 +452,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				icon: "minecraft:lava_bucket"
 				id: "711D662953283B64"
 				item: "minecraft:lava_bucket"
@@ -487,21 +478,13 @@
 				"Manage Input/Output mode by clicking the central dial."
 			]
 			id: "327B8B0014624E5F"
-			rewards: [
-				{
-					id: "24316297B625A4FE"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "6A429741A2F47582"
-					item: "enderstorage:ender_tank"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "24316297B625A4FE"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 2L
 				id: "0B4B5EFAFEDCF413"
 				item: "enderstorage:ender_tank"
@@ -542,7 +525,7 @@
 				}
 			]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "2373DC619366C429"
 				item: "create:empty_blaze_burner"
 				type: "item"
@@ -581,7 +564,8 @@
 				}
 			]
 			tasks: [{
-				consume_items: true
+				consume_items: false
+				count: 4L
 				id: "77EC9C9B06D2840E"
 				item: "create:blaze_burner"
 				type: "item"
@@ -606,7 +590,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 4L
 				id: "4E61E44E24E79395"
 				item: "create:fluid_tank"
@@ -646,16 +630,11 @@
 					item: "create:stressometer"
 					type: "item"
 				}
-				{
-					id: "708C94E47BBA9B62"
-					item: "create:goggles"
-					type: "item"
-				}
 			]
 			shape: "rsquare"
 			size: 2.0d
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "00A019030C8E44D5"
 				item: "create:goggles"
 				type: "item"

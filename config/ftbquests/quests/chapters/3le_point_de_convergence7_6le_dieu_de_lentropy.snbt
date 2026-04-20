@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "3le_point_de_convergence7_6le_dieu_de_lentropy"
 	group: "205A5F1622510366"
+	hide_quest_until_deps_complete: true
 	icon: "entropy:primordial_inertia_shard"
 	id: "440A4E1326429744"
 	images: [
@@ -301,7 +302,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 16L
 				id: "01304ED2BEE5F2EA"
 				item: "draconicevolution:draconium_ingot"
@@ -320,34 +321,21 @@
 				"&fPlace the &3Core &fin the center and surround it with &bInjectors&f. Each injector must be powered with &6RF&f."
 			]
 			id: "4F78B36CBBC17760"
-			rewards: [
-				{
-					id: "54EC35EACB045E35"
-					item: "draconicevolution:draconium_core"
-					type: "item"
-				}
-				{
-					count: 8
-					id: "71350F327E48F8B8"
-					item: "draconicevolution:basic_crafting_injector"
-					type: "item"
-				}
-				{
-					id: "208CAE03C5598FF3"
-					item: "draconicevolution:crafting_core"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "54EC35EACB045E35"
+				item: "draconicevolution:draconium_core"
+				type: "item"
+			}]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					count: 8L
 					id: "40B4FC6F63DD1D65"
 					item: "draconicevolution:basic_crafting_injector"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "6FF7D2F3E16BF281"
 					item: { Count: 8, id: "draconicevolution:crafting_core" }
 					type: "item"
@@ -371,7 +359,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 32L
 				id: "63F1A227EE83D7B5"
 				item: "draconicevolution:wyvern_core"
@@ -385,141 +373,34 @@
 			dependencies: ["5C1D6A6EF528E302"]
 			description: ["&fThis armor does not wear out; it consumes energy (RF) to maintain a shield around you."]
 			id: "6822DC937529C054"
-			rewards: [
-				{
-					id: "6C343FBEC815DA19"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								energy: {
-									energy: 0
-								}
-								module_host: {
-									modules: [ ]
-									properties: { }
-									provider_id: [I;
-										836117905
-										1087979849
-										-1396983929
-										338694813
-									]
-								}
+			rewards: [{
+				id: "07BFC871B6151794"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							energy: {
+								energy: 0
+							}
+							module_host: {
+								modules: [ ]
+								properties: { }
+								provider_id: [I;
+									556014478
+									-1880405317
+									-2073022073
+									-305094333
+								]
 							}
 						}
-						id: "draconicevolution:wyvern_chestpiece"
 					}
-					type: "item"
+					id: "draconicadditions:wyvern_necklace"
 				}
-				{
-					id: "7309E16D304BC3AE"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								energy: {
-									energy: 0
-								}
-								module_host: {
-									modules: [ ]
-									properties: {
-										mining_speed: {
-											hud: 1b
-											value: 1.0d
-										}
-									}
-									provider_id: [I;
-										1433292281
-										-842314968
-										-1731278724
-										408020514
-									]
-								}
-							}
-						}
-						id: "draconicevolution:wyvern_pickaxe"
-					}
-					type: "item"
-				}
-				{
-					id: "57BFF404610F7A3B"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								energy: {
-									energy: 0
-								}
-								module_host: {
-									modules: [ ]
-									properties: { }
-									provider_id: [I;
-										1048069943
-										942294783
-										-1227599818
-										-1472661016
-									]
-								}
-							}
-						}
-						id: "draconicevolution:wyvern_sword"
-					}
-					type: "item"
-				}
-				{
-					id: "2A70231614381DA6"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								energy: {
-									energy: 0
-								}
-								module_host: {
-									modules: [ ]
-									properties: { }
-									provider_id: [I;
-										-844273640
-										-154450460
-										-1915131745
-										1730931230
-									]
-								}
-							}
-						}
-						id: "draconicevolution:wyvern_bow"
-					}
-					type: "item"
-				}
-				{
-					id: "07BFC871B6151794"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								energy: {
-									energy: 0
-								}
-								module_host: {
-									modules: [ ]
-									properties: { }
-									provider_id: [I;
-										556014478
-										-1880405317
-										-2073022073
-										-305094333
-									]
-								}
-							}
-						}
-						id: "draconicadditions:wyvern_necklace"
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "4F67658512396E7C"
 					item: {
 						Count: 1
@@ -545,7 +426,7 @@
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "7D97EFA28F55626D"
 					item: {
 						Count: 1
@@ -576,7 +457,7 @@
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "5D6FF651ADB4B852"
 					item: {
 						Count: 1
@@ -602,7 +483,7 @@
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "0A831CD19E58DAB4"
 					item: {
 						Count: 1
@@ -627,32 +508,6 @@
 					}
 					type: "item"
 				}
-				{
-					consume_items: true
-					id: "220567E84673613C"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								energy: {
-									energy: 0
-								}
-								module_host: {
-									modules: [ ]
-									properties: { }
-									provider_id: [I;
-										1323376178
-										1626620607
-										-1441960696
-										1999795435
-									]
-								}
-							}
-						}
-						id: "draconicadditions:wyvern_necklace"
-					}
-					type: "item"
-				}
 			]
 			title: "&eAbsolute Protection"
 			x: 0.0d
@@ -667,7 +522,8 @@
 			]
 			id: "6BE1072C6862724D"
 			tasks: [{
-				consume_items: true
+				consume_items: false
+				count: 2L
 				id: "37826CF4BA9E6544"
 				item: "draconicevolution:energy_core"
 				type: "item"
@@ -687,27 +543,16 @@
 			]
 			icon: "draconicevolution:reactor_stabilizer"
 			id: "47B1EB79825AA9F1"
-			rewards: [
-				{
-					id: "467B451A57A4900F"
-					item: "draconicevolution:reactor_core"
-					type: "item"
-				}
-				{
-					id: "4140D4327DB37662"
-					item: "draconicevolution:reactor_stabilizer"
-					type: "item"
-				}
-			]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
+					count: 4L
 					id: "4F6B79F287CF7169"
 					item: "draconicevolution:reactor_core"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "714DA94C0A1655ED"
 					item: "draconicevolution:reactor_stabilizer"
 					type: "item"
@@ -726,7 +571,7 @@
 			]
 			id: "225D9A340DD84259"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 12L
 				id: "29612E4203D2ECAB"
 				item: "draconicevolution:awakened_core"
@@ -751,7 +596,8 @@
 					type: "checkmark"
 				}
 				{
-					consume_items: true
+					consume_items: false
+					count: 4L
 					id: "6FFF211847281E79"
 					item: "draconicevolution:chaos_shard"
 					type: "item"
@@ -768,13 +614,8 @@
 				"&aCongratulations: &fYou can now produce &cChaos &fvia your &2Mystical Agriculture &ffarms."
 			]
 			id: "47D149167DE0EC34"
-			rewards: [{
-				id: "082D46AA749D9192"
-				item: "entropy:chaos_seeds"
-				type: "item"
-			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "17E5F5446C0A7823"
 				item: "entropy:chaos_seeds"
 				type: "item"
@@ -791,13 +632,8 @@
 				"&7Prepare for an eternal wait... or multiply the collectors by a hundred."
 			]
 			id: "5677751DCCFF0785"
-			rewards: [{
-				id: "263556CCBA0CD642"
-				item: "avaritia:neutron_collector"
-				type: "item"
-			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "037600806BC62302"
 				item: "avaritia:neutron_collector"
 				type: "item"
@@ -822,7 +658,7 @@
 			shape: "heart"
 			size: 2.0d
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "63B31ABC3FAD0706"
 				item: "avaritia:infinity_ingot"
 				type: "item"
@@ -849,7 +685,7 @@
 			shape: "rsquare"
 			size: 4.0d
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "616C4854DFAFCF82"
 				item: "entropy:primordial_inertia_shard"
 				type: "item"
@@ -866,26 +702,13 @@
 				"&7Use your &bMechanical Crafters &7to forge this weapon capable of slaying any entity in a single strike."
 			]
 			id: "5634B69D28C8FFA5"
-			rewards: [
-				{
-					id: "3E158DE7E347FFC7"
-					item: "entropy:primordial_inertia_shard"
-					type: "item"
-				}
-				{
-					id: "27944357CF99215C"
-					item: {
-						Count: 1
-						id: "avaritia:infinity_sword"
-						tag: {
-							mode: { }
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "3E158DE7E347FFC7"
+				item: "entropy:primordial_inertia_shard"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "262EF86A54DE8A84"
 				item: {
 					Count: 1
@@ -908,26 +731,13 @@
 				"&4Warning: &fUsing it carelessly can turn your landscape into spatial Swiss cheese."
 			]
 			id: "4439438868B91C83"
-			rewards: [
-				{
-					id: "741439E521492278"
-					item: "entropy:primordial_inertia_shard"
-					type: "item"
-				}
-				{
-					id: "66FE5231B31456EA"
-					item: {
-						Count: 1
-						id: "avaritia:infinity_pickaxe"
-						tag: {
-							mode: { }
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "741439E521492278"
+				item: "entropy:primordial_inertia_shard"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "76E575FE5E031584"
 				item: {
 					Count: 1
@@ -950,55 +760,33 @@
 				"&7Each piece requires a central &dInertia Shard &7to bind the Infinity Ingots together."
 			]
 			id: "2CA49AE013F9BFDB"
-			rewards: [
-				{
-					count: 4
-					id: "19F24D67D5F02C65"
-					item: "entropy:primordial_inertia_shard"
-					type: "item"
-				}
-				{
-					id: "5A29C2BA01D6DE35"
-					item: "avaritia:infinity_helmet"
-					type: "item"
-				}
-				{
-					id: "2C25F70D12521997"
-					item: "avaritia:infinity_chestplate"
-					type: "item"
-				}
-				{
-					id: "3888895D994DF741"
-					item: "avaritia:infinity_pants"
-					type: "item"
-				}
-				{
-					id: "09F939F273A54560"
-					item: "avaritia:infinity_boots"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "19F24D67D5F02C65"
+				item: "entropy:primordial_inertia_shard"
+				type: "item"
+			}]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "73AE8FD95DD8E4D1"
 					item: "avaritia:infinity_helmet"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "311AAD5408A319BA"
 					item: "avaritia:infinity_chestplate"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "4793C5A884CD2EC7"
 					item: "avaritia:infinity_pants"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "59869515C380421D"
 					item: "avaritia:infinity_boots"
 					type: "item"
@@ -1011,21 +799,14 @@
 			dependencies: ["427FBB44E2780268"]
 			description: ["&fA bucket containing all the fluids of the universe in infinite quantity. Once filled, it will never empty."]
 			id: "31CCA3A841ECC68A"
-			rewards: [
-				{
-					count: 64
-					id: "6244B7F8929D48E2"
-					item: "avaritia:neutron"
-					type: "item"
-				}
-				{
-					id: "32447FBCF2EB222E"
-					item: "avaritia:infinity_bucket"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "6244B7F8929D48E2"
+				item: "avaritia:neutron"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "5999F2C58CF2AB4C"
 				item: "avaritia:infinity_bucket"
 				type: "item"
@@ -1051,7 +832,7 @@
 				}
 			]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "5D7774D1BC348485"
 				item: "pipez:infinity_upgrade"
 				type: "item"
@@ -1086,13 +867,18 @@
 					type: "item"
 				}
 				{
-					id: "6D005E8BEB8ACDFD"
-					item: "storagedrawers:creative_storage_upgrade"
+					id: "7A8BCDB178CB884A"
+					item: "storagedrawers:creative_vending_upgrade"
+					type: "item"
+				}
+				{
+					id: "1CA7C951D3509430"
+					item: "functionalstorage:creative_vending_upgrade"
 					type: "item"
 				}
 			]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "3A47358131B6A01E"
 				item: "storagedrawers:creative_storage_upgrade"
 				type: "item"
@@ -1118,7 +904,7 @@
 				}
 			]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "71FFB86E7A73A872"
 				item: "avaritia:eternal_singularity"
 				type: "item"
@@ -1132,7 +918,7 @@
 			description: ["&fThe perfect fuel. A heat source that will never go out, symbolizing the end of your energetic quest."]
 			id: "14320DFD9E85BC97"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "4B8A89C6F47DE291"
 				item: "avaritia:blaze_cube"
 				type: "item"

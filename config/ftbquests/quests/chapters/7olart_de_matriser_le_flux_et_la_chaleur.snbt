@@ -1,9 +1,9 @@
 {
-	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "7olart_de_matriser_le_flux_et_la_chaleur"
 	group: "38F7ABC9B17F7967"
+	hide_quest_until_deps_complete: true
 	icon: "thermalendergy:melodium_ingot"
 	id: "03C30CBD0F6EE59D"
 	images: [
@@ -37,24 +37,17 @@
 				"&fCombine them with a &bXychorium Gem&f to stabilize the &eMachine Frame&f. This block is the heart of all your future automations."
 			]
 			id: "0A06D46A16384B54"
-			rewards: [
-				{
-					count: 8
-					id: "63DD978308DD0A4C"
-					item: "alltheores:nickel_ingot"
-					type: "item"
-				}
-				{
-					id: "4626494B7FAE8365"
-					item: "thermal:machine_frame"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "63DD978308DD0A4C"
+				item: "alltheores:nickel_ingot"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "&7\"Strong as steel, or almost.\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "17581A20737C23FD"
 				item: "thermal:machine_frame"
 				type: "item"
@@ -73,21 +66,14 @@
 				"&7&oTip: Use a wrench to configure inputs and outputs!"
 			]
 			id: "44C7D911E985F936"
-			rewards: [
-				{
-					id: "3F7F02551D8E034C"
-					item: "pipez:wrench"
-					type: "item"
-				}
-				{
-					count: 16
-					id: "58BC4DA5F0607D0A"
-					item: "pipez:item_pipe"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "3F7F02551D8E034C"
+				item: "pipez:wrench"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
+				count: 16L
 				id: "4AA681CFF2792B65"
 				item: "pipez:item_pipe"
 				type: "item"
@@ -106,21 +92,14 @@
 				"&fYou must sacrifice &eMachine Frames&f to create your seeds. Automate mechanical production first before moving to biological production."
 			]
 			id: "799F8D47971CF8ED"
-			rewards: [
-				{
-					count: 4
-					id: "1DD13BB3C6FEF9D8"
-					item: "mysticalagriculture:tertium_essence"
-					type: "item"
-				}
-				{
-					id: "427409D0812C6D28"
-					item: "mysticalagriculture:invar_seeds"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "1DD13BB3C6FEF9D8"
+				item: "mysticalagriculture:tertium_essence"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "43473BE253ECAE1C"
 				item: "mysticalagriculture:invar_seeds"
 				type: "item"
@@ -139,61 +118,39 @@
 				"&fCreate your first &eFlux Plug&f (energy input) and &eFlux Point&f (energy output). Don't forget the &3Flux Controller&f to manage priorities and charge your inventory!"
 			]
 			id: "0C1B9AD68B7D9010"
-			rewards: [
-				{
-					count: 8
-					id: "70E3C3F32289013C"
-					item: "fluxnetworks:flux_dust"
-					type: "item"
-				}
-				{
-					id: "3E469CCC59F45415"
-					item: "fluxnetworks:flux_plug"
-					type: "item"
-				}
-				{
-					id: "63C4AA75285481EF"
-					item: "fluxnetworks:flux_point"
-					type: "item"
-				}
-				{
-					id: "6D0D98B7DC2B13B1"
-					item: "fluxnetworks:flux_core"
-					type: "item"
-				}
-				{
-					id: "2C370CB39A541D3E"
-					item: "fluxnetworks:flux_controller"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 8
+				id: "70E3C3F32289013C"
+				item: "fluxnetworks:flux_dust"
+				type: "item"
+			}]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "321657AB7EEA1E72"
 					item: "fluxnetworks:flux_dust"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "065F961604736D79"
 					item: "fluxnetworks:flux_core"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "34F51679B1FC4A55"
 					item: "fluxnetworks:flux_controller"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "09E51B4DC7B9C4CB"
 					item: "fluxnetworks:flux_plug"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "22974CE79ACA61DC"
 					item: "fluxnetworks:flux_point"
 					type: "item"
@@ -211,21 +168,14 @@
 				"&fIt turns your ores into dust, often doubling your production, and allows you to obtain rare by-products like &7Nickel&f or &6Gold&f."
 			]
 			id: "3C6BC294D099B103"
-			rewards: [
-				{
-					count: 2
-					id: "1A8D6DA7B578DF17"
-					item: "alltheores:invar_gear"
-					type: "item"
-				}
-				{
-					id: "36A0FBF1C7C6E768"
-					item: "thermal:machine_pulverizer"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 2
+				id: "1A8D6DA7B578DF17"
+				item: "alltheores:invar_gear"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "7F741FAE67ACE784"
 				item: "thermal:machine_pulverizer"
 				type: "item"
@@ -242,21 +192,14 @@
 				"&fThe &cInduction Smelter&f allows you to fuse metals to create alloys that are impossible to obtain otherwise. This is where you will create &6Signalum&f and &bEnderium&f required for Age 6."
 			]
 			id: "5BDE2C985A26B556"
-			rewards: [
-				{
-					count: 64
-					id: "6B79086F31CD5C94"
-					item: "minecraft:sand"
-					type: "item"
-				}
-				{
-					id: "5D816AADF02D24E8"
-					item: "thermal:machine_smelter"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "6B79086F31CD5C94"
+				item: "minecraft:sand"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "663070D6B80BE94A"
 				item: "thermal:machine_smelter"
 				type: "item"
@@ -273,20 +216,13 @@
 				"&fThis is an essential machine for preparing Age 6 processors."
 			]
 			id: "3F4CE667ECB2B304"
-			rewards: [
-				{
-					id: "3601DB50463BEE40"
-					item: "minecraft:bucket"
-					type: "item"
-				}
-				{
-					id: "22DC30D12FDD8211"
-					item: "thermal:machine_bottler"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "3601DB50463BEE40"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "1144DF8E02272807"
 				item: "thermal:machine_bottler"
 				type: "item"
@@ -325,13 +261,13 @@
 			]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "4CCD57883A38FBB7"
 					item: "thermal:upgrade_augment_1"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "44E9377362A65C8C"
 					item: "thermal:upgrade_augment_2"
 					type: "item"
@@ -366,7 +302,7 @@
 			]
 			subtitle: "&7\"The end of amateur tinkering.\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 4L
 				id: "54DACF20CE627713"
 				item: "thermal:signalum_ingot"
@@ -392,7 +328,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "17E146CFF7586194"
 				item: {
 					Count: 1
@@ -434,7 +370,7 @@
 			size: 2.0d
 			subtitle: "&7\"The pinnacle of thermal technology.\""
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				count: 4L
 				id: "7D3ACE775BA0586A"
 				item: "thermal:enderium_ingot"
@@ -466,13 +402,13 @@
 			]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "7B7CA38EFAADAACA"
 					item: "thermalendergy:prismalium_ingot"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "383B930564BC77F0"
 					item: "thermalendergy:endergy_upgrade_1"
 					type: "item"
@@ -504,13 +440,13 @@
 			]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "6F98705D747E4545"
 					item: "thermalendergy:melodium_ingot"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "01EDB0590B43B5F3"
 					item: "thermalendergy:endergy_upgrade_2"
 					type: "item"
@@ -542,13 +478,13 @@
 			]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "04579E7F3B3BEA4C"
 					item: "thermalendergy:stellarium_ingot"
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "436DA158A06B8F9A"
 					item: "thermalendergy:endergy_upgrade_3"
 					type: "item"

@@ -33,7 +33,7 @@
 			]
 			id: "6B3055F800F81EC7"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "50FB70C198D35946"
 				item: "compactmachines:machine_tiny"
 				type: "item"
@@ -46,7 +46,7 @@
 			dependencies: ["6B3055F800F81EC7"]
 			id: "3C0CCC59902F0495"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "6B4DDAAD433D9A94"
 				item: "compactmachines:machine_small"
 				type: "item"
@@ -59,7 +59,7 @@
 			dependencies: ["3C0CCC59902F0495"]
 			id: "5DCC199212252C0E"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "2C21712A0B3711F1"
 				item: "compactmachines:machine_normal"
 				type: "item"
@@ -72,7 +72,7 @@
 			dependencies: ["5DCC199212252C0E"]
 			id: "6A2492191A3C1258"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "4BD93F74DE39AE9A"
 				item: "compactmachines:machine_large"
 				type: "item"
@@ -85,7 +85,7 @@
 			dependencies: ["6A2492191A3C1258"]
 			id: "3B8BF26F6696A98B"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "3E235F3B31C4FE3E"
 				item: "compactmachines:machine_giant"
 				type: "item"
@@ -98,7 +98,7 @@
 			dependencies: ["3B8BF26F6696A98B"]
 			id: "31FAFE4B787042E2"
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "4A354D5E8BC19F0F"
 				item: "compactmachines:machine_maximum"
 				type: "item"

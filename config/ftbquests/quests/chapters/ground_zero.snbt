@@ -1,5 +1,4 @@
 {
-	consume_items: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "ground_zero"
@@ -72,7 +71,6 @@
 			}]
 			tasks: [
 				{
-					consume_items: true
 					count: 10L
 					icon: "minecraft:stick"
 					id: "67D2DEFA1DCAB4DD"
@@ -80,7 +78,6 @@
 					type: "item"
 				}
 				{
-					consume_items: true
 					count: 10L
 					id: "514822FBBBA83B0E"
 					item: "minecraft:flint"
@@ -102,7 +99,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
 				count: 4L
 				id: "0B493D5684EC00AA"
 				item: "tconstruct:pattern"
@@ -115,6 +111,7 @@
 		{
 			dependencies: ["0FE581846E087AE5"]
 			description: ["&fBuild your first workstations. The &6Part Builder &fto carve your components, and the &6Tinker Station &fto assemble them."]
+			icon: "tconstruct:part_builder"
 			id: "6C53B7C34E985E2B"
 			rewards: [{
 				count: 4
@@ -124,13 +121,11 @@
 			}]
 			tasks: [
 				{
-					consume_items: true
 					id: "7E4F5EFF133E30A6"
 					item: "tconstruct:part_builder"
 					type: "item"
 				}
 				{
-					consume_items: true
 					id: "6DE3F6886279F66E"
 					item: "tconstruct:tinker_station"
 					type: "item"
@@ -152,7 +147,6 @@
 			}]
 			tasks: [
 				{
-					consume_items: true
 					id: "3E11E01D6399BEB7"
 					item: {
 						Count: 1
@@ -164,7 +158,6 @@
 					type: "item"
 				}
 				{
-					consume_items: true
 					id: "271DF64C999705DB"
 					item: {
 						Count: 1
@@ -176,7 +169,6 @@
 					type: "item"
 				}
 				{
-					consume_items: true
 					id: "5F1C5AA1C247353C"
 					item: {
 						Count: 1
@@ -222,7 +214,7 @@
 			]
 			tasks: [
 				{
-					consume_items: true
+					consume_items: false
 					id: "6C3DA8A2C511579D"
 					item: {
 						Count: 1
@@ -262,7 +254,7 @@
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "4C780EE1263B2070"
 					item: {
 						Count: 1
@@ -302,7 +294,7 @@
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "2D73D79926935953"
 					item: {
 						Count: 1
@@ -377,7 +369,6 @@
 			]
 			tasks: [
 				{
-					consume_items: true
 					id: "5B5C451ECB52616F"
 					item: {
 						Count: 1
@@ -389,7 +380,7 @@
 					type: "item"
 				}
 				{
-					consume_items: true
+					consume_items: false
 					id: "143C6A8FE4E0D26F"
 					item: {
 						Count: 1
@@ -415,7 +406,7 @@
 				" "
 				"&8This alloy is the foundation of all the shafts and gears we are about to build."
 			]
-			icon: "create:andesite_alloy"
+			icon: "create:shaft"
 			id: "3D8CF578B91907F1"
 			rewards: [{
 				count: 16
@@ -424,8 +415,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
-				icon: "create:andesite_alloy"
+				consume_items: false
+				count: 16L
+				icon: "create:shaft"
 				id: "73CD4841A72FAA77"
 				item: "create:shaft"
 				type: "item"
@@ -451,7 +443,6 @@
 				type: "item"
 			}]
 			tasks: [{
-				consume_items: true
 				icon: "create:shaft"
 				id: "1AC30A115242444F"
 				item: "create:shaft"
@@ -487,7 +478,7 @@
 			shape: "diamond"
 			size: 2.0d
 			tasks: [{
-				consume_items: true
+				consume_items: false
 				id: "22A979374DE98188"
 				item: "create:water_wheel"
 				type: "item"

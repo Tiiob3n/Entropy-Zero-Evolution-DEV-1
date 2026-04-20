@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         'dark_steel', 'soularium', 'knightmetal', 'fiery_ingot', 'energized_steel', 'blazing_crystal', 
         'netherite', 'wither_skeleton', 'terrasteel', 'end_steel', 'vibrant_alloy', 'hepatizon', 
         'queens_slime', 'manyullyn', 'enderium', 'iridium', 'platinum', 'draconium', 'yellorium', 
-        'cyanite', 'niotic_crystal', 'spirited_crystal', 'uraninite', 'steel', 'iron', 'gold', 'coal', 'diamond', 'emerald'
+        'cyanite', 'niotic_crystal', 'spirited_crystal', 'uraninite', 'steel', 'iron', 'gold', 'coal', 'diamond', 'emerald', 'inferium'
     ]
 
     mySeeds.forEach(type => {
