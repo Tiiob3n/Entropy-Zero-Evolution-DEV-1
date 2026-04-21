@@ -354,7 +354,7 @@
 				}
 				{
 					id: "3948004E5A2BFFE9"
-					item: "farmersdelight:milk_bottle"
+					item: "croptopia:milk_bottle"
 					type: "item"
 				}
 			]
@@ -368,7 +368,7 @@
 				{
 					consume_items: false
 					id: "48351B63F91C7F9E"
-					item: "farmersdelight:milk_bottle"
+					item: "croptopia:milk_bottle"
 					type: "item"
 				}
 			]

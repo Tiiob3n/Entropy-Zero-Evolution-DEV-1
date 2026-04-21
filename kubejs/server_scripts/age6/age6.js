@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
 
     event.remove({ output: 'mekanism:steel_casing' })
     event.shaped('mekanism:steel_casing', ['SPS', 'PFP', 'SPS'], {
-        S: 'alltheores:steel_ingot',
+        S: '#forge:ingots/steel',
         P: 'industrialforegoing:dry_rubber',
         F: 'industrialforegoing:machine_frame_pity'
     }).id('entropy:age6/steel_casing_expert')
