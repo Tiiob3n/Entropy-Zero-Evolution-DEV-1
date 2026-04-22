@@ -6,24 +6,14 @@
 	hide_quest_until_deps_complete: true
 	icon: "thermalendergy:melodium_ingot"
 	id: "03C30CBD0F6EE59D"
-	images: [
-		{
-			height: 25.0d
-			image: "thermal:block/cells/energy_cell_bottom"
-			rotation: 0.0d
-			width: 25.0d
-			x: 10.0d
-			y: -2.5d
-		}
-		{
-			height: 15.0d
-			image: "thermal:block/devices/device_fisher_active"
-			rotation: 0.0d
-			width: 15.0d
-			x: 10.0d
-			y: -2.5d
-		}
-	]
+	images: [{
+		height: 25.0d
+		image: "thermal:block/charge_bench_bottom"
+		rotation: 0.0d
+		width: 25.0d
+		x: 9.0d
+		y: -2.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

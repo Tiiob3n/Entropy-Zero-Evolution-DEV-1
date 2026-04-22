@@ -688,6 +688,12 @@
 					item: "toms_storage:ts.inventory_cable"
 					type: "item"
 				}
+				{
+					count: 4L
+					id: "14F9731D52965DCF"
+					item: "toms_storage:ts.inventory_cable_connector"
+					type: "item"
+				}
 			]
 			title: "&a&lSimplified Logistics"
 			x: -8.0d
@@ -852,25 +858,12 @@
 				"&7Note: The Orb does not consume energy if it has nothing to transform."
 			]
 			id: "59F58D04A81A5AF6"
-			rewards: [
-				{
-					count: 4
-					id: "38769325C1C7293A"
-					item: "powah:steel_energized"
-					type: "item"
-				}
-				{
-					id: "11645DB4A836596D"
-					item: "powah:energizing_orb"
-					type: "item"
-				}
-				{
-					count: 2
-					id: "742C0B7D28F5BEA0"
-					item: "powah:energizing_rod_starter"
-					type: "item"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "392D030BCDAD1C4F"
+				table_id: 2050559670769664902L
+				type: "random"
+			}]
 			subtitle: "&7The electrical ritual"
 			tasks: [
 				{

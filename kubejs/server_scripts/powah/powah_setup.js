@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
     event.shapeless('16x powah:dielectric_paste', [
         'minecraft:clay_ball',
         '#forge:dyes/black',
-        '#forge:dusts/coal',
+        'mekanism:dust_coal',
         'minecraft:water_bucket'
     ]).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
 

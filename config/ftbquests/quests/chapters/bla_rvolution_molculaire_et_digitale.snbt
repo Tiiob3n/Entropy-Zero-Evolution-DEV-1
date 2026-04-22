@@ -6,12 +6,12 @@
 	icon: "ae2:spatial_cell_component_128"
 	id: "19AC7D1D0CE539A6"
 	images: [{
-		height: 100.0d
-		image: "mekanism_extras:block/models/multipart/opaque/cosmic_logistical_transporter"
+		height: 35.0d
+		image: "evolvedmekanism:block/alloyer/front_active"
 		rotation: 0.0d
-		width: 100.0d
-		x: -0.5d
-		y: -11.0d
+		width: 35.0d
+		x: 0.0d
+		y: -14.0d
 	}]
 	order_index: 0
 	quest_links: [ ]
