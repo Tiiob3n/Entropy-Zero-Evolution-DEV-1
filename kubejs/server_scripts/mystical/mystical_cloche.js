@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
         'fish', 'slime', 'turtle', 'silicon', 'rubber', 'sulfur', 'aluminium', 'saltpeter', 'apatite', 
         'grains_of_infinity', 'mystical_flower', 'marble', 'limestone', 'basalt', 'obsidian', 
         'prismarine', 'zombie', 'skeleton', 'creeper', 'spider', 'rabbit', 'bronze', 'zinc', 
-        'brass', 'graphite', 'blizz', 'blitz', 'basalz', 'amethyst_bronze', 'slimesteel', 
+        'brass', 'graphite', 'blizz', 'blitz', 'basalz', 'amethyst_bronze', 'slimesteel','nether_quartz', 
         'certus_quartz', 'sky_stone', 'ironwood', 'steeleaf', 'manasteel', 'conductive_alloy', 
         'redstone_alloy','aluminum', 'copper', 'copper_alloy', 'pig_iron', 'quartz_enriched_iron', 'lapis_lazuli', 
         'end', 'experience', 'blaze', 'ghast', 'enderman', 'chrome', 'uranium', 'titanium','tin','silver','lead','nickel','fluix','resonarium', 
