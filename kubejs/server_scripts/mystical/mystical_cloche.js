@@ -19,15 +19,15 @@ ServerEvents.recipes(event => {
         'prismarine', 'zombie', 'skeleton', 'creeper', 'spider', 'rabbit', 'bronze', 'zinc', 
         'brass', 'graphite', 'blizz', 'blitz', 'basalz', 'amethyst_bronze', 'slimesteel', 
         'certus_quartz', 'sky_stone', 'ironwood', 'steeleaf', 'manasteel', 'conductive_alloy', 
-        'redstone_alloy', 'copper_alloy', 'pig_iron', 'quartz_enriched_iron', 'lapis_lazuli', 
-        'end', 'experience', 'blaze', 'ghast', 'enderman', 'chrome', 'uranium', 'titanium', 
+        'redstone_alloy','aluminum', 'copper', 'copper_alloy', 'pig_iron', 'quartz_enriched_iron', 'lapis_lazuli', 
+        'end', 'experience', 'blaze', 'ghast', 'enderman', 'chrome', 'uranium', 'titanium','tin','silver','lead','nickel','fluix','resonarium', 
         'tungsten', 'mithril', 'invar', 'electrum', 'constantan', 'ruby', 'sapphire', 'peridot', 
         'soulium', 'signalum', 'lumium', 'hop_graphite', 'cobalt', 'rose_gold', 'refined_glowstone', 
         'refined_obsidian', 'fluorite', 'osmium', 'elementium', 'energetic_alloy', 'pulsating_alloy', 
         'dark_steel', 'soularium', 'knightmetal', 'fiery_ingot', 'energized_steel', 'blazing_crystal', 
         'netherite', 'wither_skeleton', 'terrasteel', 'end_steel', 'vibrant_alloy', 'hepatizon', 
         'queens_slime', 'manyullyn', 'enderium', 'iridium', 'platinum', 'draconium', 'yellorium', 
-        'cyanite', 'niotic_crystal', 'spirited_crystal', 'uraninite', 'steel', 'iron', 'gold', 'coal', 'diamond', 'emerald', 'inferium'
+        'cyanite', 'niotic_crystal', 'spirited_crystal', 'uraninite', 'steel', 'iron', 'gold', 'coal', 'diamond', 'emerald', 'inferium','redstone'
     ]
 
     mySeeds.forEach(type => {
