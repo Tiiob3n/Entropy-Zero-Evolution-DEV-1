@@ -12,11 +12,11 @@ ServerEvents.recipes(event => {
 
     // 2. Liste complète de graines
     const mySeeds = [
-        'air', 'earth', 'water', 'fire', 'stone', 'dirt', 'wood', 'ice', 'deepslate', 'nature', 
+        'air', 'earth', 'water', 'fire', 'stone', 'dirt', 'wood', 'ice', 'deepslate', 'nature','nether_star',
         'dye', 'nether', 'coral', 'honey', 'amethyst', 'pig', 'chicken', 'cow', 'sheep', 'squid', 
         'fish', 'slime', 'turtle', 'silicon', 'rubber', 'sulfur', 'aluminium', 'saltpeter', 'apatite', 
         'grains_of_infinity', 'mystical_flower', 'marble', 'limestone', 'basalt', 'obsidian', 
-        'prismarine', 'zombie', 'skeleton', 'creeper', 'spider', 'rabbit', 'bronze', 'zinc', 
+        'prismarine', 'zombie', 'skeleton', 'creeper', 'spider', 'rabbit', 'bronze', 'zinc','glowstone',
         'brass', 'graphite', 'blizz', 'blitz', 'basalz', 'amethyst_bronze', 'slimesteel','nether_quartz', 
         'certus_quartz', 'sky_stone', 'ironwood', 'steeleaf', 'manasteel', 'conductive_alloy', 
         'redstone_alloy','aluminum', 'copper', 'copper_alloy', 'pig_iron', 'quartz_enriched_iron', 'lapis_lazuli', 
@@ -25,8 +25,8 @@ ServerEvents.recipes(event => {
         'soulium', 'signalum', 'lumium', 'hop_graphite', 'cobalt', 'rose_gold', 'refined_glowstone', 
         'refined_obsidian', 'fluorite', 'osmium', 'elementium', 'energetic_alloy', 'pulsating_alloy', 
         'dark_steel', 'soularium', 'knightmetal', 'fiery_ingot', 'energized_steel', 'blazing_crystal', 
-        'netherite', 'wither_skeleton', 'terrasteel', 'end_steel', 'vibrant_alloy', 'hepatizon', 
-        'queens_slime', 'manyullyn', 'enderium', 'iridium', 'platinum', 'draconium', 'yellorium', 
+        'netherite', 'wither_skeleton', 'terrasteel', 'end_steel', 'vibrant_alloy', 'hepatizon','nitro_crystal',
+        'queens_slime', 'manyullyn', 'enderium', 'iridium', 'platinum', 'draconium', 'yellorium','allthemodium','vibranium','unobtainium','antimatter','plutonium','polonium', 
         'cyanite', 'niotic_crystal', 'spirited_crystal', 'uraninite', 'steel', 'iron', 'gold', 'coal', 'diamond', 'emerald', 'inferium','redstone'
     ]
 

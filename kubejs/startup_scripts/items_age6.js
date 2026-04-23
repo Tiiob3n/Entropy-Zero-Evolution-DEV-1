@@ -14,6 +14,15 @@ StartupEvents.registry('item', event => {
     event.create('entropy:chaos_seeds').displayName('Graines de Chaos (Mystical)')
     event.create('entropy:chaos_essence').displayName('Essence de Chaos')
     
+    event.create('entropy:allthemodium_seeds').displayName('Graines de Allthemodium (Mystical)')
+    event.create('entropy:allthemodium_essence').displayName('Essence de Allthemodium')
+
+    event.create('entropy:vibranium_seeds').displayName('Graines de Vibranium (Mystical)')
+    event.create('entropy:vibranium_essence').displayName('Essence de Vibranium')
+
+    event.create('entropy:unobtainium_seeds').displayName('Graines de Unobtainium (Mystical)')
+    event.create('entropy:unobtainium_essence').displayName('Essence de Unobtainium')
+    
     // --- L'ITEM FINAL DE L'AGE 9 ---
     event.create('entropy:primordial_inertia_shard')
         .displayName('§bÉclat§f de l\'§dInertie Primordiale')

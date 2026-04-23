@@ -495,7 +495,7 @@
 			y: -14.0d
 		}
 		{
-			dependencies: ["484D33F95BCD2619"]
+			dependencies: ["37D48A6A81B8DC6C"]
 			description: ["&fIt's time to craft your first digital storage components. Use &fPlastic&f and your &aCircuits&f to stabilize the matrix via the Dissolution Chamber."]
 			id: "0BF72E3F47A48087"
 			rewards: [{
@@ -520,18 +520,27 @@
 				}
 			]
 			title: "&bDigital Architect"
-			x: -2.0d
-			y: -12.5d
+			x: -4.0d
+			y: -13.5d
 		}
 		{
-			dependencies: ["0BF72E3F47A48087"]
+			dependencies: ["484D33F95BCD2619"]
 			description: ["&fThe &bInscriber&f is indispensable for AE2."]
 			id: "0C0F04FFE178B53B"
-			rewards: [{
-				id: "23B1211ACF2D6DFD"
-				item: "ae2:silicon_press"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "23B1211ACF2D6DFD"
+					item: "ae2:silicon"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4297980F89DD90AB"
+					item: "refinedstorage:silicon"
+					type: "item"
+				}
+			]
 			subtitle: "&7\"Pressing silicon\""
 			tasks: [{
 				consume_items: false
@@ -540,11 +549,11 @@
 				type: "item"
 			}]
 			title: "&bData Engraving"
-			x: -3.5d
-			y: -12.0d
+			x: -1.5d
+			y: -12.5d
 		}
 		{
-			dependencies: ["0BF72E3F47A48087"]
+			dependencies: ["0C0F04FFE178B53B"]
 			description: ["&fFor Refined Storage, forget the crafting table. You must use the &dDissolution Chamber&f and liquid &fLatex&f to bind your processors."]
 			id: "37D48A6A81B8DC6C"
 			rewards: [{
@@ -561,14 +570,13 @@
 				type: "item"
 			}]
 			title: "&3Processor Chemistry"
-			x: -3.5d
-			y: -13.0d
+			x: -3.0d
+			y: -12.5d
 		}
 		{
 			dependencies: [
-				"0C0F04FFE178B53B"
-				"37D48A6A81B8DC6C"
 				"03D3FE9A23F93194"
+				"0BF72E3F47A48087"
 			]
 			description: ["&f&cCROSS-DEPENDENCY:&f For AE2, assembling high-tier processors requires &eLithium&f or &bBrine&f from your Mekanism towers as a thermal stabilizer."]
 			id: "76D7E1B54C44B4B5"
@@ -754,8 +762,8 @@
 				}
 			]
 			title: "&dMatrix Acceleration"
-			x: -5.0d
-			y: -17.0d
+			x: -4.5d
+			y: -16.5d
 		}
 		{
 			dependencies: ["42FEBA52A772EDE4"]
@@ -790,6 +798,7 @@
 			dependencies: ["4A3343ECAB2F0D12"]
 			description: ["&fCreating a singularity requires colossal pressure. By condensing 64 materials via the Dissolution Chamber."]
 			id: "349B29A223AC563B"
+			optional: true
 			rewards: [{
 				count: 64
 				id: "10514A14F5691C42"
@@ -805,12 +814,13 @@
 			}]
 			title: "&3Infinite Compression"
 			x: -3.5d
-			y: -17.0d
+			y: -18.5d
 		}
 		{
 			dependencies: ["349B29A223AC563B"]
 			description: ["&fThe &bQuantum Network Bridge&f allows you to link two AE2 networks, regardless of distance."]
 			id: "6A32C06A9223994F"
+			optional: true
 			rewards: [{
 				count: 4
 				id: "270FDAAE40FF4A4B"
@@ -835,8 +845,8 @@
 				}
 			]
 			title: "&bQuantum Entanglement"
-			x: -2.0d
-			y: -17.0d
+			x: -3.5d
+			y: -19.5d
 		}
 		{
 			dependencies: [
@@ -849,20 +859,12 @@
 				"&fThe &6Logistical Sorter&f directs the right items to the right place."
 			]
 			id: "01109A7DB4009978"
-			rewards: [
-				{
-					count: 16
-					id: "7584F70D98A724A5"
-					item: "mekanism:basic_logistical_transporter"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "663CE8BDD8EB6CFE"
-					item: "mekanism:metallurgic_infuser"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 16
+				id: "7584F70D98A724A5"
+				item: "mekanism:basic_logistical_transporter"
+				type: "item"
+			}]
 			shape: "rsquare"
 			subtitle: "&7\"Dedicate to conquer\""
 			tasks: [
@@ -939,6 +941,7 @@
 			description: ["&fThe &dMeka-Tool&f is modular. Via a Modification Station, add 3x3 mining, Silk Touch, or teleportation."]
 			icon: "mekanism:meka_tool"
 			id: "5477269C45C54386"
+			optional: true
 			rewards: [
 				{
 					id: "3E7AB4ECBF8A6584"
