@@ -1,9 +1,10 @@
 ServerEvents.recipes(event => {
 
     // ========================================================================
-    // --- 1. INFRASTRUCTURE DE BASE & CHÂSSIS ---
+    // --- 1. INFRASTRUCTURE DE BASE & CHÂSSIS (DISSOLUTION CHAMBER) ---
     // ========================================================================
 
+    // Metallurgic Infuser
     event.remove({ output: 'mekanism:metallurgic_infuser' })
     event.shaped('mekanism:metallurgic_infuser', ['SFS', 'RCR', 'SFS'], {
         S: 'thermal:signalum_ingot',
@@ -12,6 +13,7 @@ ServerEvents.recipes(event => {
         C: 'thermal:enderium_ingot'
     }).id('entropy:age6/metallurgic_infuser_expert')
 
+    // Basic Control Circuit
     event.remove({ output: 'mekanism:basic_control_circuit' })
     event.custom({
         type: 'mekanism:metallurgic_infusing',
@@ -20,17 +22,76 @@ ServerEvents.recipes(event => {
         output: { item: 'mekanism:basic_control_circuit' }
     }).id('entropy:age6/basic_circuit_infusion')
 
-    const frames = [
-        { out: 'industrialforegoing:machine_frame_pity', pattern: ['IPI','PMP','IPI'], ing: { I: 'alltheores:invar_ingot', P: 'industrialforegoing:dry_rubber', M: 'thermal:machine_frame' }, id: 'pity' },
-        { out: 'industrialforegoing:machine_frame_simple', pattern: ['APA','PFP','APA'], ing: { A: 'mekanism:alloy_infused', P: 'thermalendergy:prismalium_ingot', F: 'industrialforegoing:machine_frame_pity' }, id: 'simple' },
-        { out: 'industrialforegoing:machine_frame_advanced', pattern: ['AMA','MVM','AMA'], ing: { A: 'mekanism:alloy_reinforced', M: 'thermalendergy:melodium_ingot', V: 'industrialforegoing:machine_frame_simple' }, id: 'advanced' },
-        { out: 'industrialforegoing:machine_frame_supreme', pattern: ['ASA','SVS','ASA'], ing: { A: 'mekanism:alloy_atomic', S: 'thermalendergy:stellarium_ingot', V: 'industrialforegoing:machine_frame_advanced' }, id: 'supreme' }
+    // --- UNIFICATION DES CHASSIS DANS LA DISSOLUTION CHAMBER ---
+    // Note : On utilise 8 items en input pour simuler ton pattern 3x3 sans le slot central
+    const dissolutionFrames = [
+        { 
+            out: 'industrialforegoing:machine_frame_pity', 
+            input: [
+                'alltheores:invar_ingot', 'industrialforegoing:dry_rubber', 'alltheores:invar_ingot',
+                'industrialforegoing:dry_rubber', 'industrialforegoing:dry_rubber',
+                'alltheores:invar_ingot', 'industrialforegoing:dry_rubber', 'alltheores:invar_ingot'
+            ], 
+            fluid: 'industrialforegoing:latex', 
+            amt: 250, 
+            base: 'thermal:machine_frame', // Utilisé pour remplacer le slot central (F/M)
+            id: 'pity' 
+        },
+        { 
+            out: 'industrialforegoing:machine_frame_simple', 
+            input: [
+                'mekanism:alloy_infused', 'thermalendergy:prismalium_ingot', 'mekanism:alloy_infused',
+                'thermalendergy:prismalium_ingot', 'thermalendergy:prismalium_ingot',
+                'mekanism:alloy_infused', 'thermalendergy:prismalium_ingot', 'mekanism:alloy_infused'
+            ], 
+            fluid: 'industrialforegoing:latex', 
+            amt: 500, 
+            base: 'industrialforegoing:machine_frame_pity',
+            id: 'simple' 
+        },
+        { 
+            out: 'industrialforegoing:machine_frame_advanced', 
+            input: [
+                'mekanism:alloy_reinforced', 'thermalendergy:melodium_ingot', 'mekanism:alloy_reinforced',
+                'thermalendergy:melodium_ingot', 'thermalendergy:melodium_ingot',
+                'mekanism:alloy_reinforced', 'thermalendergy:melodium_ingot', 'mekanism:alloy_reinforced'
+            ], 
+            fluid: 'industrialforegoing:latex', 
+            amt: 750, 
+            base: 'industrialforegoing:machine_frame_simple',
+            id: 'advanced' 
+        },
+        { 
+            out: 'industrialforegoing:machine_frame_supreme', 
+            input: [
+                'mekanism:alloy_atomic', 'thermalendergy:stellarium_ingot', 'mekanism:alloy_atomic',
+                'thermalendergy:stellarium_ingot', 'thermalendergy:stellarium_ingot',
+                'mekanism:alloy_atomic', 'thermalendergy:stellarium_ingot', 'mekanism:alloy_atomic'
+            ], 
+            fluid: 'industrialforegoing:latex', 
+            amt: 1000, 
+            base: 'industrialforegoing:machine_frame_advanced',
+            id: 'supreme' 
+        }
     ]
-    frames.forEach(f => {
+
+    dissolutionFrames.forEach(f => {
         event.remove({ output: f.out })
-        event.shaped(f.out, f.pattern, f.ing).id(`entropy:age6/${f.id}_frame_expert`)
+        
+        let ingredientList = []
+        f.input.forEach(i => { ingredientList.push({ item: i }) })
+        ingredientList.push({ item: f.base }) // On ajoute le châssis de base
+
+        event.custom({
+            type: 'industrialforegoing:dissolution_chamber',
+            input: ingredientList,
+            inputFluid: `{FluidName:"${f.fluid}",Amount:${f.amt}}`,
+            processingTime: 300,
+            output: { item: f.out, count: 1 }
+        }).id(`entropy:age6/${f.id}_frame_dissolution`)
     })
 
+    // Steel Casing
     event.remove({ output: 'mekanism:steel_casing' })
     event.shaped('mekanism:steel_casing', ['SPS', 'PFP', 'SPS'], {
         S: '#forge:ingots/steel',
@@ -244,6 +305,7 @@ ServerEvents.recipes(event => {
         duration: 200
     }).id('entropy:age6/alloy_exoversal_nucleo')
 
+    // SPS Table Fix (Optional)
     event.shaped('evolvedmekanism:alloy_exoversal', [' S ','APA',' S '], {
         S: 'evolvedmekanism:alloy_singular',
         P: 'mekanism:pellet_antimatter',

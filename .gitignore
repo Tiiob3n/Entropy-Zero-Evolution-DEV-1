@@ -67,3 +67,10 @@ config/packetfixer.properties
 config/powah.json5
 minecraftinstance.json
 MODLIST.md
+/config/jei
+config/ftbxmodcompat.snbt
+config/attributefix.json
+config/InventoryHUD/curios.json
+config/jei/ingredient-list-mod-sort-order.ini
+config/jei/ingredient-list-type-sort-order.ini
+config/powah.json5

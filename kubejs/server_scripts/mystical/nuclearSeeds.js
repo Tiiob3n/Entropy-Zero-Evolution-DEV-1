@@ -29,9 +29,9 @@ ServerEvents.recipes(event => {
     addInfusion('entropy:polonium_seeds', 'mekanism:pellet_polonium', 'evolvedmekanism:alloy_hypercharged', 'polonium')
     addInfusion('entropy:plutonium_seeds', 'mekanism:pellet_plutonium', 'evolvedmekanism:alloy_subatomic', 'plutonium')
     addInfusion('entropy:antimatter_seeds', 'mekanism:pellet_antimatter', 'evolvedmekanism:alloy_exoversal', 'antimatter')
-    addInfusion('entropy:unobtainium_seeds', 'allthemodium:allthemodium_ingot', 'mysticalagradditions:insanium_essence', 'allthemodium')
+    addInfusion('entropy:unobtainium_seeds', 'allthemodium:unobtainium_ingot', 'mysticalagradditions:insanium_essence', 'unobtainium')
     addInfusion('entropy:vibranium_seeds', 'allthemodium:vibranium_ingot', 'mysticalagradditions:insanium_essence', 'vibranium')
-    addInfusion('entropy:allthemodium_seeds', 'allthemodium:unobtainium_ingot', 'mysticalagradditions:insanium_essence', 'unobtainium')
+    addInfusion('entropy:allthemodium_seeds', 'allthemodium:allthemodium_ingot', 'mysticalagradditions:insanium_essence', 'allthemodium')
     // ========================================================================
     // --- 2. AUTOMATISATION (PHYTOGENIC INSOLATOR - THERMAL) ---
     // ========================================================================

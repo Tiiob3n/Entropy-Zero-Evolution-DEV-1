@@ -38,8 +38,9 @@ ServerEvents.recipes(event => {
         { color: 'light', dye: 'minecraft:white_dye' }
     ]
 
-    gemColors.forEach(gem => {
-        event.shaped(`xycraft_world:xychorium_gem_${gem.color}`, [
+gemColors.forEach(gem => {
+        // On ajoute le multiplicateur '8x' devant l'ID de l'item
+        event.shaped(Item.of(`xycraft_world:xychorium_gem_${gem.color}`, 8), [
             'KKK',
             'KDK',
             'KKK'

@@ -171,7 +171,7 @@
 			}]
 			title: "&bOsmium Compression"
 			x: 2.0d
-			y: -4.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["48552183D62FD8E7"]
@@ -219,10 +219,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: [
-				"5BADD0A3338E9F8B"
-				"2C9058DB5B6799BA"
-			]
+			dependencies: ["484D33F95BCD2619"]
 			description: ["&fThe technological branches are converging. To reach the next level, you must combine your &7Pity Frames&f with Mekanism's &aInfused Alloy&f."]
 			id: "1487AFC19C5CF684"
 			rewards: [{
@@ -242,7 +239,7 @@
 			}]
 			title: "&eMechanical Evolution"
 			x: 0.0d
-			y: -7.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["1487AFC19C5CF684"]
@@ -267,7 +264,7 @@
 			}]
 			title: "&6Reinforced Structure"
 			x: 0.0d
-			y: -9.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["35FF6E9B36EE25B0"]
@@ -291,10 +288,13 @@
 			}]
 			title: "&cThe Industrial Pinnacle"
 			x: 0.0d
-			y: -10.5d
+			y: -11.5d
 		}
 		{
-			dependencies: ["67780A5DBCFC950F"]
+			dependencies: [
+				"5BADD0A3338E9F8B"
+				"2C9058DB5B6799BA"
+			]
 			description: [
 				"&fThe &dDissolution Chamber&f is the bottleneck of this Age. It allows mixing fluids with items to create the ultimate digital and chemical components."
 				" "
@@ -318,12 +318,12 @@
 			}]
 			title: "&dThe Dissolution Chamber"
 			x: 0.0d
-			y: -12.5d
+			y: -6.75d
 		}
 		{
-			dependencies: ["484D33F95BCD2619"]
 			description: ["&fBuild a thermal evaporation tower. The taller it is, the more efficient it becomes. It will be the pillar of your chemical production (&bBrine&f and &eLithium&f)."]
 			id: "03D3FE9A23F93194"
+			optional: true
 			rewards: [{
 				count: 16
 				id: "3C36BDE405A02E06"
@@ -339,10 +339,10 @@
 			}]
 			title: "&eSolar Evaporation"
 			x: 2.0d
-			y: -12.5d
+			y: -14.5d
 		}
 		{
-			dependencies: ["484D33F95BCD2619"]
+			dependencies: ["67780A5DBCFC950F"]
 			description: [
 				"&fThe &bElectrolytic Separator&f is your first step into gas manipulation. Separate water into &lHydrogen&r and &lOxygen&r."
 				" "
@@ -492,7 +492,7 @@
 			}]
 			title: "&eMobile Energy Storage"
 			x: 2.0d
-			y: -14.0d
+			y: -15.5d
 		}
 		{
 			dependencies: ["37D48A6A81B8DC6C"]
@@ -520,11 +520,11 @@
 				}
 			]
 			title: "&bDigital Architect"
-			x: -4.0d
-			y: -13.5d
+			x: -4.5d
+			y: -10.0d
 		}
 		{
-			dependencies: ["484D33F95BCD2619"]
+			dependencies: ["67780A5DBCFC950F"]
 			description: ["&fThe &bInscriber&f is indispensable for AE2."]
 			id: "0C0F04FFE178B53B"
 			rewards: [
@@ -550,7 +550,7 @@
 			}]
 			title: "&bData Engraving"
 			x: -1.5d
-			y: -12.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["0C0F04FFE178B53B"]
@@ -571,13 +571,10 @@
 			}]
 			title: "&3Processor Chemistry"
 			x: -3.0d
-			y: -12.5d
+			y: -10.0d
 		}
 		{
-			dependencies: [
-				"03D3FE9A23F93194"
-				"0BF72E3F47A48087"
-			]
+			dependencies: ["0BF72E3F47A48087"]
 			description: ["&f&cCROSS-DEPENDENCY:&f For AE2, assembling high-tier processors requires &eLithium&f or &bBrine&f from your Mekanism towers as a thermal stabilizer."]
 			id: "76D7E1B54C44B4B5"
 			rewards: [{
@@ -594,8 +591,8 @@
 				type: "item"
 			}]
 			title: "&eAdvanced Circuits"
-			x: -2.0d
-			y: -14.0d
+			x: -4.5d
+			y: -11.5d
 		}
 		{
 			dependencies: ["76D7E1B54C44B4B5"]
@@ -623,13 +620,13 @@
 				}
 			]
 			title: "&dEnergistics Matrix"
-			x: -3.5d
-			y: -14.5d
+			x: -4.5d
+			y: -13.0d
 		}
 		{
-			dependencies: ["76D7E1B54C44B4B5"]
 			description: ["&fThe same principle applies to Refined Storage. Wire your circuits under high pressure."]
 			id: "6FDE5B25480A8F93"
+			optional: true
 			rewards: [{
 				count: 16
 				id: "306FCC2FE080B059"
@@ -652,8 +649,8 @@
 				}
 			]
 			title: "&bRefined Architecture"
-			x: -3.5d
-			y: -15.5d
+			x: -2.5d
+			y: -17.5d
 		}
 		{
 			dependencies: ["4A3343ECAB2F0D12"]
@@ -683,13 +680,14 @@
 				}
 			]
 			title: "&dMolecular Logistics"
-			x: -5.0d
+			x: -4.5d
 			y: -14.5d
 		}
 		{
 			dependencies: ["6FDE5B25480A8F93"]
 			description: ["&fThe RS &bCrafter&f teaches recipes to your network. Its &8Steel&f casing allows it to withstand hellish workloads."]
 			id: "42FEBA52A772EDE4"
+			optional: true
 			rewards: [
 				{
 					count: 16
@@ -712,8 +710,8 @@
 				type: "item"
 			}]
 			title: "&bIndustrial Automation"
-			x: -5.0d
-			y: -15.5d
+			x: -3.5d
+			y: -17.5d
 		}
 		{
 			dependencies: ["08C919E3A48AE1B5"]
@@ -762,13 +760,14 @@
 				}
 			]
 			title: "&dMatrix Acceleration"
-			x: -4.5d
-			y: -16.5d
+			x: 0.0d
+			y: -14.5d
 		}
 		{
 			dependencies: ["42FEBA52A772EDE4"]
 			description: ["&fStreamline Refined Storage. The &bFluid Interface&f exports gases and liquids like dirt blocks, and &eSpeed Upgrades&f make waiting a thing of the past."]
 			id: "08A8357924E9E01D"
+			optional: true
 			rewards: [{
 				count: 16
 				id: "02054DC48C28A596"
@@ -791,8 +790,8 @@
 				}
 			]
 			title: "&bLiquid Data Flow"
-			x: -6.5d
-			y: -17.0d
+			x: -3.5d
+			y: -16.0d
 		}
 		{
 			dependencies: ["4A3343ECAB2F0D12"]
@@ -814,7 +813,7 @@
 			}]
 			title: "&3Infinite Compression"
 			x: -3.5d
-			y: -18.5d
+			y: -13.0d
 		}
 		{
 			dependencies: ["349B29A223AC563B"]
@@ -845,14 +844,11 @@
 				}
 			]
 			title: "&bQuantum Entanglement"
-			x: -3.5d
-			y: -19.5d
+			x: -2.5d
+			y: -13.0d
 		}
 		{
-			dependencies: [
-				"5284C8B75E0955C5"
-				"08A8357924E9E01D"
-			]
+			dependencies: ["5284C8B75E0955C5"]
 			description: [
 				"&fAutocrafting gets stuck on the Metallurgic Infuser (which doesn't purge its gases). Solution: &lDedicate one machine per infusion type.&r"
 				" "
@@ -1076,7 +1072,7 @@
 				type: "item"
 			}]
 			title: "&dMultiverse Memory"
-			x: -2.0d
+			x: -1.0d
 			y: -22.0d
 		}
 		{
