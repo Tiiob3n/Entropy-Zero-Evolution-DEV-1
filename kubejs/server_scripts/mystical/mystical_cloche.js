@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
         'air', 'earth', 'water', 'fire', 'stone', 'dirt', 'wood', 'ice', 'deepslate', 'nature','nether_star',
         'dye', 'nether', 'coral', 'honey', 'amethyst', 'pig', 'chicken', 'cow', 'sheep', 'squid', 
         'fish', 'slime', 'turtle', 'silicon', 'rubber', 'sulfur', 'aluminium', 'saltpeter', 'apatite', 
-        'grains_of_infinity', 'mystical_flower', 'marble', 'limestone', 'basalt', 'obsidian', 
+        'grains_of_infinity', 'mystical_flower', 'marble', 'limestone', 'basalt', 'obsidian','gaia_spirit','dragon_egg',
         'prismarine', 'zombie', 'skeleton', 'creeper', 'spider', 'rabbit', 'bronze', 'zinc','glowstone',
         'brass', 'graphite', 'blizz', 'blitz', 'basalz', 'amethyst_bronze', 'slimesteel','nether_quartz', 
         'certus_quartz', 'sky_stone', 'ironwood', 'steeleaf', 'manasteel', 'conductive_alloy', 

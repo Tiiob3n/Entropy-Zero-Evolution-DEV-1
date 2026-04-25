@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
             { item: "ae2:smooth_sky_stone_block" }
         ],
         inputFluid: "{FluidName:\"industrialforegoing:pink_slime\",Amount:250}",
-        processingTime: 300,
+        processingTime: 60,
         output: {
             item: "ae2:controller",
             count: 1

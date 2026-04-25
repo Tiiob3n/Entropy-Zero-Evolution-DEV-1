@@ -10,7 +10,7 @@ ServerEvents.recipes(event => {
     ], {
         G: '#forge:glass',
         L: 'immersiveengineering:light_engineering',
-        S: 'immersiveengineering:plate_steel',
+        S: '#forge:plates/steel',
         C: 'powah:dielectric_casing'
     })
 

@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         'PCP',
         'SPS'
     ], {
-        S: 'immersiveengineering:plate_steel',    
+        S: '#forge:plates/steel',    
         P: 'powah:dielectric_paste',               
         C: 'immersiveengineering:component_iron'   
     })
@@ -31,13 +31,13 @@ ServerEvents.recipes(event => {
         R: 'immersiveengineering:slag_glass',       
         G: '#forge:glass',
         C: 'powah:dielectric_casing',
-        S: 'immersiveengineering:plate_steel'
+        S: '#forge:plates/steel'
     })
 
     // 4. Energized Steel (Via l'Energizing Orb)
     event.remove({ output: 'powah:steel_energized' })
     event.recipes.powah.energizing(
-        ['immersiveengineering:ingot_steel', 'minecraft:gold_ingot'], 
+        ['#forge:ingots/steel', 'minecraft:gold_ingot'], 
         '2x powah:steel_energized', 
         10000
     )
