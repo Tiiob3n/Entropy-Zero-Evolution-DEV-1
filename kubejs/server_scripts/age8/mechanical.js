@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
         'GAG',
         'SRS'
     ], {
-        S: 'mekanism:ingot_steel',          
+        S: '#forge:ingots/steel',          
         P: 'botania:apothecary_default',     
         G: 'minecraft:gold_ingot',
         A: 'mekanism:advanced_control_circuit', 

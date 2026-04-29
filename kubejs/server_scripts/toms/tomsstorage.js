@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 
   // On définit les objets à modifier
-  const steel = 'immersiveengineering:ingot_steel'
+  const steel = '#forge:ingots/steel'
   const plate = 'immersiveengineering:plate_steel' 
 
   // 1. Storage Terminal

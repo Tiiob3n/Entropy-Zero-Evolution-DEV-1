@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
     // Très Hauts Tiers ExtraDisks
     dissolve('extradisks:65536k_storage_part', ['extradisks:16384k_storage_part', 'extradisks:16384k_storage_part', 'extradisks:16384k_storage_part', 'refinedstorage:advanced_processor', 'thermal:electrum_ingot'], latex, 900, 500, 'ed_64m')
     dissolve('extradisks:262144k_storage_part', ['extradisks:65536k_storage_part', 'extradisks:65536k_storage_part', 'extradisks:65536k_storage_part', 'refinedstorage:advanced_processor', 'mekanism:ingot_osmium'], latex, 1000, 550, 'ed_256m')
-    dissolve('extradisks:1048576k_storage_part', ['extradisks:262144k_storage_part', 'extradisks:262144k_storage_part', 'extradisks:262144k_storage_part', 'refinedstorage:advanced_processor', 'mekanism:ingot_steel'], latex, 1500, 600, 'ed_1024m')
+    dissolve('extradisks:1048576k_storage_part', ['extradisks:262144k_storage_part', 'extradisks:262144k_storage_part', 'extradisks:262144k_storage_part', 'refinedstorage:advanced_processor', '#forge:ingots/steel'], latex, 1500, 600, 'ed_1024m')
     
     dissolve('extradisks:raw_withering_processor', ['minecraft:wither_skeleton_skull', 'refinedstorage:advanced_processor', 'minecraft:soul_sand', 'minecraft:soul_sand', 'minecraft:diamond'], latex, 2000, 400, 'raw_withering')
     dissolve('extradisks:infinite_storage_part', ['extradisks:1048576k_storage_part', 'extradisks:1048576k_storage_part', 'extradisks:1048576k_storage_part', 'extradisks:raw_withering_processor', 'minecraft:nether_star'], latex, 4000, 1000, 'rs_infinite')
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         { outED: 'extradisks:16384k_fluid_storage_part', outEX: 'extrastorage:storagepart_16384k_fluid', in: 'refinedstorage:4096k_fluid_storage_part', mat: 'minecraft:netherite_scrap', vol: 10000, id: '16m' },
         { outED: 'extradisks:65536k_fluid_storage_part', outEX: 'extrastorage:storagepart_65536k_fluid', in: 'extradisks:16384k_fluid_storage_part', mat: 'minecraft:netherite_ingot', vol: 12000, id: '64m' },
         { outED: 'extradisks:262144k_fluid_storage_part', outEX: 'extrastorage:storagepart_262144k_fluid', in: 'extradisks:65536k_fluid_storage_part', mat: 'thermal:invar_ingot', vol: 14000, id: '256m' },
-        { outED: 'extradisks:1048576k_fluid_storage_part', outEX: 'extrastorage:storagepart_1048576k_fluid', in: 'extradisks:262144k_fluid_storage_part', mat: 'mekanism:ingot_steel', vol: 16000, id: '1024m' }
+        { outED: 'extradisks:1048576k_fluid_storage_part', outEX: 'extrastorage:storagepart_1048576k_fluid', in: 'extradisks:262144k_fluid_storage_part', mat: '#forge:ingots/steel', vol: 16000, id: '1024m' }
     ]
 
     fluidTiers.forEach(t => {
