@@ -17,7 +17,7 @@
 		}
 		{
 			height: 20.0d
-			image: "farmersdelight:block/basket_top"
+			image: "farmersdelight:block/bamboo_basket_handle"
 			rotation: 0.0d
 			width: 20.0d
 			x: -2.5d
@@ -270,12 +270,19 @@
 				"&fCollect the precious liquid in a basin below. This is the first step towards high-quality beverages."
 			]
 			id: "7BFFC90D93B2B902"
-			rewards: [{
-				count: 4
-				id: "1DA60F7E4B5DC76C"
-				item: "minecraft:sugar_cane"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "1DA60F7E4B5DC76C"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					id: "683CF9819FA50F94"
+					item: "croptopia:rice_seed"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "2C33978F3E35CA3C"
 				title: "mechanical_press"

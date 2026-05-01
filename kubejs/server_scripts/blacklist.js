@@ -1,0 +1,11 @@
+ServerEvents.tags('block', event => { 
+    event.add('squatgrow:blaclist',  'minecraft:grass_block')
+    event.add('squatgrow:blaclist',  'minecraft:dirt')
+    event.add('squatgrow:blaclist',  'minecraft:coarse_dirt')
+    event.add('squatgrow:blaclist',  'minecraft:podzol')
+    event.add('squatgrow:blaclist',  'minecraft:farmland')
+    event.add('squatgrow:blaclist',  'minecraft:mycelium')
+    event.add('squatgrow:blaclist',  'minecraft:rooted_dirt')
+    event.add('squatgrow:blaclist',  'minecraft:moss_block')
+    event.add('squatgrow:blaclist',  'minecraft:moss_carpet')
+})

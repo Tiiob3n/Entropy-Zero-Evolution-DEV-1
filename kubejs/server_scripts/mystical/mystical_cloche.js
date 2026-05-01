@@ -2,12 +2,12 @@ ServerEvents.recipes(event => {
 
     // 1. Définition des paliers de vitesse (en ticks : 20 ticks = 1 seconde)
     const tiers = [
-        { id: 'inferium', farmland: 'mysticalagriculture:inferium_farmland', time: 600 },   // 30s
-        { id: 'prudentium', farmland: 'mysticalagriculture:prudentium_farmland', time: 450 }, // 22.5s
-        { id: 'tertium', farmland: 'mysticalagriculture:tertium_farmland', time: 300 },      // 15s
-        { id: 'imperium', farmland: 'mysticalagriculture:imperium_farmland', time: 200 },     // 10s
-        { id: 'supremium', farmland: 'mysticalagriculture:supremium_farmland', time: 100 },   // 5s
-        { id: 'insanium', farmland: 'mysticalagradditions:insanium_farmland', time: 50 }      // 2.5s
+        { id: 'inferium', farmland: 'mysticalagriculture:inferium_farmland', time: 300 }, 
+        { id: 'prudentium', farmland: 'mysticalagriculture:prudentium_farmland', time: 225 }, 
+        { id: 'tertium', farmland: 'mysticalagriculture:tertium_farmland', time: 150 },     
+        { id: 'imperium', farmland: 'mysticalagriculture:imperium_farmland', time: 100 },  
+        { id: 'supremium', farmland: 'mysticalagriculture:supremium_farmland', time: 50 },   
+        { id: 'insanium', farmland: 'mysticalagradditions:insanium_farmland', time: 20 }   
     ]
 
     // 2. Liste complète de graines

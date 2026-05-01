@@ -6,14 +6,24 @@
 	hide_quest_until_deps_complete: true
 	icon: "create:large_water_wheel"
 	id: "318A7F5023619DD5"
-	images: [{
-		height: 20.0d
-		image: "create:block/copper_casing"
-		rotation: 0.0d
-		width: 20.0d
-		x: 0.0d
-		y: -2.5d
-	}]
+	images: [
+		{
+			height: 20.0d
+			image: "create:block/copper_casing"
+			rotation: 0.0d
+			width: 20.0d
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			height: 3.0d
+			image: "ad_astra:block/flag/warning_flag"
+			rotation: 0.0d
+			width: 3.0d
+			x: -7.0d
+			y: -9.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -319,7 +329,7 @@
 				"The &bPrecision Mechanism&f cannot be crafted all at once. It requires an &6Assembly Sequence&f."
 				""
 				"&eRecommended Setup:&f"
-				"Place 3 Deployers over a belt or depots. Pass a &6Gold Plate&f successively under the following items:"
+				"Place 3 Deployers over a belt or depots. Pass a &6Gold Ingot&f successively under the following items:"
 				""
 				"1 - Small Cogwheel"
 				""
@@ -642,6 +652,44 @@
 			title: "&bEngineer's Vision"
 			x: 0.0d
 			y: -4.5d
+		}
+		{
+			description: [
+				"In the world of &5Entropy&r, heat is a double-edged sword. Using a &bMechanical Fan&r over lava is a great way to smelt items without fuel, but it's also dangerous."
+				""
+				"&c&l⚠WARNING:&r"
+				"If you leave your items on a &7Depot&r or a &7Belt&r for too long while they are being blasted by heat, they will eventually &4&lburn up and disappear&r."
+				""
+				"&eThis isn't a bug, it's thermodynamics!&r"
+				""
+				"&6&lPro Tip:&r"
+				"Don't leave your forge unattended. Use &aSmart Chutes&r, &aBrass Tunnels&r, or even a simple &aHopper&r to pull your items out as soon as they are finished processing."
+				""
+				"&bAutomated safety is the key to an Expert factory!"
+			]
+			id: "72A285C96EDF5F29"
+			rewards: [{
+				id: "59F7E49AA0DDECAA"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "660C619655A044A2"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "1524CAD7CCAE5966"
+					item: "create:depot"
+					type: "item"
+				}
+			]
+			title: "&6Trial by Fire"
+			x: -7.0d
+			y: -7.0d
 		}
 	]
 	title: "&bMechanical &fMotion"

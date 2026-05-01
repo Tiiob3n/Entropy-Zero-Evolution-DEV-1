@@ -1,5 +1,5 @@
 LootJS.modifiers(event => {
-    event.addLootTableModifier(/.*/)
+    event.addLootTableModifier(/.*chests\/.*/)
         .removeLoot('minecraft:iron_pickaxe')
         .removeLoot('minecraft:iron_ingot')
         .removeLoot('minecraft:iron_sword')
