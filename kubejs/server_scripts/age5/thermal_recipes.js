@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
         'SCS',
         'IXI'
     ], {
-        I: 'alltheores:invar_ingot',          
+        I: '#forge:ingots/invar',          
         X: 'xycraft_world:xychorium_gem_light', 
         S: 'minecraft:quartz_block',          
         C: 'create:brass_casing'              
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
         'DFD'
     ], {
         D: 'fluxnetworks:flux_dust',
-        F: 'alltheores:invar_ingot',
+        F: '#forge:ingots/invar',
         M: 'thermal:machine_frame'
     }).id('entropy:age5/flux_core_expert')
 
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
         'FSF',
         'LFL'
     ], {
-        L: 'alltheores:invar_ingot',
+        L: '#forge:ingots/invar',
         F: 'thermal:machine_frame',
         S: 'mysticalagriculture:prosperity_seed_base'
     }).id('entropy:age5/mystical_invar_expert')
@@ -142,7 +142,7 @@ ServerEvents.recipes(event => {
         'FSF',
         'LFL'
     ], {
-        L: 'alltheores:nickel_ingot',
+        L: '#forge:ingots/nickel',
         F: 'thermal:machine_frame',
         S: 'mysticalagriculture:prosperity_seed_base'
     }).id('entropy:age5/mystical_nickel_expert')
@@ -155,7 +155,7 @@ ServerEvents.recipes(event => {
         'RGR'
     ], {
         P: 'minecraft:piston',
-        I: 'alltheores:invar_ingot',
+        I: '#forge:ingots/invar',
         M: 'thermal:machine_frame',
         R: 'minecraft:redstone',
         G: 'thermal:invar_gear'
@@ -168,7 +168,7 @@ ServerEvents.recipes(event => {
         'RCR'
     ], {
         B: 'minecraft:blast_furnace',
-        I: 'alltheores:invar_ingot',
+        I: '#forge:ingots/invar',
         M: 'thermal:machine_frame',
         R: 'minecraft:redstone',
         C: 'thermal:constantan_gear'
@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
         'RER'
     ], {
         B: 'minecraft:glass_bottle',
-        I: 'alltheores:invar_ingot',
+        I: '#forge:ingots/invar',
         M: 'thermal:machine_frame',
         R: 'minecraft:redstone',
         E: 'thermal:constantan_gear'
@@ -194,8 +194,8 @@ ServerEvents.recipes(event => {
         'BXB',
         'IBI'
     ], {
-        I: 'alltheores:invar_ingot',
-        B: 'alltheores:bronze_ingot',
+        I: '#forge:ingots/invar',
+        B: '#forge:ingots/bronze',
         X: 'xycraft_world:xychorium_gem_blue'
     }).id('entropy:age5/upgrade_tier_1')
 
