@@ -114,6 +114,12 @@
 					item: "farmersdelight:rich_soil"
 					type: "item"
 				}
+				{
+					count: 4
+					id: "0AF1BC0B4E41C17C"
+					item: "farmersdelight:canvas"
+					type: "item"
+				}
 			]
 			tasks: [{
 				consume_items: false
